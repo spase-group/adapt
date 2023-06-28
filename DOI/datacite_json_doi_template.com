@@ -1,355 +1,419 @@
 
-DIRECTORY_SPASE=$1
+XML_FILE_INFO=$1
 
-DIRECTORY_JSON=$2
+PROJECT=$2
 
-USER_PASS=$3
+DIRECTORY_JSON=$3
 
-DATE=`date "+%Y%m%d"`
+USER_PASS=$4
 
-PROJECT=`echo $DIRECTORY_SPASE | awk 'BEGIN { FS="/" } ; { print $NF }'`
+if [ -d $XML_FILE_INFO ]; then
 
-if [ ! -d $DIRECTORY_JSON ]; then mkdir -p $DIRECTORY_JSON; fi
+   XML_FILE_NAME_LIST=`find $DIRECTORY_SPASE | sort | grep '\.xml'`$
 
-PROJECT_LOWER=`echo $PROJECT | tr 'A-Z' 'a-z'`
+else
 
-DATACITE_CURL_FILE_NAME=$DIRECTORY_JSON/datacite_curl_put_$PROJECT_LOWER'_'$DATE.com
+   FILE_NAME_SUFFIX_UPPER=`echo $XML_FILE_INFO | awk 'BEGIN { FS="." } ; { print $NF }' | tr 'a-z' 'A-Z'`
 
-touch $DATACITE_CURL_FILE_NAME
+   case $FILE_NAME_SUFFIX_UPPER in
 
-chmod +x $DATACITE_CURL_FILE_NAME
+     TXT ) XML_FILE_NAME_LIST=`cat $XML_FILE_INFO`;;
 
-DIRECTORY_OUTPUT=$DIRECTORY_JSON/JSON/$PROJECT
+     XML ) XML_FILE_NAME_LIST=$XML_FILE_INFO;;
 
-if [ ! -d $DIRECTORY_OUTPUT ]; then mkdir -p $DIRECTORY_OUTPUT; fi
+     *) XML_FILE_NAME_LIST='';;
 
-#PASE_RESOURCE_ID_LIST=`grep -hr '<ResourceID>' $DIRECTORY_SPASE | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | sed 's/^spase:\/\///' | grep -v ^'NASA/NumericalData/RBSP/[AB]/EFW/L1/B2/PT0.00006S'$`
+   esac
 
-SPASE_RESOURCE_ID_LIST=`grep -hr '<ResourceID>' $DIRECTORY_SPASE | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | sed 's/^spase:\/\///'`
+fi
 
-for SPASE_RESOURCE_ID in $SPASE_RESOURCE_ID_LIST
+if [ $XML_FILE_NAME ]; then
 
-do
+   echo 'WARNING: No XML Files found'
 
-    XML_FILE_NAME=$SPASE_RESOURCE_ID.xml
+else
 
-    PRODUCT_KEY_UPPER=`grep '<ProductKey>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sed 's/@.*//' | sort | uniq | tr 'a-z' 'A-Z'`
+   DATE=`date "+%Y%m%d"`
 
-    DOI=`grep '<DOI>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sed 's/@.*//' | sed 's/^https:\/\/doi.org\///' | sort | uniq | tr 'A-Z' 'a-z'`
+   PROJECT_LOWER=`echo $PROJECT | tr 'A-Z' 'a-z'`
 
-    PREFIX=`echo $DOI | awk 'BEGIN { FS="/" } ; { print $1 }'`
+   PROJECT_UPPER=`echo $PROJECT | tr 'a-z' 'A-Z'`
 
-    SUFFIX=`echo $DOI | awk 'BEGIN { FS="/" } ; { print $2 }'`
+   if [ ! -d $DIRECTORY_JSON ]; then mkdir -p $DIRECTORY_JSON; fi
 
-    if [ ! $PRODUCT_KEY_UPPER ]; then
+   DATACITE_CURL_FILE_NAME=$DIRECTORY_JSON/datacite_curl_put_$PROJECT_LOWER'_'$DATE.com
 
-       if [ $SPASE_RESOURCE_ID == 'NASA/NumericalData/RBSP/A/EMFISIS/HOUSEKEEPING/L2/PT1S' ]; then PRODUCT_KEY_UPPER='RBSP-A_HOUSEKEEPING_EMFISIS-L2'; fi
+   touch $DATACITE_CURL_FILE_NAME
 
-       if [ $SPASE_RESOURCE_ID == 'NASA/NumericalData/RBSP/B/EMFISIS/HOUSEKEEPING/L2/PT1S' ]; then PRODUCT_KEY_UPPER='RBSP-B_HOUSEKEEPING_EMFISIS-L2'; fi
+   chmod +x $DATACITE_CURL_FILE_NAME
 
-       if [ $SPASE_RESOURCE_ID == 'NASA/NumericalData/RBSP/A/EMFISIS/WFR/L2/SPECTRAL-MATRIX-BURST/PT1S' ]; then PRODUCT_KEY_UPPER='RBSP-A_WFR-SPECTRAL-MATRIX-BURST_EMFISIS-L2'; fi
+   DIRECTORY_OUTPUT=$DIRECTORY_JSON/JSON/$PROJECT_UPPER
 
-    fi
+   if [ ! -d $DIRECTORY_OUTPUT ]; then mkdir -p $DIRECTORY_OUTPUT; fi
 
-    PRODUCT_KEY_LOWER=`echo $PRODUCT_KEY_UPPER | tr 'A-Z' 'a-z'`
+   for XML_FILE_NAME in $XML_FILE_NAME_LIST
 
-    JSON_FILE_NAME=$DIRECTORY_OUTPUT/datacite_json_doi_template_$PRODUCT_KEY_LOWER.json
+   do
 
-    echo $DOI'	'$PREFIX'	'$SUFFIX'	'$PRODUCT_KEY_UPPER'	'$JSON_FILE_NAME'	'$SPASE_RESOURCE_ID
+       SPASE_RESOURCE_ID=`grep '<ResourceID>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | sed 's/^spase:\/\///'`
 
-    if [ $PREFIX == '10.48322' ]; then
+       PRODUCT_KEY_UPPER=`grep '<ProductKey>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sed 's/@.*//' | sort | uniq | tr 'a-z' 'A-Z'`
 
-       URL_TEXT=''
+       if [ ! $PRODUCT_KEY_UPPER ]; then
 
-    else
+          if [ $SPASE_RESOURCE_ID == 'NASA/NumericalData/RBSP/A/EMFISIS/HOUSEKEEPING/L2/PT1S' ]; then PRODUCT_KEY_UPPER='RBSP-A_HOUSEKEEPING_EMFISIS-L2'; fi
 
-       URL_TEXT='test.'
+          if [ $SPASE_RESOURCE_ID == 'NASA/NumericalData/RBSP/B/EMFISIS/HOUSEKEEPING/L2/PT1S' ]; then PRODUCT_KEY_UPPER='RBSP-B_HOUSEKEEPING_EMFISIS-L2'; fi
 
-    fi
+          if [ $SPASE_RESOURCE_ID == 'NASA/NumericalData/RBSP/A/EMFISIS/WFR/L2/SPECTRAL-MATRIX-BURST/PT1S' ]; then PRODUCT_KEY_UPPER='RBSP-A_WFR-SPECTRAL-MATRIX-BURST_EMFISIS-L2'; fi
 
-    echo 'curl -sS --request PUT --url https://api.'$URL_TEXT'datacite.org/dois/'$PREFIX'%2F'$SUFFIX" --user '"$USER_PASS"' --header 'content-type: application/vnd.api+json' -d @"$JSON_FILE_NAME >> $DATACITE_CURL_FILE_NAME
+       fi
 
-    if [ -e $JSON_FILE_NAME ]; then rm $JSON_FILE_NAME; fi
+       PRODUCT_KEY_LOWER=`echo $PRODUCT_KEY_UPPER | tr 'A-Z' 'a-z'`
 
-    echo '{' >& $JSON_FILE_NAME
+       DOI=`grep '<DOI>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sed 's/^https:\/\/doi.org\///' | sort | uniq | tr 'A-Z' 'a-z'`
 
-    echo '  "data": {' >> $JSON_FILE_NAME
+       if [ $DOI ]; then
 
-    echo '    "type": "dois",' >> $JSON_FILE_NAME
+          PREFIX=`echo $DOI | awk 'BEGIN { FS="/" } ; { print $1 }'`
 
-    echo '    "attributes": {' >> $JSON_FILE_NAME
+          SUFFIX=`echo $DOI | awk 'BEGIN { FS="/" } ; { print $2 }'`
 
-    echo '      "doi": "'$DOI'",' >> $JSON_FILE_NAME
+       else
 
-    echo '      "prefix": "10.48322",' >> $JSON_FILE_NAME
+           if [ $DIRECTORY_JSON == 'DATACITE' ]; then PREFIX='10.48322'; fi
 
-    echo '      "suffix": "'$SUFFIX'",' >> $JSON_FILE_NAME
+           if [ $DIRECTORY_JSON == 'TEST_DATACITE' ]; then PREFIX='10.82168'; fi
 
-    echo '      "url": "https://hpde.io/'$SPASE_RESOURCE_ID'.html",' >> $JSON_FILE_NAME
+       fi
 
-    echo '      "types": {' >> $JSON_FILE_NAME
+       JSON_FILE_NAME=$DIRECTORY_OUTPUT/datacite_json_doi_template_$PRODUCT_KEY_LOWER.json
 
-    echo '        "ris": "DATA",' >> $JSON_FILE_NAME
+       if [ -e $JSON_FILE_NAME ]; then rm $JSON_FILE_NAME; fi
 
-    echo '        "bibtex": "misc",' >> $JSON_FILE_NAME
+       echo '{' >& $JSON_FILE_NAME
 
-    echo '        "citeproc": "dataset",' >> $JSON_FILE_NAME
+       echo '  "data": {' >> $JSON_FILE_NAME
 
-    echo '        "schemaOrg": "Dataset",' >> $JSON_FILE_NAME
+       echo '    "type": "dois",' >> $JSON_FILE_NAME
 
-    echo '        "resourceTypeGeneral": "Dataset"' >> $JSON_FILE_NAME
+       echo '    "attributes": {' >> $JSON_FILE_NAME
 
-    echo '      },' >> $JSON_FILE_NAME
+       if [ ! $DOI ]; then echo '      "doi": "'$DOI'",'; fi >> $JSON_FILE_NAME
 
-    echo '      "creators": [' >> $JSON_FILE_NAME
+       echo '      "prefix": "'$PREFIX'",' >> $JSON_FILE_NAME
 
-    SPASE_PERSON_NAME_LIST=`grep '<PersonID>' $XML_FILE_NAME | grep -v Lee.Frost.Bargatze | grep -v Robert.E.McGuire | grep -v Robert.M.Candey | grep -v MMS_SDC_POC | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sed 's/^spase:\/\/SMWG\/Person\///'`
+       if [ ! $DOI ]; then echo '      "suffix": "'$SUFFIX'",'; fi >> $JSON_FILE_NAME
 
-    SPASE_PERSON_NAME_LAST=`grep '<PersonID>' $XML_FILE_NAME | grep -v Lee.Frost.Bargatze | grep -v Robert.E.McGuire | grep -v Robert.M.Candey | grep -v MMS_SDC_POC | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sed 's/^spase:\/\/SMWG\/Person\///' | tail -1`
+       echo '      "url": "https://hpde.io/'$SPASE_RESOURCE_ID'.html",' >> $JSON_FILE_NAME
 
-    for SPASE_PERSON_NAME in $SPASE_PERSON_NAME_LIST
+       echo '      "types": {' >> $JSON_FILE_NAME
 
-    do
+       echo '        "ris": "DATA",' >> $JSON_FILE_NAME
 
-        SPASE_PERSON_NAME_MATCH=`grep ^$SPASE_PERSON_NAME'	' datacite_json_doi_template.tab | awk 'BEGIN { FS="	" } ; { print $1 }'`
+       echo '        "bibtex": "misc",' >> $JSON_FILE_NAME
 
-        if [ $SPASE_PERSON_NAME_MATCH ]; then
+       echo '        "citeproc": "dataset",' >> $JSON_FILE_NAME
 
-           GIVEN_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_json_doi_template.tab | awk 'BEGIN { FS="	" } ; { print $2 }'`
+       echo '        "schemaOrg": "Dataset",' >> $JSON_FILE_NAME
 
-           AUTHORS_GIVEN_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_json_doi_template.tab | awk 'BEGIN { FS="	" } ; { print $3 }'`
+       echo '        "resourceTypeGeneral": "Dataset"' >> $JSON_FILE_NAME
 
-           FAMILY_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_json_doi_template.tab | awk 'BEGIN { FS="	" } ; { print $4 }'`
+       echo '      },' >> $JSON_FILE_NAME
 
-           INITIAL_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_json_doi_template.tab | awk 'BEGIN { FS="	" } ; { print $5 }'`
+       echo '      "creators": [' >> $JSON_FILE_NAME
 
-           AFFILIATION_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_json_doi_template.tab | awk 'BEGIN { FS="	" } ; { print $6 }'`
+       SPASE_PERSON_NAME_LIST=`grep '	'$SPASE_RESOURCE_ID'	' person_mission_nasa_all.tab | grep -v '	MetadataContact'$ | awk 'BEGIN { FS="	" } ; { print $3 }'`
 
-           AFFILIATION_ROR=`grep ^$SPASE_PERSON_NAME'	' datacite_json_doi_template.tab | awk 'BEGIN { FS="	" } ; { print $7 }'`
+       SPASE_PERSON_NAME_LAST=`grep '	'$SPASE_RESOURCE_ID'	' person_mission_nasa_all.tab | grep -v '	MetadataContact'$ | awk 'BEGIN { FS="	" } ; { print $3 }' | tail -1`
 
-           MISSION_ACRONYM=`grep ^$SPASE_PERSON_NAME'	' datacite_json_doi_template.tab | awk 'BEGIN { FS="	" } ; { print $8 }'`
+       for SPASE_PERSON_NAME in $SPASE_PERSON_NAME_LIST
 
-        else
+       do
 
-           GIVEN_NAME=GIVEN_NAME
+           SPASE_PERSON_NAME_MATCH=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $1 }'`
 
-           FAMILY_NAME=FAMILY_NAME
+           if [ $SPASE_PERSON_NAME_MATCH ]; then
 
-        fi
+              FULL_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $2 }'`
 
-        echo '        {' >> $JSON_FILE_NAME
+              FIRST_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $3 }'`
 
-        echo '          "name": "'$FAMILY_NAME', '"$GIVEN_NAME"'",' >> $JSON_FILE_NAME
+              AUTHORS_GIVEN_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $4 }'`
 
-        echo '          "nameType": "Personal",' >> $JSON_FILE_NAME
+              GIVEN_NAME=`echo $AUTHORS_GIVEN_NAME | sed 's/,//'`
 
-        echo '          "givenName": "'"$GIVEN_NAME"'",' >> $JSON_FILE_NAME
+              FAMILY_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $5 }'`
 
-        echo '          "familyName": "'$FAMILY_NAME'",' >> $JSON_FILE_NAME
+              INITIAL_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $6 }'`
 
-        echo '          "affiliation": [' >> $JSON_FILE_NAME
+              AFFILIATION_NAME=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $7 }'`
 
-        echo '            {' >> $JSON_FILE_NAME
+              AFFILIATION_ROR=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $8 }'`
 
-        if [ $AFFILIATION_ROR ]; then
+              MISSION_ACRONYM=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $9 }'`
 
-           echo '              "name": "'"$AFFILIATION_NAME"'",' >> $JSON_FILE_NAME
+              NAME_PATTERN=`grep ^$SPASE_PERSON_NAME'	' datacite_doi_name_list_all.tab | awk 'BEGIN { FS="	" } ; { print $10 }'`
 
-           echo '              "schemeUri": "https://ror.org",' >> $JSON_FILE_NAME
+           else
 
-           echo '              "affiliationIdentifier": "https://ror.org/'$AFFILIATION_ROR'",' >> $JSON_FILE_NAME
+              GIVEN_NAME=GIVEN_NAME
 
-           echo '              "affiliationIdentifierScheme": "ROR"' >> $JSON_FILE_NAME
+              FAMILY_NAME=FAMILY_NAME
 
-        else
+           fi
 
-           echo '              "name": "'"$AFFILIATION_NAME"'"' >> $JSON_FILE_NAME
+           echo '        {' >> $JSON_FILE_NAME
 
-        fi
+           echo '          "name": "'$FAMILY_NAME', '"$GIVEN_NAME"'",' >> $JSON_FILE_NAME
 
-        echo '            }' >> $JSON_FILE_NAME
+           echo '          "nameType": "Personal",' >> $JSON_FILE_NAME
 
-        echo '          ],' >> $JSON_FILE_NAME
+           echo '          "givenName": "'"$GIVEN_NAME"'",' >> $JSON_FILE_NAME
 
-        echo '          "nameIdentifiers": []' >> $JSON_FILE_NAME
+           echo '          "familyName": "'$FAMILY_NAME'",' >> $JSON_FILE_NAME
 
-        if [ $SPASE_PERSON_NAME != $SPASE_PERSON_NAME_LAST ]; then
+           echo '          "affiliation": [' >> $JSON_FILE_NAME
 
-           echo '        },' >> $JSON_FILE_NAME
+           echo '            {' >> $JSON_FILE_NAME
 
-        else
+           if [ $AFFILIATION_ROR ]; then
 
-           echo '        }' >> $JSON_FILE_NAME
+              echo '              "name": "'"$AFFILIATION_NAME"'",' >> $JSON_FILE_NAME
 
-        fi
+              echo '              "schemeUri": "https://ror.org",' >> $JSON_FILE_NAME
 
-    done
+              echo '              "affiliationIdentifier": "https://ror.org/'$AFFILIATION_ROR'",' >> $JSON_FILE_NAME
 
-    echo '      ],' >> $JSON_FILE_NAME
+              echo '              "affiliationIdentifierScheme": "ROR"' >> $JSON_FILE_NAME
 
-    TITLE=`grep -r '<ResourceName>' $XML_FILE_NAME | sort | awk 'BEGIN { FS="[<>]" } ; { print $3 }'`
+           else
 
-    echo '      "titles": [' >> $JSON_FILE_NAME
+              echo '              "name": "'"$AFFILIATION_NAME"'"' >> $JSON_FILE_NAME
 
-    echo '        {' >> $JSON_FILE_NAME
+           fi
 
-    echo '          "lang": "en",' >> $JSON_FILE_NAME
+           echo '            }' >> $JSON_FILE_NAME
 
-    echo '          "title": "'"$TITLE"'",' >> $JSON_FILE_NAME
+           echo '          ],' >> $JSON_FILE_NAME
 
-    echo '          "titleType": null' >> $JSON_FILE_NAME
+           echo '          "nameIdentifiers": []' >> $JSON_FILE_NAME
 
-    echo '        }' >> $JSON_FILE_NAME
+           if [ $SPASE_PERSON_NAME != $SPASE_PERSON_NAME_LAST ]; then
 
-    echo '      ],' >> $JSON_FILE_NAME
+              echo '        },' >> $JSON_FILE_NAME
 
-    PUBLISHER='NASA Space Physics Data Facility'
+           else
 
-    echo '      "publisher": "'"$PUBLISHER"'",' >> $JSON_FILE_NAME
+              echo '        }' >> $JSON_FILE_NAME
 
-    PROCESSING_LEVEL=`grep '<ProcessingLevel>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }'`
+           fi
 
-    echo '      "subjects": [' >> $JSON_FILE_NAME
+       done
 
-    echo '        {' >> $JSON_FILE_NAME
+       echo '      ],' >> $JSON_FILE_NAME
 
-    echo '          "subject": "'$PROCESSING_LEVEL'"' >> $JSON_FILE_NAME
+       TITLE=`grep -r '<ResourceName>' $XML_FILE_NAME | sort | awk 'BEGIN { FS="[<>]" } ; { print $3 }'`
 
-    echo '        },' >> $JSON_FILE_NAME
+       echo '      "titles": [' >> $JSON_FILE_NAME
 
-    MEASUREMENT_TYPE_LIST=`grep '<MeasurementType>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | uniq`
+       echo '        {' >> $JSON_FILE_NAME
 
-    MEASUREMENT_TYPE_LAST=`grep '<MeasurementType>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | tail -1`
+       echo '          "lang": "en",' >> $JSON_FILE_NAME
 
-    for MEASUREMENT_TYPE in $MEASUREMENT_TYPE_LIST
+       echo '          "title": "'"$TITLE"'",' >> $JSON_FILE_NAME
 
-    do
+       echo '          "titleType": null' >> $JSON_FILE_NAME
 
-        echo '        {' >> $JSON_FILE_NAME
+       echo '        }' >> $JSON_FILE_NAME
 
-        echo '          "subject": "'$MEASUREMENT_TYPE'"' >> $JSON_FILE_NAME
+       echo '      ],' >> $JSON_FILE_NAME
 
-        if [ $MEASUREMENT_TYPE != $MEASUREMENT_TYPE_LAST ]; then
+       PUBLISHER='NASA Space Physics Data Facility'
 
-           echo '        },' >> $JSON_FILE_NAME
+       echo '      "publisher": "'"$PUBLISHER"'",' >> $JSON_FILE_NAME
 
-        else
+       PROCESSING_LEVEL=`grep '<ProcessingLevel>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }'`
 
-           echo '        }' >> $JSON_FILE_NAME
+       echo '      "subjects": [' >> $JSON_FILE_NAME
 
-        fi
+       if [ $PROCESSING_LEVEL ]; then
 
-    done
+          echo '        {' >> $JSON_FILE_NAME
 
-    echo '      ],' >> $JSON_FILE_NAME
+          echo '          "subject": "'$PROCESSING_LEVEL'"' >> $JSON_FILE_NAME
 
-    echo '      "contributors": [],' >> $JSON_FILE_NAME
+          echo '        },' >> $JSON_FILE_NAME
 
-    echo '      "dates": [],' >> $JSON_FILE_NAME
+       fi
 
-    PUBLICATION_YEAR=2022
+       MEASUREMENT_TYPE_LIST=`grep '<MeasurementType>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | uniq`
 
-    echo '      "publicationYear": '$PUBLICATION_YEAR',' >> $JSON_FILE_NAME
+       MEASUREMENT_TYPE_LAST=`grep '<MeasurementType>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | tail -1`
 
-    echo '      "language": "en",' >> $JSON_FILE_NAME
+       for MEASUREMENT_TYPE in $MEASUREMENT_TYPE_LIST
 
-    echo '      "identifiers": [' >> $JSON_FILE_NAME
+       do
 
-    echo '        {' >> $JSON_FILE_NAME
+           echo '        {' >> $JSON_FILE_NAME
 
-    echo '          "identifier": "spase://'$SPASE_RESOURCE_ID'",' >> $JSON_FILE_NAME
+           echo '          "subject": "'$MEASUREMENT_TYPE'"' >> $JSON_FILE_NAME
 
-    echo '          "identifierType": "SPASE"' >> $JSON_FILE_NAME
+           if [ $MEASUREMENT_TYPE != $MEASUREMENT_TYPE_LAST ]; then
 
-    echo '        }' >> $JSON_FILE_NAME
+              echo '        },' >> $JSON_FILE_NAME
 
-    echo '      ],' >> $JSON_FILE_NAME
+           else
 
-    echo '      "sizes": [],' >> $JSON_FILE_NAME
+              echo '        }' >> $JSON_FILE_NAME
 
-    FORMAT_LIST=`grep '<Format>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | uniq`
+           fi
 
-    FORMAT_LAST=`grep '<Format>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | tail -1`
+       done
 
-    echo '      "formats": [' >> $JSON_FILE_NAME
+       echo '      ],' >> $JSON_FILE_NAME
 
-    for FORMAT in $FORMAT_LIST
+       echo '      "contributors": [],' >> $JSON_FILE_NAME
 
-    do
+       echo '      "dates": [],' >> $JSON_FILE_NAME
 
-        echo '        {' >> $JSON_FILE_NAME
+       PUBLICATION_YEAR=2023
 
-        echo '          "subject": "'$FORMAT'"' >> $JSON_FILE_NAME
+       echo '      "publicationYear": '$PUBLICATION_YEAR',' >> $JSON_FILE_NAME
 
-        if [ $FORMAT != $FORMAT_LAST ]; then
+       echo '      "language": "en",' >> $JSON_FILE_NAME
 
-           echo '        },' >> $JSON_FILE_NAME
+       echo '      "identifiers": [' >> $JSON_FILE_NAME
 
-        else
+       echo '        {' >> $JSON_FILE_NAME
 
-           echo '        }' >> $JSON_FILE_NAME
+       echo '          "identifier": "spase://'$SPASE_RESOURCE_ID'",' >> $JSON_FILE_NAME
 
-        fi
+       echo '          "identifierType": "SPASE"' >> $JSON_FILE_NAME
 
-    done
+       echo '        }' >> $JSON_FILE_NAME
 
-    echo '      ],' >> $JSON_FILE_NAME
+       echo '      ],' >> $JSON_FILE_NAME
 
-    echo '      "rightsList": [' >> $JSON_FILE_NAME
+       echo '      "sizes": [],' >> $JSON_FILE_NAME
 
-    echo '        {' >> $JSON_FILE_NAME
+       FORMAT_LIST=`grep '<Format>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | uniq`
 
-    echo '          "rights": "Creative Commons Zero v1.0 Universal",' >> $JSON_FILE_NAME
+       FORMAT_LAST=`grep '<Format>' $XML_FILE_NAME | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sort | tail -1`
 
-    echo '          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",' >> $JSON_FILE_NAME
+       echo '      "formats": [' >> $JSON_FILE_NAME
 
-    echo '          "schemeUri": "https://spdx.org/licenses/",' >> $JSON_FILE_NAME
+       for FORMAT in $FORMAT_LIST
 
-    echo '          "rightsIdentifier": "cc0-1.0",' >> $JSON_FILE_NAME
+       do
 
-    echo '          "rightsIdentifierScheme": "SPDX"' >> $JSON_FILE_NAME
+           echo '        {' >> $JSON_FILE_NAME
 
-    echo '        }' >> $JSON_FILE_NAME
+           echo '          "subject": "'$FORMAT'"' >> $JSON_FILE_NAME
 
-    echo '      ],' >> $JSON_FILE_NAME
+           if [ $FORMAT != $FORMAT_LAST ]; then
 
-    DESCRIPTION=`grep '<Description>' $XML_FILE_NAME | head -1 | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sed 's/"/\&quot;/g'`
+              echo '        },' >> $JSON_FILE_NAME
 
-    echo '      "descriptions": [' >> $JSON_FILE_NAME
+           else
 
-    echo '        {' >> $JSON_FILE_NAME
+              echo '        }' >> $JSON_FILE_NAME
 
-    echo '          "lang": "en",' >> $JSON_FILE_NAME
+           fi
 
-    echo '          "description": "'"$DESCRIPTION"'",' >> $JSON_FILE_NAME
+       done
 
-    echo '          "descriptionType": "Abstract"' >> $JSON_FILE_NAME
+       echo '      ],' >> $JSON_FILE_NAME
 
-    echo '        }' >> $JSON_FILE_NAME
+       echo '      "rightsList": [' >> $JSON_FILE_NAME
 
-    echo '      ],' >> $JSON_FILE_NAME
+       echo '        {' >> $JSON_FILE_NAME
 
-    echo '      "geoLocations": [],' >> $JSON_FILE_NAME
+       echo '          "rights": "Creative Commons Zero v1.0 Universal",' >> $JSON_FILE_NAME
 
-    echo '      "fundingReferences": [],' >> $JSON_FILE_NAME
+       echo '          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",' >> $JSON_FILE_NAME
 
-    echo '      "relatedIdentifiers": [],' >> $JSON_FILE_NAME
+       echo '          "schemeUri": "https://spdx.org/licenses/",' >> $JSON_FILE_NAME
 
-    echo '      "schemaVersion": "http://datacite.org/schema/kernel-4",' >> $JSON_FILE_NAME
+       echo '          "rightsIdentifier": "cc0-1.0",' >> $JSON_FILE_NAME
 
-    echo '      "providerId": "nasasmd",' >> $JSON_FILE_NAME
+       echo '          "rightsIdentifierScheme": "SPDX"' >> $JSON_FILE_NAME
 
-    echo '      "clientId": "heliophy.spdf",' >> $JSON_FILE_NAME
+       echo '        }' >> $JSON_FILE_NAME
 
-    echo '      "agency": "datacite",' >> $JSON_FILE_NAME
+       echo '      ],' >> $JSON_FILE_NAME
 
-    echo '      "state": "draft"' >> $JSON_FILE_NAME
+       DESCRIPTION=`grep '<Description>' $XML_FILE_NAME | head -1 | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sed 's/"/\&quot;/g'`
 
-    echo '    }' >> $JSON_FILE_NAME
+       echo '      "descriptions": [' >> $JSON_FILE_NAME
 
-    echo '  }' >> $JSON_FILE_NAME
+       echo '        {' >> $JSON_FILE_NAME
 
-    echo '}' >> $JSON_FILE_NAME
+       echo '          "lang": "en",' >> $JSON_FILE_NAME
 
-done
+       echo '          "description": "'"$DESCRIPTION"'",' >> $JSON_FILE_NAME
+
+       echo '          "descriptionType": "Abstract"' >> $JSON_FILE_NAME
+
+       echo '        }' >> $JSON_FILE_NAME
+
+       echo '      ],' >> $JSON_FILE_NAME
+
+       echo '      "geoLocations": [],' >> $JSON_FILE_NAME
+
+       echo '      "fundingReferences": [],' >> $JSON_FILE_NAME
+
+       echo '      "relatedIdentifiers": [],' >> $JSON_FILE_NAME
+
+       echo '      "schemaVersion": "http://datacite.org/schema/kernel-4",' >> $JSON_FILE_NAME
+
+       echo '      "providerId": "nasasmd",' >> $JSON_FILE_NAME
+
+       echo '      "clientId": "heliophy.spdf",' >> $JSON_FILE_NAME
+
+       echo '      "agency": "datacite",' >> $JSON_FILE_NAME
+
+       echo '      "state": "draft"' >> $JSON_FILE_NAME
+
+       echo '    }' >> $JSON_FILE_NAME
+
+       echo '  }' >> $JSON_FILE_NAME
+
+       echo '}' >> $JSON_FILE_NAME
+
+       if [ $PREFIX == '10.48322' ]; then URL_TEXT=''; fi
+
+       if [ $PREFIX == '10.82168' ]; then URL_TEXT='test.'; fi
+
+       if [ $DOI ]; then
+
+          echo 'curl -sS --request PUT --url https://api.'$URL_TEXT'datacite.org/dois/'$PREFIX'%2F'$SUFFIX" --user '"$USER_PASS"' --header 'content-type: application/vnd.api+json' -d @"$JSON_FILE_NAME >> $DATACITE_CURL_FILE_NAME
+
+#               curl -sS --request PUT --url https://api.'$URL_TEXT'datacite.org/dois/'$PREFIX'%2F'$SUFFIX" --user '"$USER_PASS"' --header 'content-type: application/vnd.api+json' -d @"$JSON_FILE_NAME
+
+       else
+
+          echo "curl -sSX POST -H 'Content-Type: application/vnd.api+json' -u '"$USER_PASS"' -d @"$JSON_FILE_NAME" https://api."$URL_TEXT"datacite.org/dois" >> $DATACITE_CURL_FILE_NAME
+
+          echo "curl -sSX POST -H 'Content-Type: application/vnd.api+json' -u '"$USER_PASS"' -d @"$JSON_FILE_NAME" https://api."$URL_TEXT"datacite.org/dois" >& $DIRECTORY_JSON/datacite_json_doi_template_$$.com
+
+          chmod +x $DIRECTORY_JSON/datacite_json_doi_template_$$.com
+
+          $DIRECTORY_JSON/datacite_json_doi_template_$$.com >& $DIRECTORY_JSON/datacite_json_doi_template_$$.json
+
+          DOI=`awk 'BEGIN { FS="\"" } ; { print $6 }' TEST_DATACITE/datacite_json_doi_template_$$.json | tr 'a-z' 'A-Z'`
+
+          rm $DIRECTORY_JSON/datacite_json_doi_template_$$.com $DIRECTORY_JSON/datacite_json_doi_template_$$.json
+
+       fi
+
+       PREFIX=`echo $DOI | awk 'BEGIN { FS="/" } ; { print $1 }'`
+
+       SUFFIX=`echo $DOI | awk 'BEGIN { FS="/" } ; { print $2 }'`
+
+       echo $DOI'	'$PREFIX'	'$SUFFIX'	'$PRODUCT_KEY_UPPER'	'$JSON_FILE_NAME'	'$SPASE_RESOURCE_ID
+
+   done
+
+fi
 
