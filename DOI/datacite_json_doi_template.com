@@ -9,7 +9,7 @@ USER_PASS=$4
 
 if [ -d $XML_FILE_INFO ]; then
 
-   XML_FILE_NAME_LIST=`find $DIRECTORY_SPASE | sort | grep '\.xml'`$
+   XML_FILE_NAME_LIST=`find $XML_FILE_INFO | sort | grep '\.xml'`$
 
 else
 
