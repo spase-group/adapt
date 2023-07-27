@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/tss-1r_m1_rpsa/yyyymmddhhmmss</ResourceID>
+      <ResourceHeader>
+         <ResourceName>TSS-1R Satellite Electron and Ion Measurements, SPES Grid Bias And HVU 1/2 Status (RPSA), Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description>References:
+1. The Instrument Data File Set. URL http://www.idfs.org</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator J.D. Winningham for use of the Data. 
+
+PI determined</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/J.David.Winningham</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Mission Overview</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/grl10545.pdf</URL>
+            <Description>TSS-1R</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Documentation Folder</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/</URL>
+            <Description>TSS</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=TSS-1R_M1_RPSA&amp;index=sp_phys</URL>
+            <ProductKey>TSS-1R_M1_RPSA</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator J.D. Winningham. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>InstrumentStatus</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Start Time for the record</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_Start</ParameterKey>
+         <Description>Start time = Epoch - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Epoch_End</ParameterKey>
+         <Description>End time = Epoch + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SPES 1 Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SPES_1_Grid</ParameterKey>
+         <Description>SPES 1 Grid Bias</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SPES 1 Grid</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_SPES_1_Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_SPES_1_Grid</ParameterKey>
+         <Description>Data Quality Indicator for SPES 1 Grid</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SPES 2 Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SPES_2_Grid</ParameterKey>
+         <Description>SPES 2 Grid Bias</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SPES 2 Grid</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_SPES_2_Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_SPES_2_Grid</ParameterKey>
+         <Description>Data Quality Indicator for SPES 2 Grid</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SPES 3 Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SPES_3_Grid</ParameterKey>
+         <Description>SPES 3 Grid Bias</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SPES 3 Grid</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_SPES_3_Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_SPES_3_Grid</ParameterKey>
+         <Description>Data Quality Indicator for SPES 3 Grid</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SPES 4 Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SPES_4_Grid</ParameterKey>
+         <Description>SPES 4 Grid Bias</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SPES 4 Grid</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_SPES_4_Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_SPES_4_Grid</ParameterKey>
+         <Description>Data Quality Indicator for SPES 4 Grid</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SPES 5 Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SPES_5_Grid</ParameterKey>
+         <Description>SPES 5 Grid Bias</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SPES 5 Grid</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_SPES_5_Grid</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_SPES_5_Grid</ParameterKey>
+         <Description>Data Quality Indicator for SPES 5 Grid</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HVPS 1 State</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HVPS_1_State</ParameterKey>
+         <Description>High Voltage Power Supply 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>HVPS 1 State</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_HVPS_1_State</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_HVPS_1_State</ParameterKey>
+         <Description>Data Quality Indicator for HVPS 1 State</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HVPS 2 State</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HVPS_2_State</ParameterKey>
+         <Description>High Voltage Power Supply 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>HVPS 2 State</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_HVPS_2_State</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_HVPS_2_State</ParameterKey>
+         <Description>Data Quality Indicator for HVPS 2 State</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PPS 1 State</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PPS_1_State</ParameterKey>
+         <Description>Programmable Power Supply 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PPS 1 State</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_PPS_1_State</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_PPS_1_State</ParameterKey>
+         <Description>Data Quality Indicator for PPS 1 State</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PPS 2 State</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PPS_2_State</ParameterKey>
+         <Description>Programmable Power Supply 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PPS 2 State</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_PPS_2_State</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_PPS_2_State</ParameterKey>
+         <Description>Data Quality Indicator for PPS 2 State</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

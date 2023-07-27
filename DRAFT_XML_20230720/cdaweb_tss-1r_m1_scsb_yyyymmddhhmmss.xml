@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/tss-1r_m1_scsb/yyyymmddhhmmss</ResourceID>
+      <ResourceHeader>
+         <ResourceName>TSS-1R Tethered Satellite Core Measurements (SCORE) High time resolution experiment status flags (SCSB), Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description>References:
+1. The Instrument Data File Set. URL http://www.idfs.org</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator C. Bonifazi for use of the Data. 
+
+PI determined</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Mission Overview</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/grl10545.pdf</URL>
+            <Description>TSS-1R</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Documentation Folder</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/</URL>
+            <Description>TSS</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=TSS-1R_M1_SCSB&amp;index=sp_phys</URL>
+            <ProductKey>TSS-1R_M1_SCSB</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator C. Bonifazi. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>InstrumentStatus</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Start Time for the record</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_Start</ParameterKey>
+         <Description>Start time = Epoch - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Epoch_End</ParameterKey>
+         <Description>End time = Epoch + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SLA Oper</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SLA_Oper</ParameterKey>
+         <Description>SLA Operate Status</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SLA Oper</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_SLA_Oper</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_SLA_Oper</ParameterKey>
+         <Description>Data Quality Indicator for SLA Oper</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SA Pwr Chk</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SA_Pwr_Chk</ParameterKey>
+         <Description>SA Power Status</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SA Pwr Chk</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_SA_Pwr_Chk</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_SA_Pwr_Chk</ParameterKey>
+         <Description>Data Quality Indicator for SA Pwr Chk</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SA Autochk Cmd</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SA_Autochk_Cmd</ParameterKey>
+         <Description>SA Autocheck CMD Status</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SA Autochk Cmd</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_SA_Autochk_Cmd</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_SA_Autochk_Cmd</ParameterKey>
+         <Description>Data Quality Indicator for SA Autochk Cmd</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

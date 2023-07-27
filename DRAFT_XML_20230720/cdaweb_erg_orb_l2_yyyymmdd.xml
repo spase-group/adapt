@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/Arase/Ephemeris/Level2/Definitive/PT6S</ResourceID>
+      <ResourceHeader>
+         <ResourceName>ERG Ephemeris, Definitive Spacecraft Position, Velocity, Footpoint, and Model Magnetic Field, Level 2 (L2), 6 s Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description>ERG orbit</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator I. Shinohara, Y. Miyoshi, and T.-F. Chang for use of the Data. 
+
+TBD</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Iku.Shinohara</PersonID>
+            <Role>ProjectManager</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Yoshizumi.Miyoshi</PersonID>
+            <Role>ProjectScientist</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Tzu-Fang.Chang</PersonID>
+            <Role>HostContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>the ERG Science Center website</Name>
+            <URL>http://ergsc.isee.nagoya-u.ac.jp</URL>
+            <Description>For more information, see</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>instrument papers in Earth, Planets and Space</Name>
+            <URL>https://www.springeropen.com/collections/erg</URL>
+            <Description>ERG</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/ERG-SC</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>ERG Science Center</Name>
+            <URL>https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/satellite/erg/orb/def/</URL>
+            <ProductKey>ERG_ORB_L2</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via the ERG Science Center</Description>
+            <Language>en</Language>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the ERG Science Center, ERG-SC, the Institute of Space and Astronautical Science, ISAS, the Japan Aerospace Exploration Agency, JAXA, and the Institute for Space-Earth Environmental Research, ISEE, Nagoya University in presentations or publications when using data, data analysis software, plug-ins for data analysis, integrated analysis tools, or any other services provided by the ERG-SC.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/erg/orb/l2/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/erg/orb/l2/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ERG_ORB_L2&amp;index=sp_phys</URL>
+            <ProductKey>ERG_ORB_L2</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator I. Shinohara, Y. Miyoshi, and T.-F. Chang. Please acknowledge the Data Providers, the ERG Science Center, and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Arase/Ephemeris</InstrumentID>
+      <MeasurementType>Ephemeris</MeasurementType>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2016-12-20T00:00:00.000</StartDate>
+            <RelativeStopDate>-P7D</RelativeStopDate>
+         </TimeSpan>
+         <Cadence>PT6S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RingCurrent</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.MidLatitudeRegion</ObservedRegion>
+      <Parameter>
+         <Name>Epoch Time</Name>
+         <ParameterKey>epoch</ParameterKey>
+         <Description>Epoch Time, beginning of interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleMin>6.3587268219904e+13</ScaleMin>
+            <ScaleMax>6.6301178619903e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2015-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2100-12-31T23:59:59.099900000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Observation Date and Time, character format</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>date_time</ParameterKey>
+         <Description>Observation Date and Time, character format: year, month, day, hour, minute, second, millisecond, microsecond, nanosecond</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Cadence>PT6S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Time</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>9</Size>
+            <Element>
+               <Name>Year</Name>
+               <Index>1</Index>
+               <Units>yr</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Month</Name>
+               <Index>2</Index>
+               <Units>mo</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Day</Name>
+               <Index>3</Index>
+               <Units>d</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Hour</Name>
+               <Index>4</Index>
+               <Units>h</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Minute</Name>
+               <Index>5</Index>
+               <Units>min</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Second</Name>
+               <Index>6</Index>
+               <Units>s</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Millisecond</Name>
+               <Index>7</Index>
+               <Units>ms</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Microsecond</Name>
+               <Index>8</Index>
+               <Units>micros</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Nanosecond</Name>
+               <Index>9</Index>
+               <Units>ns</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Position, GSE, cartesian coordinates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_gse</ParameterKey>
+         <Description>Spacecraft Position, Geocentric Solar Ecliptic, GSE, cartesian coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>Re</Units>
+         <UnitsConversion>6.3712e6&gt;m</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+      <Parameter>
+         <Name>Spacecraft Position, GSM, cartesian coordinates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_gsm</ParameterKey>
+         <Description>Spacecraft Position, Geocentric Solar Magnetospheric, GSM, cartesian coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>Re</Units>
+         <UnitsConversion>6.3712e6&gt;m</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+      <Parameter>
+         <Name>Spacecraft Position, SM, cartesian coordinates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_sm</ParameterKey>
+         <Description>Spacecraft Position, Solar Magnetospheric, SM, cartesian coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>Re</Units>
+         <UnitsConversion>6.3712e6&gt;m</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+      <Parameter>
+         <Name>Spacecraft Position, MAG, [L, MLAT, MLT], IGRF</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_rmlatmlt</ParameterKey>
+         <Description>Spacecraft Position, L Shell, Magnetic Latitude, Magnetic Local Time, [L, MLAT, MLT], calculated by using the International Geomagnetic Reference Field, IGRF, model</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+      <Parameter>
+         <Name>Spacecraft Position mapped to the magnetic equator, [Leq, MLTeq], IGRF</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_eq</ParameterKey>
+         <Description>Spacecraft Position mapped on to the magnetic equator, L Shell, equatorial, Magnetic Local Time, equatorial, [Leq, MLTeq], calculated by using the International Geomagnetic Reference Field, IGRF, model</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+      <Parameter>
+         <Name>Spacecraft Footpoint Position, GEO, [Lat, Long], 100 km, northern hemisphere, IGRF</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_iono_north</ParameterKey>
+         <Description>Spacecraft Footpoint Position at 100 km altitude in the northern hemisphere, Geographic, GEO, spherical coordinates, [Lat, Long], calculated by using the International Geomagnetic Reference Field, IGRF, model</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.0174532925&gt;rad</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+      <Parameter>
+         <Name>Spacecraft Footpoint Position, GEO, [Lat, Long], 100 km, southern hemisphere, IGRF</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_iono_south</ParameterKey>
+         <Description>Spacecraft Footpoint Position at 100 km altitude in the southern hemisphere, Geographic, GEO, spherical coordinates, [Lat, Long], calculated by using the International Geomagnetic Reference Field, IGRF, model</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.0174532925&gt;rad</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+      <Parameter>
+         <Name>Model Magnetic Field Vector, at spacecraft position, IGRF</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_blocal</ParameterKey>
+         <Description>Model Magnetic Field Vector, B, at the spacecraft position, calculated by using the International Geomagnetic Reference Field, IGRF, model</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Model BX GSE</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Model BY GSE</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Model BZ GSE</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Field>
+            <Qualifier>Vector</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>Model Magnetic Field Magnitude, at spacecraft position, IGRF</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_blocal_mag</ParameterKey>
+         <Description>Model Magnetic Field Magnitude, |B|, at the spacecraft position, calculated by using the International Geomagnetic Reference Field, IGRF, model</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>|B|</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Field>
+            <Qualifier>Scalar</Qualifier>
+            <Qualifier>Magnitude</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>Model Magnetic Field Vector, at spacecraft position mapped to the magnetic equator, IGRF</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_beq</ParameterKey>
+         <Description>Model Magnetic Field Vector, Beq, at the spacecraft position mapped on to the magnetic equator, calculated by using the International Geomagnetic Reference Field, IGRF, model</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Model BXeq GSE</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Model BYeq GSE</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Model BZeq GSE</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Field>
+            <Qualifier>Vector</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Field Magnitude, at spacecraft position mapped to the magnetic equator, IGRF</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_beq_mag</ParameterKey>
+         <Description>Model Magnetic Field Magnitude, |Beq|, at the spacecraft position mapped on to the magnetic equator, calculated by using the International Geomagnetic Reference Field, IGRF, model</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>|B|eq</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Field>
+            <Qualifier>Scalar</Qualifier>
+            <Qualifier>Magnitude</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>McIlwain L Parameter, at three pitch angles</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_Lm</ParameterKey>
+         <Description>McIlwain L Parameter for particles with pitch angles equal to 30&#176;, 60&#176;, and 90&#176;, respectively</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>McIlwain L @ PA30</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>McIlwain L @ PA60</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>McIlwain L @ PA90</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <Qualifier>Array</Qualifier>
+            <SupportQuantity>Positional</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Velocity, GSE, cartesian coordinates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>vel_gse</ParameterKey>
+         <Description>Spacecraft Velocity, Geocentric Solar Ecliptic, GSE, cartesian coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>km/s</Units>
+         <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+      <Parameter>
+         <Name>Spacecraft Velocity, GSM, cartesian coordinates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>vel_gsm</ParameterKey>
+         <Description>Spacecraft Velocity, Geocentric Solar Magnetospheric, GSM, cartesian coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>km/s</Units>
+         <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+      <Parameter>
+         <Name>Spacecraft Velocity, SM, cartesian coordinates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>vel_sm</ParameterKey>
+         <Description>Spacecraft Velocity, Solar Magnetospheric, SM, cartesian coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT6S</Cadence>
+         <Units>km/s</Units>
+         <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+      <Parameter>
+         <Name>Spacecraft Spin Number</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>spn_num</ParameterKey>
+         <Description>Spacecraft Spin Number</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Cadence>PT6S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Spin number</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleMin>-1.0E31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>5</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Other</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Maneuver Preparation Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>man_prep_flag</ParameterKey>
+         <Description>Spacecraft Maneuver Preparation Flag</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Cadence>PT6S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag for maneuver preparation</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>9</ValidMax>
+         <FillValue>-128</FillValue>
+         <Support>
+            <SupportQuantity>Other</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Maneuver Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>man_on_flag</ParameterKey>
+         <Description>Spacecraft Maneuver Flag</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Cadence>PT6S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag for maneuver on/off</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>9</ValidMax>
+         <FillValue>-128</FillValue>
+         <Support>
+            <SupportQuantity>Other</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Eclipse Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>eclipse_flag</ParameterKey>
+         <Description>Spacecraft Eclipse Flag</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Cadence>PT6S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag for eclipse</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>9</ValidMax>
+         <FillValue>-128</FillValue>
+         <Support>
+            <SupportQuantity>Other</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

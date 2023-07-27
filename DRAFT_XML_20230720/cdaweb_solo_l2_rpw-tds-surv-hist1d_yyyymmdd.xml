@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/solo_l2_rpw-tds-surv-hist1d/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Radio and Plasma Waves (RPW) Time Domain Sampler (TDS) 1-Dimensional Histograms, Survey Mode, Level 2 (L2), 1 s Data</ResourceName>
+         <ReleaseDate>2023-07-24T12:34:56.789</ReleaseDate>
+         <Description>This file contains RPW TDS level 2 regular snapshot Histogram 1D data.</Description>
+         <Acknowledgement>The authors are pleased to acknowledge the Solar Orbiter/RPW Investigation (M. Maksimovic, PIs) for access to data.. Data provided are Publicly available. If used in presentations or publications, please acknowledge Solar Orbiter/RPW Investigation (M. Maksimovic, PIs). Please read carefully the caveats attached to the data. For reporting purposes, we request bibliography information for any publication, etc., using these data. Please send information on the use of this data to: M. Maksimovic (PI).</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>RPW Web site</Name>
+            <URL>https://rpw.lesia.obspm.fr</URL>
+            <Description>RPW Web site at LESIA</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/rpw/science/l2/tds-surv-hist1d/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/rpw/science/l2/tds-surv-hist1d/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_L2_RPW-TDS-SURV-HIST1D&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_L2_RPW-TDS-SURV-HIST1D</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator M. Maksimovic. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <RelativeStopDate>-P6M</RelativeStopDate>
+         </TimeSpan>
+         <Cadence>PT1S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>* Primary time used as a reference in the file
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleMin>6.3113925819904e+13</ScaleMin>
+            <ScaleMax>6.4060653819903e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2000-01-01T12:00:00.000000000</ValidMin>
+         <ValidMax>2029-12-31T23:59:59.999000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_FLAG</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Quality flag</Description>
+         <Caveats>Flag to indicate the quality of the data</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality flag</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_BITMASK</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QUALITY_BITMASK</ParameterKey>
+         <Description>Bitmask flag</Description>
+         <Caveats>Flag to indicate any context information or status at the receiver or experiment level</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bitmask flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>65534</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65534</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>BIA_STATUS_INFO</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BIA_STATUS_INFO</ParameterKey>
+         <Description>BIAS status byte</Description>
+         <Caveats>BIAS status byte</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BIAS status</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>RPW_STATUS_INFO</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>RPW_STATUS_INFO</ParameterKey>
+         <Description>RPW status</Description>
+         <Caveats>RPW status (bitmask - received from DPU)</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RPW Status info</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>7</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SURVEY_MODE</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SURVEY_MODE</ParameterKey>
+         <Description>TDS survey mode</Description>
+         <Caveats>Flag to indicate if the receiver in the SURVEY_BURST (=1) or SURVEY_NORMAL (=0) mode</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TDS survey mode</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SAMPLING_RATE</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SAMPLING_RATE</ParameterKey>
+         <Description>TDS sampling rate</Description>
+         <Caveats>TDS sampling rate</Caveats>
+         <Cadence>PT1S</Cadence>
+         <Units>Hz</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sampling rate code</AxisLabel>
+            <ValueFormat>F9.1</ValueFormat>
+            <ScaleMin>65534.0</ScaleMin>
+            <ScaleMax>524275.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0971e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>INPUT_CONFIG</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>INPUT_CONFIG</ParameterKey>
+         <Description>Bitmask of TDS analog input configuration</Description>
+         <Caveats>Input TDS configuration</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TDS input config.</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SNAPSHOT_LEN</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SNAPSHOT_LEN</ParameterKey>
+         <Description>Length of snapshot</Description>
+         <Caveats>Length of snapshot in samples</Caveats>
+         <Cadence>PT1S</Cadence>
+         <Units>samples</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Length of snapshot</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleMin>512</ScaleMin>
+            <ScaleMax>262144</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>CHANNEL_REF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>CHANNEL_REF</ParameterKey>
+         <Description>Channel reference for the histogram counts.</Description>
+         <Caveats>Configuration of signal channels in the snapshot (0=GND 1=V1, 2=V2, 3=V3). The number AB indicates that the corresponding channel contains a difference of 2 channels A-B.</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>I2</ValueFormat>
+            <ScaleMin>10</ScaleMin>
+            <ScaleMax>40</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>10</ValidMin>
+         <ValidMax>40</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>HIST1D_ID</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HIST1D_ID</ParameterKey>
+         <Description>Histogram ID</Description>
+         <Caveats>An ID number of the histogram (1..4) indicating which of the four possible configured histograms is contained in the packet</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Histogram ID</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>1</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>HIST1D_PARAM</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HIST1D_PARAM</ParameterKey>
+         <Description>Histogram build parameters</Description>
+         <Caveats>The parameter used to build this histogram. Equal to the corresponding CP_TDS_N_1D_HISTx_TYPE Setting.</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Histogram parameter</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>14</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>14</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>HIST1D_AXIS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HIST1D_AXIS</ParameterKey>
+         <Description>Axis corresponding to the histogram</Description>
+         <Caveats>Axis corresponding to this histogram</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>F</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>256</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>HIST1D_COL_TIME</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HIST1D_COL_TIME</ParameterKey>
+         <Description>Histogram build duration</Description>
+         <Caveats>The duration of the time period (in seconds) over which this histogram has been built.</Caveats>
+         <Cadence>PT1S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Histogram build duration</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>65534</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65534</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>HIST1D_OUT</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HIST1D_OUT</ParameterKey>
+         <Description>Histogram out values</Description>
+         <Caveats>Number of out of range values which were out of the limit specified by the current axis configuration.</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Histogram out values</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>65534</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65534</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>HIST1D_BINS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HIST1D_BINS</ParameterKey>
+         <Description>Number of histogram bins</Description>
+         <Caveats>Number of bins in the histogram. Determines the length of the packet.</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Number of bins</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>32</ScaleMin>
+            <ScaleMax>256</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>32</ValidMin>
+         <ValidMax>256</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>HIST1D_COUNTS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HIST1D_COUNTS</ParameterKey>
+         <Description>Number of histogram bins</Description>
+         <Caveats>Counts corresponding to each bin in the histogram</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>256</Size>
+         </Structure>
+         <FillValue>65535</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

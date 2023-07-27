@@ -1,0 +1,2045 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/tss-1r_m1_dptb/yyyymmddhhmmss</ResourceID>
+      <ResourceHeader>
+         <ResourceName>TSS-1R Deployer, Temperature Data, Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description>References:
+1. The Instrument Data File Set. URL http://www.idfs.org</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Geiger for use of the Data. 
+
+PI determined</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Mission Overview</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/grl10545.pdf</URL>
+            <Description>TSS-1R</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Documentation Folder</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/</URL>
+            <Description>TSS</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=TSS-1R_M1_DPTB&amp;index=sp_phys</URL>
+            <ProductKey>TSS-1R_M1_DPTB</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Geiger. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>InstrumentStatus</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Start Time for the record</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_Start</ParameterKey>
+         <Description>Start time = Epoch - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Epoch_End</ParameterKey>
+         <Description>End time = Epoch + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 1 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_1_Motor_T_1_telemetry_unitless</ParameterKey>
+         <Description>Latch 1 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 1 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 1 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_1_Motor_T_2_T_degrees_C</ParameterKey>
+         <Description>Latch 1 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 1 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Latch_1_Motor_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Latch_1_Motor_T</ParameterKey>
+         <Description>Data Quality Indicator for Latch 1 Motor T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 2 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_2_Motor_T_1_telemetry_unitless</ParameterKey>
+         <Description>Latch 2 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 2 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 2 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_2_Motor_T_2_T_degrees_C</ParameterKey>
+         <Description>Latch 2 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 2 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Latch_2_Motor_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Latch_2_Motor_T</ParameterKey>
+         <Description>Data Quality Indicator for Latch 2 Motor T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 3 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_3_Motor_T_1_telemetry_unitless</ParameterKey>
+         <Description>Latch 3 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 3 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 3 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_3_Motor_T_2_T_degrees_C</ParameterKey>
+         <Description>Latch 3 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 3 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Latch_3_Motor_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Latch_3_Motor_T</ParameterKey>
+         <Description>Data Quality Indicator for Latch 3 Motor T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 4 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_4_Motor_T_1_telemetry_unitless</ParameterKey>
+         <Description>Latch 4 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 4 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 4 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_4_Motor_T_2_T_degrees_C</ParameterKey>
+         <Description>Latch 4 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 4 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Latch_4_Motor_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Latch_4_Motor_T</ParameterKey>
+         <Description>Data Quality Indicator for Latch 4 Motor T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 5 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_5_Motor_T_1_telemetry_unitless</ParameterKey>
+         <Description>Latch 5 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 5 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 5 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_5_Motor_T_2_T_degrees_C</ParameterKey>
+         <Description>Latch 5 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 5 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Latch_5_Motor_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Latch_5_Motor_T</ParameterKey>
+         <Description>Data Quality Indicator for Latch 5 Motor T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 6 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_6_Motor_T_1_telemetry_unitless</ParameterKey>
+         <Description>Latch 6 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 6 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch 6 Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_6_Motor_T_2_T_degrees_C</ParameterKey>
+         <Description>Latch 6 Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch 6 Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Latch_6_Motor_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Latch_6_Motor_T</ParameterKey>
+         <Description>Data Quality Indicator for Latch 6 Motor T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Dock Ring Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Dock_Ring_Motor_T_1_telemetry_unitless</ParameterKey>
+         <Description>Docking Ring Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dock Ring Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Dock Ring Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Dock_Ring_Motor_T_2_T_degrees_C</ParameterKey>
+         <Description>Docking Ring Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dock Ring Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Dock_Ring_Motor_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Dock_Ring_Motor_T</ParameterKey>
+         <Description>Data Quality Indicator for Dock Ring Motor T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Lnch Lock Diseng Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Lnch_Lock_Diseng_Motor_T_1_telemetry_unitless</ParameterKey>
+         <Description>Launch Lock Disengage Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Lnch Lock Diseng Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Lnch Lock Diseng Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Lnch_Lock_Diseng_Motor_T_2_T_degrees_C</ParameterKey>
+         <Description>Launch Lock Disengage Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Lnch Lock Diseng Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 7</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Lnch_Lock_Diseng_Motor_T</ParameterKey>
+         <Description>Data Quality Indicator for Lnch Lock Diseng Motor T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Load Bank 1 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Load_Bank_1_T_1_telemetry_unitless</ParameterKey>
+         <Description>Load Bank 1 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Load Bank 1 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Load Bank 1 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Load_Bank_1_T_2_T_degrees_C</ParameterKey>
+         <Description>Load Bank 1 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Load Bank 1 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Load_Bank_1_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Load_Bank_1_T</ParameterKey>
+         <Description>Data Quality Indicator for Load Bank 1 T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Load Bank 2 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Load_Bank_2_T_1_telemetry_unitless</ParameterKey>
+         <Description>Load Bank 2 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Load Bank 2 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Load Bank 2 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Load_Bank_2_T_2_T_degrees_C</ParameterKey>
+         <Description>Load Bank 2 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Load Bank 2 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Load_Bank_2_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Load_Bank_2_T</ParameterKey>
+         <Description>Data Quality Indicator for Load Bank 2 T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Load Bank 3 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Load_Bank_3_T_1_telemetry_unitless</ParameterKey>
+         <Description>Load Bank 3 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Load Bank 3 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Load Bank 3 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Load_Bank_3_T_2_T_degrees_C</ParameterKey>
+         <Description>Load Bank 3 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Load Bank 3 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Load_Bank_3_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Load_Bank_3_T</ParameterKey>
+         <Description>Data Quality Indicator for Load Bank 3 T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Load Bank 4 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Load_Bank_4_T_1_telemetry_unitless</ParameterKey>
+         <Description>Load Bank 4 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Load Bank 4 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Load Bank 4 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Load_Bank_4_T_2_T_degrees_C</ParameterKey>
+         <Description>Load Bank 4 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Load Bank 4 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Load_Bank_4_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Load_Bank_4_T</ParameterKey>
+         <Description>Data Quality Indicator for Load Bank 4 T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Struc Struts T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Struc_Struts_T1_1_telemetry_unitless</ParameterKey>
+         <Description>Structure Struts Temperature 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Struc Struts T1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Struc Struts T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Struc_Struts_T1_2_T_degrees_C</ParameterKey>
+         <Description>Structure Struts Temperature 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Struc Struts T1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Struc_Struts_T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Struc_Struts_T1</ParameterKey>
+         <Description>Data Quality Indicator for Struc Struts T1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Struc Struts T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Struc_Struts_T2_1_telemetry_unitless</ParameterKey>
+         <Description>Structure Struts Temperature 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Struc Struts T2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Struc Struts T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Struc_Struts_T2_2_T_degrees_C</ParameterKey>
+         <Description>Structure Struts Temperature 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Struc Struts T2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Struc_Struts_T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Struc_Struts_T2</ParameterKey>
+         <Description>Data Quality Indicator for Struc Struts T2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Sup Struc T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Sup_Struc_T1_1_telemetry_unitless</ParameterKey>
+         <Description>Satellite Support Struct Temperature 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Sup Struc T1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Sup Struc T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Sup_Struc_T1_2_T_degrees_C</ParameterKey>
+         <Description>Satellite Support Struct Temperature 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Sup Struc T1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Sat_Sup_Struc_T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sat_Sup_Struc_T1</ParameterKey>
+         <Description>Data Quality Indicator for Sat Sup Struc T1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Sup Struc T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Sup_Struc_T2_1_telemetry_unitless</ParameterKey>
+         <Description>Satellite Support Struct Temperature 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Sup Struc T2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Sup Struc T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Sup_Struc_T2_2_T_degrees_C</ParameterKey>
+         <Description>Satellite Support Struct Temperature 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Sup Struc T2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Sat_Sup_Struc_T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sat_Sup_Struc_T2</ParameterKey>
+         <Description>Data Quality Indicator for Sat Sup Struc T2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DACA-PICA Cld Plate 5 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DACA_PICA_Cld_Plate_5_T_1_telemetry_unitless</ParameterKey>
+         <Description>DACA-PICA Cold Plate (5) Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DACA-PICA Cld Plate 5 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DACA-PICA Cld Plate 5 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DACA_PICA_Cld_Plate_5_T_2_T_degrees_C</ParameterKey>
+         <Description>DACA-PICA Cold Plate (5) Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DACA-PICA Cld Plate 5 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 16</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_DACA_PICA_Cld_Plate_5_T</ParameterKey>
+         <Description>Data Quality Indicator for DACA-PICA Cld Plate 5 T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MCA Cld Plate 6 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MCA_Cld_Plate_6_T_1_telemetry_unitless</ParameterKey>
+         <Description>MCA Cold Plate (6) Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCA Cld Plate 6 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MCA Cld Plate 6 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MCA_Cld_Plate_6_T_2_T_degrees_C</ParameterKey>
+         <Description>MCA Cold Plate (6) Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCA Cld Plate 6 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_MCA_Cld_Plate_6_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_MCA_Cld_Plate_6_T</ParameterKey>
+         <Description>Data Quality Indicator for MCA Cld Plate 6 T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC Cld Plate 10 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_Cld_Plate_10_T_1_telemetry_unitless</ParameterKey>
+         <Description>MPC Cold Plate (10) Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC Cld Plate 10 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC Cld Plate 10 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_Cld_Plate_10_T_2_T_degrees_C</ParameterKey>
+         <Description>MPC Cold Plate (10) Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC Cld Plate 10 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 18</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_MPC_Cld_Plate_10_T</ParameterKey>
+         <Description>Data Quality Indicator for MPC Cld Plate 10 T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LTCM Load Cell T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LTCM_Load_Cell_T_1_telemetry_unitless</ParameterKey>
+         <Description>LTCM Load Cell Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>LTCM Load Cell T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LTCM Load Cell T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LTCM_Load_Cell_T_2_T_degrees_C</ParameterKey>
+         <Description>LTCM Load Cell Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>LTCM Load Cell T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_LTCM_Load_Cell_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_LTCM_Load_Cell_T</ParameterKey>
+         <Description>Data Quality Indicator for LTCM Load Cell T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LTCM Encoder T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LTCM_Encoder_T_1_telemetry_unitless</ParameterKey>
+         <Description>LTCM Encoder Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>LTCM Encoder T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LTCM Encoder T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LTCM_Encoder_T_2_T_degrees_C</ParameterKey>
+         <Description>LTCM Encoder Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>LTCM Encoder T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_LTCM_Encoder_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_LTCM_Encoder_T</ParameterKey>
+         <Description>Data Quality Indicator for LTCM Encoder T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pallet T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pallet_T1_1_telemetry_unitless</ParameterKey>
+         <Description>Pallet Temperature 1 (Front Torque Box)</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pallet T1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pallet T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pallet_T1_2_T_degrees_C</ParameterKey>
+         <Description>Pallet Temperature 1 (Front Torque Box)</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pallet T1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Pallet_T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Pallet_T1</ParameterKey>
+         <Description>Data Quality Indicator for Pallet T1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pallet T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pallet_T2_1_telemetry_unitless</ParameterKey>
+         <Description>Pallet Temperature 2 (Side Torque Box)</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pallet T2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pallet T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pallet_T2_2_T_degrees_C</ParameterKey>
+         <Description>Pallet Temperature 2 (Side Torque Box)</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pallet T2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Pallet_T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Pallet_T2</ParameterKey>
+         <Description>Data Quality Indicator for Pallet T2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HVRA T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HVRA_T1_1_telemetry_unitless</ParameterKey>
+         <Description>HVRA Temperature 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>HVRA T1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HVRA T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HVRA_T1_2_T_degrees_C</ParameterKey>
+         <Description>HVRA Temperature 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>HVRA T1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_HVRA_T1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_HVRA_T1</ParameterKey>
+         <Description>Data Quality Indicator for HVRA T1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HVRA T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HVRA_T2_1_telemetry_unitless</ParameterKey>
+         <Description>HVRA Temperature 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>HVRA T2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HVRA T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HVRA_T2_2_T_degrees_C</ParameterKey>
+         <Description>HVRA Temperature 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>HVRA T2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_HVRA_T2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_HVRA_T2</ParameterKey>
+         <Description>Data Quality Indicator for HVRA T2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PICA 1 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PICA_1_T_1_telemetry_unitless</ParameterKey>
+         <Description>PICA 1 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PICA 1 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PICA 1 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PICA_1_T_2_T_degrees_C</ParameterKey>
+         <Description>PICA 1 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PICA 1 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_PICA_1_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_PICA_1_T</ParameterKey>
+         <Description>Data Quality Indicator for PICA 1 T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PICA 2 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PICA_2_T_1_telemetry_unitless</ParameterKey>
+         <Description>PICA 2 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PICA 2 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PICA 2 T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PICA_2_T_2_T_degrees_C</ParameterKey>
+         <Description>PICA 2 Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PICA 2 T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_PICA_2_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_PICA_2_T</ParameterKey>
+         <Description>Data Quality Indicator for PICA 2 T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MCA T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MCA_T_1_telemetry_unitless</ParameterKey>
+         <Description>MCA Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCA T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MCA T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MCA_T_2_T_degrees_C</ParameterKey>
+         <Description>MCA Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCA T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_MCA_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_MCA_T</ParameterKey>
+         <Description>Data Quality Indicator for MCA T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DACA T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DACA_T_1_telemetry_unitless</ParameterKey>
+         <Description>DACA Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DACA T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DACA T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DACA_T_2_T_degrees_C</ParameterKey>
+         <Description>DACA Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DACA T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_DACA_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_DACA_T</ParameterKey>
+         <Description>Data Quality Indicator for DACA T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>UTCM Struc T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>UTCM_Struc_T_1_telemetry_unitless</ParameterKey>
+         <Description>UTCM Structure Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>UTCM Struc T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>UTCM Struc T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>UTCM_Struc_T_2_T_degrees_C</ParameterKey>
+         <Description>UTCM Structure Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>UTCM Struc T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_UTCM_Struc_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_UTCM_Struc_T</ParameterKey>
+         <Description>Data Quality Indicator for UTCM Struc T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Ver Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Ver_Motor_T_1_telemetry_unitless</ParameterKey>
+         <Description>Vernier Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Ver Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Ver Motor T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Ver_Motor_T_2_T_degrees_C</ParameterKey>
+         <Description>Vernier Motor Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Ver Motor T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Ver_Motor_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Ver_Motor_T</ParameterKey>
+         <Description>Data Quality Indicator for Ver Motor T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Ver Motor Ele T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Ver_Motor_Ele_T_1_telemetry_unitless</ParameterKey>
+         <Description>Vernier Motor Electronics Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Ver Motor Ele T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Ver Motor Ele T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Ver_Motor_Ele_T_2_T_degrees_C</ParameterKey>
+         <Description>Vernier Motor Electronics Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Ver Motor Ele T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Ver_Motor_Ele_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Ver_Motor_Ele_T</ParameterKey>
+         <Description>Data Quality Indicator for Ver Motor Ele T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_T_1_telemetry_unitless</ParameterKey>
+         <Description>MPC Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2050.0</ScaleMin>
+            <ScaleMax>2050.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_T_2_T_degrees_C</ParameterKey>
+         <Description>MPC Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-60.0</ScaleMin>
+            <ScaleMax>60.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_MPC_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_MPC_T</ParameterKey>
+         <Description>Data Quality Indicator for MPC T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

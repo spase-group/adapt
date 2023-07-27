@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/tss-1r_m1_stsa/yyyymmddhhmmss</ResourceID>
+      <ResourceHeader>
+         <ResourceName>TSS-1R SETS Tether and Electron Gun, Langmuir Probe, Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description>References:
+1. The Instrument Data File Set. URL http://www.idfs.org</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator I. Linscott for use of the Data. 
+
+PI determined</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Mission Overview</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/grl10545.pdf</URL>
+            <Description>TSS-1R</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Documentation Folder</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/</URL>
+            <Description>TSS</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=TSS-1R_M1_STSA&amp;index=sp_phys</URL>
+            <ProductKey>TSS-1R_M1_STSA</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator I. Linscott. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Start Time for the record</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_Start</ParameterKey>
+         <Description>Start time = Epoch - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Epoch_End</ParameterKey>
+         <Description>End time = Epoch + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Center Scan Values</Name>
+         <ParameterKey>Center_Scan</ParameterKey>
+         <Description>Center Scan Values for the data returned.</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Units>V</Units>
+         <RenderingHints>
+            <AxisLabel>Voltage</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-8.5</ScaleMin>
+            <ScaleMax>-8.49875</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+         </Structure>
+         <ValidMin>-8.5</ValidMin>
+         <ValidMax>-8.49875</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Band Low Scan Values</Name>
+         <ParameterKey>Band_Low_Scan</ParameterKey>
+         <Description>low Scan = Center_Scan - value</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Units>V</Units>
+         <RenderingHints>
+            <AxisLabel>Scan low values</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-8.50012</ScaleMin>
+            <ScaleMax>-8.49887</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Band High Scan Values</Name>
+         <ParameterKey>Band_High_Scan</ParameterKey>
+         <Description>high Scan = Center_Scan + value</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Units>V</Units>
+         <RenderingHints>
+            <AxisLabel>Scan high values</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-8.49987</ScaleMin>
+            <ScaleMax>-8.49862</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>LangP Swping</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LangP_Swping_1_Telemetry_Dimensionless</ParameterKey>
+         <Description>Langmuir Probe Current, Sweeping</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LangP Swping</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LangP Swping</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LangP_Swping_2_Power_Db</ParameterKey>
+         <Description>Langmuir Probe Current, Sweeping</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Db</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LangP Swping</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-10.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_LangP_Swping</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_LangP_Swping</ParameterKey>
+         <Description>Data Quality Indicator for LangP Swping</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>9.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LP Sweep Voltage sensor 0</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Raw_Sweep_Voltage_Telemetry_LangP_Swping_CAL</ParameterKey>
+         <Description>LP Sweep Voltage for LangP Swping</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LP Sweep Voltage</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Slope MSB</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Slope_MSB_LangP_Swping_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Slope MSB for LangP Swping</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Slope MSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Slope LSB</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Slope_LSB_LangP_Swping_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Slope LSB for LangP Swping</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Slope LSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Offset MS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Offset_MSB_LangP_Swping_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Offset MSB for LangP Swping</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Offset MSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Offset LS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Offset_LSB_LangP_Swping_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Offset LSB for LangP Swping</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Offset LSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LangP Flybk</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LangP_Flybk_1_Telemetry_Dimensionless</ParameterKey>
+         <Description>Langmuir Probe Current, Flyback</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LangP Flybk</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LangP Flybk</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LangP_Flybk_2_Power_Db</ParameterKey>
+         <Description>Langmuir Probe Current, Flyback</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Db</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LangP Flybk</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-10.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_LangP_Flybk</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_LangP_Flybk</ParameterKey>
+         <Description>Data Quality Indicator for LangP Flybk</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>9.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LP Sweep Voltage sensor 1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Raw_Sweep_Voltage_Telemetry_LangP_Flybk_CAL</ParameterKey>
+         <Description>LP Sweep Voltage for LangP Flybk</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LP Sweep Voltage</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Slope MSB</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Slope_MSB_LangP_Flybk_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Slope MSB for LangP Flybk</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Slope MSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Slope LSB</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Slope_LSB_LangP_Flybk_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Slope LSB for LangP Flybk</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Slope LSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Offset MS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Offset_MSB_LangP_Flybk_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Offset MSB for LangP Flybk</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Offset MSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Offset LS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Offset_LSB_LangP_Flybk_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Offset LSB for LangP Flybk</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Offset LSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LangP Srch Mode</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LangP_Srch_Mode_1_Telemetry_Dimensionless</ParameterKey>
+         <Description>Langmuir Probe Current, Search Mode</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LangP Srch Mode</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LangP Srch Mode</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LangP_Srch_Mode_2_Power_Db</ParameterKey>
+         <Description>Langmuir Probe Current, Search Mode</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Db</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LangP Srch Mode</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-10.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_LangP_Srch_Mode</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_LangP_Srch_Mode</ParameterKey>
+         <Description>Data Quality Indicator for LangP Srch Mode</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>9.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LP Sweep Voltage sensor 2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Raw_Sweep_Voltage_Telemetry_LangP_Srch_Mode_CAL</ParameterKey>
+         <Description>LP Sweep Voltage for LangP Srch Mode</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LP Sweep Voltage</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Slope MSB</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Slope_MSB_LangP_Srch_Mode_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Slope MSB for LangP Srch Mode</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Slope MSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Slope LSB</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Slope_LSB_LangP_Srch_Mode_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Slope LSB for LangP Srch Mode</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Slope LSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Offset MS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Offset_MSB_LangP_Srch_Mode_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Offset MSB for LangP Srch Mode</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Offset MSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Offset LS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Offset_LSB_LangP_Srch_Mode_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Offset LSB for LangP Srch Mode</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Offset LSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LangP Short Swp</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LangP_Short_Swp_1_Telemetry_Dimensionless</ParameterKey>
+         <Description>Langmuir Probe Current, Short Sweep</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LangP Short Swp</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LangP Short Swp</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LangP_Short_Swp_2_Power_Db</ParameterKey>
+         <Description>Langmuir Probe Current, Short Sweep</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Db</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LangP Short Swp</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-10.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_LangP_Short_Swp</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_LangP_Short_Swp</ParameterKey>
+         <Description>Data Quality Indicator for LangP Short Swp</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>9.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LP Sweep Voltage sensor 3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Raw_Sweep_Voltage_Telemetry_LangP_Short_Swp_CAL</ParameterKey>
+         <Description>LP Sweep Voltage for LangP Short Swp</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LP Sweep Voltage</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Slope MSB</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Slope_MSB_LangP_Short_Swp_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Slope MSB for LangP Short Swp</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Slope MSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Slope LSB</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Slope_LSB_LangP_Short_Swp_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Slope LSB for LangP Short Swp</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Slope LSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Offset MS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Offset_MSB_LangP_Short_Swp_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Offset MSB for LangP Short Swp</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Offset MSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fitted Sweep Voltage Offset LS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Fitted_Sweep_Voltage_Offset_LSB_LangP_Short_Swp_CAL</ParameterKey>
+         <Description>Fitted Sweep Voltage Offset LSB for LangP Short Swp</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Fitted Sweep Voltage Offset LSB</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49975</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49950</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49925</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>-8.49875</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

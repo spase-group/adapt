@@ -1,0 +1,2679 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/tss-1r_m1_epmb/yyyymmddhhmmss</ResourceID>
+      <ResourceHeader>
+         <ResourceName>TSS-1R EMP (EMP) Output Command Block and Variable Data Block, Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description>References:
+1. The Instrument Data File Set. URL http://www.idfs.org</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator T. Lavoie for use of the Data. 
+
+PI determined</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Mission Overview</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/grl10545.pdf</URL>
+            <Description>TSS-1R</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Documentation Folder</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/</URL>
+            <Description>TSS</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=TSS-1R_M1_EPMB&amp;index=sp_phys</URL>
+            <ProductKey>TSS-1R_M1_EPMB</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator T. Lavoie. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>InstrumentStatus</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Start Time for the record using time_off value of 374</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_Start</ParameterKey>
+         <Description>Start time = Epoch - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Epoch_End</ParameterKey>
+         <Description>End time = Epoch + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch_TO1</ParameterKey>
+         <Description>Start Time for the record using time_off value of 499</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch_TO1</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_TO1_Start</ParameterKey>
+         <Description>Start time = Epoch_TO1 - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Epoch_TO1_End</ParameterKey>
+         <Description>End time = Epoch_TO1 + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch_TO2</ParameterKey>
+         <Description>Start Time for the record using time_off value of 624</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch_TO2</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_TO2_Start</ParameterKey>
+         <Description>Start time = Epoch_TO2 - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Epoch_TO2_End</ParameterKey>
+         <Description>End time = Epoch_TO2 + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch_TO3</ParameterKey>
+         <Description>Start Time for the record using time_off value of 749</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch_TO3</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_TO3_Start</ParameterKey>
+         <Description>Start time = Epoch_TO3 - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Epoch_TO3_End</ParameterKey>
+         <Description>End time = Epoch_TO3 + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch_TO4</ParameterKey>
+         <Description>Start Time for the record using time_off value of 874</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch_TO4</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_TO4_Start</ParameterKey>
+         <Description>Start time = Epoch_TO4 - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Epoch_TO4_End</ParameterKey>
+         <Description>End time = Epoch_TO4 + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 1 Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_1_Pt1</ParameterKey>
+         <Description>Output Command Block 1, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 1 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_1_Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_1_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 1 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 1 Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_1_Pt2</ParameterKey>
+         <Description>Output Command Block 1, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 1 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_1_Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_1_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 1 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 2 Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_2_Pt1</ParameterKey>
+         <Description>Output Command Block 2, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 2 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_2_Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_2_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 2 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 2 Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_2_Pt2</ParameterKey>
+         <Description>Output Command Block 2, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 2 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_2_Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_2_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 2 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 3 Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_3_Pt1</ParameterKey>
+         <Description>Output Command Block 3, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 3 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_3_Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_3_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 3 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 3 Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_3_Pt2</ParameterKey>
+         <Description>Output Command Block 3, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 3 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_3_Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_3_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 3 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 4 Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_4_Pt1</ParameterKey>
+         <Description>Output Command Block 4, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 4 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_4_Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_4_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 4 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 4 Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_4_Pt2</ParameterKey>
+         <Description>Output Command Block 4, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 4 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_4_Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_4_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 4 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 5 Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_5_Pt1</ParameterKey>
+         <Description>Output Command Block 5, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 5 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_5_Pt1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_5_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 5 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 5 Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OCB_5_Pt2</ParameterKey>
+         <Description>Output Command Block 5, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 5 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_5_Pt2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_OCB_5_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 5 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 6 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_6_Pt1</ParameterKey>
+         <Description>Output Command Block 6, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 6 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_6_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_6_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 6 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 6 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_6_Pt2</ParameterKey>
+         <Description>Output Command Block 6, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 6 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_6_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_6_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 6 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 7 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_7_Pt1</ParameterKey>
+         <Description>Output Command Block 7, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 7 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_7_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_7_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 7 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 7 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_7_Pt2</ParameterKey>
+         <Description>Output Command Block 7, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 7 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_7_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_7_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 7 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 8 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_8_Pt1</ParameterKey>
+         <Description>Output Command Block 8, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 8 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_8_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_8_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 8 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 8 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_8_Pt2</ParameterKey>
+         <Description>Output Command Block 8, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 8 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_8_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_8_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 8 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 9 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_9_Pt1</ParameterKey>
+         <Description>Output Command Block 9, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 9 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_9_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_9_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 9 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 9 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_9_Pt2</ParameterKey>
+         <Description>Output Command Block 9, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 9 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_9_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_9_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 9 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 10 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_10_Pt1</ParameterKey>
+         <Description>Output Command Block 10, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 10 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_10_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_10_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 10 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 10 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>OCB_10_Pt2</ParameterKey>
+         <Description>Output Command Block 10, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 10 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_10_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO1</Set>
+         <ParameterKey>Data_Quality_OCB_10_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 10 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 11 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_11_Pt1</ParameterKey>
+         <Description>Output Command Block 11, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 11 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_11_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_11_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 11 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 11 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_11_Pt2</ParameterKey>
+         <Description>Output Command Block 11, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 11 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_11_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_11_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 11 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 12 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_12_Pt1</ParameterKey>
+         <Description>Output Command Block 12, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 12 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_12_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_12_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 12 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 12 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_12_Pt2</ParameterKey>
+         <Description>Output Command Block 12, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 12 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_12_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_12_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 12 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 13 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_13_Pt1</ParameterKey>
+         <Description>Output Command Block 13, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 13 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_13_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_13_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 13 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 13 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_13_Pt2</ParameterKey>
+         <Description>Output Command Block 13, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 13 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_13_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_13_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 13 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 14 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_14_Pt1</ParameterKey>
+         <Description>Output Command Block 14, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 14 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_14_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_14_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 14 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 14 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_14_Pt2</ParameterKey>
+         <Description>Output Command Block 14, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 14 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_14_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_14_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 14 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 15 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_15_Pt1</ParameterKey>
+         <Description>Output Command Block 15, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 15 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_15_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_15_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 15 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 15 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>OCB_15_Pt2</ParameterKey>
+         <Description>Output Command Block 15, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 15 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_15_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO2</Set>
+         <ParameterKey>Data_Quality_OCB_15_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 15 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 16 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>OCB_16_Pt1</ParameterKey>
+         <Description>Output Command Block 16, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 16 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_16_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_OCB_16_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for OCB 16 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OCB 16 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>OCB_16_Pt2</ParameterKey>
+         <Description>Output Command Block 16, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>OCB 16 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_OCB_16_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_OCB_16_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for OCB 16 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB Type</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>VDB_Type</ParameterKey>
+         <Description>VDB: Type</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB Type</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_Type</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_VDB_Type</ParameterKey>
+         <Description>Data Quality Indicator for VDB Type</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB Off In File</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>VDB_Off_In_File</ParameterKey>
+         <Description>VDB: Offset into File</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB Off In File</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_Off_In_File</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_VDB_Off_In_File</ParameterKey>
+         <Description>Data Quality Indicator for VDB Off In File</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>VDB_1</ParameterKey>
+         <Description>Variable Data Block 1 Data</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_VDB_1</ParameterKey>
+         <Description>Data Quality Indicator for VDB 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 2 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>VDB_2_Pt1</ParameterKey>
+         <Description>Variable Data Block 2, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 2 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_2_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_VDB_2_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for VDB 2 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 2 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>VDB_2_Pt2</ParameterKey>
+         <Description>Variable Data Block 2, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 2 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_2_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_VDB_2_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for VDB 2 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 3 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>VDB_3_Pt1</ParameterKey>
+         <Description>Variable Data Block 3, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 3 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_3_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_VDB_3_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for VDB 3 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 3 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>VDB_3_Pt2</ParameterKey>
+         <Description>Variable Data Block 3, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 3 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_3_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_VDB_3_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for VDB 3 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 4 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>VDB_4_Pt1</ParameterKey>
+         <Description>Variable Data Block 4, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 4 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_4_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_VDB_4_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for VDB 4 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 4 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>VDB_4_Pt2</ParameterKey>
+         <Description>Variable Data Block 4, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 4 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_4_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO3</Set>
+         <ParameterKey>Data_Quality_VDB_4_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for VDB 4 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 5 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>VDB_5_Pt1</ParameterKey>
+         <Description>Variable Data Block 5, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 5 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_5_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_VDB_5_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for VDB 5 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 5 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>VDB_5_Pt2</ParameterKey>
+         <Description>Variable Data Block 5, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 5 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_5_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_VDB_5_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for VDB 5 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 6 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>VDB_6_Pt1</ParameterKey>
+         <Description>Variable Data Block 6, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 6 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_6_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_VDB_6_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for VDB 6 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 6 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>VDB_6_Pt2</ParameterKey>
+         <Description>Variable Data Block 6, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 6 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_6_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_VDB_6_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for VDB 6 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 7 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>VDB_7_Pt1</ParameterKey>
+         <Description>Variable Data Block 7, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 7 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_7_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_VDB_7_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for VDB 7 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 7 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>VDB_7_Pt2</ParameterKey>
+         <Description>Variable Data Block 7, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 7 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_7_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_VDB_7_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for VDB 7 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 8 Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>VDB_8_Pt1</ParameterKey>
+         <Description>Variable Data Block 8, Part 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 8 Pt1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_8_Pt1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_VDB_8_Pt1</ParameterKey>
+         <Description>Data Quality Indicator for VDB 8 Pt1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VDB 8 Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>VDB_8_Pt2</ParameterKey>
+         <Description>Variable Data Block 8, Part 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDB 8 Pt2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_VDB_8_Pt2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_VDB_8_Pt2</ParameterKey>
+         <Description>Data Quality Indicator for VDB 8 Pt2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Unknown 1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Unknown_1</ParameterKey>
+         <Description>unknown Data Block 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unknown 1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Unknown_1</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_Unknown_1</ParameterKey>
+         <Description>Data Quality Indicator for Unknown 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Unknown 2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Unknown_2</ParameterKey>
+         <Description>unknown Data Block 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unknown 2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Unknown_2</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_Unknown_2</ParameterKey>
+         <Description>Data Quality Indicator for Unknown 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Unknown 3</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Unknown_3</ParameterKey>
+         <Description>unknown Data Block 3</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unknown 3</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Unknown_3</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_Unknown_3</ParameterKey>
+         <Description>Data Quality Indicator for Unknown 3</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Unknown 4</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Unknown_4</ParameterKey>
+         <Description>unknown Data Block 4</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unknown 4</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Unknown_4</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_Unknown_4</ParameterKey>
+         <Description>Data Quality Indicator for Unknown 4</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Unknown 5</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Unknown_5</ParameterKey>
+         <Description>unknown Data Block 5</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unknown 5</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Unknown_5</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_Unknown_5</ParameterKey>
+         <Description>Data Quality Indicator for Unknown 5</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Unknown 6</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Unknown_6</ParameterKey>
+         <Description>unknown Data Block 6</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unknown 6</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Unknown_6</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_Unknown_6</ParameterKey>
+         <Description>Data Quality Indicator for Unknown 6</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Unknown 7</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Unknown_7</ParameterKey>
+         <Description>unknown Data Block 7</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unknown 7</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Unknown_7</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_Unknown_7</ParameterKey>
+         <Description>Data Quality Indicator for Unknown 7</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Unknown 8</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Unknown_8</ParameterKey>
+         <Description>unknown Data Block 8</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unknown 8</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Unknown_8</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_Unknown_8</ParameterKey>
+         <Description>Data Quality Indicator for Unknown 8</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Unknown 9</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Unknown_9</ParameterKey>
+         <Description>unknown Data Block 9</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unknown 9</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Unknown_9</Name>
+         <Set>Time series defined by using: Epoch_TO4</Set>
+         <ParameterKey>Data_Quality_Unknown_9</ParameterKey>
+         <Description>Data Quality Indicator for Unknown 9</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Dimensionless</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

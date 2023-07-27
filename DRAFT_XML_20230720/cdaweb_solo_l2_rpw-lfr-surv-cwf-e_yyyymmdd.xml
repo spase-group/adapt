@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/solo_l2_rpw-lfr-surv-cwf-e/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Radio and Plasma Waves (RPW) Low Frequency Receiver (LFR) Continuous Waveforms, Electric Components, Survey Mode, Level 2 (L2), 1 s Data</ResourceName>
+         <ReleaseDate>2023-07-24T12:34:56.789</ReleaseDate>
+         <Description>This file contains RPW LFR level 2 continuous waveform of electric data in survey mode.</Description>
+         <Acknowledgement>The authors are pleased to acknowledge the Solar Orbiter/RPW Investigation (M. Maksimovic, PIs) for access to data.. Data provided are Publicly available. If used in presentations or publications, please acknowledge Solar Orbiter/RPW Investigation (M. Maksimovic, PIs). Please read carefully the caveats attached to the data. For reporting purposes, we request bibliography information for any publication, etc., using these data. Please send information on the use of this data to: M. Maksimovic (PI).</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>RPW Website at LESIA</Name>
+            <URL>https://rpw.lesia.obspm.fr</URL>
+            <Description>Solar Orbiter</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/rpw/science/l2/lfr-surv-cwf-e/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/rpw/science/l2/lfr-surv-cwf-e/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_L2_RPW-LFR-SURV-CWF-E&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_L2_RPW-LFR-SURV-CWF-E</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator M. Maksimovic. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <RelativeStopDate>-P6M</RelativeStopDate>
+         </TimeSpan>
+         <Cadence>PT1S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>* Primary time used as a reference in the file.
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleMin>-315575942816000000</ScaleMin>
+            <ScaleMax>1609416069183000000</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2000-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2050-12-31T23:59:59.999000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_FLAG</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Quality flag</Description>
+         <Caveats>Flag to indicate the quality of the data</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality flag</AxisLabel>
+            <ValueFormat>I1.1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_BITMASK</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QUALITY_BITMASK</ParameterKey>
+         <Description>Bitmask flag</Description>
+         <Caveats>Flag to indicate any context information or status at the receiver or experiment level</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bitmask flag</AxisLabel>
+            <ValueFormat>I3.3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>100</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>100</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>L2_QUALITY_BITMASK</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>L2_QUALITY_BITMASK</ParameterKey>
+         <Description>Bitmask flag (data starts on 12/31/2020)</Description>
+         <Caveats>Flag to indicate any context or events that can alter data -bit0: partial saturation -bit1: full saturation</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>L2 Bitmask flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>65534</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65534</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>BIAS Works/BIAS Fails configuration.</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BW</ParameterKey>
+         <Description>BIAS Works/BIAS Fails configuration.</Description>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Probe to spacecraft potential</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>VDC</ParameterKey>
+         <Description>Probe to spacecraft potential (probes 1,2,3)</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>V</Units>
+         <UnitsConversion>V&gt;V</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VDC</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+            <ScaleMin>-1.0e+30</ScaleMin>
+            <ScaleMax>1.0e+30</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Vdc1</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Vdc2</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Vdc3</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+30</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Probe potential difference</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>EDC</ParameterKey>
+         <Description>Probe to probe voltages (probes V1-V2, V1-V3, V2-V3)</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>V</Units>
+         <UnitsConversion>V&gt;V</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EDC</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+            <ScaleMin>-1.0e+30</ScaleMin>
+            <ScaleMax>1.0e+30</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Vdc12</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Vdc13</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Vdc23</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+30</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>AC probe potential difference</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>EAC</ParameterKey>
+         <Description>AC probe to probe voltages (probes V1-V2, V1-V3, V2-V3)</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>V</Units>
+         <UnitsConversion>V&gt;V</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EAC</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+            <ScaleMin>-1.0e+30</ScaleMin>
+            <ScaleMax>1.0e+30</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Vac12</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Vac13</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Vac23</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+30</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bias current 1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>IBIAS1</ParameterKey>
+         <Description>Calibrated bias current on probe 1.</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>nA</Units>
+         <UnitsConversion>1.0&gt;A</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I_bias_1</AxisLabel>
+            <ValueFormat>E14.7</ValueFormat>
+            <ScaleMin>-1.0e+30</ScaleMin>
+            <ScaleMax>1.0e+30</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+30</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bias current 2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>IBIAS2</ParameterKey>
+         <Description>Calibrated bias current on probe 2.</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>nA</Units>
+         <UnitsConversion>1.0&gt;A</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I_bias_2</AxisLabel>
+            <ValueFormat>E14.7</ValueFormat>
+            <ScaleMin>-1.0e+30</ScaleMin>
+            <ScaleMax>1.0e+30</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+30</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bias current 3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>IBIAS3</ParameterKey>
+         <Description>Calibrated bias current on probe 3.</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>nA</Units>
+         <UnitsConversion>1.0&gt;A</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I_bias_3</AxisLabel>
+            <ValueFormat>E14.7</ValueFormat>
+            <ScaleMin>-1.0e+30</ScaleMin>
+            <ScaleMax>1.0e+30</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+30</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DELTA_PLUS_MINUS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DELTA_PLUS_MINUS</ParameterKey>
+         <Description>Time between sample timestamp and beginning/end of integration. Total integration time is twice this value.</Description>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Delta plus minus</AxisLabel>
+            <ValueFormat>I1.1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SYNCHRO_FLAG</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SYNCHRO_FLAG</ParameterKey>
+         <Description>Time synchronisation flag</Description>
+         <Caveats>Flag to indicate if the local time is synchronized with the RPW DPU clock or not. Possible values: synchronized=0, not synchronized=1. This flag is extracted from ACQUISITION_TIME in L0 packets, it is the MSB of the CUC time.</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>time sync. flag</AxisLabel>
+            <ValueFormat>I3.3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sampling rate</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SAMPLING_RATE</ParameterKey>
+         <Description>Sampling frequency of the waveform</Description>
+         <Caveats>sampling frequency of the waveform : F0, F1, F2 or F3</Caveats>
+         <Cadence>PT1S</Cadence>
+         <Units>Hz</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Fe</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+            <ScaleMin>16.0</ScaleMin>
+            <ScaleMax>24576.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>16.0</ValidMin>
+         <ValidMax>24576.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

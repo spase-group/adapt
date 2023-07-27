@@ -1,0 +1,1803 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/tss-1r_m1_csea/yyyymmddhhmmss</ResourceID>
+      <ResourceHeader>
+         <ResourceName>TSS-1R Shuttle Calibrated Ancillary System Parameters (CAS) Temperature, Voltage, and Current Measurements, Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description>References:
+1. The Instrument Data File Set. URL http://www.idfs.org</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator T. Lavoie for use of the Data. 
+
+PI determined</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Mission Overview</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/grl10545.pdf</URL>
+            <Description>TSS-1R</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Documentation Folder</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/</URL>
+            <Description>TSS</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=TSS-1R_M1_CSEA&amp;index=sp_phys</URL>
+            <ProductKey>TSS-1R_M1_CSEA</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator T. Lavoie. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>InstrumentStatus</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Start Time for the record</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_Start</ParameterKey>
+         <Description>Start time = Epoch - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Epoch_End</ParameterKey>
+         <Description>End time = Epoch + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS LT BL T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_LT_BL_T_650_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS LT BL Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS LT BL T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS LT BL T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_LT_BL_T_650_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS LT BL Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS LT BL T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS LT BL T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_LT_BL_T_650_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS LT BL Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS LT BL T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_M_FUS_LT_BL_T_650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_LT_BL_T_650</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS LT BL T@650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS RT BL T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_RT_BL_T_650_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS RT BL Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS RT BL T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS RT BL T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_RT_BL_T_650_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS RT BL Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS RT BL T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS RT BL T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_RT_BL_T_650_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS RT BL Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS RT BL T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_M_FUS_RT_BL_T_650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_RT_BL_T_650</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS RT BL T@650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS LT BL T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_LT_BL_T_1215_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS LT BL Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS LT BL T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS LT BL T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_LT_BL_T_1215_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS LT BL Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS LT BL T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS LT BL T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_LT_BL_T_1215_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS LT BL Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS LT BL T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_LT_BL_T_1215</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS LT BL T@1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS RT BL T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_RT_BL_T_1215_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS RT BL Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS RT BL T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS RT BL T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_RT_BL_T_1215_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS RT BL Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS RT BL T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS RT BL T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_RT_BL_T_1215_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS RT BL Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS RT BL T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_RT_BL_T_1215</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS RT BL T@1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS L Sill Longn T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_L_Sill_Longn_T_650_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS L Sill Longn Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS L Sill Longn T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS L Sill Longn T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_L_Sill_Longn_T_650_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS L Sill Longn Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS L Sill Longn T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS L Sill Longn T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_L_Sill_Longn_T_650_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS L Sill Longn Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS L Sill Longn T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 4</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_L_Sill_Longn_T_650</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS L Sill Longn T@650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS L Sill Longn T@1030</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_L_Sill_Longn_T_1030_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS L Sill Longn Temperature at 1030</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS L Sill Longn T@1030</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS L Sill Longn T@1030</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_L_Sill_Longn_T_1030_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS L Sill Longn Temperature at 1030</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS L Sill Longn T@1030</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS L Sill Longn T@1030</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_L_Sill_Longn_T_1030_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS L Sill Longn Temperature at 1030</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS L Sill Longn T@1030</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 5</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_L_Sill_Longn_T_1030</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS L Sill Longn T@1030</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS L Sill Longn T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_L_Sill_Longn_T_1215_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS L Sill Longn Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS L Sill Longn T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS L Sill Longn T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_L_Sill_Longn_T_1215_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS L Sill Longn Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS L Sill Longn T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS L Sill Longn T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_L_Sill_Longn_T_1215_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS L Sill Longn Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS L Sill Longn T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 6</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_L_Sill_Longn_T_1215</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS L Sill Longn T@1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS R Sill Longn T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_R_Sill_Longn_T_650_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS R Sill Longn Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS R Sill Longn T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS R Sill Longn T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_R_Sill_Longn_T_650_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS R Sill Longn Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS R Sill Longn T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS R Sill Longn T@650</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_R_Sill_Longn_T_650_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS R Sill Longn Temperature at 650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS R Sill Longn T@650</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 7</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_R_Sill_Longn_T_650</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS R Sill Longn T@650</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS R Sill Longn T@1030</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_R_Sill_Longn_T_1030_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS R Sill Longn Temperature at 1030</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS R Sill Longn T@1030</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS R Sill Longn T@1030</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_R_Sill_Longn_T_1030_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS R Sill Longn Temperature at 1030</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS R Sill Longn T@1030</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS R Sill Longn T@1030</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_R_Sill_Longn_T_1030_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS R Sill Longn Temperature at 1030</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS R Sill Longn T@1030</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 8</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_R_Sill_Longn_T_1030</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS R Sill Longn T@1030</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS R Sill Longn T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_R_Sill_Longn_T_1215_1_telemetry_unitless</ParameterKey>
+         <Description>M-FUS R Sill Longn Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS R Sill Longn T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS R Sill Longn T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_R_Sill_Longn_T_1215_2_T_degrees_F</ParameterKey>
+         <Description>M-FUS R Sill Longn Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS R Sill Longn T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>M-FUS R Sill Longn T@1215</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>M_FUS_R_Sill_Longn_T_1215_3_T_degrees_C</ParameterKey>
+         <Description>M-FUS R Sill Longn Temperature at 1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>M-FUS R Sill Longn T@1215</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 9</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_M_FUS_R_Sill_Longn_T_1215</ParameterKey>
+         <Description>Data Quality Indicator for M-FUS R Sill Longn T@1215</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 Evap Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_Evap_Outlet_T_1_telemetry_unitless</ParameterKey>
+         <Description>FCL 1 Evap Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 Evap Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 Evap Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_Evap_Outlet_T_2_T_degrees_F</ParameterKey>
+         <Description>FCL 1 Evap Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 Evap Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>150.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 Evap Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_Evap_Outlet_T_3_T_degrees_C</ParameterKey>
+         <Description>FCL 1 Evap Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 Evap Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-20.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 10</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_1_Evap_Outlet_T</ParameterKey>
+         <Description>Data Quality Indicator for FCL 1 Evap Outlet T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 Evap Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_Evap_Outlet_T_1_telemetry_unitless</ParameterKey>
+         <Description>FCL 2 Evap Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 Evap Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 Evap Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_Evap_Outlet_T_2_T_degrees_F</ParameterKey>
+         <Description>FCL 2 Evap Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 Evap Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>150.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 Evap Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_Evap_Outlet_T_3_T_degrees_C</ParameterKey>
+         <Description>FCL 2 Evap Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 Evap Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-20.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 11</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_2_Evap_Outlet_T</ParameterKey>
+         <Description>Data Quality Indicator for FCL 2 Evap Outlet T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 Rad Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_Rad_Outlet_T_1_telemetry_unitless</ParameterKey>
+         <Description>FCL 1 Rad Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 Rad Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 Rad Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_Rad_Outlet_T_2_T_degrees_F</ParameterKey>
+         <Description>FCL 1 Rad Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 Rad Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>150.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 Rad Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_Rad_Outlet_T_3_T_degrees_C</ParameterKey>
+         <Description>FCL 1 Rad Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 Rad Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-20.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 12</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_1_Rad_Outlet_T</ParameterKey>
+         <Description>Data Quality Indicator for FCL 1 Rad Outlet T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 Rad Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_Rad_Outlet_T_1_telemetry_unitless</ParameterKey>
+         <Description>FCL 2 Rad Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 Rad Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 Rad Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_Rad_Outlet_T_2_T_degrees_F</ParameterKey>
+         <Description>FCL 2 Rad Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees F</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 Rad Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>150.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 Rad Outlet T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_Rad_Outlet_T_3_T_degrees_C</ParameterKey>
+         <Description>FCL 2 Rad Outlet Temperature</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 Rad Outlet T</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-20.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 13</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_2_Rad_Outlet_T</ParameterKey>
+         <Description>Data Quality Indicator for FCL 2 Rad Outlet T</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_V_1_telemetry_unitless</ParameterKey>
+         <Description>Fuel Cell No 1 Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_V_2_Voltage_volts</ParameterKey>
+         <Description>Fuel Cell No 1 Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_FCL_1_V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_1_V</ParameterKey>
+         <Description>Data Quality Indicator for FCL 1 V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_V_1_telemetry_unitless</ParameterKey>
+         <Description>Fuel Cell No 2 Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_V_2_Voltage_volts</ParameterKey>
+         <Description>Fuel Cell No 2 Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_FCL_2_V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_2_V</ParameterKey>
+         <Description>Data Quality Indicator for FCL 2 V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 3 V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_3_V_1_telemetry_unitless</ParameterKey>
+         <Description>Fuel Cell No 3 Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 3 V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 3 V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_3_V_2_Voltage_volts</ParameterKey>
+         <Description>Fuel Cell No 3 Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 3 V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_FCL_3_V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_3_V</ParameterKey>
+         <Description>Data Quality Indicator for FCL 3 V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_I_1_telemetry_unitless</ParameterKey>
+         <Description>Fuel Cell No 1 Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 1 I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_1_I_2_Current_amps</ParameterKey>
+         <Description>Fuel Cell No 1 Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 1 I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_FCL_1_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_1_I</ParameterKey>
+         <Description>Data Quality Indicator for FCL 1 I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_I_1_telemetry_unitless</ParameterKey>
+         <Description>Fuel Cell No 2 Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 2 I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_2_I_2_Current_amps</ParameterKey>
+         <Description>Fuel Cell No 2 Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 2 I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_FCL_2_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_2_I</ParameterKey>
+         <Description>Data Quality Indicator for FCL 2 I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 3 I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_3_I_1_telemetry_unitless</ParameterKey>
+         <Description>Fuel Cell No 3 Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 3 I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FCL 3 I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FCL_3_I_2_Current_amps</ParameterKey>
+         <Description>Fuel Cell No 3 Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FCL 3 I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_FCL_3_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_FCL_3_I</ParameterKey>
+         <Description>Data Quality Indicator for FCL 3 I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Mid PCA Main Bus A I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Mid_PCA_Main_Bus_A_I_1_telemetry_unitless</ParameterKey>
+         <Description>Mid PCA Main Bus A Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Mid PCA Main Bus A I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Mid PCA Main Bus A I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Mid_PCA_Main_Bus_A_I_2_Current_amps</ParameterKey>
+         <Description>Mid PCA Main Bus A Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Mid PCA Main Bus A I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 20</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Mid_PCA_Main_Bus_A_I</ParameterKey>
+         <Description>Data Quality Indicator for Mid PCA Main Bus A I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Mid PCA Main Bus B I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Mid_PCA_Main_Bus_B_I_1_telemetry_unitless</ParameterKey>
+         <Description>Mid PCA Main Bus B Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Mid PCA Main Bus B I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Mid PCA Main Bus B I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Mid_PCA_Main_Bus_B_I_2_Current_amps</ParameterKey>
+         <Description>Mid PCA Main Bus B Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Mid PCA Main Bus B I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 21</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Mid_PCA_Main_Bus_B_I</ParameterKey>
+         <Description>Data Quality Indicator for Mid PCA Main Bus B I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>P/L Pri Main Bus B V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>P_L_Pri_Main_Bus_B_V_1_telemetry_unitless</ParameterKey>
+         <Description>Payload Primary Main Bus B Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P/L Pri Main Bus B V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>P/L Pri Main Bus B V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>P_L_Pri_Main_Bus_B_V_2_Voltage_volts</ParameterKey>
+         <Description>Payload Primary Main Bus B Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P/L Pri Main Bus B V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 22</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_P_L_Pri_Main_Bus_B_V</ParameterKey>
+         <Description>Data Quality Indicator for P/L Pri Main Bus B V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>P/L Pri Main Bus C V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>P_L_Pri_Main_Bus_C_V_1_telemetry_unitless</ParameterKey>
+         <Description>Payload Primary Main Bus C Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P/L Pri Main Bus C V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>255.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>P/L Pri Main Bus C V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>P_L_Pri_Main_Bus_C_V_2_Voltage_volts</ParameterKey>
+         <Description>Payload Primary Main Bus C Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P/L Pri Main Bus C V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 23</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_P_L_Pri_Main_Bus_C_V</ParameterKey>
+         <Description>Data Quality Indicator for P/L Pri Main Bus C V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

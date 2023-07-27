@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/solo_ll02_epd-ept-south-rates/yyyymmddthhmmss_solo_duration</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Energetic Particle Detecter (EPD) Electron Proton Telescope (EPT) Southward Direction, Particle Rates, Low Latency, Level 2 (LL02), 1 s Data</ResourceName>
+         <ReleaseDate>2023-07-24T12:34:56.789</ReleaseDate>
+         <Description></Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator J. Rodriguez-Pacheco for use of the Data. 
+
+Not for publication</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Homepage</Name>
+            <URL>https://sci.esa.int/web/solar-orbiter</URL>
+            <Description>ESA Solar Orbiter</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Data Archive</Name>
+            <URL>https://soar.esac.esa.int/soar</URL>
+            <Description>ESA Solar Orbiter</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Astronomy and Astrophysics</Name>
+            <URL>https://www.aanda.org/component/toc/?task=topic&id=1082</URL>
+            <Description>Special Issue of Solar Orbiter Mission and Instruments in</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/epd/low_latency/ll02/ept/south-rates/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/epd/low_latency/ll02/ept/south-rates/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_LL02_EPD-EPT-SOUTH-RATES&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_LL02_EPD-EPT-SOUTH-RATES</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator J. Rodriguez-Pacheco. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <RelativeStopDate>-P6M</RelativeStopDate>
+         </TimeSpan>
+         <Cadence>PT1S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>EPOCH (Terrestrial Time)</Name>
+         <ParameterKey>EPOCH</ParameterKey>
+         <Description>Epoch encoded as Terrestrial Time on rotating Earth geoid, ns since J2000</Description>
+         <Caveats>Start of acquisition interval</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0E-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>EPOCH</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>-9223372036854775808</ScaleMin>
+            <ScaleMax>9223372036854775807</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>31-DEC-9999 23:59:59.999999999</ValidMin>
+         <ValidMax>11-Apr-2292 11:46:07.670775807</ValidMax>
+         <FillValue>31-DEC-9999 23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EPOCH_2 (Terrestrial Time)</Name>
+         <ParameterKey>EPOCH_1</ParameterKey>
+         <Description>Epoch encoded as Terrestrial Time on rotating Earth geoid, ns since J2000</Description>
+         <Caveats>Start of acquisition interval</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0E-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>EPOCH_2</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>-9223372036854775808</ScaleMin>
+            <ScaleMax>9223372036854775807</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>31-DEC-9999 23:59:59.999999999</ValidMin>
+         <ValidMax>11-Apr-2292 11:46:07.670775807</ValidMax>
+         <FillValue>31-DEC-9999 23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Elapsed Time</Name>
+         <ParameterKey>SCET</ParameterKey>
+         <Description>Elapsed time of the onboard clock with 30 s cadence</Description>
+         <Caveats>Start of acquisition interval</Caveats>
+         <RenderingHints>
+            <AxisLabel>Time</AxisLabel>
+            <ValueFormat>F14.3</ValueFormat>
+            <ScaleMin>6.5664e+08</ScaleMin>
+            <ScaleMax>6.56726e+08</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.29497e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Elapsed Time HR</Name>
+         <ParameterKey>SCET_1</ParameterKey>
+         <Description>Elapsed time of the onboard clock with 5 s cadence</Description>
+         <Caveats>Start of acquisition interval</Caveats>
+         <RenderingHints>
+            <AxisLabel>Time</AxisLabel>
+            <ValueFormat>F14.3</ValueFormat>
+            <ScaleMin>6.5664e+08</ScaleMin>
+            <ScaleMax>6.56726e+08</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.29497e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality flag</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Data quality flag</Description>
+         <Caveats>0:Bad, 1:Known problems, 2:Survey data, 3:Good, 4:Excellent</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Quality flag</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Electron Flux</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Ele_Flux</ParameterKey>
+         <Description>Electron number flux as a function of energy</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Electron Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0321700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0410300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0537100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0734800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0.101500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0.142800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0.199900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0.282400</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electron Flux Sigma</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Ele_Flux_Sigma</ParameterKey>
+         <Description>Electron number flux uncertainty</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Delta Electron Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0321700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0410300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0537100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0734800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0.101500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0.142800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0.199900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0.282400</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton Flux</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Prot_Flux</ParameterKey>
+         <Description>Proton number flux as a function of energy</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Proton Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0371600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0479000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0631900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0830000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0.111300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0.151600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0.208600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0.289600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>0.403800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>0.566900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>0.798500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>1.12700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>1.59000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>2.24300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>3.17000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>4.48100</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton Flux Sigma</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Prot_Flux_Sigma</ParameterKey>
+         <Description>Proton number flux uncertainty</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Delta Proton Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0371600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0479000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0631900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0830000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0.111300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0.151600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0.208600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0.289600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>0.403800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>0.566900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>0.798500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>1.12700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>1.59000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>2.24300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>3.17000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>4.48100</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha Flux</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Alpha_Flux</ParameterKey>
+         <Description>Alpha number flux as a function of energy</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Alpha Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>9.95700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>12.6800</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha Flux Sigma</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Alpha_Flux_Sigma</ParameterKey>
+         <Description>Alpha number flux uncertainty</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Delta Alpha Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>9.95700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>12.6800</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electron High Resolution Flux</Name>
+         <Set>Time series defined by using: EPOCH_1</Set>
+         <ParameterKey>Ele_HR_Flux</ParameterKey>
+         <Description>Electron number flux in 0.05 - 0.1 MeV range with 5 s cadence</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Electron Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electron HR Flux Sigma</Name>
+         <Set>Time series defined by using: EPOCH_1</Set>
+         <ParameterKey>Ele_HR_Flux_Sigma</ParameterKey>
+         <Description>Electron HR number flux uncertainty</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Delta Electron Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton High Resolution Flux</Name>
+         <Set>Time series defined by using: EPOCH_1</Set>
+         <ParameterKey>Prot_HR_Flux</ParameterKey>
+         <Description>Proton number flux with 5 s cadence</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Proton Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0632300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0.111300</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton HR Flux Sigma</Name>
+         <Set>Time series defined by using: EPOCH_1</Set>
+         <ParameterKey>Prot_HR_Flux_Sigma</ParameterKey>
+         <Description>Proton HR number flux uncertainty</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Delta Proton Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+08</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0632300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0.111300</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electron bins low energy</Name>
+         <ParameterKey>Ele_Bins_Low_Energy</ParameterKey>
+         <Description>Lowest energy of each energy bin for electron flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Electron bins width</Name>
+         <ParameterKey>Ele_Bins_Width</ParameterKey>
+         <Description>Width of each energy bin for electron flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bins low energy</Name>
+         <ParameterKey>Prot_Bins_Low_Energy</ParameterKey>
+         <Description>Lowest energy of each energy bin for proton flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bins width</Name>
+         <ParameterKey>Prot_Bins_Width</ParameterKey>
+         <Description>Width of each energy bin for proton flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha bins low energy</Name>
+         <ParameterKey>Alpha_Bins_Low_Energy</ParameterKey>
+         <Description>Lowest energy of each energy bin for alpha flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha bins width</Name>
+         <ParameterKey>Alpha_Bins_Width</ParameterKey>
+         <Description>Width of each energy bin for alpha flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Proton HR bins low energy</Name>
+         <ParameterKey>Prot_HR_Bins_Low_Energy</ParameterKey>
+         <Description>Lowest energy of each energy bin for proton HR flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Proton HR bins width</Name>
+         <ParameterKey>Prot_HR_Bins_Width</ParameterKey>
+         <Description>Width of each energy bin for proton HR flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

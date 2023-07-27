@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/Arase/</ResourceID>
+      <ResourceHeader>
+         <ResourceName>ERG (XEP), Level 2 (L2), ?????.????? Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description></Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator J.R. Wygant for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/John.R.Wygant</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>the ERG Science Center website</Name>
+            <URL>http://ergsc.isee.nagoya-u.ac.jp</URL>
+            <Description>For more information, see</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>instrument papers in Earth, Planets and Space</Name>
+            <URL>https://www.springeropen.com/collections/erg</URL>
+            <Description>ERG</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/ERG-SC</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>ERG Science Center</Name>
+            <URL>https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/satellite/erg/xep/l2/omniflux/</URL>
+            <ProductKey>ERG_XEP_L2_OMNIFLUX</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via the ERG Science Center</Description>
+            <Language>en</Language>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the ERG Science Center, ERG-SC, the Institute of Space and Astronautical Science, ISAS, the Japan Aerospace Exploration Agency, JAXA, and the Institute for Space-Earth Environmental Research, ISEE, Nagoya University in presentations or publications when using data, data analysis software, plug-ins for data analysis, integrated analysis tools, or any other services provided by the ERG-SC.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/erg/xep/l2/omniflux/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/erg/xep/l2/omniflux/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ERG_XEP_L2_OMNIFLUX&amp;index=sp_phys</URL>
+            <ProductKey>ERG_XEP_L2_OMNIFLUX</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator J.R. Wygant. Please acknowledge the Data Providers, the ERG Science Center, and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2017-03-19T00:00:00.000</StartDate>
+            <StopDate>2018-02-28T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>?????.?????</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RingCurrent</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.MidLatitudeRegion</ObservedRegion>
+      <Parameter>
+         <Name>Epoch for L</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Time, beginning of interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleMin>6.3587268219904e+13</ScaleMin>
+            <ScaleMax>6.6301178619903e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2015-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2100-12-31T23:59:59.099900000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_L</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FEDO_SSD</ParameterKey>
+         <Description>Omni-directional flux of XEP SSD</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>1/keV-sr-s-cm2</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>e- Omni Nflux</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.000</ScaleMin>
+            <ScaleMax>1.E+20</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>9</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_L</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FEDO_SSD_T</ParameterKey>
+         <Description>---&gt; Omni-directional flux of XEP SSD (overlaid time series)</Description>
+         <Caveats>Average Type: standard
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: FEDO_SSD.</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>1/keV-sr-s-cm2</Units>
+         <RenderingHints>
+            <AxisLabel>e- Omni Nflux</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.000</ScaleMin>
+            <ScaleMax>1.E+20</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>9</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_SSD energy mean</Name>
+         <ParameterKey>FEDO_SSD_Energy_MEAN</ParameterKey>
+         <Description>Energy bin mean</Description>
+         <Caveats>Average Type: none
+This parameter is virtual. It is calculated by calling the function SPDF_COMPUTE_MEAN with the following input parameters: FEDO_SSD_Energy.</Caveats>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy mean</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.000</ScaleMin>
+            <ScaleMax>1.E+4</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>11</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_SSD energy</Name>
+         <ParameterKey>FEDO_SSD_Energy</ParameterKey>
+         <Description>Energy bin</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 9</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_SSD_Quality</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FEDO_SSD_Quality</ParameterKey>
+         <Description>FEDO SSD Quality Flag</Description>
+         <Caveats>* 0: good for both qualitative and quantitative use; 1: good for qualitative use only; 2: use with caution; 3: bad data, do not use; -128: not determined
+Average Type: none</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>9</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>9</ValidMax>
+         <FillValue>-128</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_GSO</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FEDO_GSO</ParameterKey>
+         <Description>Omni-directional flux of XEP GSO</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>1/keV-sr-s-cm2</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>e- Omni Nflux</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.000</ScaleMin>
+            <ScaleMax>1.E+20</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_GSO energy mean</Name>
+         <ParameterKey>FEDO_GSO_Energy_MEAN</ParameterKey>
+         <Description>Energy bin mean</Description>
+         <Caveats>Average Type: none
+This parameter is virtual. It is calculated by calling the function SPDF_COMPUTE_MEAN with the following input parameters: FEDO_GSO_Energy.</Caveats>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy mean</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.000</ScaleMin>
+            <ScaleMax>1.E+4</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>11</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_GSO energy</Name>
+         <ParameterKey>FEDO_GSO_Energy</ParameterKey>
+         <Description>Energy bin</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 4</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_GSO_Quality</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FEDO_GSO_Quality</ParameterKey>
+         <Description>FEDO GSO Quality Flag</Description>
+         <Caveats>* 0: good for both qualitative and quantitative use; 1: good for qualitative use only; 2: use with caution; 3: bad data, do not use; -128: not determined
+Average Type: none</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>9</ValidMax>
+         <FillValue>-128</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

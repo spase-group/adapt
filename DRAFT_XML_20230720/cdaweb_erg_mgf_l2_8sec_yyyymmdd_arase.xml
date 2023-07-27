@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/Arase/</ResourceID>
+      <ResourceHeader>
+         <ResourceName>ERG Magnetometer (MGF) Spacecraft observed and IGRF Magnetic Field Vectors in DSI, GSE, GSM, and SM Coordinates, Level 2 (L2), 8 s Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description></Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator A. Matsuoka for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>the ERG Science Center website</Name>
+            <URL>http://ergsc.isee.nagoya-u.ac.jp</URL>
+            <Description>For more information, see</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>instrument papers in Earth, Planets and Space</Name>
+            <URL>https://www.springeropen.com/collections/erg</URL>
+            <Description>ERG</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/ERG-SC</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>ERG Science Center</Name>
+            <URL>https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/satellite/erg/mgf/l2/8sec/</URL>
+            <ProductKey>ERG_MGF_L2_8SEC</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via the ERG Science Center</Description>
+            <Language>en</Language>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the ERG Science Center, ERG-SC, the Institute of Space and Astronautical Science, ISAS, the Japan Aerospace Exploration Agency, JAXA, and the Institute for Space-Earth Environmental Research, ISEE, Nagoya University in presentations or publications when using data, data analysis software, plug-ins for data analysis, integrated analysis tools, or any other services provided by the ERG-SC.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/erg/mgf/l2/8sec/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/erg/mgf/l2/8sec/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ERG_MGF_L2_8SEC&amp;index=sp_phys</URL>
+            <ProductKey>ERG_MGF_L2_8SEC</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator A. Matsuoka. Please acknowledge the Data Providers, the ERG Science Center, and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2017-03-13T00:00:00.000</StartDate>
+            <StopDate>2018-02-28T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT8S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RingCurrent</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.MidLatitudeRegion</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>epoch_8sec</ParameterKey>
+         <Description>Time, beginning of interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I22</ValueFormat>
+            <ScaleMin>6.3587268219904e+13</ScaleMin>
+            <ScaleMax>6.6301178619903e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2015-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2100-12-31T23:59:59.099900000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Date and Time</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>date_time_8sec</ParameterKey>
+         <Description>Observation date and time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Cadence>PT8S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Time</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>9</Size>
+            <Element>
+               <Name>Year</Name>
+               <Index>1</Index>
+               <Units>yr</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Month</Name>
+               <Index>2</Index>
+               <Units>mo</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Day</Name>
+               <Index>3</Index>
+               <Units>d</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Hour</Name>
+               <Index>4</Index>
+               <Units>h</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Minute</Name>
+               <Index>5</Index>
+               <Units>min</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Second</Name>
+               <Index>6</Index>
+               <Units>s</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Millisecond</Name>
+               <Index>7</Index>
+               <Units>ms</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Microsecond</Name>
+               <Index>8</Index>
+               <Units>micros</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Nanosecond</Name>
+               <Index>9</Index>
+               <Units>ns</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>B in DSI</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>mag_8sec_dsi</ParameterKey>
+         <Description>8 sec resolution B in DSI coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B DSI</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>-99999.999</ScaleMin>
+            <ScaleMax>99999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Bx_DSI</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>By_DSI</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>Bz_DSI</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B in GSE</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>mag_8sec_gse</ParameterKey>
+         <Description>8 sec resolution B in GSE coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B GSE</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>-99999.999</ScaleMin>
+            <ScaleMax>99999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Bx_GSE</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>By_GSE</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>Bz_GSE</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B in GSM</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>mag_8sec_gsm</ParameterKey>
+         <Description>8 sec resolution B in GSM coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B GSM</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>-99999.999</ScaleMin>
+            <ScaleMax>99999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Bx_GSM</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>By_GSM</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>Bz_GSM</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B in SM</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>mag_8sec_sm</ParameterKey>
+         <Description>8 sec resolution B in SM coordinates</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B SM</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>-99999.999</ScaleMin>
+            <ScaleMax>99999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Bx_SM</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>By_SM</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>Bz_SM</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bt</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>magt_8sec</ParameterKey>
+         <Description>8 sec resolution total B</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bt</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>-99999.999</ScaleMin>
+            <ScaleMax>99999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMSD for DSI</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>rmsd_8sec_dsi</ParameterKey>
+         <Description>8 sec resolution RMSD for DSI</Description>
+         <Caveats>Average Type: RMS</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMSD DSI</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>RMSx_DSI</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>RMSy_DSI</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>RMSz_DSI</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMSD for GSE</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>rmsd_8sec_gse</ParameterKey>
+         <Description>8 sec resolution RMSD for GSE</Description>
+         <Caveats>Average Type: RMS</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMSD GSE</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>RMSx_GSE</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>RMSy_GSE</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>RMSz_GSE</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMSD for GSM</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>rmsd_8sec_gsm</ParameterKey>
+         <Description>8 sec resolution RMSD for GSM</Description>
+         <Caveats>Average Type: RMS</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMSD GSM</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>RMSx_GSM</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>RMSy_GSM</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>RMSz_GSM</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMSD for SM</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>rmsd_8sec_sm</ParameterKey>
+         <Description>8 sec resolution RMSD for SM</Description>
+         <Caveats>Average Type: RMS</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMSD SM</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>RMSx_SM</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>RMSy_SM</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>RMSz_SM</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bt RMSD</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>rmsd_8sec</ParameterKey>
+         <Description>8 sec resolution Bt RMSD</Description>
+         <Caveats>Average Type: RMS</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bt RMSD</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>N for RMSD</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>n_rmsd_8sec</ParameterKey>
+         <Description>The number of data points for RMSD</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Cadence>PT8S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>N RMSD</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>9999</ValidMax>
+         <FillValue>-2147483648</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Dynamic Range</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>dyn_rng_8sec</ParameterKey>
+         <Description>Dynamic Range</Description>
+         <Caveats>* 0: +/-8192 nT; 1: +/-65536 nT
+Average Type: none</Caveats>
+         <Cadence>PT8S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Range</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>9</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>9</ValidMax>
+         <FillValue>-128</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Quality Flag</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>quality_8sec</ParameterKey>
+         <Description>Quality Flag</Description>
+         <Caveats>* (Elements) 0th-2nd: offset; 3rd: RMS; 4th: period; 5th: time seriese; 6th: range 7th: invalid data; 8th:MTQ; 9th:eclipse; 10-13th: reserved; 14th: sampling rate; 15th: attitude.
+Average Type: none</Caveats>
+         <Cadence>PT8S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality SC</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+            <Element>
+               <Name>Offset Bx</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Offset By</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Offset Bz</Name>
+               <Index>3</Index>
+            </Element>
+            <Element>
+               <Name>RMS</Name>
+               <Index>4</Index>
+            </Element>
+            <Element>
+               <Name>period</Name>
+               <Index>5</Index>
+            </Element>
+            <Element>
+               <Name>time series</Name>
+               <Index>6</Index>
+            </Element>
+            <Element>
+               <Name>range</Name>
+               <Index>7</Index>
+            </Element>
+            <Element>
+               <Name>invalid data</Name>
+               <Index>8</Index>
+            </Element>
+            <Element>
+               <Name>MTQ</Name>
+               <Index>9</Index>
+            </Element>
+            <Element>
+               <Name>eclipse</Name>
+               <Index>10</Index>
+            </Element>
+            <Element>
+               <Name>reserved</Name>
+               <Index>11</Index>
+            </Element>
+            <Element>
+               <Name>reserved</Name>
+               <Index>12</Index>
+            </Element>
+            <Element>
+               <Name>reserved</Name>
+               <Index>13</Index>
+            </Element>
+            <Element>
+               <Name>reserved</Name>
+               <Index>14</Index>
+            </Element>
+            <Element>
+               <Name>sampling rate</Name>
+               <Index>15</Index>
+            </Element>
+            <Element>
+               <Name>attitude</Name>
+               <Index>16</Index>
+            </Element>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>127</ValidMax>
+         <FillValue>-128</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Quality Flag for GC</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>quality_8sec_gc</ParameterKey>
+         <Description>Quality Flag for Geophysical Coordinates</Description>
+         <Caveats>* (Value) 0: good; 1: caution; 2: poor; 3: ignore.
+Average Type: none</Caveats>
+         <Cadence>PT8S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality Geophy Coord</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>127</ValidMax>
+         <FillValue>-128</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>IGRF B in DSI</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>igrf_8sec_dsi</ParameterKey>
+         <Description>8 sec resolution IGRF B in DSI</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>IGRF B DSI</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>-99999.999</ScaleMin>
+            <ScaleMax>99999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>IGRF_Bx_DSI</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>IGRF_By_DSI</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>IGRF_Bz_DSI</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>IGRF B in GSE</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>igrf_8sec_gse</ParameterKey>
+         <Description>8 sec resolution IGRF B in GSE</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>IGRF B GSE</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>-99999.999</ScaleMin>
+            <ScaleMax>99999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>IGRF_Bx_GSE</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>IGRF_By_GSE</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>IGRF_Bz_GSE</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>IGRF B in GSM</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>igrf_8sec_gsm</ParameterKey>
+         <Description>8 sec resolution IGRF B in GSM</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>IGRF B GSM</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>-99999.999</ScaleMin>
+            <ScaleMax>99999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>IGRF_Bx_GSM</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>IGRF_By_GSM</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>IGRF_Bz_GSM</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>IGRF B in SM</Name>
+         <Set>Time series defined by using: epoch_8sec</Set>
+         <ParameterKey>igrf_8sec_sm</ParameterKey>
+         <Description>8 sec resolution IGRF B in SM</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT8S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>IGRF B SM</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>-99999.999</ScaleMin>
+            <ScaleMax>99999.999</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>IGRF_Bx_SM</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>IGRF_By_SM</Name>
+               <Index>2</Index>
+               <Units>nT</Units>
+            </Element>
+            <Element>
+               <Name>IGRF_Bz_SM</Name>
+               <Index>3</Index>
+               <Units>nT</Units>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

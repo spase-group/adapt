@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/Arase/</ResourceID>
+      <ResourceHeader>
+         <ResourceName>ERG (HEP), Level 2 (L2), ?????.????? Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description></Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator J.R. Wygant for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/John.R.Wygant</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>the ERG Science Center website</Name>
+            <URL>http://ergsc.isee.nagoya-u.ac.jp</URL>
+            <Description>For more information, see</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>instrument papers in Earth, Planets and Space</Name>
+            <URL>https://www.springeropen.com/collections/erg</URL>
+            <Description>ERG</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/ERG-SC</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>ERG Science Center</Name>
+            <URL>https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/satellite/erg/hep/l2/omniflux/</URL>
+            <ProductKey>ERG_HEP_L2_OMNIFLUX</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via the ERG Science Center</Description>
+            <Language>en</Language>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the ERG Science Center, ERG-SC, the Institute of Space and Astronautical Science, ISAS, the Japan Aerospace Exploration Agency, JAXA, and the Institute for Space-Earth Environmental Research, ISEE, Nagoya University in presentations or publications when using data, data analysis software, plug-ins for data analysis, integrated analysis tools, or any other services provided by the ERG-SC.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/erg/hep/l2/omniflux/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/erg/hep/l2/omniflux/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ERG_HEP_L2_OMNIFLUX&amp;index=sp_phys</URL>
+            <ProductKey>ERG_HEP_L2_OMNIFLUX</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator J.R. Wygant. Please acknowledge the Data Providers, the ERG Science Center, and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2017-03-20T00:00:00.000</StartDate>
+            <StopDate>2018-08-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>?????.?????</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RingCurrent</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.MidLatitudeRegion</ObservedRegion>
+      <Parameter>
+         <Name>Epoch for L</Name>
+         <ParameterKey>Epoch_L</ParameterKey>
+         <Description>Time, beginning of interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleMin>6.3587268219904e+13</ScaleMin>
+            <ScaleMax>6.6301178619903e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2015-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2100-12-31T23:59:59.099900000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Epoch for H</Name>
+         <ParameterKey>Epoch_H</ParameterKey>
+         <Description>Time, beginning of interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleMin>6.3587268219904e+13</ScaleMin>
+            <ScaleMax>6.6301178619903e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2015-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2100-12-31T23:59:59.099900000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_H</Name>
+         <Set>Time series defined by using: Epoch_H</Set>
+         <ParameterKey>FEDO_H</ParameterKey>
+         <Description>FEDO-H: Omni-directional flux of HEP-H min</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>1/keV-sr-s-cm2</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>e- Omni Nflux HEP-H min</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+10</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>11</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>580</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>668.600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>778.400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>897.800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>1024.70</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>1195</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>1399</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>1597.90</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>1797.50</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>1997.70</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>2123.60</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_L</Name>
+         <Set>Time series defined by using: Epoch_L</Set>
+         <ParameterKey>FEDO_L</ParameterKey>
+         <Description>Omni-directional flux of HEP-L mean</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>1/keV-sr-s-cm2</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>e- Omni Nflux HEP-L mean</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+10</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>63</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>95</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>120.500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>145.800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>176.700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>214</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>259.300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>313.600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>378.800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>457.900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>554</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>669.100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>792.200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>921.800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>1181.40</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>1590.80</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_L</Name>
+         <Set>Time series defined by using: Epoch_L</Set>
+         <ParameterKey>FEDO_L_T</ParameterKey>
+         <Description>---&gt; FEDO_L as stacked time series</Description>
+         <Caveats>Average Type: standard
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: FEDO_L.</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>1/keV-sr-s-cm2</Units>
+         <RenderingHints>
+            <AxisLabel>e- Omni Nflux HEP-L mean</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+10</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>63</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>95</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>120.500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>145.800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>176.700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>214</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>259.300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>313.600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>378.800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>457.900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>554</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>669.100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>792.200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>921.800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>1181.40</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>1590.80</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_H</Name>
+         <Set>Time series defined by using: Epoch_H</Set>
+         <ParameterKey>FEDO_H_T</ParameterKey>
+         <Description>---&gt; FEDO_H as stacked time series</Description>
+         <Caveats>Average Type: standard
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: FEDO_H.</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>1/keV-sr-s-cm2</Units>
+         <RenderingHints>
+            <AxisLabel>e- Omni Nflux HEP-H mean</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.01</ScaleMin>
+            <ScaleMax>1.0e+10</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>11</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>580</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>668.600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>778.400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>897.800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>1024.70</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>1195</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>1399</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>1597.90</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>1797.50</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>1997.70</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>2123.60</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_H energy mean</Name>
+         <ParameterKey>FEDO_H_Energy_MEAN</ParameterKey>
+         <Description>Energy bin mean</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy mean</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>11</Size>
+         </Structure>
+         <ValidMin>500.0</ValidMin>
+         <ValidMax>2500.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_H energy</Name>
+         <ParameterKey>FEDO_H_Energy</ParameterKey>
+         <Description>Energy bin</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 11</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_L energy mean</Name>
+         <ParameterKey>FEDO_L_Energy_MEAN</ParameterKey>
+         <Description>Energy bin mean</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy mean</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleMin>0.000</ScaleMin>
+            <ScaleMax>1.E+4</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>40.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FEDO_L energy</Name>
+         <ParameterKey>FEDO_L_Energy</ParameterKey>
+         <Description>Energy bin</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E20.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

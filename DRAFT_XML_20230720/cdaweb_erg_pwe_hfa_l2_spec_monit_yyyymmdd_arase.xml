@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/Arase/</ResourceID>
+      <ResourceHeader>
+         <ResourceName>ERG (PWE), Level 2 (L2), ?????.????? Data</ResourceName>
+         <ReleaseDate>2023-07-26T12:34:56.789</ReleaseDate>
+         <Description></Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator J.R. Wygant for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/John.R.Wygant</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>the ERG Science Center website</Name>
+            <URL>http://ergsc.isee.nagoya-u.ac.jp</URL>
+            <Description>For more information, see</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>instrument papers in Earth, Planets and Space</Name>
+            <URL>https://www.springeropen.com/collections/erg</URL>
+            <Description>ERG</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/ERG-SC</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>ERG Science Center</Name>
+            <URL>https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/satellite/erg/pwe/hfa/l2/spec/monit/</URL>
+            <ProductKey>ERG_PWE_HFA_L2_SPEC_MONIT</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via the ERG Science Center</Description>
+            <Language>en</Language>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the ERG Science Center, ERG-SC, the Institute of Space and Astronautical Science, ISAS, the Japan Aerospace Exploration Agency, JAXA, and the Institute for Space-Earth Environmental Research, ISEE, Nagoya University in presentations or publications when using data, data analysis software, plug-ins for data analysis, integrated analysis tools, or any other services provided by the ERG-SC.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/erg/pwe/hfa/l2/spec/monit/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/erg/pwe/hfa/l2/spec/monit/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ERG_PWE_HFA_L2_SPEC_MONIT&amp;index=sp_phys</URL>
+            <ProductKey>ERG_PWE_HFA_L2_SPEC_MONIT</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator J.R. Wygant. Please acknowledge the Data Providers, the ERG Science Center, and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2017-03-23T00:00:00.000</StartDate>
+            <StopDate>2018-02-28T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>?????.?????</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RingCurrent</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.MidLatitudeRegion</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Time, beginning of interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleMin>6.3587268219904e+13</ScaleMin>
+            <ScaleMax>6.6301178619903e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>01-Jan-2015 00:00:00.000.000.000</ValidMin>
+         <ValidMax>31-Dec-2100 23:59:59.999.999.999</ValidMax>
+         <FillValue>-9223372036854775808</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Eu spectra</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_eu</ParameterKey>
+         <Description>Power spectra Eu^2</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV^2/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-SPEC (Eu)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>Ev spectra</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_ev</ParameterKey>
+         <Description>Power spectra Ev^2</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV^2/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-SPEC (Ev)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>Bgamma spectra</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_bgamma</ParameterKey>
+         <Description>Power spectra Bgamma^2</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>pT^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-SPEC (Bgamma)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>Esum spectra</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_esum</ParameterKey>
+         <Description>Power spectra Eu^2+Ev^2</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV^2/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-SPEC (Etotal)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>er_spectra</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_er</ParameterKey>
+         <Description>Power spectra E-right^2</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV^2/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-SPEC (E RH)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>el_spectra</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_el</ParameterKey>
+         <Description>Power spectra E-left^2</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV^2/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-SPEC (E LH)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>e_mix_spectra</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_e_mix</ParameterKey>
+         <Description>Power spectra Eu^2+Ev^2 or Eu^2 or Ev^2</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV^2/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-SPEC (E)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>e_axial_ratio</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_e_ar</ParameterKey>
+         <Description>spectra axial ratio</Description>
+         <Caveats>-1:LH,+1:RH</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>LH:-1/RH:+1</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-SPEC(E axial ratio)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>eu_ev_matrix</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_eu_ev</ParameterKey>
+         <Description>spectral matrix Eu-Ev*</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV^2/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-matrix(Eu-Ev*)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479 2</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>eu_ev_matrix</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_eu_ev_d1</ParameterKey>
+         <Description>---&gt; spectral matrix Eu-Ev* [1]</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ARR_SLICE with the following input parameters: spectra_eu_ev.</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV^2/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-matrix(Eu-Ev*) [1]</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>eu_ev_matrix</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_eu_ev_d2</ParameterKey>
+         <Description>---&gt; spectral matrix Eu-Ev* [2]</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ARR_SLICE with the following input parameters: spectra_eu_ev.</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV^2/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-matrix(Eu-Ev*) [2]</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>eu_bg_matrix</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_eu_bg</ParameterKey>
+         <Description>spectral matrix Eu-Bgamma*</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV/m pT/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-matrix(Eu-Bg*)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479 2</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>eu_bg_matrix</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_eu_bg_d1</ParameterKey>
+         <Description>---&gt; spectral matrix Eu-Bgamma* [1]</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ARR_SLICE with the following input parameters: spectra_eu_bg.</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV/m</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-matrix(Eu-Bg*) [1]</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>eu_bg_matrix</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_eu_bg_d2</ParameterKey>
+         <Description>---&gt; spectral matrix Eu-Bgamma* [2]</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ARR_SLICE with the following input parameters: spectra_eu_bg.</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>pT/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-matrix(Eu-Bg*) [2]</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>ev_bg_matrix</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_ev_bg</ParameterKey>
+         <Description>spectral matrix Ev-Bgamma*</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV/m pT/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-matrix(Ev-Bg*)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479 2</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>ev_bg_matrix</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_ev_bg_d1</ParameterKey>
+         <Description>---&gt; spectral matrix Ev-Bgamma* [1]</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ARR_SLICE with the following input parameters: spectra_ev_bg.</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>mV/m</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-matrix(Ev-Bg*) [1]</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>ev_bg_matrix</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>spectra_ev_bg_d2</ParameterKey>
+         <Description>---&gt; spectral matrix Ev-Bgamma* [2]</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ARR_SLICE with the following input parameters: spectra_ev_bg.</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>pT/Hz</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>PWE/HFA-matrix(Ev-Bg*) [2]</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>index</Name>
+         <ParameterKey>index</ParameterKey>
+         <Description>index</Description>
+         <Caveats>Average Type: none</Caveats>
+         <RenderingHints>
+            <AxisLabel>Index</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>-1</ValidMin>
+         <ValidMax>2</ValidMax>
+         <FillValue>-2</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Frequency</Name>
+         <ParameterKey>freq_spec</ParameterKey>
+         <Description>Frequency</Description>
+         <Caveats>Average Type: none</Caveats>
+         <Units>kHz</Units>
+         <RenderingHints>
+            <AxisLabel>Frequency</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>479</Size>
+         </Structure>
+         <FillValue>-1.0E+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>e_mix_content</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>e_mix_content</ParameterKey>
+         <Description>e_mix_content</Description>
+         <Caveats>0:(Eu+Ev)/2,1:Eu,2:Ev</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA(E) label</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>TI (Corrected)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ti_corrected</ParameterKey>
+         <Description>Time index</Description>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TI</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4294967294</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>TI (Original)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ti_original</ParameterKey>
+         <Description>Time index (Original)</Description>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TI (Original)</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4294967294</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>ch1_in</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ch1_in</ParameterKey>
+         <Description>HFA Ch1 input</Description>
+         <Caveats>0:Eu,1:Ev,2:Bgamma,3:Cal</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA Ch1 select</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>ch2_in</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ch2_in</ParameterKey>
+         <Description>HFA Ch2 input</Description>
+         <Caveats>0:Eu,1:Ev,2:Bgamma,3:Cal</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA Ch2 select</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>ch1_gain</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ch1_gain</ParameterKey>
+         <Description>HFA Ch1 gain</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>dB</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA Ch1 gain</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>ch2_gain</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ch2_gain</ParameterKey>
+         <Description>HFA Ch2 gain</Description>
+         <Cadence>?????.?????</Cadence>
+         <Units>dB</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA Ch2 gain</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>src_time_step</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>time_step</ParameterKey>
+         <Description>HFA source TLM time step</Description>
+         <Caveats>0:Low, 1:High, 2:PP</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA time step</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>tlm_sel</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tlm_sel</ParameterKey>
+         <Description>HFA TLM select</Description>
+         <Caveats>0:EE/1:LR/2:EB/3:EP/10:PP-L/11:PP-H</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA TLM select</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>fpga_obs_mode</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>obs_stat</ParameterKey>
+         <Description>HFA FPGA observation mode</Description>
+         <Caveats>0:FFT1,1:FFT8,2:WAVE</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA obs mode</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>wave_out_stat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>wav_stat</ParameterKey>
+         <Description>HFA Waveform output status</Description>
+         <Caveats>0:DIS,1:ENA</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA wave stat</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>aver_stat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ave_stat</ParameterKey>
+         <Description>HFA Average mode status</Description>
+         <Caveats>0:OFF,1:ON</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA aver stat</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>254</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>quality flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>quality_flag</ParameterKey>
+         <Description>quality flag</Description>
+         <Caveats>* b0:see Quality Note, b1:DC-CAL signal ON, b2:AC-CAL(E) signal ON, b3:AC-CAL(B) signal ON, b4:eclipse, b5:magnetorquer operated, b6:ambiguous UTC label, b7-b15:reserved, b16:Eu/Ev saturated, b17:Bg saturated, b18:HFA internal CAL, b19-b30:reserved, b31:HK CDF error
+Average Type: none</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/HFA q-flag</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>128</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>128</ValidMax>
+         <FillValue>-128</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>WPT-Pre AC gain</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>wpt_ac_gain</ParameterKey>
+         <Description>WPT-Pre AC gain</Description>
+         <Caveats>0:low gain, 1:high gain</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/WPTP AC Gain</AxisLabel>
+            <ScaleMin>-127</ScaleMin>
+            <ScaleMax>126</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-127</ValidMin>
+         <ValidMax>126</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>MSC-PA gain</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mscpa_gain</ParameterKey>
+         <Description>MSC-PA gain</Description>
+         <Caveats>0:low gain, 1:high gain</Caveats>
+         <Cadence>?????.?????</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PWE/MSC PA gain</AxisLabel>
+            <ScaleMin>-127</ScaleMin>
+            <ScaleMax>126</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-127</ValidMin>
+         <ValidMax>126</ValidMax>
+      </Parameter>
+   </NumericalData>
+</Spase>

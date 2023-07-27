@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/solo_l2_epd-sis-a-hehist/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Energetic Particle Detecter (EPD) Suprathermal Ion Spectrograph (SIS) Telescope A, Helium Histograms, Level 2 (L2), 1 s Data</ResourceName>
+         <ReleaseDate>2023-07-24T12:34:56.789</ReleaseDate>
+         <Description>Energetic Particle Detector (EPD). Instrument suite, part of the scientific payload aboard the Solar Orbiter mission, dedicated to the study of solar energetic particles. EPD measures electrons, protons and heavy ions with high temporal resolution over a wide energy range, from suprathermal energies to several hundreds of MeV/nucleon. It is composed of four units: SupraThermal Electrons and Protons (STEP), Electron Proton Telescope (EPT), Suprathermal Ion Spectrograph (SIS) and High Energy Telescope (HET).
+https://doi.org/10.1051/0004-6361/201935287</Description>
+         <Acknowledgement>See http://espada.uah.es/epd/EPD_data.php. See http://espada.uah.es/epd/EPD_data.php.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL>http://espada.uah.es/epd/EPD_data.php</URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/epd/science/l2/sis/a-hehist/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/epd/science/l2/sis/a-hehist/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_L2_EPD-SIS-A-HEHIST&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_L2_EPD-SIS-A-HEHIST</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator J. Rodriguez-Pacheco. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <RelativeStopDate>-P6M</RelativeStopDate>
+         </TimeSpan>
+         <Cadence>PT1S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>EPOCH</ParameterKey>
+         <Description>Nanoseconds since J2000</Description>
+         <Caveats>Start of acquisition interval</Caveats>
+         <Units>nanoseconds</Units>
+         <RenderingHints>
+            <AxisLabel>Time</AxisLabel>
+            <ScaleMin>6.3763351419904e+13</ScaleMin>
+            <ScaleMax>6.3763437819904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2000-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2050-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta epoch</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>DELTA_EPOCH</ParameterKey>
+         <Description>Accumulation period in seconds</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <AxisLabel>Delta epoch</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>3600</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>3600</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>He Histogram</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>He_Histogram</ParameterKey>
+         <Description>Helium mass histogram. Detected counts per mass bin for particles in the energy range 0.5 - 2 MeV/n.</Description>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>He counts</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.0001</ScaleMin>
+            <ScaleMax>0.001</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>80</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>2.05000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2.10000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>2.15000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>2.20000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>2.25000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>2.30000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>2.35000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>2.40000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>2.45000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>2.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>2.55000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>2.60000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>2.65000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>2.70000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>2.75000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>2.80000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>2.85000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>2.90000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>2.95000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>3</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>3.05000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>3.10000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>3.15000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>3.20000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>3.25000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>3.30000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>3.35000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>3.40000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>3.45000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>3.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>3.55000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>3.60000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>3.65000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>3.70000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>3.75000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>3.80000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 38</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>3.85000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 39</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>3.90000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 40</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>3.95000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 41</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>4</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 42</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>4.05000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 43</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>4.10000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 44</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>4.15000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 45</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>4.20000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 46</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>4.25000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 47</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>4.30000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 48</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>4.35000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 49</Name>
+               <Index>49</Index>
+               <RenderingHints>
+                  <AxisLabel>4.40000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 50</Name>
+               <Index>50</Index>
+               <RenderingHints>
+                  <AxisLabel>4.45000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 51</Name>
+               <Index>51</Index>
+               <RenderingHints>
+                  <AxisLabel>4.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 52</Name>
+               <Index>52</Index>
+               <RenderingHints>
+                  <AxisLabel>4.55000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 53</Name>
+               <Index>53</Index>
+               <RenderingHints>
+                  <AxisLabel>4.60000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 54</Name>
+               <Index>54</Index>
+               <RenderingHints>
+                  <AxisLabel>4.65000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 55</Name>
+               <Index>55</Index>
+               <RenderingHints>
+                  <AxisLabel>4.70000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 56</Name>
+               <Index>56</Index>
+               <RenderingHints>
+                  <AxisLabel>4.75000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 57</Name>
+               <Index>57</Index>
+               <RenderingHints>
+                  <AxisLabel>4.80000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 58</Name>
+               <Index>58</Index>
+               <RenderingHints>
+                  <AxisLabel>4.85000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 59</Name>
+               <Index>59</Index>
+               <RenderingHints>
+                  <AxisLabel>4.90000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 60</Name>
+               <Index>60</Index>
+               <RenderingHints>
+                  <AxisLabel>4.95000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 61</Name>
+               <Index>61</Index>
+               <RenderingHints>
+                  <AxisLabel>5</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 62</Name>
+               <Index>62</Index>
+               <RenderingHints>
+                  <AxisLabel>5.05000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 63</Name>
+               <Index>63</Index>
+               <RenderingHints>
+                  <AxisLabel>5.10000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 64</Name>
+               <Index>64</Index>
+               <RenderingHints>
+                  <AxisLabel>5.15000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 65</Name>
+               <Index>65</Index>
+               <RenderingHints>
+                  <AxisLabel>5.20000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 66</Name>
+               <Index>66</Index>
+               <RenderingHints>
+                  <AxisLabel>5.25000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 67</Name>
+               <Index>67</Index>
+               <RenderingHints>
+                  <AxisLabel>5.30000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 68</Name>
+               <Index>68</Index>
+               <RenderingHints>
+                  <AxisLabel>5.35000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 69</Name>
+               <Index>69</Index>
+               <RenderingHints>
+                  <AxisLabel>5.40000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 70</Name>
+               <Index>70</Index>
+               <RenderingHints>
+                  <AxisLabel>5.45000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 71</Name>
+               <Index>71</Index>
+               <RenderingHints>
+                  <AxisLabel>5.50000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 72</Name>
+               <Index>72</Index>
+               <RenderingHints>
+                  <AxisLabel>5.55000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 73</Name>
+               <Index>73</Index>
+               <RenderingHints>
+                  <AxisLabel>5.60000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 74</Name>
+               <Index>74</Index>
+               <RenderingHints>
+                  <AxisLabel>5.65000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 75</Name>
+               <Index>75</Index>
+               <RenderingHints>
+                  <AxisLabel>5.70000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 76</Name>
+               <Index>76</Index>
+               <RenderingHints>
+                  <AxisLabel>5.75000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 77</Name>
+               <Index>77</Index>
+               <RenderingHints>
+                  <AxisLabel>5.80000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 78</Name>
+               <Index>78</Index>
+               <RenderingHints>
+                  <AxisLabel>5.85000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 79</Name>
+               <Index>79</Index>
+               <RenderingHints>
+                  <AxisLabel>5.90000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 80</Name>
+               <Index>80</Index>
+               <RenderingHints>
+                  <AxisLabel>5.95000</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bins Mass</Name>
+         <ParameterKey>Mass_Bins</ParameterKey>
+         <Description>Lowest mass value for each bin</Description>
+         <Units>u</Units>
+         <UnitsConversion>1.66054e-27&gt;kg</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Mass</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleMin>2.0</ScaleMin>
+            <ScaleMax>5.95</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>80</Size>
+         </Structure>
+         <ValidMin>2.0</ValidMin>
+         <ValidMax>6.0</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Bins Width</Name>
+         <ParameterKey>Mass_Bins_Width</ParameterKey>
+         <Description>Width of each mass bin</Description>
+         <Units>u</Units>
+         <UnitsConversion>1.66054e-27&gt;kg</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>80</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>6.0</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Flow direction XYZ</Name>
+         <ParameterKey>XYZ</ParameterKey>
+         <Description>Particle flow direction (unit vector) in spacecraft XYZ coordinates</Description>
+         <RenderingHints>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+         </Structure>
+         <ValidMin>-1.0</ValidMin>
+         <ValidMax>1.0</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality flag</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Data quality flag</Description>
+         <Caveats>0:Bad, 1:Known problems, 2:Survey data, 3:Good, 4:Excellent</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Quality flag</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality bitmask</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>QUALITY_BITMASK</ParameterKey>
+         <Description>Computer readable quality parameter</Description>
+         <Caveats>0x1: Integration aborted, 0x2: Iris moved during integration, 0x4: Iris closed, 0x10: Iris setting 0 (fully open), 0x20: Iris setting 1 (26%), 0x40: Iris setting 2 (4%), 0x80: Iris setting 3 (1%)</Caveats>
+         <Cadence>PT1S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Quality bitmask</AxisLabel>
+            <ValueFormat>Z4</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>32767</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>32767</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

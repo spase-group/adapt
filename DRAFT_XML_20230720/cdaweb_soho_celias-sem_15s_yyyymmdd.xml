@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/soho_celias-sem_15s/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOHO Charge, Element, and Isotope Analysis System (CELIAS) Solar Extreme-Ultra-Violet Monitor (SEM), Version 4 (V4), PT15S Data</ResourceName>
+         <ReleaseDate>2023-07-24T12:34:56.789</ReleaseDate>
+         <Description>Description of the CELIAS-SEM instrument and scientific scope can be
+found on CELIAS homepage http://www.ieap.uni-kiel.de/et/soho/celias/
+and SOHO homepage http://sohowww.nascom.nasa.gov/
+Version 4 Science Product Release Notes are available at
+https://lasp.colorado.edu/eve/data_access/eve_data/lasp_soho_sem_data/long/
+LASP_SOHO_SEM_release_notes_v4.pdf
+The data was created from the original ASCII dataset at https://soho.nascom.nasa.gov/data/archive.html</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Wimmer-Schweingruber for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>the SOHO Archive</Name>
+            <URL>https://soho.nascom.nasa.gov/data/archive.html</URL>
+            <Description>SOHO CELIAS-SEM 15 second data available at</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/soho/celias/sem_15s/</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/soho/celias/sem_15s/</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOHO_CELIAS-SEM_15S&amp;index=sp_phys</URL>
+            <ProductKey>SOHO_CELIAS-SEM_15S</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Wimmer-Schweingruber. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType></MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <RelativeStopDate>-P1W</RelativeStopDate>
+         </TimeSpan>
+         <Cadence>PT15S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Centered Time, number of milliseconds since 01-Jan-0000 00:00:00.000</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+         </RenderingHints>
+         <ValidMin>01-Jan-1995 00:00:00.000</ValidMin>
+         <ValidMax>01-Jan-2050 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Chan 1 count rate</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>CH1</ParameterKey>
+         <Description>Channel 1 15-second average (raw) count rate</Description>
+         <Cadence>PT15S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CH1 count rate</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Chan 2 count rate</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>CH2</ParameterKey>
+         <Description>Channel 2 15-second average (raw) count rate</Description>
+         <Cadence>PT15S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CH2 count rate</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Chan 3 count rate</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>CH3</ParameterKey>
+         <Description>Channel 3 15-second average (raw) count rate</Description>
+         <Cadence>PT15S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CH3 count rate</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>First Order Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>first_order_flux</ParameterKey>
+         <Description>First Order Flux at 1 AU (26-34 nm, average of CH1 and CH3)</Description>
+         <Cadence>PT15S</Cadence>
+         <Units>photons cm^-2 s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>First Order Flux</AxisLabel>
+            <ValueFormat>E11.5E2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Central Order Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>central_order_flux</ParameterKey>
+         <Description>Central Order Flux at 1 AU (0.1 - 50 nm, CH2)</Description>
+         <Cadence>PT15S</Cadence>
+         <Units>photons cm^-2 s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Central Order Flux</AxisLabel>
+            <ValueFormat>E11.5E2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Heliocentric location</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HC_POS</ParameterKey>
+         <Description>SOHO Heliocentric location</Description>
+         <Cadence>PT15S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E12.5E2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>X</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Y</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Z</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-2.0e+08</ValidMin>
+         <ValidMax>2.0e+08</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Heliocentric distance (km)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HC_R</ParameterKey>
+         <Description>SOHO heliocentric distance (km)</Description>
+         <Cadence>PT15S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>R</AxisLabel>
+            <ValueFormat>E12.5E2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+08</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Heliocentric distance (AU)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>R_AU</ParameterKey>
+         <Description>SOHO heliocentric distance (AU)</Description>
+         <Cadence>PT15S</Cadence>
+         <Units>ua</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>R</AxisLabel>
+            <ValueFormat>F8.6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>
