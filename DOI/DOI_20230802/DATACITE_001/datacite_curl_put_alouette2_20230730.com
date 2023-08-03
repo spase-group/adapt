@@ -1,0 +1,1 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_neprof_tops.json https://api.datacite.org/dois

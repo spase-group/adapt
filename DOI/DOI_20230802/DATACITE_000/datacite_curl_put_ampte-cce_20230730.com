@@ -1,0 +1,1 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/AMPTE-CCE/datacite_json_doi_template_amptecce_h0_mepa.json https://api.datacite.org/dois

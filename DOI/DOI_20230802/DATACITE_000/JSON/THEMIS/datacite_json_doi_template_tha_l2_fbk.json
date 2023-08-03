@@ -1,0 +1,157 @@
+{
+  "data": {
+    "type": "dois",
+    "attributes": {
+      "doi": "",
+      "prefix": "10.48322",
+      "suffix": "",
+      "url": "https://hpde.io/NASA/NumericalData/THEMIS/A/FBK/PT4S.html",
+      "types": {
+        "ris": "DATA",
+        "bibtex": "misc",
+        "citeproc": "dataset",
+        "schemaOrg": "Dataset",
+        "resourceTypeGeneral": "Dataset"
+      },
+      "creators": [
+        {
+          "name": "Angelopoulos, Vassilis",
+          "nameType": "Personal",
+          "givenName": "Vassilis",
+          "familyName": "Angelopoulos",
+          "affiliation": [
+            {
+              "name": "University of California, Los Angeles",
+              "schemeUri": "https://ror.org",
+              "affiliationIdentifier": "https://ror.org/ZZZ",
+              "affiliationIdentifierScheme": "ROR"
+            }
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Bonnell, John W.",
+          "nameType": "Personal",
+          "givenName": "John W.",
+          "familyName": "Bonnell",
+          "affiliation": [
+            {
+              "name": "University of California, Berkeley",
+              "schemeUri": "https://ror.org",
+              "affiliationIdentifier": "https://ror.org/ZZZ",
+              "affiliationIdentifierScheme": "ROR"
+            }
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Ergun, Robert E.",
+          "nameType": "Personal",
+          "givenName": "Robert E.",
+          "familyName": "Ergun",
+          "affiliation": [
+            {
+              "name": "Laboratory for Atmospheric and Space Physics, University of Colorado Boulder",
+              "schemeUri": "https://ror.org",
+              "affiliationIdentifier": "https://ror.org/ZZZ",
+              "affiliationIdentifierScheme": "ROR"
+            }
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Mozer, Forrest S.",
+          "nameType": "Personal",
+          "givenName": "Forrest S.",
+          "familyName": "Mozer",
+          "affiliation": [
+            {
+              "name": "University of California, Berkeley",
+              "schemeUri": "https://ror.org",
+              "affiliationIdentifier": "https://ror.org/ZZZ",
+              "affiliationIdentifierScheme": "ROR"
+            }
+          ],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Roux, Alain",
+          "nameType": "Personal",
+          "givenName": "Alain",
+          "familyName": "Roux",
+          "affiliation": [
+            {
+              "name": "CNRS Centre de Recherches en Physique de L Environ",
+              "schemeUri": "https://ror.org",
+              "affiliationIdentifier": "https://ror.org/ZZZ",
+              "affiliationIdentifierScheme": "ROR"
+            }
+          ],
+          "nameIdentifiers": []
+        }
+      ],
+      "titles": [
+        {
+          "lang": "en",
+          "title": "THEMIS-A: Probe Electric Field Instrument and Search Coil Magnetometer Instrument, Digital Fields Board - digitally computed Filter Bank spectra and E12 peak and average in HF band (FBK).",
+          "titleType": null
+        }
+      ],
+      "publisher": "NASA Space Physics Data Facility",
+      "subjects": [
+        {
+          "subject": "ElectricField"
+        },
+        {
+          "subject": "MagneticField"
+        },
+        {
+          "subject": "Spectrum"
+        }
+      ],
+      "contributors": [],
+      "dates": [],
+      "publicationYear": 2023,
+      "language": "en",
+      "identifiers": [
+        {
+          "identifier": "spase://NASA/NumericalData/THEMIS/A/FBK/PT4S",
+          "identifierType": "SPASE"
+        }
+      ],
+      "sizes": [],
+      "formats": [
+        {
+          "subject": "CDF"
+        },
+        {
+          "subject": "CSV"
+        }
+      ],
+      "rightsList": [
+        {
+          "rights": "Creative Commons Zero v1.0 Universal",
+          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc0-1.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "descriptions": [
+        {
+          "lang": "en",
+          "description": "The Filter Bank is part of the Digital fields board and provides band-pass filtering for EFI and SCM spectra as well as E12HF peak and average value calculations.  The Filter Bank provides band-pass filtering for less computationally and power intensive spectra than the FFT would provide.  The process is as follows:   Signals are fed to the Filter Bank via a low-pass FIR filter with a cut-off frequency half that of the original signal maximum.  The output is passed to the band-pass filters, is differenced from the original signal, then absolute value of the data is taken and averaged.  The output from the low-pass filter is also sent to a second FIR filter with 2:1 decimation.  This output is then fed back through the system.  The process runs through 12 cascades for input at 8,192 samples/s and 13 for input at 16,384 samples/sec (EAC input only), reducing the signal and computing power by a factor 2 at each cascade.  At each cascade a set of data is produced at a sampling frequency of 2^n from 2 Hz to the initial sampling frequency (frequency characteristics for each step are shown below in Table 1).  The average from the Filter Bank is compressed to 8 bits with a pseudo-logarithmic encoder.  The data is stored in sets of six frequency bins at 2.689 kHz, 572 Hz, 144.2 Hz, 36.2 Hz, 9.05 Hz, and 2.26 Hz.  The average of the coupled E12HF signal and it's peak value are recorded over 62.5 ms windows (i.e. a 16 Hz sampling rate).  Accumulation of values from signal 31.25 ms windows is performed externally.  The  analog signals fed into the FBK are E12DC and SCM1.  Sensor and electronics design provided by UCB (J. W. Bonnell, F. S. Mozer), Digital Fields Board provided by LASP (R. Ergun), Search coil data provided by CETP (A. Roux).",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "relatedIdentifiers": [],
+      "schemaVersion": "http://datacite.org/schema/kernel-4",
+      "providerId": "nasasmd",
+      "clientId": "heliophy.spdf",
+      "agency": "datacite",
+      "state": "draft"
+    }
+  }
+}

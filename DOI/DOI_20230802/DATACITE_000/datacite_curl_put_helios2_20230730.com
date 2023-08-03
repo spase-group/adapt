@@ -1,0 +1,5 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/HELIOS2/datacite_json_doi_template_hel2_6sec_nessmag.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/HELIOS2/datacite_json_doi_template_helios2_coho1hr_merged_mag_plasma.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/HELIOS2/datacite_json_doi_template_helios2_e6_1hour_particle_flux.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/HELIOS2/datacite_json_doi_template_helios2_e6_kunow_1hour_particle-flux.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/HELIOS2/datacite_json_doi_template_helios2_helio1day_position.json https://api.datacite.org/dois

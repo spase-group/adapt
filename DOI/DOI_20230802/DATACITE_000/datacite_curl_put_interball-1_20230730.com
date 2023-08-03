@@ -1,0 +1,2 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/INTERBALL-1/datacite_json_doi_template_it_h0_mfi.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/INTERBALL-1/datacite_json_doi_template_it_or_def interballtail.json https://api.datacite.org/dois

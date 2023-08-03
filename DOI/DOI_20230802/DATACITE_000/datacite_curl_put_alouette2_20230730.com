@@ -1,0 +1,6 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_lim.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_qui.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_snt.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_sol.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_ula.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_wnk.json https://api.datacite.org/dois

@@ -1,0 +1,95 @@
+{
+  "data": {
+    "type": "dois",
+    "attributes": {
+      "prefix": "10.48322",
+      "url": "https://hpde.io/NASA/NumericalData/ParkerSolarProbe/SWEAP/SPC/Level3/SolarWindMomentsFits/PT0.2185S.html",
+      "types": {
+        "ris": "DATA",
+        "bibtex": "misc",
+        "citeproc": "dataset",
+        "schemaOrg": "Dataset",
+        "resourceTypeGeneral": "Dataset"
+      },
+      "creators": [
+        {
+          "name": "Kasper, Justin C.",
+          "nameType": "Personal",
+          "givenName": "Justin C.",
+          "familyName": "Kasper",
+          "affiliation": [
+            {
+              "name": "Massachusetts Institute of Technology",
+              "schemeUri": "https://ror.org",
+              "affiliationIdentifier": "https://ror.org/ZZZ",
+              "affiliationIdentifierScheme": "ROR"
+            }
+          ],
+          "nameIdentifiers": []
+        }
+      ],
+      "titles": [
+        {
+          "lang": "en",
+          "title": "PSP Solar Wind Electrons Alphas and Protons (SWEAP) SPC Ion Number Density, Velocity, and Thermal Speed Momemts and Fits, Level 3 (L3), 0.2185 s Data",
+          "titleType": null
+        }
+      ],
+      "publisher": "NASA Space Physics Data Facility",
+      "subjects": [
+        {
+          "subject": "Calibrated"
+        },
+        {
+          "subject": "Ephemeris"
+        },
+        {
+          "subject": "ThermalPlasma"
+        }
+      ],
+      "contributors": [],
+      "dates": [],
+      "publicationYear": 2023,
+      "language": "en",
+      "identifiers": [
+        {
+          "identifier": "spase://NASA/NumericalData/ParkerSolarProbe/SWEAP/SPC/Level3/SolarWindMomentsFits/PT0.2185S",
+          "identifierType": "SPASE"
+        }
+      ],
+      "sizes": [],
+      "formats": [
+        {
+          "subject": "CDF"
+        },
+        {
+          "subject": "CSV"
+        }
+      ],
+      "rightsList": [
+        {
+          "rights": "Creative Commons Zero v1.0 Universal",
+          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc0-1.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "descriptions": [
+        {
+          "lang": "en",
+          "description": "SPC Level 3 Ion Data -------------------- File Naming Format: psp_swp_spc_l3i_YYYYMMDD_v01.cdf This data product contains derived measurements of ion properties in the solar wind, including those for density, temperature, and velocity. These are determined both by a direct computation of the velocity moments of the reduced distribution function and by attempting to fit the primary peak in the ion I(V) curve with a Maxwellian model. These measurements correspond one to one with spectra in the psp_swp_spc_l2i file for the same date. It may be convenient for some applications to cross-reference the two. For example, the corresponding l3i file contains ephemeris and data quality flag information that may be useful for an investigator who is concerned only with l2i type measurements. Conditions that impact measurement quality are documented in the DQF variable, which contains a 32 element flag array for each measurement time. Each element of the array is reserved to signify a specific condition. These conditions are described in the DQF_FLAGNAMES variable. In this version, for example, DQF_FLAGNAMES.DAT[23] is set to &quot;spacecraft maneuver&quot;. If measurement &quot;i&quot; was made during a spacecraft maneuver, it is thus flagged with DQF.DAT[23,i] = 1. In Version 01, measurements are not provided, i.e. variables are set to fill, during spacecraft maneuvers, under conditions of low signal-to-noise, and during certain observed transients. Such conditions are rare during encounters, but increasingly frequent in interplanetary cruise. These conditions are documented in the DQF variable. Remarks are also provided in the &quot;SPC Reduced Data Quality Periods&quot; table. In Version 01, the solar wind alpha particle component is not measured. Thus, variables are set equal to fill values. SPC Encounter 1 Remarks ----------------------- Data quality is very good for the duration of the encounter. The solar wind flow was within the optimal field of view for the SPC instrument for nearly the entire encounter. See the data flags for specific exceptions. As with all encounters, signal-to-noise is higher during ingress than egress, which is reflected in the typically smaller uncertainties and less frequent &quot;primary peak low signal&quot; flag events. SPC Cruise Phase Remarks ------------------------ Measurements recorded during cruise phase are not all transmitted to Earth. The typical return is one spectrum out of every 32. SPC Encounter 2 Remarks ----------------------- Due to an erroneous setting in the operating mode for this encounter, ion full scan spectra and certain spectra immediately following ion full scans are of reduced quality. In the affected full scan spectra, the energy steps over an initial portion of the measurement spectra have zero width, i.e. the Level 2 ion variables MV_LO.DAT = MV_HI.DAT, and the corresponding measurements are purely noise. In some cases, this results in a poor determination of the proton &quot;primary peak&quot; energy, which renders additional subsequent full scans that follow subject to the same incompleteness. In other cases, the energy range for the subsequent &quot;ion peak tracking mode&quot; scan is not ideal. The affected Level 3 ion measurements have been flagged with DQF.DAT[22]=1, which stands for &quot;energy ranging/peak tracking error&quot; and/or set to fill. The operating mode has been revised such that future encounters will not be so affected. Parker Solar Probe SWEAP Rules of the Road ------------------------------------------ As part of the development of collaboration with the broader Heliophysics community, the mission has drafted a &quot;Rules of the Road&quot; to govern how PSP instrument data are to be used. * 1) Users should consult with the PI to discuss the appropriate use of instrument data or model results and to ensure that the users are accessing the most recently available versions of the data and of the analysis routines. Instrument team Science Operations Centers, SOCs, and/or Virtual Observatories, VOs, should facilitate this process serving as the contact point between PI and users in most cases. * 2) Users should heed the caveats of investigators to the interpretations and limitations of data or model results. Investigators supplying data or models may insist that such caveats be published. Data and model version numbers should also be specified. * 3) Browse products, Quicklook, and Planning data are not intended for science analysis or publication and should not be used for those purposes without consent of the PI. * 4) Users should acknowledge the sources of data used in all publications, presentations, and reports: &quot;We acknowledge the NASA Parker Solar Probe Mission and the SWEAP team led by J. Kasper for use of data.&quot;. * 5) Users are encouraged to provide the PI a copy of each manuscript that uses the PI data prior to submission of that manuscript for consideration of publication. On publication, the citation should be transmitted to the PI and any other providers of data.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "relatedIdentifiers": [],
+      "schemaVersion": "http://datacite.org/schema/kernel-4",
+      "providerId": "nasasmd",
+      "clientId": "heliophy.spdf",
+      "agency": "datacite",
+      "state": "draft"
+    }
+  }
+}

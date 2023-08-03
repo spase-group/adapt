@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/Ulysses/SWICS/GSFC/SPDF/PT3H</ResourceID>
+      <ResourceHeader>
+         <ResourceName>Ulysses SWICS 3-hour averages data via CDAWeb</ResourceName>
+         <DOI>https://doi.org/10.48322/10.48322/np2e-ev26</DOI>
+         <ReleaseDate>2023-07-30T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2021-04-27T15:38:11</ReleaseDate>
+               <Note>Only known prior ReleaseDate of the metadata</Note>
+            </RevisionEvent>
+            <RevisionEvent>
+               <ReleaseDate>2023-07-30T12:34:56.789</ReleaseDate>
+               <Note>Added DOI and PublicationInfo minted by LFB, metadata versioned up to SPASE 2.6.0, reviewed by LFB 20230727</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>This data set contains 3-hour averages of ion data from the Ulysses Solar Wind Ion Composition Spectrometer (SWICS) instrument. Density, velocity, and temperature data are available for 10 speciess (H, He, C, N, O, Ne, Mg, Si, S, and Fe) and charge states at 3-hr resolution.</Description>
+         <PublicationInfo>
+            <Authors>Gloeckler, George, M.; Geiss, Johannes</Authors>
+            <PublicationDate>2023-01-01T00:00:00</PublicationDate>
+            <PublishedBy>NASA Space Physics Data Facility</PublishedBy>
+         </PublicationInfo>
+         <Contact>
+            <PersonID>spase://SMWG/Person/George.Gloeckler</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Johannes.Geiss</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <PriorID>spase://VSPO/NumericalData/Ulysses/SWICS/GSFC/SPDF/PT3H</PriorID>
+         <PriorID>spase://VSPO/NumericalData/Ulysses/SWICS/GSFC/SPDF/PT3H</PriorID>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/ulysses/plasma/swics_cdaweb/swi_m1/</URL>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/ulysses/plasma/swics_cdaweb/swi_m1/</URL>
+            <Description>In CDF via HTTP from CDAWeb</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=UY_M1_SWI&amp;index=sp_phys</URL>
+            <ProductKey>UY_M1_SWI</ProductKey>
+         </AccessURL>
+         <Format>CDF</Format>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>CDAWeb HAPI Server</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/hapi</URL>
+            <Style>HAPI</Style>
+            <ProductKey>UY_M1_SWI</ProductKey>
+            <Description>Web Service to this product using the HAPI interface.</Description>
+         </AccessURL>
+         <Format>CSV</Format>
+      </AccessInformation>
+      <ProviderProcessingLevel>CALIBRATED</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Ulysses/SWICS</InstrumentID>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <MeasurementType>IonComposition</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>1990-12-07T00:00:00</StartDate>
+            <StopDate>2009-06-30T00:00:00</StopDate>
+         </TimeSpan>
+         <Cadence>PT3H</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Heliosphere.Outer</ObservedRegion>
+   </NumericalData>
+</Spase>

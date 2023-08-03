@@ -1,0 +1,2 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/CASSINI/datacite_json_doi_template_cassini_helio1day_position.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/CASSINI/datacite_json_doi_template_cassini_mag_1min_magnetic_field.json https://api.datacite.org/dois

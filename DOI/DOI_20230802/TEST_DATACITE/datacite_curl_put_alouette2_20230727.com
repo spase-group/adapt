@@ -1,0 +1,6 @@
+curl -sSX POST -H 'Content-Type: application/vnd.api+json' -u 'testorg.heliophy:6yard$TACK27' -d @TEST_DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_lim.json https://api.test.datacite.org/dois
+curl -sSX POST -H 'Content-Type: application/vnd.api+json' -u 'testorg.heliophy:6yard$TACK27' -d @TEST_DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_qui.json https://api.test.datacite.org/dois
+curl -sSX POST -H 'Content-Type: application/vnd.api+json' -u 'testorg.heliophy:6yard$TACK27' -d @TEST_DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_snt.json https://api.test.datacite.org/dois
+curl -sSX POST -H 'Content-Type: application/vnd.api+json' -u 'testorg.heliophy:6yard$TACK27' -d @TEST_DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_sol.json https://api.test.datacite.org/dois
+curl -sSX POST -H 'Content-Type: application/vnd.api+json' -u 'testorg.heliophy:6yard$TACK27' -d @TEST_DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_ula.json https://api.test.datacite.org/dois
+curl -sSX POST -H 'Content-Type: application/vnd.api+json' -u 'testorg.heliophy:6yard$TACK27' -d @TEST_DATACITE/JSON/ALOUETTE2/datacite_json_doi_template_alouette2_av_wnk.json https://api.test.datacite.org/dois

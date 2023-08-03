@@ -1,0 +1,1 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ISS/datacite_json_doi_template_iss_27day-averages_ams-02.json https://api.datacite.org/dois

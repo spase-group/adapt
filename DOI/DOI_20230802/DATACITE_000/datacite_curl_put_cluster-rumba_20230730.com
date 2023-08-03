@@ -1,0 +1,3 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/CLUSTER-RUMBA/datacite_json_doi_template_c1_pp_edi.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/CLUSTER-RUMBA/datacite_json_doi_template_c1_waveform_wbd.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/CLUSTER-RUMBA/datacite_json_doi_template_c1_ce_wbd_waveform_bm2_cdf c1_waveform_wbd_bm2.json https://api.datacite.org/dois

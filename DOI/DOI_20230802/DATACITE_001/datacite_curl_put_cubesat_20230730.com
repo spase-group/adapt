@@ -1,0 +1,2 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/CUBESAT/datacite_json_doi_template_csswe_reptile_6sec-counts-l1.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/CUBESAT/datacite_json_doi_template_csswe_reptile_6sec-flux-l2.json https://api.datacite.org/dois

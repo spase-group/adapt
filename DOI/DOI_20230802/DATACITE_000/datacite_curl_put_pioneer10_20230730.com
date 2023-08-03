@@ -1,0 +1,3 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/PIONEER10/datacite_json_doi_template_pioneer10_coho1hr_merged_mag_plasma.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/PIONEER10/datacite_json_doi_template_pioneer10_helio1day_position.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/PIONEER10/datacite_json_doi_template_pioneer10_mag_1min_magnetic_field.json https://api.datacite.org/dois

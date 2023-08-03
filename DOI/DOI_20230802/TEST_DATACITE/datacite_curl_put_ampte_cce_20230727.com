@@ -1,0 +1,1 @@
+curl -sSX POST -H 'Content-Type: application/vnd.api+json' -u 'testorg.heliophy:6yard$TACK27' -d @TEST_DATACITE/JSON/AMPTE_CCE/datacite_json_doi_template_amptecce_h0_mepa.json https://api.test.datacite.org/dois

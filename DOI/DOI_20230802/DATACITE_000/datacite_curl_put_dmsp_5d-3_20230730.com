@@ -1,0 +1,6 @@
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DMSP_5D-3/datacite_json_doi_template_dmsp-f16_ssj_precipitating-electrons-ions.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DMSP_5D-3/datacite_json_doi_template_dmsp-f16_ssm_magnetometer.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DMSP_5D-3/datacite_json_doi_template_dmsp-f17_ssj_precipitating-electrons-ions.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DMSP_5D-3/datacite_json_doi_template_dmsp-f17_ssm_magnetometer.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DMSP_5D-3/datacite_json_doi_template_dmsp-f18_ssj_precipitating-electrons-ions.json https://api.datacite.org/dois
+curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DMSP_5D-3/datacite_json_doi_template_dmsp-f18_ssm_magnetometer.json https://api.datacite.org/dois
