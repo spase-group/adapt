@@ -3,9 +3,9 @@ XML_FILE_NAME=$1
 
 RANDOM_NUMBER=$RANDOM
 
-PROGRAM_DIR=/Users/astropooch/bin
+PROGRAM_DIR=.
 
-OUTPUT_DIR=/Users/astropooch/bin/WORK
+OUTPUT_DIR=.
 
 if [ ! -d $OUTPUT_DIR ]; then mkdir -p $OUTPUT_DIR; fi
 

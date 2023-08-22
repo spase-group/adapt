@@ -3,15 +3,15 @@ URL=$1
 
 PROTOCOL=`echo $URL | tr 'a-z' 'A-Z' | sed 's/S*:.*$//'`
 
-curl -kIsS "$URL" &> /Users/astropooch/bin/WORK/curl_check_$$.txt 2> /Users/astropooch/bin/WORK/curl_check_error_$$.txt
+curl -kIsS "$URL" &> curl_check_$$.txt 2> curl_check_error_$$.txt
 
-ERROR=`head -1 /Users/astropooch/bin/WORK/curl_check_error_$$.txt | sed 's///' | awk 'BEGIN { FS="[()]" } ; { print "CURL Error: "$2 }'`
+ERROR=`head -1 curl_check_error_$$.txt | sed 's///' | awk 'BEGIN { FS="[()]" } ; { print "CURL Error: "$2 }'`
 
 if [ $PROTOCOL == HTTP ]; then
 
    if [ ! "$ERROR" ]; then
 
-      CURL_STATUS=`head -1 /Users/astropooch/bin/WORK/curl_check_$$.txt | sed 's///' | sed '/^HTTP\/1.1 200 200$/s/200$/OK/'`
+      CURL_STATUS=`head -1 curl_check_$$.txt | sed 's///' | sed '/^HTTP\/1.1 200 200$/s/200$/OK/'`
 
       if [ "$CURL_STATUS" == 'HTTP/1.1 200 OK' ]; then
 
@@ -49,7 +49,7 @@ else
 
 fi
 
-rm /Users/astropooch/bin/WORK/curl_check_$$.txt /Users/astropooch/bin/WORK/curl_check_error_$$.txt
+rm curl_check_$$.txt curl_check_error_$$.txt
 
 printf "%s\t%s\t%s\n" $STATUS "$CURL_STATUS" $URL
 

@@ -466,7 +466,7 @@ else
 
        printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\n" $DOI_STATUS $DOI $PREFIX $SUFFIX_LOWER $PRODUCT_KEY_UPPER $SPASE_RESOURCE_ID $JSON_FILE_NAME >> datacite_json_doi_template_all.tab
 
-       spase_editor_update.com "$DOI_LOWER" /Users/astropooch/DOI $DIRECTORY_JSON $SPASE_RESOURCE_ID.xml $URL_CHECK
+       spase_editor_update.com "$DOI_LOWER" DOI $DIRECTORY_JSON $SPASE_RESOURCE_ID.xml $URL_CHECK
 
    done
 

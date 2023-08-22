@@ -43,11 +43,11 @@ if [ -e $REGISTRY_DIRECTORY/$SPASE_RESOURCE_ID.xml ]; then
 
    cp -p $XML_FILE_NAME $REGISTRY_DIRECTORY/WORK/spase_editor_update_new_$$.xml
 
-   /Users/astropooch/bin/spase_xml_tab_wrapper.com $REGISTRY_DIRECTORY/WORK/spase_editor_update_old_$$.xml
+   spase_xml_tab_wrapper.com $REGISTRY_DIRECTORY/WORK/spase_editor_update_old_$$.xml
 
    RELEASE_DATE_PRIOR=`grep ^'\ \ \ \ \ \ \ \ \ <ReleaseDate>' $REGISTRY_DIRECTORY/WORK/spase_editor_update_old_$$.xml | awk 'BEGIN { FS="[<>]" } ; { print $3 }' | sed 's/Z$//'`
 
-   /Users/astropooch/bin/spase_xml_tab_wrapper.com $REGISTRY_DIRECTORY/WORK/spase_editor_update_new_$$.xml
+   spase_xml_tab_wrapper.com $REGISTRY_DIRECTORY/WORK/spase_editor_update_new_$$.xml
 
    printf "\n%s\n\n" $DASHES
 
@@ -309,7 +309,7 @@ if [ $URL_CHECK == 'OUI' ]; then
 
        PROTOCOL=`echo $URL | awk 'BEGIN { FS=":" } ; { print $1 }' | tr 'a-z' 'A-Z'`
 
-       CURL_CHECK=`/Users/astropooch/bin/curl_check.com $URL`
+       CURL_CHECK=`curl_check.com $URL`
 
        STATUS=`echo "$CURL_CHECK" | awk 'BEGIN { FS="	" } ; { print $1 }'`
 
@@ -353,7 +353,7 @@ done
 
 printf "\n%s\n\n" $DASHES
 
-/Users/astropooch/bin/doi_check.com $COLLATION_FILE_NAME | sed 's/^/SPASE_EDITOR_/'
+doi_check.com $COLLATION_FILE_NAME | sed 's/^/SPASE_EDITOR_/'
 
 echo
 
