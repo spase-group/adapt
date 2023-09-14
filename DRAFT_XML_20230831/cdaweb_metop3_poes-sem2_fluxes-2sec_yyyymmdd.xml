@@ -1,0 +1,3734 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/metop3_poes-sem2_fluxes-2sec/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <ReleaseDate>2023-08-31T12:34:56.789</ReleaseDate>
+         <Description>POES N19 data: POES/MetOp: Particle Precipitation Data (These data have known contamination problems. Please consult provider rob.redmon@noaa.gov for usage recommendations.)</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>archive and instrument documentation at NOAA National Geophysical Data Center (NGDC)</Name>
+            <URL>http://www.ngdc.noaa.gov/stp/satellite/poes</URL>
+            <Description>Primary POES</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>MEPED Telescope Data Processing Algorithm Theoretical Basis Document (section 2.2.1)</Name>
+            <URL>http://www.ngdc.noaa.gov/stp/satellite/poes/docs/NGDC/MEPED%20telescope%20processing%20ATBD_V1.pdf</URL>
+            <Description>For further details on MEPED contamination issues, see the</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=METOP3_POES-SEM2_FLUXES-2SEC&amp;index=sp_phys</URL>
+            <ProductKey>METOP3_POES-SEM2_FLUXES-2SEC</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2029-12-31T23:59:57.999000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>time</Name>
+         <ParameterKey>time</ParameterKey>
+         <Description>Date and time for each observation</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-2.14748e+09</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>year</Name>
+         <ParameterKey>year</ParameterKey>
+         <Description>4 digit year</Description>
+         <Units>a</Units>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-2.14748e+09</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>day</Name>
+         <ParameterKey>day</ParameterKey>
+         <Description>3 digit day of year</Description>
+         <Units>d</Units>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-2.14748e+09</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>msec</Name>
+         <ParameterKey>msec</ParameterKey>
+         <Description>milliseconds of the day</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-2.14748e+09</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>TED T0deg Electron Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_flux_stackt0</ParameterKey>
+         <Description>Electron differential flux, TED, 0 degree telescope, 189-7980 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_T0deg_Elec_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+            <Element>
+               <Name>TED_189eV_ElecFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>189</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_844eV_ElecFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>844</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_2595eV_ElecFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2595</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_7980eV_ElecFlux</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>7980</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED T30deg Electron Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_flux_stackt30</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_T30deg_Elec_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+            <Element>
+               <Name>TED_189eV_ElecFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>189</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_844eV_ElecFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>844</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_2595eV_ElecFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2595</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_7980eV_ElecFlux</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>7980</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED 189 keV Electron Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_flux_t_stacke1</ParameterKey>
+         <Description>Electron differential flux, TED, 0 and 30 degree telescopes, 189 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_189keV_Elec_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>TED_T0deg_Elec_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_T30deg_Elec_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED 844 eV Electron Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_flux_t_stacke2</ParameterKey>
+         <Description>---&gt; 844 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_844eV_Elec_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>TED_T0deg_Elec_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_T30deg_Elec_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED 2595 eV Electron Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_flux_t_stacke3</ParameterKey>
+         <Description>---&gt; 2595 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_2595eV_Elec_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>TED_T0deg_Elec_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_T30deg_Elec_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED 7980 eV Electron Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_flux_t_stacke4</ParameterKey>
+         <Description>---&gt; 7980 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_7980eV_Elec_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>TED_T0deg_Elec_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_T30deg_Elec_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED Electron Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_flux</ParameterKey>
+         <Description>---&gt; As spectrograms in energy for each telescope.
+
+* Column 1 Labels from TED_TELESCOPES: ["TED_T0deg_Elec_DiffFlux","TED_T30deg_Elec_DiffFlux"].
+* Column 2 Labels from TED_ELE_DIFF_ENERGIES: ["TED_189eV_ElecFlux","TED_844eV_ElecFlux","TED_2595eV_ElecFlux","TED_7980eV_ElecFlux"].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>TED Electron Diff Flux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 4</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Energy</Name>
+         <ParameterKey>ted_ele_diff_energies</ParameterKey>
+         <Description>TED, Electron Differential Energies</Description>
+         <Units>eV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+         </Structure>
+         <ValidMin>100.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>TED Telescope Direction</Name>
+         <ParameterKey>ted_telescopes</ParameterKey>
+         <Description>Two TED telescopes</Description>
+         <RenderingHints>
+            <AxisLabel>TED_Telescope_Direction</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>30.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>TED T0deg Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_flux_stackt0</ParameterKey>
+         <Description>Proton differential flux, TED, 0 degree telescope, 189-7980 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_T0deg_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+            <Element>
+               <Name>TED_189eV_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>189</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_844eV_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>844</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_2595eV_Prtn_DiffFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2595</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_7980eV_Prtn_DiffFlux</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>7980</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED T30deg Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_flux_stackt30</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_T30deg_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+            <Element>
+               <Name>TED_189eV_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>189</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_844eV_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>844</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_2595eV_Prtn_DiffFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2595</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_7980eV_Prtn_DiffFlux</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>7980</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED 189 eV Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_flux_t_stacke1</ParameterKey>
+         <Description>Proton differential flux, TED, 0 and 30 degree telescopes, 189 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_189eV_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>TED_T0deg_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_T30deg_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED 844 eV Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_flux_t_stacke2</ParameterKey>
+         <Description>---&gt; 844 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_844eV_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>TED_T0deg_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_T30deg_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED 2595 eV Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_flux_t_stacke3</ParameterKey>
+         <Description>---&gt; 2595 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_2595eV_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>TED_T0deg_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_T30deg_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED 7980 eV Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_flux_t_stacke4</ParameterKey>
+         <Description>---&gt; 7980 eV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: ted_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>TED_7980eV_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>TED_T0deg_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>TED_T30deg_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_flux</ParameterKey>
+         <Description>---&gt; As spectrograms in energy for each telescope.
+
+* Column 1 Labels from TED_TELESCOPES: ["TED_T0deg_Prtn_DiffFlux","TED_T30deg_Prtn_DiffFlux"].
+* Column 2 Labels from TED_PRO_DIFF_ENERGIES: ["TED_189eV_Prtn_DiffFlux","TED_844eV_Prtn_DiffFlux","TED_2595eV_Prtn_DiffFlux","TED_7980eV_Prtn_DiffFlux"].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>TED Proton Diff Flux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 4</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Energy</Name>
+         <ParameterKey>ted_pro_diff_energies</ParameterKey>
+         <Description>TED, Proton Differential Energies</Description>
+         <Units>eV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+         </Structure>
+         <ValidMin>100.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T0deg_LowE_Elec_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_tel0_low_eflux</ParameterKey>
+         <Description>Electron integral energy flux, TED, 0 degree telescope, low energy (50-1000 eV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T0deg_LowE_Elec_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T30deg_LowE_Elec_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_tel30_low_eflux</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T30deg_LowE_Elec_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T0deg_LowE_Elec_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_tel0_low_eflux_error</ParameterKey>
+         <Description>---&gt; % error, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T0deg_LowE_Elec_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T0deg_LowE_Elec_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_tel30_low_eflux_error</ParameterKey>
+         <Description>---&gt; % error, 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T0deg_LowE_Elec_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T0deg_HiE_Elec_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_tel0_hi_eflux</ParameterKey>
+         <Description>Electron integral energy flux, TED, 0 degree telescope, high energy (1-20 keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T0deg_HiE_Elec_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T30deg_HiE_Elec_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_tel30_hi_eflux</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T30deg_HiE_Elec_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T0deg_HiE_Elec_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_tel0_hi_eflux_error</ParameterKey>
+         <Description>---&gt; % error, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T0deg_HiE_Elec_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T30deg_HiE_Elec_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_tel30_hi_eflux_error</ParameterKey>
+         <Description>---&gt; % error, 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T30deg_HiE_Elec_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T0deg_LowE_Prtn_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_tel0_low_eflux</ParameterKey>
+         <Description>Proton integral energy flux, TED, 0 degree telescope, low energy (50-1000 eV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T0deg_LowE_Prtn_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T30deg_LowE_Prtn_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_tel30_low_eflux</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T30deg_LowE_Prtn_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T0deg_LowE_Prtn_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_tel0_low_eflux_error</ParameterKey>
+         <Description>---&gt; % error, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T0deg_LowE_Prtn_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T30deg_LowE_Prtn_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_tel30_low_eflux_error</ParameterKey>
+         <Description>---&gt; % error, 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T30deg_LowE_Prtn_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T0deg_HiE_Prtn_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_tel0_hi_eflux</ParameterKey>
+         <Description>Proton integral energy flux, TED, 0 degree telescope, high energy (1-20 keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T0deg_HiE_Prtn_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T30deg_HiE_Prtn_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_tel30_hi_eflux</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T30deg_HiE_Prtn_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T0deg_HiE_Prtn_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_tel0_hi_eflux_error</ParameterKey>
+         <Description>---&gt; % error, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T0deg_HiE_Prtn_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_T30deg_HiE_Prtn_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_tel30_hi_eflux_error</ParameterKey>
+         <Description>---&gt; % error, 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_T30deg_HiE_Prtn_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_LowE_Elec_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_atmo_low</ParameterKey>
+         <Description>Electron atmospheric integral energy flux, TED, low energy (50-1000 eV), at 120 km</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/m^2</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_LowE_Elec_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-6400.0</ValidMin>
+         <ValidMax>6400.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_HiE_Elec_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_atmo_hi</ParameterKey>
+         <Description>---&gt; high energy (1-20 keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/m^2</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_HiE_Elec_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-6400.0</ValidMin>
+         <ValidMax>6400.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_LowE_Elec_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_atmo_low_err</ParameterKey>
+         <Description>---&gt; % error, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_LowE_Elec_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_HiE_Elec_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_atmo_hi_err</ParameterKey>
+         <Description>---&gt; % error, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_HiE_Elec_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_Total_Elec_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_atmo_total</ParameterKey>
+         <Description>Electron total atmospheric integral energy flux, TED, at 120 km</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/m^2</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_Total_Elec_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-12800.0</ValidMin>
+         <ValidMax>6400.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_Total_Elec_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_atmo_total_err</ParameterKey>
+         <Description>---&gt; % error</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_Total_Elec_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_LowE_Prtn_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_atmo_low</ParameterKey>
+         <Description>Proton atmospheric integral energy flux, TED, low energy (50-1000 eV), at 120 km</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/m^2</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_LowE_Prtn_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-6400.0</ValidMin>
+         <ValidMax>6400.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_HiE_Prtn_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_atmo_hi</ParameterKey>
+         <Description>---&gt; high energy (1-20 keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/m^2</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_HiE_Prtn_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-6400.0</ValidMin>
+         <ValidMax>6400.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_LowE_Prtn_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_atmo_low_err</ParameterKey>
+         <Description>---&gt; % error, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_LowE_Prtn_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_HiE_Prtn_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_atmo_hi_err</ParameterKey>
+         <Description>---&gt; % error, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_HiE_Prtn_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_Total_Prtn_EngyFlux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_atmo_total</ParameterKey>
+         <Description>Proton total atmospheric integral energy flux, TED, at 120 km</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/m^2</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_Total_Prtn_EngyFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-12800.0</ValidMin>
+         <ValidMax>6400.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TED_Atmo_Total_Prtn_EngyFlux%Err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_atmo_total_err</ParameterKey>
+         <Description>---&gt; % error</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TED_Atmo_Total_Prtn_EngyFlux%Err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_total_eflux_atmo</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_total_eflux_atmo</ParameterKey>
+         <Description>Electron and Proton total atmospheric integral energy flux, TED, at 120 km</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/m^2</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_total_eflux_atmo</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-25600.0</ValidMin>
+         <ValidMax>25600.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_total_eflux_atmo_err</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_total_eflux_atmo_err</ParameterKey>
+         <Description>---&gt; % error</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/m^2</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_total_eflux_atmo_err</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.01</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_CharEnergy_tel0</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_energy_tel0</ParameterKey>
+         <Description>Electron characteristic energy channel, TED, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_CharEnergy_tel0</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_CharEnergy_tel30</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_energy_tel30</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_CharEnergy_tel30</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_CharEnergy_tel0</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_energy_tel0</ParameterKey>
+         <Description>Proton characteristic energy channel, TED, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_CharEnergy_tel0</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_CharEnergy_tel30</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_energy_tel30</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_CharEnergy_tel30</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_max_flux_tel0</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_max_flux_tel0</ParameterKey>
+         <Description>Electron maximum differential flux, TED, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_max_flux_tel0</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.0e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_max_flux_tel30</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_max_flux_tel30</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_max_flux_tel30</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.0e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_max_flux_tel0</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_max_flux_tel0</ParameterKey>
+         <Description>Proton maximum differential flux, TED, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_max_flux_tel0</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.0e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_max_flux_tel30</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_max_flux_tel30</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr eV)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_max_flux_tel30</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.0e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_eflux_bg_tel0_low</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_bg_tel0_low</ParameterKey>
+         <Description>Electron background integral energy flux, TED, 0 degree telescope, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_eflux_bg_tel0_low</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_eflux_bg_tel30_lo</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_bg_tel30_low</ParameterKey>
+         <Description>---&gt; 30 degree telescope, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_eflux_bg_tel30_lo</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_eflux_bg_tel0_hi</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_bg_tel0_hi</ParameterKey>
+         <Description>---&gt; 0 degree telescope, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_eflux_bg_tel0_hi</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_eflux_bg_tel30_hi</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_bg_tel30_hi</ParameterKey>
+         <Description>---&gt; 30 degree telescope, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_eflux_bg_tel30_hi</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_eflux_bg_tel0_low</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_bg_tel0_low</ParameterKey>
+         <Description>Proton background integral energy flux, TED, 0 degree telescope, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_eflux_bg_tel0_low</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_eflux_bg_tel30_low</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_bg_tel30_low</ParameterKey>
+         <Description>---&gt; 30 degree telescope, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_eflux_bg_tel30_low</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_eflux_bg_tel0_hi</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_bg_tel0_hi</ParameterKey>
+         <Description>---&gt; 0 degree telescope, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_eflux_bg_tel0_hi</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_eflux_bg_tel30_hi</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_bg_tel30_hi</ParameterKey>
+         <Description>---&gt; 30 degree telescope, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mW/(m^2 sr)</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_eflux_bg_tel30_hi</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_eflux_bg_tel0_0.05-1keV_cps</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_bg_tel0_low_cps</ParameterKey>
+         <Description>Electron background counts, TED, 0 degree telescope, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_eflux_bg_tel0_0.05-1keV_cps</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_eflux_bg_tel30_0.05-1keV_cps</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_bg_tel30_low_cps</ParameterKey>
+         <Description>---&gt; 30 degree telescope, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_eflux_bg_tel30_0.05-1keV_cps</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_eflux_bg_tel0_1-20keV_cps</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_bg_tel0_hi_cps</ParameterKey>
+         <Description>---&gt; 0 degree telescope, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_eflux_bg_tel0_1-20keV_cps</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_ele_eflux_bg_tel30_1-20keV_cps</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ele_eflux_bg_tel30_hi_cps</ParameterKey>
+         <Description>---&gt; 30 degree telescope, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_ele_eflux_bg_tel30_1-20keV_cps</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_eflux_bg_tel0_0.05-1keV_cps</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_bg_tel0_low_cps</ParameterKey>
+         <Description>Proton background counts, TED, 0 degree telescope, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_eflux_bg_tel0_0.05-1keV_cps</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_eflux_bg_tel30_0.05-1keV_cps</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_bg_tel30_low_cps</ParameterKey>
+         <Description>---&gt; 30 degree telescope, low energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_eflux_bg_tel30_0.05-1keV_cps</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_eflux_bg_tel0_1-20keV_cps</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_bg_tel0_hi_cps</ParameterKey>
+         <Description>---&gt; 0 degree telescope, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_eflux_bg_tel0_1-20keV_cps</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_pro_eflux_bg_tel30_1-20keV_cps</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_pro_eflux_bg_tel30_hi_cps</ParameterKey>
+         <Description>---&gt; 30 degree telescope, high energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_pro_eflux_bg_tel30_1-20keV_cps</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_alpha_0_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_alpha_0_sat</ParameterKey>
+         <Description>Pitch angle (satellite), TED, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_alpha_0_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_alpha_30_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_alpha_30_sat</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_alpha_30_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_alpha_0_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_alpha_0_foot</ParameterKey>
+         <Description>Pitch angle (foot of field line), TED, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_alpha_0_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_alpha_30_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_alpha_30_foot</ParameterKey>
+         <Description>---&gt; 30 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_alpha_30_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ted_IFC_on</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ted_ifc_on</ParameterKey>
+         <Description>IFC flag (0=off, 1=on), TED</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ted_IFC_on</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED T0deg Electron Integral Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux_stackt0</ParameterKey>
+         <Description>Electron integral flux, MEPED, 0 degree telescope, &gt;40 to &gt;612 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_T0deg_Elec_IntFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+            <Element>
+               <Name>MEP_&gt;40keV_Elec_IntFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>40</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;130keV_Elec_IntFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>130</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;287keV_Elec_IntFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>287</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;612keV_Elec_IntFlux</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>612</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED T0deg Electron Integral Flux %Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux_err_stackt0</ParameterKey>
+         <Description>---&gt; % Error</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_ele_flux_err.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>MEPED_T0deg_Elec_IntFlux_%Err</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+            <Element>
+               <Name>MEP_&gt;40keV_Elec_IntFlux%Err</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>40</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;130keV_Elec_IntFlux%Err</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>130</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;287keV_Elec_IntFlux%Err</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>287</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;612keV_Elec_IntFlux%Err</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>612</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>1.0e-05</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED T90deg Electron Integral Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux_stackt90</ParameterKey>
+         <Description>Electron integral flux, MEPED, 90 degree telescope, &gt;40 to &gt;612 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_T90deg_Elec_IntFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+            <Element>
+               <Name>MEP_&gt;40keV_Elec_IntFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>40</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;130keV_Elec_IntFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>130</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;287keV_Elec_IntFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>287</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;612keV_Elec_IntFlux</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>612</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED T90deg Electron Integral Flux %Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux_err_stackt90</ParameterKey>
+         <Description>---&gt; % Error</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_ele_flux_err.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>MEPED_T90deg_Elec_IntFlux_%Err</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+            <Element>
+               <Name>MEP_&gt;40keV_Elec_IntFlux%Err</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>40</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;130keV_Elec_IntFlux%Err</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>130</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;287keV_Elec_IntFlux%Err</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>287</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_&gt;612keV_Elec_IntFlux%Err</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>612</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>1.0e-05</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED Electron Integral Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux</ParameterKey>
+         <Description>Electron integral flux, MEPED, as spectrograms in energy for each telescope.
+
+* Column 1 Labels from MEP_TELESCOPES: ["MEP_T0deg_Elec_IntFlux","MEP_T90deg_Elec_IntFlux"].
+* Column 2 Labels from MEP_ELE_INT_ENERGIES: ["MEP_&gt;40keV_Elec_IntFlux","MEP_&gt;130keV_Elec_IntFlux","MEP_&gt;287keV_Elec_IntFlux","MEP_&gt;612keV_Elec_IntFlux"].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr)^-1</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>MEPED Elec IntFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 4</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED_Electron_Integral_Flux_%Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux_err</ParameterKey>
+         <Description>% Error, Electron integral flux, MEPED, as spectrogram in energy for each telescope.
+
+* Column 1 Labels from MEP_TELESCOPES: ["MEP_T0deg_Elec_IntFlux%Err","MEP_T90deg_Elec_IntFlux%Err"].
+* Column 2 Labels from MEP_ELE_INT_ENERGIES: ["MEP_&gt;40keV_Elec_IntFlux%Err","MEP_&gt;130keV_Elec_IntFlux%Err","MEP_&gt;287keV_Elec_IntFlux%Err","MEP_&gt;612keV_Elec_IntFlux%Err"].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>MEPED_Elec_IntFlux_%Err</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 4</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED &gt;40 keV Electron Integral Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux_t_stacke1</ParameterKey>
+         <Description>Electron integral flux, MEPED, 0 and 90 degree telescopes, &gt;40 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_&gt;40keV_Elec_IntFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>MEP_T0deg_Elec_IntFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_T90deg_Elec_IntFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED &gt;130 keV Electron Integral Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux_t_stacke2</ParameterKey>
+         <Description>---&gt; &gt;130 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_&gt;130keV_Elec_IntFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>MEP_T0deg_Elec_IntFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_T90deg_Elec_IntFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED &gt;287 keV Electron Integral Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux_t_stacke3</ParameterKey>
+         <Description>---&gt; &gt;287 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_&gt;287keV_Elec_IntFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>MEP_T0deg_Elec_IntFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_T90deg_Elec_IntFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED &gt;612 keV Electron Integral Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ele_flux_t_stacke4</ParameterKey>
+         <Description>---&gt; &gt;612 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_ele_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_&gt;612keV_Elec_IntFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>MEP_T0deg_Elec_IntFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_T90deg_Elec_IntFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Energy</Name>
+         <ParameterKey>mep_ele_int_energies</ParameterKey>
+         <Description>MEPED Electron Integral Energies</Description>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>4</Size>
+         </Structure>
+         <ValidMin>30.0</ValidMin>
+         <ValidMax>800.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED Telescope Direction</Name>
+         <ParameterKey>mep_telescopes</ParameterKey>
+         <Description>Two MEPED telescopes</Description>
+         <RenderingHints>
+            <AxisLabel>MEPED_Telescope_Direction</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED T0deg Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_stackt0</ParameterKey>
+         <Description>Proton differential flux, MEPED, 0 degree telescope, 39-2723 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr keV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_T0deg_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>5</Size>
+            <Element>
+               <Name>MEP_39keV_PrtnDiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>39</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_115keV_PrtnDiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>115</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_332keV_PrtnDiffFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>332</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_1105keV_PrtnDiffFlux</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>1105</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_2723keV_PrtnDiffFlux</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>2723</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED T0deg Proton Diff Flux %Errors</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_err_stackt0</ParameterKey>
+         <Description>---&gt; % Error</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_pro_flux_err.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>MEPED_T0deg_Prtn_DiffFlux_%Err</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>5</Size>
+            <Element>
+               <Name>MEP_39keV_Prtn_DiffFlux%Err</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>39</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_115keV_Prtn_DiffFlux%Err</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>115</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_332keV_Prtn_DiffFlux%Err</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>332</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_1105keV_Prtn_DiffFlux%Err</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>1105</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_2723keV_Prtn_DiffFlux%Err</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>2723</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>1.0e-05</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED T90deg Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_stackt90</ParameterKey>
+         <Description>Proton differential flux, MEPED, 90 degree telescope, 39-2723 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr keV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_T90deg_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>5</Size>
+            <Element>
+               <Name>MEP_39keV_PrtnDiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>39</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_115keV_PrtnDiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>115</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_332keV_PrtnDiffFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>332</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_1105keV_PrtnDiffFlux</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>1105</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_2723keV_PrtnDiffFlux</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>2723</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED T90deg Proton Diff Flux %Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_err_stackt90</ParameterKey>
+         <Description>---&gt; % Error</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_pro_flux_err.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>MEPED_T90deg_Prtn_DiffFlux_%Err</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>5</Size>
+            <Element>
+               <Name>MEP_39keV_Prtn_DiffFlux%Err</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>39</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_115keV_Prtn_DiffFlux%Err</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>115</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_332keV_Prtn_DiffFlux%Err</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>332</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_1105keV_Prtn_DiffFlux%Err</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>1105</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_2723keV_Prtn_DiffFlux%Err</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>2723</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>1.0e-05</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux</ParameterKey>
+         <Description>Proton Differential flux, MEPED, as spectrograms in energy for each telescope.
+
+* Column 1 Labels from MEP_TELESCOPES: ["MEP_T0deg_Prtn_DiffFlux","MEP_T90deg_Prtn_DiffFlux"].
+* Column 2 Labels from MEP_PRO_DIFF_ENERGIES: ["MEP_39keV_PrtnDiffFlux","MEP_115keV_PrtnDiffFlux","MEP_332keV_PrtnDiffFlux","MEP_1105keV_PrtnDiffFlux","MEP_2723keV_PrtnDiffFlux"].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr keV)^-1</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>MEPED Proton Diff Flux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 5</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED_Proton_Diff_Flux_%Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_err</ParameterKey>
+         <Description>---&gt; % Error in Proton differential flux.
+
+* Column 1 Labels from MEP_TELESCOPES: ["MEP_T0deg_Prtn_DiffFlux%Err","MEP_T90deg_Prtn_DiffFlux%Err"].
+* Column 2 Labels from MEP_PRO_BY_ENERGY_LABEL: ["MEP_39keV_Prtn_DiffFlux%Err","MEP_115keV_Prtn_DiffFlux%Err","MEP_332keV_Prtn_DiffFlux%Err","MEP_1105keV_Prtn_DiffFlux%Err","MEP_2723keV_Prtn_DiffFlux%Err"].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>MEPED_Prtn_DiffFlux_%Err</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2 5</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED 39 keV Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_t_stacke1</ParameterKey>
+         <Description>Proton differential flux, MEPED, 0 and 90 degree telescopes, 39 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr keV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_39keV_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>MEP_T0deg_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_T90deg_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED 115 keV Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_t_stacke2</ParameterKey>
+         <Description>---&gt; 115 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr keV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_115keV_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>MEP_T0deg_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_T90deg_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED 332 keV Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_t_stacke3</ParameterKey>
+         <Description>---&gt; 332 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr keV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_332keV_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>MEP_T0deg_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_T90deg_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED 1105 keV Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_t_stacke4</ParameterKey>
+         <Description>---&gt; 1105 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr keV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_1105keV_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>MEP_T0deg_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_T90deg_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED 2723 keV Proton Diff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_t_stacke5</ParameterKey>
+         <Description>---&gt; 2723 keV</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function MAKE_STACK_ARRAY with the following input parameters: mep_pro_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr keV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_2723keV_Prtn_DiffFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>MEP_T0deg_Prtn_DiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_T90deg_Prtn_DiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Energy</Name>
+         <ParameterKey>mep_pro_diff_energies</ParameterKey>
+         <Description>MEPED Proton Differential Energies</Description>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>5</Size>
+         </Structure>
+         <ValidMin>30.0</ValidMin>
+         <ValidMax>4000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED &gt;6174 keV Proton Int Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_p6</ParameterKey>
+         <Description>Proton integral flux, MEPED, 0 and 90 degree telescopes, &gt;6174 keV</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_&gt;6174keV_Prtn_IntFlux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED &gt;6174 keV Proton Int Flux %Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_pro_flux_p6_err</ParameterKey>
+         <Description>---&gt; % Error</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>MEPED_&gt;6174keV_Prtn_IntFlux_%Err</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>1.0e-05</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED Omni PrtnDiff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_omni_flux_stack</ParameterKey>
+         <Description>Proton differential flux, MEPED Omni telescope, at center energies 25, 50, and 100 MeV,</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: mep_omni_flux.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr MeV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>MEPED_Omni_PrtnDiff_Flux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>MEP_Omni_25keV_PrtnDiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>25</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_Omni_50keV_PrtnDiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>50</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_Omni_100keV_PrtnDiffFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>100</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED Omni PrtnDiff Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_omni_flux</ParameterKey>
+         <Description>proton differential flux. MEPED Omni telescope, as spectrograms in energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>(cm^2 s sr MeV)^-1</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>MEPED_Omni_PrtnDiff_Flux</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>MEP_Omni_25keV_PrtnDiffFlux</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>25</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_Omni_50keV_PrtnDiffFlux</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>50</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_Omni_100keV_PrtnDiffFlux</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>100</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Energy</Name>
+         <ParameterKey>mep_omni_energies</ParameterKey>
+         <Description>---&gt; MEPED Omni Proton Center Energies</Description>
+         <Units>MeV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+         </Structure>
+         <ValidMin>20.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED_OmniFitFlag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_omni_flux_flag_fit</ParameterKey>
+         <Description>---&gt; Fit flag</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MEPED_OmniFitFlag</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>mep_omni_flux_flag_iter_limn</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_omni_flux_flag_iter_lim</ParameterKey>
+         <Description>---&gt; Omni flag for iteration limit)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>mep_omni_flux_flag_iter_lim</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED Omni Gamma</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_omni_gamma_stack</ParameterKey>
+         <Description>---&gt; Gamma</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: mep_omni_gamma.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>MEPED_Omni_Gamma</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>MEP_25keV_OmniGamma</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>25</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_50keV_OmniGamma</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>50</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_100keV_OmniGamma</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>100</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-50.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MEPED Omni Gamma</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_omni_gamma</ParameterKey>
+         <Description>---&gt; As spectrograms in energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>mep_omni_gamma</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>MEP_25keV_OmniGamma</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>25</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_50keV_OmniGamma</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>50</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>MEP_100keV_OmniGamma</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>100</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-50.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>meped_alpha_0_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>meped_alpha_0_sat</ParameterKey>
+         <Description>Pitch angle (satellite), MEPED, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>meped_alpha_0_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>meped_alpha_90_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>meped_alpha_90_sat</ParameterKey>
+         <Description>---&gt; 90 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>meped_alpha_90_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>meped_alpha_0_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>meped_alpha_0_foot</ParameterKey>
+         <Description>Pitch angle (foot of field line), MEPED, 0 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>meped_alpha_0_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>meped_alpha_90_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>meped_alpha_90_foot</ParameterKey>
+         <Description>---&gt; 90 degree telescope</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>meped_alpha_90_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>mep_IFC_on</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mep_ifc_on</ParameterKey>
+         <Description>IFC flag (0=off, 1=on), MEPED</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>mep_IFC_on</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>satID</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>satid</ParameterKey>
+         <Description>Satellite Designation ID</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>satID</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1.0</ValidMin>
+         <ValidMax>40.0</ValidMax>
+         <FillValue>-2.14748e+09</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>sat_direction</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sat_direction</ParameterKey>
+         <Description>---&gt; Satellite direction 0-North/ 1-South</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>sat_direction</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0</ValidMax>
+         <FillValue>-2.14748e+09</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Altitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>alt</ParameterKey>
+         <Description>Altitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Altitude</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>800.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GeodLat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>lat</ParameterKey>
+         <Description>Geodetic latitude (satellite)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>GeodLat</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GeodLon</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>lon</ParameterKey>
+         <Description>---&gt; Geodetic longitude (satellite)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>GeodLon</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MagLat_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mag_lat_sat</ParameterKey>
+         <Description>Magnetic latitude (satellite)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MagLat_sat</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MagLon_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mag_lon_sat</ParameterKey>
+         <Description>---&gt; Magnetic longitude (satellite)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MagLon_sat</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>L_IGRF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>l_igrf</ParameterKey>
+         <Description>L value of the satellite from IGRF field</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>L_IGRF</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>20.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MLT</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mlt</ParameterKey>
+         <Description>Magnetic local time (hours)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MLT</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>25.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GeodLat_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>geod_lat_foot</ParameterKey>
+         <Description>Geodetic latitude (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>GeodLat_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GeodLon_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>geod_lon_foot</ParameterKey>
+         <Description>---&gt; Geodetic longitude (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>GeodLon_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>AACGM_Lat_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>aacgm_lat_foot</ParameterKey>
+         <Description>AACGM latitude (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AACGM_Lat_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>AACGM_Lon_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>aacgm_lon_foot</ParameterKey>
+         <Description>---&gt; AACGM longitude (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AACGM_Lon_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MagLat_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mag_lat_foot</ParameterKey>
+         <Description>Magnetic latitude (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MagLat_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MagLon_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mag_lon_foot</ParameterKey>
+         <Description>---&gt; Magnetic longitude (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MagLon_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Br_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>br_sat</ParameterKey>
+         <Description>B-radial IGRF (satellite)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Br_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bt_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bt_sat</ParameterKey>
+         <Description>---&gt; B-theta IGRF (satellite)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bt_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bp_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bp_sat</ParameterKey>
+         <Description>---&gt; B-phi IGRF (satellite)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bp_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Btot_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>btot_sat</ParameterKey>
+         <Description>---&gt; B-total IGRF (satellite)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Btot_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Br_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>br_foot</ParameterKey>
+         <Description>B-radial IGRF (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Br_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bt_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bt_foot</ParameterKey>
+         <Description>---&gt; B-theta IGRF (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bt_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bp_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bp_foot</ParameterKey>
+         <Description>---&gt; B-phi IGRF (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bp_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Btot_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>btot_foot</ParameterKey>
+         <Description>---&gt; B-total IGRF (foot of field line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Btot_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bx_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bx_sat</ParameterKey>
+         <Description>Bx IGRF satellite coordinates (towards Earth)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bx_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>By_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>by_sat</ParameterKey>
+         <Description>---&gt; By IGRF satellite coordinates (opposite velocity direction)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>By_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bz_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bz_sat</ParameterKey>
+         <Description>---&gt; Bz IGRF satellite coordinates (XxY direction)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bz_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Altitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>alt_text</ParameterKey>
+         <Description>[TEXT LABEL] Altitude of the satellite</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: alt.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>Altitude</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>800.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GeodLat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>lat_text</ParameterKey>
+         <Description>---&gt; Geodetic latitude (satellite)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: lat.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>GeodLat</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GeodLon</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>lon_text</ParameterKey>
+         <Description>---&gt; Geodetic longitude (satellite)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: lon.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>GeodLon</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>L_IGRF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>l_igrf_text</ParameterKey>
+         <Description>---&gt; L value of the satellite from IGRF field</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: l_igrf.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>L_IGRF</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>20.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MLT</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mlt_text</ParameterKey>
+         <Description>---&gt; Magnetic local time (hours)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: mlt.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <AxisLabel>MLT</AxisLabel>
+            <ValueFormat>F4.1</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>25.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GeodLat_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>geod_lat_foot_text</ParameterKey>
+         <Description>---&gt; Geodetic latitude (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: geod_lat_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>GeodLat_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GeodLon_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>geod_lon_foot_text</ParameterKey>
+         <Description>---&gt; Geodetic longitude (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: geod_lon_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>GeodLon_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>AACGM_Lat_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>aacgm_lat_foot_text</ParameterKey>
+         <Description>---&gt; AACGM latitude (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: aacgm_lat_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>AACGM_Lat_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>AACGM_Lon_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>aacgm_lon_foot_text</ParameterKey>
+         <Description>---&gt; AACGM longitude (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: aacgm_lon_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>AACGM_Lon_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MagLat_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mag_lat_foot_text</ParameterKey>
+         <Description>---&gt; Magnetic latitude (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: mag_lat_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>MagLat_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MagLon_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mag_lon_foot_text</ParameterKey>
+         <Description>---&gt; Magnetic longitude (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: mag_lon_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>MagLon_foot</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Br_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>br_sat_text</ParameterKey>
+         <Description>[TEXT LABEL] B-radial IGRF (satellite)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: br_sat.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Br_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bt_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bt_sat_text</ParameterKey>
+         <Description>---&gt; B-theta IGRF (satellite)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: bt_sat.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Bt_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bp_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bp_sat_text</ParameterKey>
+         <Description>---&gt; B-phi IGRF (satellite)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: bp_sat.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Bp_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Btot_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>btot_sat_text</ParameterKey>
+         <Description>---&gt; B-total IGRF (satellite)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: btot_sat.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Btot_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Br_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>br_foot_text</ParameterKey>
+         <Description>---&gt; B-radial IGRF (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: br_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Br_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bt_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bt_foot_text</ParameterKey>
+         <Description>---&gt; B-theta IGRF (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: bt_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Bt_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bp_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bp_foot_text</ParameterKey>
+         <Description>---&gt; B-phi IGRF (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: bp_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Bp_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Btot_foot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>btot_foot_text</ParameterKey>
+         <Description>---&gt; B-total IGRF (foot of field line)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: btot_foot.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Btot_foot</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bx_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bx_sat_text</ParameterKey>
+         <Description>---&gt; Bx IGRF satellite coordinates (towards Earth)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: bx_sat.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Bx_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>By_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>by_sat_text</ParameterKey>
+         <Description>---&gt; By IGRF satellite coordinates (opposite velocity direction)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: by_sat.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>By_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bz_sat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>bz_sat_text</ParameterKey>
+         <Description>---&gt; Bz IGRF satellite coordinates (XxY direction)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: bz_sat.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Bz_sat</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

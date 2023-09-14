@@ -1,0 +1,2890 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/fast_teams_pa_l2/yyyymmdd_fast_orbit</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <ReleaseDate>2023-08-31T12:34:56.789</ReleaseDate>
+         <Description></Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data. 
+
+open and public</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>known issues</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/fast/documents/fast_teams_known_problems.pdf</URL>
+            <Description>FAST TEAMS data</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=FAST_TEAMS_PA_L2&amp;index=sp_phys</URL>
+            <ProductKey>FAST_TEAMS_PA_L2</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>* sample center time
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1e-9&gt;ss</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Time</AxisLabel>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3902887419904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2029-12-31T23:59:59.999999000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Epoch_Helium</Name>
+         <ParameterKey>Epoch_Helium</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>* sample center time
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1e-9&gt;ss</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Time</AxisLabel>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3902887419904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2029-12-31T23:59:59.999999000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>delta time</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>delta_time</ParameterKey>
+         <Description>Sample width: end time - start time</Description>
+         <Caveats>Sample end time - start time</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>delta time</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1.0</ValidMin>
+         <ValidMax>60.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>helium delta time</Name>
+         <Set>Time series defined by using: Epoch_helium</Set>
+         <ParameterKey>delta_time_helium</ParameterKey>
+         <Description>Sample width: end time - start time</Description>
+         <Caveats>Sample end time - start time</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>helium delta time</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1.0</ValidMin>
+         <ValidMax>60.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>H+ Energy-Pitch Angle Distribution</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>proton_distribution</ParameterKey>
+         <Description>H+ Energy-Pitch Angle Distribution (spectrograms at 16 selected pitch angles).
+
+* Column 1 Labels from ENERGY: [ 12500.0, 10700.0, 9020.00, 7400.00, 6190.00, 5350.00, 4510.00, 3700.00, 3090.00, 2670.00, 2250.00, 1850.00, 1550.00, 1340.00, 1130.00, 924.000, 773.000, 668.000, 564.000, 462.000, 386.000, 334.000, 281.000, 231.000, 193.000, 167.000, 141.000, 115.000, 96.4000, 83.2000, 70.1000, 57.4000, 48.0000, 41.4000, 34.9000, 28.6000, 23.8000, 20.5000, 17.3000, 14.1000, 11.7000, 10.1000, 8.45000, 6.70000, 4.95000, 3.31000, 1.85000, 0.928000].
+* Column 2 Labels from PITCH_ANGLE: ["H+ PA 11.25","H+ PA 33.75","H+ PA 56.25","H+ PA 78.75","H+ PA 101.2","H+ PA 123.8","H+ PA 146.2","H+ PA 168.8","H+ PA 191.2","H+ PA 213.8","H+ PA 236.2","H+ PA 258.8","H+ PA 281.2","H+ PA 303.8","H+ PA 326.2","H+ PA 348.8"].</Description>
+         <Caveats>64 solid angle bins are sorted into 16 pitch angles. Distribution is transformed into the plasma frame using the O+ convection velocity.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm^2-s-sr-eV</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>H+ Energy Flux</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O+ Energy-Pitch Angle Distribution</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>oxygen_distribution</ParameterKey>
+         <Description>O+ Energy-Pitch Angle Distribution (spectrograms at 16 selected pitch angles).
+
+* Column 1 Labels from ENERGY: [ 12500.0, 10700.0, 9020.00, 7400.00, 6190.00, 5350.00, 4510.00, 3700.00, 3090.00, 2670.00, 2250.00, 1850.00, 1550.00, 1340.00, 1130.00, 924.000, 773.000, 668.000, 564.000, 462.000, 386.000, 334.000, 281.000, 231.000, 193.000, 167.000, 141.000, 115.000, 96.4000, 83.2000, 70.1000, 57.4000, 48.0000, 41.4000, 34.9000, 28.6000, 23.8000, 20.5000, 17.3000, 14.1000, 11.7000, 10.1000, 8.45000, 6.70000, 4.95000, 3.31000, 1.85000, 0.928000].
+* Column 2 Labels from PITCH_ANGLE: ["O+ PA 11.25","O+ PA 33.75","O+ PA 56.25","O+ PA 78.75","O+ PA 101.2","O+ PA 123.8","O+ PA 146.2","O+ PA 168.8","O+ PA 191.2","O+ PA 213.8","O+ PA 236.2","O+ PA 258.8","O+ PA 281.2","O+ PA 303.8","O+ PA 326.2","O+ PA 348.8"].</Description>
+         <Caveats>64 solid angle bins are sorted into 16 pitch angles. Distribution is transformed into the plasma frame using the O+ convection velocity.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm^2-s-sr-eV</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>O+ Energy Flux</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>He+ Energy-Pitch Angle Distribution</Name>
+         <Set>Time series defined by using: Epoch_Helium</Set>
+         <ParameterKey>helium_distribution</ParameterKey>
+         <Description>He+ Energy-Pitch Angle Distribution (spectrograms at 16 selected pitch angles).
+
+* Column 1 Labels from ENERGY: [ 12500.0, 10700.0, 9020.00, 7400.00, 6190.00, 5350.00, 4510.00, 3700.00, 3090.00, 2670.00, 2250.00, 1850.00, 1550.00, 1340.00, 1130.00, 924.000, 773.000, 668.000, 564.000, 462.000, 386.000, 334.000, 281.000, 231.000, 193.000, 167.000, 141.000, 115.000, 96.4000, 83.2000, 70.1000, 57.4000, 48.0000, 41.4000, 34.9000, 28.6000, 23.8000, 20.5000, 17.3000, 14.1000, 11.7000, 10.1000, 8.45000, 6.70000, 4.95000, 3.31000, 1.85000, 0.928000].
+* Column 2 Labels from PITCH_ANGLE: ["He+ PA 11.25","He+ PA 33.75","He+ PA 56.25","He+ PA 78.75","He+ PA 101.2","He+ PA 123.8","He+ PA 146.2","He+ PA 168.8","He+ PA 191.2","He+ PA 213.8","He+ PA 236.2","He+ PA 258.8","He+ PA 281.2","He+ PA 303.8","He+ PA 326.2","He+ PA 348.8"].</Description>
+         <Caveats>64 solid angle bins are sorted into 16 pitch angles. Distribution is transformed into the plasma frame using the O+ convection velocity.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm^2-s-sr-eV</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>He+ Energy Flux</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>H+ Omnidirectional Energy Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>proton_omni_flux</ParameterKey>
+         <Description>H+ omnidirectional energy flux vs energy in Plasma Frame</Description>
+         <Caveats>H+ distribution integrated over pitch angle to get omni-directional flux</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm^2-s-sr-eV</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>H+ Energy Flux</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>12500.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>10700.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>9020</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>7400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>6190</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>5350</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>4510</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>3700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>3090</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>2670</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>2250</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>1850</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>1550</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>1340</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>1130</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>924</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>773</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>668</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>564</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>462</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>386</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>334</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>281</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>231</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>193</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>167</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>141</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>115</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>96.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>83.2000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>70.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>57.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>48</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>41.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>34.9000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>28.6000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>23.8000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 38</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>20.5000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 39</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>17.3000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 40</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>14.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 41</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>11.7000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 42</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>10.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 43</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>8.45000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 44</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>6.70000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 45</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>4.95000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 46</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>3.31000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 47</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>1.85000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 48</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.928000</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O+ Omnidirectional Energy Flux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>oxygen_omni_flux</ParameterKey>
+         <Description>O+ omnidirectional energy flux vs energy in Plasma Frame</Description>
+         <Caveats>O+ distribution integrated over pitch angle to get omni-directional flux</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm^2-s-sr-eV</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>O+ Energy Flux</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>12500.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>10700.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>9020</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>7400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>6190</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>5350</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>4510</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>3700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>3090</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>2670</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>2250</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>1850</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>1550</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>1340</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>1130</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>924</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>773</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>668</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>564</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>462</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>386</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>334</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>281</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>231</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>193</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>167</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>141</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>115</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>96.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>83.2000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>70.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>57.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>48</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>41.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>34.9000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>28.6000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>23.8000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 38</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>20.5000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 39</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>17.3000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 40</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>14.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 41</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>11.7000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 42</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>10.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 43</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>8.45000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 44</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>6.70000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 45</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>4.95000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 46</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>3.31000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 47</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>1.85000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 48</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.928000</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>He+ Omnidirectional Energy Flux</Name>
+         <Set>Time series defined by using: Epoch_Helium</Set>
+         <ParameterKey>helium_omni_flux</ParameterKey>
+         <Description>He+ omnidirectional energy flux vs energy in Plasma Frame</Description>
+         <Caveats>He+ distribution integrated over pitch angle to get omni-directional flux</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm^2-s-sr-eV</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>He+ Energy Flux</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>12500.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>10700.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>9020</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>7400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>6190</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>5350</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>4510</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>3700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>3090</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>2670</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>2250</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>1850</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>1550</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>1340</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>1130</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>924</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>773</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>668</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>564</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>462</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>386</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>334</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>281</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>231</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>193</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>167</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>141</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>115</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>96.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>83.2000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>70.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>57.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>48</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>41.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>34.9000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>28.6000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>23.8000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 38</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>20.5000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 39</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>17.3000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 40</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>14.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 41</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>11.7000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 42</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>10.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 43</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>8.45000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 44</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>6.70000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 45</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>4.95000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 46</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>3.31000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 47</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>1.85000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 48</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.928000</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton_Flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>proton_flag</ParameterKey>
+         <Description>Proton Flag. Non-zero values indicate that incomplete data was used</Description>
+         <Caveats>This flag indicates that because of telemetry problems, there was no data for some angular bins. However, a full pitch angle distribution could be constructed. Data with nonzero flag should be used with caution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>H+ Flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>16</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Oxygen_Flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>oxygen_flag</ParameterKey>
+         <Description>Oxygen Flag. Non-zero values indicate that incomplete data was used</Description>
+         <Caveats>This flag indicates that because of telemetry problems, there was no data for some angular bins. However, a full pitch angle distribution could be constructed. Data with nonzero flag should be used with caution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>O+ Flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>16</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Helium_Flag</Name>
+         <Set>Time series defined by using: Epoch_Helium</Set>
+         <ParameterKey>helium_flag</ParameterKey>
+         <Description>Helium Flag. Non-zero values indicate that incomplete data was used</Description>
+         <Caveats>This flag indicates that because of telemetry problems, there was no data for some angular bins. However, a full pitch angle distribution could be constructed. Data with nonzero flag should be used with caution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He+ Flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>16</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Energy</Name>
+         <ParameterKey>Energy</ParameterKey>
+         <Description>Energy</Description>
+         <Units>eV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>G12.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>12500.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Pitch_Angle</Name>
+         <ParameterKey>pitch_angle</ParameterKey>
+         <Description>Pitch_Angle</Description>
+         <Caveats>Pitch angle from 0 to 360 degrees, compatible with the iESA definition.</Caveats>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>theta</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Loss_Cone_angle</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>loss_cone_angle</ParameterKey>
+         <Description>Loss Cone Angle calculating using a dipole model and 100 km mirror altitude</Description>
+         <Caveats>calculated from dipole magnetic field model and mirror altitude of 100 km</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Loss Cone Angle</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>B_vec</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>B_vec</ParameterKey>
+         <Description>B vector in TEAMS coordinate system with H+ time bins</Description>
+         <Caveats>calculated from magnetic field in the TEAMS coordinate system</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B Vector</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>B</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>B</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>B</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>65600.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>H+ Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>proton_error</ParameterKey>
+         <Description>Poisson Error in H+ energy-pitch angle distribution.
+
+* Column 1 Labels from ENERGY: [ 12500.0, 10700.0, 9020.00, 7400.00, 6190.00, 5350.00, 4510.00, 3700.00, 3090.00, 2670.00, 2250.00, 1850.00, 1550.00, 1340.00, 1130.00, 924.000, 773.000, 668.000, 564.000, 462.000, 386.000, 334.000, 281.000, 231.000, 193.000, 167.000, 141.000, 115.000, 96.4000, 83.2000, 70.1000, 57.4000, 48.0000, 41.4000, 34.9000, 28.6000, 23.8000, 20.5000, 17.3000, 14.1000, 11.7000, 10.1000, 8.45000, 6.70000, 4.95000, 3.31000, 1.85000, 0.928000].
+* Column 2 Labels from PITCH_ANGLE: [ 11.2500, 33.7500, 56.2500, 78.7500, 101.200, 123.800, 146.200, 168.800, 191.200, 213.800, 236.200, 258.800, 281.200, 303.800, 326.200, 348.800].</Description>
+         <Caveats>Poisson Error in H+ energy-pitch angle distribution</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm^2-s-sr-eV</Units>
+         <RenderingHints>
+            <AxisLabel>H+_error</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>O+ Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>oxygen_error</ParameterKey>
+         <Description>Poisson Error in O+ energy-pitch angle distribution.
+
+* Column 1 Labels from ENERGY: [ 12500.0, 10700.0, 9020.00, 7400.00, 6190.00, 5350.00, 4510.00, 3700.00, 3090.00, 2670.00, 2250.00, 1850.00, 1550.00, 1340.00, 1130.00, 924.000, 773.000, 668.000, 564.000, 462.000, 386.000, 334.000, 281.000, 231.000, 193.000, 167.000, 141.000, 115.000, 96.4000, 83.2000, 70.1000, 57.4000, 48.0000, 41.4000, 34.9000, 28.6000, 23.8000, 20.5000, 17.3000, 14.1000, 11.7000, 10.1000, 8.45000, 6.70000, 4.95000, 3.31000, 1.85000, 0.928000].
+* Column 2 Labels from PITCH_ANGLE: [ 11.2500, 33.7500, 56.2500, 78.7500, 101.200, 123.800, 146.200, 168.800, 191.200, 213.800, 236.200, 258.800, 281.200, 303.800, 326.200, 348.800].</Description>
+         <Caveats>Poisson Error in O+ energy-pitch angle distribution</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm^2-s-sr-eV</Units>
+         <RenderingHints>
+            <AxisLabel>O+_error</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>He+ Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>helium_error</ParameterKey>
+         <Description>Poisson Error in He+ energy-pitch angle distribution.
+
+* Column 1 Labels from ENERGY: [ 12500.0, 10700.0, 9020.00, 7400.00, 6190.00, 5350.00, 4510.00, 3700.00, 3090.00, 2670.00, 2250.00, 1850.00, 1550.00, 1340.00, 1130.00, 924.000, 773.000, 668.000, 564.000, 462.000, 386.000, 334.000, 281.000, 231.000, 193.000, 167.000, 141.000, 115.000, 96.4000, 83.2000, 70.1000, 57.4000, 48.0000, 41.4000, 34.9000, 28.6000, 23.8000, 20.5000, 17.3000, 14.1000, 11.7000, 10.1000, 8.45000, 6.70000, 4.95000, 3.31000, 1.85000, 0.928000].
+* Column 2 Labels from PITCH_ANGLE: [ 11.2500, 33.7500, 56.2500, 78.7500, 101.200, 123.800, 146.200, 168.800, 191.200, 213.800, 236.200, 258.800, 281.200, 303.800, 326.200, 348.800].</Description>
+         <Caveats>Poisson Error in He+ energy-pitch angle distribution</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm^2-s-sr-eV</Units>
+         <RenderingHints>
+            <AxisLabel>He+_error</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>filtered O+ Velocity in GEI in spacecraft frame</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_o_filtered_gei</ParameterKey>
+         <Description>filtered O+ Velocity in GEI in spacecraft frame</Description>
+         <Caveats>O+ Velocity in GEI in spacecraft frame</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>filt. v(O+) GEI S/C</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Filt. vx(O+) GEI s/c</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Filt. vy(O+) GEI s/c</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Filt. vz(O+) GEI s/c</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O+ Velocity in GEI in spacecraft frame</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_o_gei</ParameterKey>
+         <Description>O+ Velocity in GEI in spacecraft frame</Description>
+         <Caveats>O+ Velocity in GEI in spacecraft frame</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>v(O+) GEI S/C</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>vx(O+) GEI s/c</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>vy(O+) GEI s/c</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>vz(O+) GEI s/c</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Velocity in GEI</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_sc_gei</ParameterKey>
+         <Description>Spacecraft Velocity in GEI</Description>
+         <Caveats>Spacecraft Velocity, GEI</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>S/C Vel. GEI</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>vx(s/c) GEI</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>vy(s/c) GEI</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>vz(s/c) GEI</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Convection Velocity in GEI</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_convect_gei</ParameterKey>
+         <Description>Convection Velocity in GEI</Description>
+         <Caveats>Convection Velocity in GEI derived from O+ velocity</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Convection Velocity, GEI</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>vx convection GEI</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>vy convection GEI</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>vz convection GEI</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>filtered O+ Velocity in GSE in spacecraft frame</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_o_filtered_gse</ParameterKey>
+         <Description>filtered O+ Velocity in GSE in spacecraft frame</Description>
+         <Caveats>O+ Velocity in GSE in spacecraft frame</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>O+ Velocity, GSE, SC Frame</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Filt. vx(O+) GSE s/c</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Filt. vy(O+) GSE s/c</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Filt. vz(O+) GSE s/c</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O+ Velocity in GSE in spacecraft frame</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_o_gse</ParameterKey>
+         <Description>O+ Velocity in GSE in spacecraft frame</Description>
+         <Caveats>O+ Velocity in GSE in spacecraft frame</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>O+ Velocity, GSE, SC Frame</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>vx(O+) GSE s/c</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>vy(O+) GSE s/c</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>vz(O+) GSE s/c</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Velocity in GSE</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_sc_gse</ParameterKey>
+         <Description>Spacecraft Velocity in GSE</Description>
+         <Caveats>Spacecraft Velocity, GSE</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Spacecraft Velocity, GSE</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>vx(s/c) GSE</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>vy(s/c) GSE</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>vz(s/c) GSE</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Convection Velocity in GSE</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_convect_gse</ParameterKey>
+         <Description>Convection Velocity in GSE</Description>
+         <Caveats>Convection Velocity in GSE derived from O+ velocity</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Convection Velocity, GSE</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>vx convection GSE</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>vy convection GSE</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>vz convection GSE</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>filtered O+ Velocity in SM in spacecraft frame</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_o_filtered_sm</ParameterKey>
+         <Description>filtered O+ Velocity in SM in spacecraft frame</Description>
+         <Caveats>O+ Velocity in SM in spacecraft frame</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>O+ Velocity, SM, SC Frame</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Filt. vx(O+) SM s/c</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Filt. vy(O+) SM s/c</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Filt. vz(O+) SM s/c</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O+ Velocity in SM in spacecraft frame</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_o_sm</ParameterKey>
+         <Description>O+ Velocity in SM in spacecraft frame</Description>
+         <Caveats>O+ Velocity in SM in spacecraft frame</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>O+ Velocity, SM, SC Frame</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>vx(O+) SM s/c</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>vy(O+) SM s/c</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>vz(O+) SM s/c</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Velocity in SM</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_sc_sm</ParameterKey>
+         <Description>Spacecraft Velocity in SM</Description>
+         <Caveats>Spacecraft Velocity, SM</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Spacecraft Velocity, SM</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>vx(s/c) SM</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>vy(s/c) SM</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>vz(s/c) SM</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Convection Velocity in SM</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>v_convect_sm</ParameterKey>
+         <Description>Convection Velocity in SM</Description>
+         <Caveats>Convection Velocity in SM derived from O+ velocity</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Convection Velocity, SM</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>vx convection SM</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>vy convection SM</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>vz convection SM</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-11.0</ValidMin>
+         <ValidMax>11.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>H+ and O+ Deadtime flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DeadTimeEn</ParameterKey>
+         <Description>H+ and O+ Deadtime flag. For each energy, indicates which deadtime algorithm was used.</Description>
+         <Caveats>Dead time flag. 0: rate&lt;2e5 cts/s, Standard deadtime correction used,. 1: rate&gt;2e5 cts/s. Use iESA to correct data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>H+ and O+ Deadtime flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>12500.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>10700.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>9020</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>7400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>6190</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>5350</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>4510</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>3700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>3090</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>2670</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>2250</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>1850</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>1550</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>1340</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>1130</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>924</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>773</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>668</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>564</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>462</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>386</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>334</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>281</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>231</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>193</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>167</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>141</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>115</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>96.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>83.2000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>70.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>57.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>48</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>41.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>34.9000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>28.6000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>23.8000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 38</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>20.5000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 39</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>17.3000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 40</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>14.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 41</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>11.7000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 42</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>10.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 43</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>8.45000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 44</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>6.70000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 45</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>4.95000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 46</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>3.31000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 47</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>1.85000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 48</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.928000</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>He+ Deadtime flag</Name>
+         <Set>Time series defined by using: Epoch_Helium</Set>
+         <ParameterKey>DeadTimeEn_Helium</ParameterKey>
+         <Description>He+ Deadtime flag. For each energy, indicates which deadtime algorithm was used.</Description>
+         <Caveats>Dead time flag. 0: rate&lt;2e5 cts/s, Standard deadtime correction used,. 1: rate&gt;2e5 cts/s. Use iESA to correct data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He+ Deadtime flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>12500.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>10700.0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>9020</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>7400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>6190</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>5350</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>4510</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>3700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>3090</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>2670</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>2250</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>1850</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>1550</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>1340</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>1130</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>924</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>773</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>668</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>564</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>462</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>386</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>334</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>281</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>231</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>193</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>167</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>141</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>115</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>96.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>83.2000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>70.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>57.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>48</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>41.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>34.9000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>28.6000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>23.8000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 38</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>20.5000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 39</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>17.3000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 40</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>14.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 41</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>11.7000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 42</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>10.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 43</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>8.45000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 44</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>6.70000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 45</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>4.95000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 46</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>3.31000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 47</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>1.85000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 48</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.928000</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Potential</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sc_potential</ParameterKey>
+         <Description>Spacecraft Potential</Description>
+         <Caveats>Spacecraft Potential</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>S/C Potential</AxisLabel>
+            <ValueFormat>G13.5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60.0</ValidMin>
+         <ValidMax>60.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Potential Flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>potential_flag</ParameterKey>
+         <Description>Spacecraft Potential Flag</Description>
+         <Caveats>0: Data is corrected for spacecraft potential (until 2000-01-01/12:00:00), 1: No potential correction (2000-01-01/12:00:00-2003-01-01/12:00:00, 2: Data is corrected for charging of TEAMS front aperture (after 2003-01-01/12:00:0)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Spacecraft Potential Flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft High Potential Warning</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>high_potential</ParameterKey>
+         <Description>Spacecraft High Potential Warning</Description>
+         <Caveats>High Potential Warning, 0: pot&gt;-5V, 1: pot &lt; -5V</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Spacecraft High Potential Warning</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>dummy_orbit</Name>
+         <ParameterKey>dummy_orbit</ParameterKey>
+         <Description>dummy depend for orbit_number</Description>
+         <Caveats>dummy depend for orbit_number</Caveats>
+         <RenderingHints>
+            <AxisLabel>orbit_dummy</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Orbit Number</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>orbit_number</ParameterKey>
+         <Description>Spacecraft orbit number</Description>
+         <Caveats>Orbit Number</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Orbit</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>52000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft position in GEI coordinates</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>fa_pos_gei</ParameterKey>
+         <Description>Spacecraft position in GEI coordinates</Description>
+         <Caveats>Spacecraft location in GEI coordinate system, XYZ</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Position, GEI</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>x(s/c) GEI</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>y(s/c) GEI</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>z(s/c) GEI</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-12742.0</ValidMin>
+         <ValidMax>12742.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft position in GSE coordinates</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>fa_pos_gse</ParameterKey>
+         <Description>Spacecraft position in GSE coordinates</Description>
+         <Caveats>Spacecraft location in GSE coordinate system, XYZ</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Position, GSE</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>x(s/c) GSE</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>y(s/c) GSE</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>z(s/c) GSE</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-12742.0</ValidMin>
+         <ValidMax>12742.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft position in SM coordinates</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>fa_pos_sm</ParameterKey>
+         <Description>Spacecraft position in SM coordinates</Description>
+         <Caveats>Spacecraft location in SM coordinate system, XYZ</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Position, SM</AxisLabel>
+            <ValueFormat>G13.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>x(s/c) SM</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>y(s/c) SM</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>z(s/c) SM</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-12742.0</ValidMin>
+         <ValidMax>12742.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Altitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>altitude</ParameterKey>
+         <Description>Spacecraft Altitude</Description>
+         <Caveats>Spacecraft Altitude</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Altitude</AxisLabel>
+            <ValueFormat>G13.5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>300.0</ValidMin>
+         <ValidMax>4500.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Invariant Latitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>invariant_latitude</ParameterKey>
+         <Description>Spacecraft Invariant Latitude</Description>
+         <Caveats>Spacecraft Invariant Latitude</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Invariant Latitude</AxisLabel>
+            <ValueFormat>G13.5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Invariant Longitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>invariant_longitude</ParameterKey>
+         <Description>Spacecraft Invariant Longitude</Description>
+         <Caveats>Spacecraft Invariant Longitude</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Invariant Longitude</AxisLabel>
+            <ValueFormat>G13.5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Magnetic Local Time</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mlt</ParameterKey>
+         <Description>Spacecraft Magnetic Local Time</Description>
+         <Caveats>Spacecraft Magnetic Local Time</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MLT</AxisLabel>
+            <ValueFormat>G13.5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>24.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

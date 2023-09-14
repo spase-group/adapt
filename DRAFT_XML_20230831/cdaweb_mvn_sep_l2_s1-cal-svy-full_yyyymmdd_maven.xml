@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/mvn_sep_l2_s1-cal-svy-full/yyyymmdd_maven</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <ReleaseDate>2023-08-31T12:34:56.789</ReleaseDate>
+         <Description>MAVEN SEP electron and ion Flux</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>at PDS PPI Node</Name>
+            <URL>https://pds-ppi.igpp.ucla.edu/search/?sc=MAVEN&facet=SPACECRAFT_NAME</URL>
+            <Description>MAVEN Data Archive</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>The MMS Mission home page at the Science Data Center (SDC) LASP, UC Boulder</Name>
+            <URL>http://lasp.colorado.edu/home/maven/</URL>
+            <Description>MAVEN home page</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>at NASA.gov</Name>
+            <URL>https://www.nasa.gov/mission_pages/maven/main/index.html</URL>
+            <Description>MAVEN home page</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=MVN_SEP_L2_S1-CAL-SVY-FULL&amp;index=sp_phys</URL>
+            <ProductKey>MVN_SEP_L2_S1-CAL-SVY-FULL</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Mars</ObservedRegion>
+      <Parameter>
+         <Name>time_unix</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>time_unix</ParameterKey>
+         <Description>Time, middle of sample, in Unix time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Time (UTC)</AxisLabel>
+            <ValueFormat>F15.3</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>1.0e+10</ScaleMax>
+         </RenderingHints>
+         <ValidMin>1.2623e+09</ValidMin>
+         <ValidMax>1.89346e+09</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>epoch</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>epoch</ParameterKey>
+         <Description>Time, middle of sample, in TT2000 time base</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>epoch</AxisLabel>
+            <ValueFormat>E25.18</ValueFormat>
+            <ScaleMin>6.3619063427983e+13</ScaleMin>
+            <ScaleMax>6.3619149827289e+13</ScaleMax>
+         </RenderingHints>
+         <ValidMin>2009-12-31T23:59:59.999998080</ValidMin>
+         <ValidMax>2029-12-31T23:59:59.999998080</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>time_met</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>time_met</ParameterKey>
+         <Description>Time, middle of sample, in raw mission elapsed time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>time_met</AxisLabel>
+            <ValueFormat>F25.6</ValueFormat>
+            <ScaleMin>5.05138e+08</ScaleMin>
+            <ScaleMax>5.05224e+08</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>9.4608e+08</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>time_ephemeris</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>time_ephemeris</ParameterKey>
+         <Description>Ephermeris Time, middle of sample, compatible with spice</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>time_ephemeris</AxisLabel>
+            <ValueFormat>F25.6</ValueFormat>
+            <ScaleMin>5.05138e+08</ScaleMin>
+            <ScaleMax>5.05224e+08</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>9.4608e+08</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>attenuator_state</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>attenuator_state</ParameterKey>
+         <Description>Attenuator state, 0=error,  1=open, 2=closed,   3=mixed</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>attenuator_state</AxisLabel>
+            <ValueFormat>I7</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>3</ScaleMax>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>2</ValidMax>
+         <FillValue>65535</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>accum_time</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>accum_time</ParameterKey>
+         <Description>Number of 1-second accumulations contained within this data sample.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>accum_time</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>128</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>128</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>mapid</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>mapid</ParameterKey>
+         <Description>Binning Map ID number</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>mapid</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>128</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>128</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>seq_cntr</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>seq_cntr</ParameterKey>
+         <Description>CCSDS Sequence Counter</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>seq_cntr</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>16384</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>16384</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_ion_flux</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_ion_flux</ParameterKey>
+         <Description>Differential ion flux in forward look direction (#/cm^2/sec/ster/keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>f_ion_flux</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>28</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>f_ion_flux_unc</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_ion_flux_unc</ParameterKey>
+         <Description>Ion flux uncertainty in forward look direction (#/cm^2/sec/ster/keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>f_ion_flux_unc</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>28</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_ion_flux_tot</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_ion_flux_tot</ParameterKey>
+         <Description>Total (integrated) ion flux in forward look direction (#/cm^2/sec/ster)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_ion_flux_tot</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>f_ion_flux_tot_unc</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_ion_flux_tot_unc</ParameterKey>
+         <Description>Total ion flux uncertainty (#/cm^2/sec/ster)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_ion_flux_tot_unc</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_ion_energy</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_ion_energy</ParameterKey>
+         <Description>Ion energy (keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_ion_energy</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>28</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_ion_denergy</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_ion_denergy</ParameterKey>
+         <Description>Ion energy channel width (keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_ion_denergy</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>28</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_elec_flux</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_elec_flux</ParameterKey>
+         <Description>Differential electron flux in forward look direction (#/cm^2/sec/ster/keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>f_elec_flux</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>f_elec_flux_unc</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_elec_flux_unc</ParameterKey>
+         <Description>Electron flux uncertainty (#/cm^2/sec/ster/keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>f_elec_flux_unc</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_elec_flux_tot</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_elec_flux_tot</ParameterKey>
+         <Description>Total (integrated) electron flux in forward look direction (#/cm^2/sec/ster)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_elec_flux_tot</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>f_elec_flux_tot_unc</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_elec_flux_tot_unc</ParameterKey>
+         <Description>Total electron flux uncertainty (#/cm^2/sec/ster)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_elec_flux_tot_unc</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_elec_energy</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_elec_energy</ParameterKey>
+         <Description>Electron energy (keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_elec_energy</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_elec_denergy</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_elec_denergy</ParameterKey>
+         <Description>Electron energy channel width (keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_elec_denergy</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_ion_flux</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_ion_flux</ParameterKey>
+         <Description>Differential ion flux in reverse look direction (#/cm^2/sec/ster/keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>r_ion_flux</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>28</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>r_ion_flux_unc</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_ion_flux_unc</ParameterKey>
+         <Description>Ion flux uncertainty in reverse look direction (#/cm^2/sec/ster/keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>r_ion_flux_unc</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>28</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_ion_flux_tot</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_ion_flux_tot</ParameterKey>
+         <Description>Total (integrated) ion flux in reverse look direction (#/cm^2/sec/ster)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_ion_flux_tot</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>r_ion_flux_tot_unc</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_ion_flux_tot_unc</ParameterKey>
+         <Description>Total ion flux uncertainty (#/cm^2/sec/ster)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_ion_flux_tot_unc</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_ion_energy</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_ion_energy</ParameterKey>
+         <Description>Ion energy (keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_ion_energy</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>28</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_ion_denergy</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_ion_denergy</ParameterKey>
+         <Description>Ion energy channel width (keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_ion_denergy</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>28</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_elec_flux</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_elec_flux</ParameterKey>
+         <Description>Differential electron flux in reverse look direction (#/cm^2/sec/ster/keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>r_elec_flux</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>r_elec_flux_unc</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_elec_flux_unc</ParameterKey>
+         <Description>Electron flux uncertainty in reverse look direction (#/cm^2/sec/ster/keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>r_elec_flux_unc</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_elec_flux_tot</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_elec_flux_tot</ParameterKey>
+         <Description>Total (integrated) electron flux in reverse look direction (#/cm^2/sec/ster)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_elec_flux_tot</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>r_elec_flux_tot_unc</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_elec_flux_tot_unc</ParameterKey>
+         <Description>Total electron flux uncertainty (#/cm^2/sec/ster)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_elec_flux_tot_unc</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_elec_energy</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_elec_energy</ParameterKey>
+         <Description>Electron energy (keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_elec_energy</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_elec_denergy</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_elec_denergy</ParameterKey>
+         <Description>Electron energy channel width (keV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_elec_denergy</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>a_t_rates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>a_t_rates</ParameterKey>
+         <Description>Count Rate in THICK detectors of A Stack (#/sec)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>a_t_rates</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>b_t_rates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>b_t_rates</ParameterKey>
+         <Description>Count Rate in THICK detectors of B Stack (#/sec)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>b_t_rates</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>a_fto_rates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>a_fto_rates</ParameterKey>
+         <Description>Count Rate of triple coincidence in A Stack (#/sec)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>a_fto_rates</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>10</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>b_fto_rates</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>b_fto_rates</ParameterKey>
+         <Description>Count Rate in triple coincidence in B Stack (#/sec)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>b_fto_rates</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>10</Size>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_o_rate</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_o_rate</ParameterKey>
+         <Description>Total Count Rate in Forward Open detector (#/sec)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_o_rate</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>f_f_rate</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>f_f_rate</ParameterKey>
+         <Description>Total Count Rate in Forward Foil detector (#/sec)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>f_f_rate</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_o_rate</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_o_rate</ParameterKey>
+         <Description>Total Count Rate in Rear Open detector (#/sec)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_o_rate</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>r_f_rate</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>r_f_rate</ParameterKey>
+         <Description>Total Count Rate in Rear Foil detector (#/sec)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>r_f_rate</AxisLabel>
+            <ValueFormat>E10.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>quality_flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>quality_flag</ParameterKey>
+         <Description>Quality FLAG</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>quality_flag</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1024</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1024</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

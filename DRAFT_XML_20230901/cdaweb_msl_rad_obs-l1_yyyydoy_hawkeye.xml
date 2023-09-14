@@ -1,0 +1,2165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_0.xsd">
+   <Version>2.6.0</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/UNKNOWN/msl_rad_obs-l1/yyyydoy_hawkeye</ResourceID>
+      <ResourceHeader>
+         <ResourceName>Radiation Assessment Detector, Data</ResourceName>
+         <ReleaseDate>2023-09-01T12:34:56.789</ReleaseDate>
+         <Description>The Radiation Assessment Detector (RAD) and its data products are described in detail in the literature (Hassler et al., 2012). Each RAD observation contains the following: (1) Instrument counters, (2) Neutral particle count histograms in detectors D and E, (3) LET count histograms, (4) Absorbed dose rate in detectors B and E, (5) High-cadence dose rate in B and E (16 rates per observation).</Description>
+         <Acknowledgement>Please acknowledge the RAD Principal Investigator Dr. Hassler of Southwest Research Institute Boulder.. The RAD data are archived as fully citable data. Please consult the RAD team for further details on processing and usage of these data.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.M.Candey</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Hassler et al (2014)</Name>
+            <URL>https://link.springer.com/article/10.1007/s11214-012-9913-1</URL>
+            <Description>The RAD instrument is described in detail in</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=MSL_RAD_OBS-L1&amp;index=sp_phys</URL>
+            <ProductKey>MSL_RAD_OBS-L1</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator D. Hassler. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Alive Time of detector electronics</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ALIVE_TIME</ParameterKey>
+         <Description>Actual instrument observation time</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Alive Time</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Dead Time of detector electronics</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>DEAD_TIME</ParameterKey>
+         <Description>Amount of time hardware could not accept a new trigger</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dead Time</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Duration of Observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>DURATION</ParameterKey>
+         <Description>Total duration of the observation including dead and alive time</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Observation Time</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>2000</ValidMax>
+         <FillValue>65535</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Temperature at the start of observation acquistion</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>START_TEMPERATURE</ParameterKey>
+         <Description>Temperature at beginning of observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Temperature</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>100.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FSW checksum</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>FSW_XSUM</ParameterKey>
+         <Description>RAD Flight Software checksum</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>NA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FSW Xsum</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>EVIL Table checksum</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>EVIL_XSUM</ParameterKey>
+         <Description>EVIL Table checksum</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>NA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Table Xsum</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Setup table checksum</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SETUP_XSUM</ParameterKey>
+         <Description>Setup Table checksum</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>NA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Table Xsum</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Temperature table checksum</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>TEMP_XSUM</ParameterKey>
+         <Description>Temperature adjustment table checksum</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>NA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Table Xsum</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Database observation ID</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>OBS_ID</ParameterKey>
+         <Description>Observation id in database as primary key</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Observation ID</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SC clock at beginning of observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>BEGIN_SCLK</ParameterKey>
+         <Description>Spacecraft Clock at beginning of observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sclk</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SC clock at end of observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>END_SCLK</ParameterKey>
+         <Description>Spacecraft Clock at end of observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sclk</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>UTC at start of observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>BEGIN_UTC</ParameterKey>
+         <Description>UTC time at start of observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Time</Units>
+         <RenderingHints>
+            <AxisLabel>UTC</AxisLabel>
+            <ValueFormat>A81</ValueFormat>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>UTC at end of observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>END_UTC</ParameterKey>
+         <Description>UTC time at end of observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Time</Units>
+         <RenderingHints>
+            <AxisLabel>UTC</AxisLabel>
+            <ValueFormat>A81</ValueFormat>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>Mars Local Time at start of observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>BEGIN_MARS</ParameterKey>
+         <Description>Mars local time at start of observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Time</Units>
+         <RenderingHints>
+            <AxisLabel>Mars Local Time</AxisLabel>
+            <ValueFormat>A81</ValueFormat>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>Mars local time at end of observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>END_MARS</ParameterKey>
+         <Description>Mars local time at end of observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Time</Units>
+         <RenderingHints>
+            <AxisLabel>Mars Local Time</AxisLabel>
+            <ValueFormat>A81</ValueFormat>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>Mars Sol</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SOL</ParameterKey>
+         <Description>Martian Sol</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Sol</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sol</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>9999</ValidMax>
+         <FillValue>65535</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Precise Sol at start of observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>BEGIN_SOL</ParameterKey>
+         <Description>Precise Sol at start of observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Sol</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Start Sol</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>9999.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Precise Sol at end of observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>END_SOL</ParameterKey>
+         <Description>Precise Sol at end of observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Sol</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>End Sol</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>9999.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Rover Latitude</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ROVER_LAT</ParameterKey>
+         <Description>Rover Latitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latitude</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Rover Longitude</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ROVER_LONG</ParameterKey>
+         <Description>Rover Longitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Longitude</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Rover Elevation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ROVER_ELEVATION</ParameterKey>
+         <Description>Rover Elevation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Meters</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Elevation</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-5000.0</ValidMin>
+         <ValidMax>9999.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Rover Azmith</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ROVER_AZMITH</ParameterKey>
+         <Description>Rover Azmith Where to get this??</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>rad</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Azmith</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Rover Zenith angle</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ROVER_ZENITH</ParameterKey>
+         <Description>Rover Zenith angle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>rad</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Zenith</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Rover Tilt Angle</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ROVER_TILT</ParameterKey>
+         <Description>Rover Tilt Angle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>rad</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Tilt</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Solar Zenith</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SOLAR_ZENITH</ParameterKey>
+         <Description>Solar Zenith</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>rad</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Solar Zenith</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Solar Longitude</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SOLAR_LONG</ParameterKey>
+         <Description>Solar Longitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Solar Longitude</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Is RAD in Solar  Mode</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SOLAR_MODE</ParameterKey>
+         <Description>Did RAD detect a solar event during intialization?</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Solar Mode</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Is DAN powered on during observation</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>DAN_POWERED</ParameterKey>
+         <Description>True if DAN was enabled during RAD observation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dan Powered</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Fast Triggers triggered on RAD</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>FAST_TRIG_COUNT</ParameterKey>
+         <Description>How many fast triggers hardware detected</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Fast Triggers</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LET in A1 silicon</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>LET_A1_f</ParameterKey>
+         <Description>[Quality filtered] LET in A1 silicon detector</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function APPLY_FILTER_FLAG with the following input parameters: LET_A1, FLAGGED_DATA.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>counts (good Q</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LET A1</AxisLabel>
+            <ValueFormat>F10.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>52</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LET in A1 silicon</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>LET_A1</ParameterKey>
+         <Description>[All quality] LET in A1 silicon detector</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>counts (All Q)</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LET A1</AxisLabel>
+            <ValueFormat>F10.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>52</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LET in A2 silicon</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>LET_A2_f</ParameterKey>
+         <Description>[Quality filtered] LET in A2 silicon detector</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function APPLY_FILTER_FLAG with the following input parameters: LET_A2, FLAGGED_DATA.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>counts (good Q)</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LET A2</AxisLabel>
+            <ValueFormat>F10.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>52</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LET in A2 silicon</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>LET_A2</ParameterKey>
+         <Description>[All quality] LET in A2 silicon detector</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>counts (All Q)</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>LET A2</AxisLabel>
+            <ValueFormat>F10.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>52</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bin Start</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>LET_BIN_ENERGY</ParameterKey>
+         <Description>Energy at the start of the bin</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>keV/micron</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>F10.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>52</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>45000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 0 (F2H)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_02</ParameterKey>
+         <Description>Triggers for Fast channel 0 (F2H)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>F2H</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>100000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 0 (F2H)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_02</ParameterKey>
+         <Description>Triggers for Slow channel 0 (F2H)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>F2H</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 1 (EL)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_03</ParameterKey>
+         <Description>Triggers for Fast channel 1 (EL)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EL</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 1 (EL)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_03</ParameterKey>
+         <Description>Triggers for Slow channel 1 (EL)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EL</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 2 (EN)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_04</ParameterKey>
+         <Description>Triggers for Fast channel 2 (EN)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EN</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 2 (EN)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_04</ParameterKey>
+         <Description>Triggers for Slow channel 2 (EN)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EN</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 3 (EM)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_05</ParameterKey>
+         <Description>Triggers for Fast channel 3 (EM)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EM</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 3 (EM)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_05</ParameterKey>
+         <Description>Triggers for Slow channel 3 (EM)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EM</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 4 (EI)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_06</ParameterKey>
+         <Description>Triggers for Fast channel 4 (EI)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EI</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 4 (EI)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_06</ParameterKey>
+         <Description>Triggers for Slow channel 4 (EI)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EI</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 5 (EH)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_07</ParameterKey>
+         <Description>Triggers for Fast channel 5 (EH)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EH</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 5 (EH)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_07</ParameterKey>
+         <Description>Triggers for Slow channel 5 (EH)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EH</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 6 (EU)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_08</ParameterKey>
+         <Description>Triggers for Fast channel 6 (EU)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EU</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 6 (EU)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_08</ParameterKey>
+         <Description>Triggers for Slow channel 6 (EU)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EU</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 7 (DL)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_09</ParameterKey>
+         <Description>Triggers for Fast channel 7 (DL)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DL</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 7 (DL)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_09</ParameterKey>
+         <Description>Triggers for Slow channel 7 (DL)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DL</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 8 (DN)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_10</ParameterKey>
+         <Description>Triggers for Fast channel 8 (DN)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DN</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 8 (DN)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_10</ParameterKey>
+         <Description>Triggers for Slow channel 8 (DN)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DN</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 9 (DM)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_11</ParameterKey>
+         <Description>Triggers for Fast channel 9 (DM)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DM</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 9 (DM)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_11</ParameterKey>
+         <Description>Triggers for Slow channel 9 (DM)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DM</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 10 (DI)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_12</ParameterKey>
+         <Description>Triggers for Fast channel 10 (DI)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DI</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 10 (DI)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_12</ParameterKey>
+         <Description>Triggers for Slow channel 10 (DI)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DI</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 11 (DH)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_13</ParameterKey>
+         <Description>Triggers for Fast channel 11 (DH)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DH</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 11 (DH)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_13</ParameterKey>
+         <Description>Triggers for Slow channel 11 (DH)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DH</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 12 (DU)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_14</ParameterKey>
+         <Description>Triggers for Fast channel 12 (DU)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DU</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 12 (DU)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_14</ParameterKey>
+         <Description>Triggers for Slow channel 12 (DU)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DU</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 13 (CL)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_15</ParameterKey>
+         <Description>Triggers for Fast channel 13 (CL)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CL</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 13 (CL)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_15</ParameterKey>
+         <Description>Triggers for Slow channel 13 (CL)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CL</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 14 (CM)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_16</ParameterKey>
+         <Description>Triggers for Fast channel 14 (CM)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CM</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 14 (CM)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_16</ParameterKey>
+         <Description>Triggers for Slow channel 14 (CM)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CM</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 15 (CH)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_17</ParameterKey>
+         <Description>Triggers for Fast channel 15 (CH)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CH</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 15 (CH)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_17</ParameterKey>
+         <Description>Triggers for Slow channel 15 (CH)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CH</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 16 (CU)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_18</ParameterKey>
+         <Description>Triggers for Fast channel 16 (CU)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CU</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 16 (CU)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_18</ParameterKey>
+         <Description>Triggers for Slow channel 16 (CU)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CU</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 17 (C2L)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_19</ParameterKey>
+         <Description>Triggers for Fast channel 17 (C2L)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>C2L</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 17 (C2L)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_19</ParameterKey>
+         <Description>Triggers for Slow channel 17 (C2L)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>C2L</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 18 (C2H)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_20</ParameterKey>
+         <Description>Triggers for Fast channel 18 (C2H)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>C2H</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 18 (C2H)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_20</ParameterKey>
+         <Description>Triggers for Slow channel 18 (C2H)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>C2H</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 19 (BL)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_21</ParameterKey>
+         <Description>Triggers for Fast channel 19 (BL)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BL</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 19 (BL)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_21</ParameterKey>
+         <Description>Triggers for Slow channel 19 (BL)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BL</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 20 (BM)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_22</ParameterKey>
+         <Description>Triggers for Fast channel 20 (BM)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BM</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 20 (BM)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_22</ParameterKey>
+         <Description>Triggers for Slow channel 20 (BM)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BM</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 21 (BH)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_23</ParameterKey>
+         <Description>Triggers for Fast channel 21 (BH)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BH</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 21 (BH)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_23</ParameterKey>
+         <Description>Triggers for Slow channel 21 (BH)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BH</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 22 (BU)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_24</ParameterKey>
+         <Description>Triggers for Fast channel 22 (BU)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BU</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 22 (BU)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_24</ParameterKey>
+         <Description>Triggers for Slow channel 22 (BU)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BU</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 23 (A2L)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_25</ParameterKey>
+         <Description>Triggers for Fast channel 23 (A2L)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A2L</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 23 (A2L)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_25</ParameterKey>
+         <Description>Triggers for Slow channel 23 (A2L)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A2L</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 24 (A2M)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_26</ParameterKey>
+         <Description>Triggers for Fast channel 24 (A2M)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A2M</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 24 (A2M)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_26</ParameterKey>
+         <Description>Triggers for Slow channel 24 (A2M)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A2M</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 25 (A2H)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_27</ParameterKey>
+         <Description>Triggers for Fast channel 25 (A2H)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A2H</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 25 (A2H)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_27</ParameterKey>
+         <Description>Triggers for Slow channel 25 (A2H)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A2H</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 26 (A2U)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_28</ParameterKey>
+         <Description>Triggers for Fast channel 26 (A2U)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A2U</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 26 (A2U)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_28</ParameterKey>
+         <Description>Triggers for Slow channel 26 (A2U)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A2U</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 27 (A1L)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_29</ParameterKey>
+         <Description>Triggers for Fast channel 27 (A1L)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A1L</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 27 (A1L)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_29</ParameterKey>
+         <Description>Triggers for Slow channel 27 (A1L)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A1L</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 28 (A1M)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_30</ParameterKey>
+         <Description>Triggers for Fast channel 28 (A1M)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A1M</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 28 (A1M)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_30</ParameterKey>
+         <Description>Triggers for Slow channel 28 (A1M)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A1M</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 29 (A1H)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_31</ParameterKey>
+         <Description>Triggers for Fast channel 29 (A1H)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A1H</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 29 (A1H)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_31</ParameterKey>
+         <Description>Triggers for Slow channel 29 (A1H)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A1H</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 30 (A1U)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_32</ParameterKey>
+         <Description>Triggers for Fast channel 30 (A1U)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A1U</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 30 (A1U)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_32</ParameterKey>
+         <Description>Triggers for Slow channel 30 (A1U)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>A1U</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Fast channel 31 (F1L)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_FAST_33</ParameterKey>
+         <Description>Triggers for Fast channel 31 (F1L)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>F1L</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Triggers for Slow channel 31 (F1L)</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>CHANNEL_COUNTERS_SLOW_33</ParameterKey>
+         <Description>Triggers for Slow channel 31 (F1L)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>F1L</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 0</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_0</ParameterKey>
+         <Description>Particle events that matched  for index 0 [A1U and BU and not C2L]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 0</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 1</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_1</ParameterKey>
+         <Description>Particle events that matched  for index 1 [A2U and BU and not C2L]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 1</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 2</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_2</ParameterKey>
+         <Description>Particle events that matched  for index 2 [A1M and BM]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 2</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 3</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_3</ParameterKey>
+         <Description>Particle events that matched  for index 3 [A2M and BM]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 3</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 4</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_4</ParameterKey>
+         <Description>Particle events that matched  for index 4 [BU]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 4</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 5</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_5</ParameterKey>
+         <Description>Particle events that matched  for index 5 [EH and EI]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 5</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 6</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_6</ParameterKey>
+         <Description>Particle events that matched  for index 6 [not F1L and not BU and not C2H and not C2L and not CU and EH and EI and EM]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 6</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 7</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_7</ParameterKey>
+         <Description>Particle events that matched  for index 7 [not F1L and not BU and not C2H and not C2L and not CU and DH and DI]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 7</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 8</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_8</ParameterKey>
+         <Description>Particle events that matched  for index 8 [not F1L and not BU and not C2H and not C2L and not CU and DH and DI and EH and EI]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 8</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 9</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_9</ParameterKey>
+         <Description>Particle events that matched  for index 9 [DM and DL]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 9</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 10</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_10</ParameterKey>
+         <Description>Particle events that matched  for index 10 [not F1L and not A1U and not A2U and BU and not BH and not C2H and not C2L and not CU and not DH and not EH]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 10</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 11</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_11</ParameterKey>
+         <Description>Particle events that matched  for index 11 [A2U and BU and CU and DH and EH]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 11</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 12</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_12</ParameterKey>
+         <Description>Particle events that matched  for index 12 [not A1U and not A2U and not BU and not CU and DH and EH]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 12</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 13</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_13</ParameterKey>
+         <Description>Particle events that matched  for index 13 [A2U and BU and CU and DH and not EH]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 13</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 14</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_14</ParameterKey>
+         <Description>Particle events that matched  for index 14 [not A1M and not A2M and BM and not CM]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 14</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that matched  index 15</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MATCH_COUNTER_15</ParameterKey>
+         <Description>Particle events that matched  for index 15 NA</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 15</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 0</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_0</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 0 [A1U and BU and not C2L]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 0</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 1</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_1</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 1 [A2U and BU and not C2L]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 1</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 2</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_2</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 2 [A1M and BM]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 2</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 3</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_3</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 3 [A2M and BM]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 3</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 4</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_4</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 4 [BU]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 4</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 5</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_5</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 5 [EH and EI]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 5</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 6</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_6</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 6 [not F1L and not BU and not C2H and not C2L and not CU and EH and EI and EM]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 6</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 7</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_7</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 7 [not F1L and not BU and not C2H and not C2L and not CU and DH and DI]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 7</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 8</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_8</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 8 [not F1L and not BU and not C2H and not C2L and not CU and DH and DI and EH and EI]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 8</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 9</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_9</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 9 [DM and DL]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 9</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 10</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_10</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 10 [not F1L and not A1U and not A2U and BU and not BH and not C2H and not C2L and not CU and not DH and not EH]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 10</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 11</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_11</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 11 [A2U and BU and CU and DH and EH]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 11</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 12</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_12</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 12 [not A1U and not A2U and not BU and not CU and DH and EH]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 12</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 13</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_13</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 13 [A2U and BU and CU and DH and not EH]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 13</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 14</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_14</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 14 [not A1M and not A2M and BM and not CM]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 14</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Particle events that were analyzed by hardware  index 15</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>READ_COUNTER_15</ParameterKey>
+         <Description>Particle events that were analyzed by hardware  for index 15 NA</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Count</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Index 15</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Epoch TT2000</Name>
+         <ParameterKey>EPOCH</ParameterKey>
+         <Description>Epoch time tag</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+         </RenderingHints>
+         <ValidMin>2005-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2035-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>
