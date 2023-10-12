@@ -87,8 +87,8 @@ print,''
 
 .run /Users/astropooch/Space/PROGRAMS/HARVEST/SPASE/spase_model_reformat
 .run /Users/astropooch/Space/PROGRAMS/HARVEST/SPASE/spase_model_tree
-.run /Users/astropooch/Space/PROGRAMS/HARVEST/SPASE/spase_model_ontology
 .run /Users/astropooch/Space/PROGRAMS/HARVEST/SPASE/spase_model_ontology_decode
+.run /Users/astropooch/Space/PROGRAMS/HARVEST/SPASE/spase_model_ontology
 .run /Users/astropooch/Space/PROGRAMS/HARVEST/SPASE/spase_model_keyword
 .run /Users/astropooch/Space/PROGRAMS/HARVEST/SPASE/spase_model_enumerate
 .run /Users/astropooch/Space/PROGRAMS/HARVEST/SPASE/spase_model_structure
