@@ -1,7 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/INTERBALL-1/datacite_json_doi_template_it_k0_akr.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/INTERBALL-1/datacite_json_doi_template_it_k0_cor.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/INTERBALL-1/datacite_json_doi_template_it_k0_epi.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/INTERBALL-1/datacite_json_doi_template_it_k0_icd.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/INTERBALL-1/datacite_json_doi_template_it_k0_mfi.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/INTERBALL-1/datacite_json_doi_template_it_k0_vdp.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/INTERBALL-1/datacite_json_doi_template_it_k0_wav.json https://api.datacite.org/dois

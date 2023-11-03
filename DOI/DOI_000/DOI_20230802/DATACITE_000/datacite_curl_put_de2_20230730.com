@@ -1,4 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DE2/datacite_json_doi_template_de2_62ms_vefimagb.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DE2/datacite_json_doi_template_de2_ac500ms_vefi.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DE2/datacite_json_doi_template_de2_dca500ms_vefi.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/DE2/datacite_json_doi_template_de2_neutral8s_fpi.json https://api.datacite.org/dois

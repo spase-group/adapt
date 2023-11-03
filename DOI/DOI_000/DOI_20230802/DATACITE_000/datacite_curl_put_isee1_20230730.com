@@ -1,8 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ISEE1/datacite_json_doi_template_isee1_4sec_mfi.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ISEE1/datacite_json_doi_template_isee1_60sec_mfi.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ISEE1/datacite_json_doi_template_isee1_h0_fe.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ISEE1/datacite_json_doi_template_isee1_h1_fpe.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ISEE1/datacite_json_doi_template_isee1_h2_fpe.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ISEE1/datacite_json_doi_template_isee1_pwi_sa.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ISEE1/datacite_json_doi_template_isee1_pwi_sa-rapid-e.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ISEE1/datacite_json_doi_template_isee1_pwi_sfr-e.json https://api.datacite.org/dois

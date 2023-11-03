@@ -1,1 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -H 'Authorization: Bearer {aGVsaW9waHkuc3BkZjpUcmFucXVpbGxpdHkkQmFzZSZFYWdsZQo=}' -d @TEST_DATACITE/JSON/LANL/datacite_json_doi_template_a1_k0_mpa.json https://api.test.datacite.org/dois

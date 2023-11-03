@@ -1,2 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/MESSENGER/datacite_json_doi_template_messenger_helio1day_position.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/MESSENGER/datacite_json_doi_template_messenger_mag_rtn.json https://api.datacite.org/dois

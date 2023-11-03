@@ -1,4 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/NEWHORIZONS/datacite_json_doi_template_new_horizons_helio1day_position.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/NEWHORIZONS/datacite_json_doi_template_new_horizons_swap_pickup-ions.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/NEWHORIZONS/datacite_json_doi_template_new_horizons_swap_pickup-ions-histogram.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/NEWHORIZONS/datacite_json_doi_template_new_horizons_swap_validsum.json https://api.datacite.org/dois

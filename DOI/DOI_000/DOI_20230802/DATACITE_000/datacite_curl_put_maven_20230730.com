@@ -1,3 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/MAVEN/datacite_json_doi_template_maven_helio1day_position.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/MAVEN/datacite_json_doi_template_mvn_insitu_kp-4sec.json https://api.datacite.org/dois
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/MAVEN/datacite_json_doi_template_mvn_mag_l2-sunstate-1sec.json https://api.datacite.org/dois

@@ -1,1 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/HAWKEYE/datacite_json_doi_template_hk_h0_mag.json https://api.datacite.org/dois

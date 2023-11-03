@@ -1,1 +1,0 @@
-curl -ksSX --request PUT --url https://api.datacite.org/dois/10.48322%2F667v-0f59 -H 'Authorization: Bearer {aGVsaW9waHkuc3BkZjpUcmFucXVpbGxpdHkkQmFzZSZFYWdsZQ==}' --header 'content-type: application/vnd.api+json' -d @DATACITE/JSON/BARREL/datacite_json_doi_template_bar_1n_l2_hkpg.json

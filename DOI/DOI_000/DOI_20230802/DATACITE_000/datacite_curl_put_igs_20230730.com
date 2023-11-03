@@ -1,1 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/IGS/datacite_json_doi_template_gps_roti15min_jpl.json https://api.datacite.org/dois

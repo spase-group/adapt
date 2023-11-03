@@ -1,1 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/ROCSAT-1/datacite_json_doi_template_rs_k0_ipei.json https://api.datacite.org/dois

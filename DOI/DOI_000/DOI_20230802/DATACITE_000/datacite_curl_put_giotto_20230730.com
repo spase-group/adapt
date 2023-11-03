@@ -1,1 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/GIOTTO/datacite_json_doi_template_giotto_helio1day_position.json https://api.datacite.org/dois

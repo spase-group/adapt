@@ -1,1 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/PHOBOS2/datacite_json_doi_template_phobos2_helio1day_position.json https://api.datacite.org/dois

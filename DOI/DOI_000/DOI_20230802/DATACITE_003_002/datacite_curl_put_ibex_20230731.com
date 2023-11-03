@@ -1,1 +1,0 @@
-curl -ksSX POST -H 'Content-Type: application/vnd.api+json' -u 'heliophy.spdf:Tranquillity$Base&Eagle' -d @DATACITE/JSON/IBEX/datacite_json_doi_template_ibex_h3_ena_hi_r14_press-slope_cg_nosp_ram_3yr.json https://api.datacite.org/dois
