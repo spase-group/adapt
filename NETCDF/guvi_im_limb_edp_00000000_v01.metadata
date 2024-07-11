@@ -1,0 +1,337 @@
+Dumping cdf from "GUVI_im_limb_v008r00_2005179_REV19249_edp.ncdf.cdf"...
+File Info
+=========================================
+CDF File:     GUVI_im_limb_v008r00_2005179_REV19249_edp.ncdf.cdf
+Version:      3.8.1
+
+Common Data Format (CDF)
+https://cdf.gsfc.nasa.gov
+Space Physics Data Facility
+NASA/Goddard Space Flight Center
+Greenbelt, Maryland 20771 USA
+
+Format:       SINGLE
+Encoding:     IBMPC
+Majority:     ROW
+NumrVars:     0
+NumzVars:     37
+NumAttrs:     12 (8 global, 4 variable)
+Compression:  None
+Checksum:     None
+LeapSecondLastUpdated:     20170101
+
+Global Attributes (8 attributes)
+=========================================
+FILENAME (num:0) (1 entry):
+	0 (CDF_CHAR/46): 	"GUVI_im_limb_v008r00_2005179_REV19249_edp.ncdf"
+DESCRIPTION (num:1) (1 entry):
+	0 (CDF_CHAR/24): 	"Electron Density Profile"
+MISSION (num:2) (1 entry):
+	0 (CDF_CHAR/5): 	"TIMED"
+INSTRUMENT (num:3) (1 entry):
+	0 (CDF_CHAR/4): 	"GUVI"
+DATA_PRODUCT_TYPE (num:4) (1 entry):
+	0 (CDF_CHAR/47): 	"Level 3 Data Product - Electron Density Profile"
+DATE_GENERATED (num:5) (1 entry):
+	0 (CDF_CHAR/24): 	"Sat Jul  8 23:02:22 2006"
+NC_KIND (num:6) (1 entry):
+	0 (CDF_CHAR/7): 	"classic"
+NC_DIMENSIONS_G (num:7) (8 entries):
+	0 (CDF_CHAR/7): 	"dim1=23"
+	1 (CDF_CHAR/7): 	"dim2=32"
+	2 (CDF_CHAR/8): 	"dim3=448"
+	3 (CDF_CHAR/6): 	"dim4=2"
+	4 (CDF_CHAR/7): 	"dim5=50"
+	5 (CDF_CHAR/7): 	"dim6=14"
+	6 (CDF_CHAR/3): 	"N=2"
+	7 (CDF_CHAR/16): 	"nonvariant_var=1"
+
+Variable Attributes (4 attributes)
+=========================================
+NC_DIMENSIONS_V (num:8)
+TITLE (num:9)
+UNITS (num:10)
+COMMENT (num:11)
+
+Variable Information (0 rVariable, 37 zVariables)
+===========================================================
+k_nonpar_r            CDF_FLOAT/1	1:[23]	F/T
+k_nonpar_thetapix     CDF_FLOAT/1	1:[32]	F/T
+k_nonpar_w0           CDF_DOUBLE/1	2:[2,448]	F/TT
+k_nonpar_w1           CDF_DOUBLE/1	2:[2,448]	F/TT
+k_nonpar_w0c          CDF_DOUBLE/1	2:[2,32]	F/TT
+k_nonpar_w1c          CDF_DOUBLE/1	2:[2,32]	F/TT
+k_par_r               CDF_FLOAT/1	1:[50]	F/T
+k_par_thetapix        CDF_FLOAT/1	1:[32]	F/T
+k_par_w0              CDF_DOUBLE/1	2:[50,448]	F/TT
+k_par_w1              CDF_DOUBLE/1	2:[50,448]	F/TT
+pf                    CDF_INT2/1	1:[1]	F/T
+ver0                  CDF_FLOAT/1	2:[2,23]	F/TT
+sigver0               CDF_FLOAT/1	2:[2,23]	F/TT
+ver                   CDF_FLOAT/1	2:[2,23]	F/TT
+sigver                CDF_FLOAT/1	2:[2,23]	F/TT
+ep                    CDF_FLOAT/1	2:[2,23]	F/TT
+sigep                 CDF_FLOAT/1	2:[2,23]	F/TT
+nmf2                  CDF_FLOAT/1	1:[2]	F/T
+rmf2                  CDF_FLOAT/1	1:[2]	F/T
+hmf2                  CDF_FLOAT/1	1:[2]	F/T
+signmf2               CDF_FLOAT/1	1:[2]	F/T
+sigrmf2               CDF_FLOAT/1	1:[2]	F/T
+sighmf2               CDF_FLOAT/1	1:[2]	F/T
+glat                  CDF_FLOAT/1	1:[2]	F/T
+glon                  CDF_FLOAT/1	1:[2]	F/T
+mlat                  CDF_FLOAT/1	1:[2]	F/T
+mlon                  CDF_FLOAT/1	1:[2]	F/T
+acmlat                CDF_FLOAT/1	1:[2]	F/T
+acmlon                CDF_FLOAT/1	1:[2]	F/T
+re                    CDF_DOUBLE/1	1:[2]	F/T
+prof                  CDF_FLOAT/1	3:[2,32,14]	F/TTT
+dprof                 CDF_FLOAT/1	3:[2,32,14]	F/TTT
+ind                   CDF_INT4/1	1:[2]	F/T
+time                  CDF_INT4/1	1:[2]	F/T
+hpcor                 CDF_INT2/1	1:[1]	F/T
+ncomb                 CDF_INT2/1	1:[1]	F/T
+oden                  CDF_FLOAT/1	2:[2,23]	F/TT
+
+
+Variable (37 variables)
+=========================================
+
+k_nonpar_r (No: 0) (Recs: 1)
+----------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/4): "dim1"
+     TITLE           (CDF_CHAR/19): "EDP/VER radius grid"
+     UNITS           (CDF_CHAR/2): "km"
+     COMMENT         (CDF_CHAR/34): "altitude grid is (k_nonpar_r - re)"
+
+k_nonpar_thetapix (No: 1) (Recs: 1)
+-----------------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/4): "dim2"
+     TITLE           (CDF_CHAR/36): "Observational Angles for Observation"
+     UNITS           (CDF_CHAR/6): "radian"
+     COMMENT         (CDF_CHAR/57): "tangent altitudes are (625.+Re)*sin(k_nonpar_thetapix)-Re"
+
+k_nonpar_w0 (No: 2) (Recs: 1) (Compression: GZIP.6 BlockingFactor: 1)
+-----------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/6): "N,dim3"
+
+k_nonpar_w1 (No: 3) (Recs: 1) (Compression: GZIP.6 BlockingFactor: 1)
+-----------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/6): "N,dim3"
+
+k_nonpar_w0c (No: 4) (Recs: 1)
+------------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/9): "dim4,dim2"
+
+k_nonpar_w1c (No: 5) (Recs: 1)
+------------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/9): "dim4,dim2"
+
+k_par_r (No: 6) (Recs: 1)
+-------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/4): "dim5"
+
+k_par_thetapix (No: 7) (Recs: 1)
+--------------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/4): "dim2"
+
+k_par_w0 (No: 8) (Recs: 1) (Compression: GZIP.6 BlockingFactor: 1)
+--------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/9): "dim5,dim3"
+
+k_par_w1 (No: 9) (Recs: 1) (Compression: GZIP.6 BlockingFactor: 1)
+--------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/9): "dim5,dim3"
+
+pf (No: 10) (Recs: 1)
+--
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/14): "nonvariant_var"
+     TITLE           (CDF_CHAR/43): "Flag of Chapman Layers Parameters Existence"
+     COMMENT         (CDF_CHAR/50): " If 1, chapman layers parameters present, 0 if not"
+
+ver0 (No: 11) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/6): "N,dim1"
+     TITLE           (CDF_CHAR/58): "Volume Emission Rate (no mutual neutralization correction)"
+
+sigver0 (No: 12) (Recs: 1)
+-------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/6): "N,dim1"
+     TITLE           (CDF_CHAR/72): "Uncertainty in Volume Emission Rate (no mutual neutralization correction"
+
+ver (No: 13) (Recs: 1)
+---
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/6): "N,dim1"
+     TITLE           (CDF_CHAR/20): "Volume Emission Rate"
+
+sigver (No: 14) (Recs: 1)
+------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/6): "N,dim1"
+     TITLE           (CDF_CHAR/35): "Uncertainty in Volume Emission Rate"
+
+ep (No: 15) (Recs: 1)
+--
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/6): "N,dim1"
+     TITLE           (CDF_CHAR/16): "Electron Density"
+     UNITS           (CDF_CHAR/4): "cm-3"
+
+sigep (No: 16) (Recs: 1)
+-----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/6): "N,dim1"
+     TITLE           (CDF_CHAR/41): "Retrieved Uncertainty in Electron Density"
+     UNITS           (CDF_CHAR/4): "cm-3"
+
+nmf2 (No: 17) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/29): "Chapman Layer Maximum Density"
+     UNITS           (CDF_CHAR/4): "cm-3"
+
+rmf2 (No: 18) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/28): "Chapman Layer Maximum Radius"
+     UNITS           (CDF_CHAR/2): "km"
+
+hmf2 (No: 19) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/33): "Chapman Layer Topside Scaleheight"
+     UNITS           (CDF_CHAR/1): " "
+
+signmf2 (No: 20) (Recs: 1)
+-------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/44): "Uncertainty in Chapman Layer Maximum Density"
+     UNITS           (CDF_CHAR/4): "cm-3"
+
+sigrmf2 (No: 21) (Recs: 1)
+-------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/43): "Uncertainty in Chapman Layer Maximum Radius"
+     UNITS           (CDF_CHAR/2): "km"
+
+sighmf2 (No: 22) (Recs: 1)
+-------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/48): "Uncertainty in Chapman Layer Topside Scaleheight"
+     UNITS           (CDF_CHAR/1): " "
+
+glat (No: 23) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/42): "Geographic Latitude (registered at ~300km)"
+     UNITS           (CDF_CHAR/6): "degree"
+
+glon (No: 24) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/43): "Geographic Longitude (registered at ~300km)"
+     UNITS           (CDF_CHAR/6): "degree"
+
+mlat (No: 25) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/59): "Geomagnetic (simple dipole) Latitude (registered at ~300km)"
+     UNITS           (CDF_CHAR/6): "degree"
+
+mlon (No: 26) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/60): "Geomagnetic (simple dipole) Longitude (registered at ~300km)"
+     UNITS           (CDF_CHAR/6): "degree"
+
+acmlat (No: 27) (Recs: 1)
+------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/51): "Geomagnetic (AACGM) Latitude (registered at ~300km)"
+     UNITS           (CDF_CHAR/6): "degree"
+
+acmlon (No: 28) (Recs: 1)
+------
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/52): "Geomagnetic (AACGM) Longitude (registered at ~300km)"
+     UNITS           (CDF_CHAR/6): "degree"
+
+re (No: 29) (Recs: 1)
+--
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/45): "Earth radius at the given geographic latitude"
+     UNITS           (CDF_CHAR/2): "km"
+
+prof (No: 30) (Recs: 1) (Compression: GZIP.6 BlockingFactor: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/11): "N,dim2,dim6"
+     TITLE           (CDF_CHAR/21): "Radiances at 135.6 nm"
+     UNITS           (CDF_CHAR/8): "Rayleigh"
+
+dprof (No: 31) (Recs: 1) (Compression: GZIP.6 BlockingFactor: 1)
+-----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/11): "N,dim2,dim6"
+     TITLE           (CDF_CHAR/38): "Uncertainties of Radiances at 135.6 nm"
+     UNITS           (CDF_CHAR/8): "Rayleigh"
+
+ind (No: 32) (Recs: 1)
+---
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/28): "Index map into level 1B file"
+
+time (No: 33) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/1): "N"
+     TITLE           (CDF_CHAR/26): "GUVI Time (Universal Time)"
+     UNITS           (CDF_CHAR/2): "ms"
+
+hpcor (No: 34) (Recs: 1)
+-----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/14): "nonvariant_var"
+     TITLE           (CDF_CHAR/13): "H+ Correction"
+     COMMENT         (CDF_CHAR/38): "H+ correction from IRI made, -1 if not"
+
+ncomb (No: 35) (Recs: 1)
+-----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/14): "nonvariant_var"
+     TITLE           (CDF_CHAR/34): "Number of limb scans for smoothing"
+
+oden (No: 36) (Recs: 1)
+----
+Attribute Entries:
+     NC_DIMENSIONS_V (CDF_CHAR/6): "N,dim1"
+     TITLE           (CDF_CHAR/41): "Atomic Oxygen Density Profile (from MSIS)"
+
