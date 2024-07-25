@@ -1,0 +1,331 @@
+Dumping cdf from "MASTER_CDF_20240718/endurance_l1b_pes_00000000_v01.cdf"...
+File Info
+=========================================
+CDF File:     endurance_l1b_pes_00000000_v01.cdf
+Version:      3.9.0
+
+Common Data Format (CDF)
+https://cdf.gsfc.nasa.gov
+Space Physics Data Facility
+NASA/Goddard Space Flight Center
+Greenbelt, Maryland 20771 USA
+
+Format:       SINGLE
+Encoding:     NETWORK
+Majority:     COLUMN
+NumrVars:     0
+NumzVars:     15
+NumAttrs:     45 (18 global, 27 variable)
+Compression:  None
+Checksum:     None
+LeapSecondLastUpdated:     20170101
+
+Global Attributes (18 attributes)
+=========================================
+Project (1 entry):
+	0 (CDF_CHAR/33): 	"SPDF> Space Physics Data Facility"
+Source_name (1 entry):
+	0 (CDF_CHAR/9): 	"Endurance"
+Discipline (1 entry):
+	0 (CDF_CHAR/33): 	"Space Physics>Ionospheric Science"
+Descriptor (1 entry):
+	0 (CDF_CHAR/30): 	"PES>Photoelectron Spectrometer"
+Data_type (1 entry):
+	0 (CDF_CHAR/12): 	"L1B>Level 1B"
+Data_version (1 entry):
+	0 (CDF_CHAR/2): 	"01"
+PI_name (1 entry):
+	0 (CDF_CHAR/12): 	"G. Collinson"
+PI_affiliation (1 entry):
+	0 (CDF_CHAR/43): 	"NASA GSFC / Catholic University of America "
+Logical_source_description (1 entry):
+	0 (CDF_CHAR/101): 	"Uncalibrated L1b raw counts per energy step from the 8 DESA sensors during science portion of mission"
+Logical_source (1 entry):
+	0 (CDF_CHAR/17): 	"endurance_l1b_pes"
+Logical_file_id (1 entry):
+	0 (CDF_CHAR/30): 	"endurance_l1b_pes_00000000_v01"
+Mission_group (1 entry):
+	0 (CDF_CHAR/16): 	"Sounding Rockets"
+Instrument_type (1 entry):
+	0 (CDF_CHAR/21): 	"Plasma and Solar Wind"
+MODS (1 entry):
+	0 (CDF_CHAR/1): 	" "
+TEXT (1 entry):
+	0 (CDF_CHAR/1107): 	"The Endurance PES instrument was comprised of 8 boom-mounted Dual Electrostatic Analyzer (DESA) sensors, and a main electronics box (MEB). Each DESA sensor had two look directions; A-side (looking down to Earth from launch to pitch-over maneuver, and then up to space until loss of signal (LOS)); and B-side (looking up to space from launch to pitch-over, and then down to Earth until loss of signal (LOS)). The sensors were synchronized by the MEB and cross-calibrated to look at approximately the same energy at the same time. A PES sweep consisted of 81 different steps and took 10 seconds. At each step, a voltage could be applied to the Electrostatic Analyzer (ESA) and/or the Retarding Potential Analyzer (RPA). Of these 81 steps; 3 (0, 1, 44) were used to take background counts with the ESA grounded, and to fire the SLP; 34 (2:9, 33, 56:80) were used to collect the standard resolution data measurement (15% DE/E, 10eV to 1keV) using the ESA alone; and 44 (10:32, 34:43, 45:55) were used to collect the high-resolution measurement (0.5% DE/E, 20.3 eV to 25.85 eV) using the ESA and RPA combined.”"
+HTTP_LINK (1 entry):
+	0 (CDF_CHAR/43): 	"https://doi.org/10.1007/s11214-022-00908-0 "
+LINK_TEXT (1 entry):
+	0 (CDF_CHAR/146): 	"Collinson, G., Glocer, A., Pfaff, R. et al. The Endurance Rocket Mission. Space Sci Rev 218, 39 (2022). https://doi.org/10.1007/s11214-022-00908-0"
+LINK_TITLE (1 entry):
+	0 (CDF_CHAR/43): 	"https://doi.org/10.1007/s11214-022-00908-0 "
+
+Variable Attributes (27 attributes)
+=========================================
+FIELDNAM
+CATDESC
+UNITS
+LABLAXIS
+FILLVAL
+FORMAT
+VAR_TYPE
+SCALETYP
+VALIDMIN
+VALIDMAX
+VAR_NOTES
+DEPEND_0
+DEPEND_1
+DEPEND_2
+LABL_PTR_2
+FORM_PTR
+UNIT_PTR
+SCAL_PTR
+MONOTON
+DICT_KEY
+AVG_TYPE
+RESOLUTION
+Bin_location
+DISPLAY_TYPE
+VIRTUAL
+FUNCT
+COMPONENT_0
+
+Variable Information (0 rVariable, 15 zVariables)
+===========================================================
+Epoch                 CDF_EPOCH/1	0:[]	T/  
+Epoch_steps           CDF_EPOCH/1	0:[]	T/  
+PES_A_counts          CDF_INT4/1	2:[81,8]	T/TT
+PES_B_counts          CDF_INT4/1	2:[81,8]	T/TT
+step                  CDF_INT4/1	0:[]	T/  
+esa_en                CDF_REAL4/1	0:[]	T/  
+rpa_en                CDF_REAL4/1	0:[]	T/  
+rpa_flag              CDF_INT4/1	0:[]	T/  
+esa_flag              CDF_INT4/1	0:[]	T/  
+slp_flag              CDF_INT4/1	0:[]	T/  
+PES_step_duration     CDF_INT4/1	0:[]	T/  
+sensor                CDF_INT2/1	1:[8]	F/T
+sensor_labl_a         CDF_CHAR/15	1:[8]	F/T
+sensor_labl_b         CDF_CHAR/15	1:[8]	F/T
+stepIndex             CDF_INT2/1	1:[81]	F/T
+
+
+Variable (15 variables)
+=========================================
+
+Epoch (No: 0) (Recs: 0)
+-----
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/4): "Time"
+     CATDESC         (CDF_CHAR/26): "Time start of avg interval"
+     UNITS           (CDF_CHAR/2): "ms"
+     LABLAXIS        (CDF_CHAR/5): "Epoch"
+     FILLVAL         (CDF_REAL8/1): 31-Dec-9999 23:59:59.999
+     VAR_TYPE        (CDF_CHAR/12): "support_data"
+     VALIDMIN        (CDF_EPOCH/1): 01-Jan-1994 00:00:00.000
+     VALIDMAX        (CDF_EPOCH/1): 01-Jan-2050 00:00:00.000
+     VAR_NOTES       (CDF_CHAR/1): " "
+     MONOTON         (CDF_CHAR/8): "INCREASE"
+     DICT_KEY        (CDF_CHAR/23): "time>Epoch_center_range"
+     AVG_TYPE        (CDF_CHAR/1): " "
+     DISPLAY_TYPE    (CDF_CHAR/1): " "
+
+Epoch_steps (No: 1) (Recs: 0)
+-----------
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/4): "Time"
+     CATDESC         (CDF_CHAR/26): "Time start of avg interval"
+     UNITS           (CDF_CHAR/2): "ms"
+     LABLAXIS        (CDF_CHAR/5): "Epoch"
+     FILLVAL         (CDF_REAL8/1): 31-Dec-9999 23:59:59.999
+     VAR_TYPE        (CDF_CHAR/12): "support_data"
+     VALIDMIN        (CDF_EPOCH/1): 01-Jan-1994 00:00:00.000
+     VALIDMAX        (CDF_EPOCH/1): 01-Jan-2050 00:00:00.000
+     VAR_NOTES       (CDF_CHAR/1): " "
+     MONOTON         (CDF_CHAR/8): "INCREASE"
+     DICT_KEY        (CDF_CHAR/23): "time>Epoch_center_range"
+     AVG_TYPE        (CDF_CHAR/1): " "
+     DISPLAY_TYPE    (CDF_CHAR/1): " "
+
+PES_A_counts (No: 2) (Recs: 0)
+------------
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/12): "PES A counts"
+     CATDESC         (CDF_CHAR/43): "Counts per Energy step all sensors,  Side A"
+     UNITS           (CDF_CHAR/1): " "
+     LABLAXIS        (CDF_CHAR/12): "PES A counts"
+     FORMAT          (CDF_CHAR/2): "i6"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_INT4/1): 0
+     VALIDMAX        (CDF_INT4/1): 2147483647
+     VAR_NOTES       (CDF_CHAR/1): " "
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DEPEND_1        (CDF_CHAR/9): "stepIndex"
+     DEPEND_2        (CDF_CHAR/6): "sensor"
+     LABL_PTR_2      (CDF_CHAR/13): "sensor_labl_a"
+     DISPLAY_TYPE    (CDF_CHAR/44): "spectrogram>y=stepIndex,z=PES_A_counts(*,^8)"
+
+PES_B_counts (No: 3) (Recs: 0)
+------------
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/12): "PES B counts"
+     CATDESC         (CDF_CHAR/43): "Counts per Energy step all sensors,  Side B"
+     UNITS           (CDF_CHAR/1): " "
+     LABLAXIS        (CDF_CHAR/12): "PES B counts"
+     FORMAT          (CDF_CHAR/2): "i6"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_INT4/1): 0
+     VALIDMAX        (CDF_INT4/1): 2147483647
+     VAR_NOTES       (CDF_CHAR/1): " "
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DEPEND_1        (CDF_CHAR/9): "stepIndex"
+     DEPEND_2        (CDF_CHAR/6): "sensor"
+     LABL_PTR_2      (CDF_CHAR/13): "sensor_labl_b"
+     DISPLAY_TYPE    (CDF_CHAR/44): "spectrogram>y=stepIndex,z=PES_B_counts(*,^8)"
+
+step (No: 4) (Recs: 0)
+----
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/15): "PES Energy Step"
+     CATDESC         (CDF_CHAR/38): "Photoelectron Spectrometer Energy Step"
+     UNITS           (CDF_CHAR/1): " "
+     LABLAXIS        (CDF_CHAR/15): "PES Energy Step"
+     FILLVAL         (CDF_INT4/1): -99
+     FORMAT          (CDF_CHAR/2): "i3"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_INT4/1): 0
+     VALIDMAX        (CDF_INT4/1): 81
+     VAR_NOTES       (CDF_CHAR/1): " "
+     DEPEND_0        (CDF_CHAR/11): "Epoch_steps"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+esa_en (No: 5) (Recs: 0)
+------
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/10): "ESA Energy"
+     CATDESC         (CDF_CHAR/56): "Energy setting of all 8 PES Electostatic Analyzers (ESA)"
+     UNITS           (CDF_CHAR/2): "eV"
+     LABLAXIS        (CDF_CHAR/10): "ESA Energy"
+     FILLVAL         (CDF_REAL4/1): nan
+     FORMAT          (CDF_CHAR/4): "f8.3"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     SCALETYP        (CDF_CHAR/3): "log"
+     VALIDMIN        (CDF_REAL4/1): 0.0
+     VALIDMAX        (CDF_REAL4/1): 1000.0
+     VAR_NOTES       (CDF_CHAR/1): " "
+     DEPEND_0        (CDF_CHAR/11): "Epoch_steps"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+rpa_en (No: 6) (Recs: 0)
+------
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/11): "RPA Voltage"
+     CATDESC         (CDF_CHAR/67): "Voltage (Energy) setting of PES Retarding Potential Analyzers (RPA)"
+     UNITS           (CDF_CHAR/2): "eV"
+     LABLAXIS        (CDF_CHAR/11): "RPA Voltage"
+     FILLVAL         (CDF_REAL4/1): nan
+     FORMAT          (CDF_CHAR/4): "f8.3"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL4/1): -30.0
+     VALIDMAX        (CDF_REAL4/1): 0.0
+     VAR_NOTES       (CDF_CHAR/1): " "
+     DEPEND_0        (CDF_CHAR/11): "Epoch_steps"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+rpa_flag (No: 7) (Recs: 0)
+--------
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/8): "RPA flag"
+     CATDESC         (CDF_CHAR/30): "RPA grounded (0) or active (1)"
+     UNITS           (CDF_CHAR/22): "0=grounded,(1)=enabled"
+     LABLAXIS        (CDF_CHAR/7): "RPA On?"
+     FILLVAL         (CDF_INT4/1): -99
+     FORMAT          (CDF_CHAR/2): "i3"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_INT4/1): 0
+     VALIDMAX        (CDF_INT4/1): 1
+     VAR_NOTES       (CDF_CHAR/1): " "
+     DEPEND_0        (CDF_CHAR/11): "Epoch_steps"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+esa_flag (No: 8) (Recs: 0)
+--------
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/8): "ESA flag"
+     CATDESC         (CDF_CHAR/30): "ESA grounded (0) or active (1)"
+     UNITS           (CDF_CHAR/22): "0=grounded,(1)=enabled"
+     LABLAXIS        (CDF_CHAR/7): "ESA On?"
+     FILLVAL         (CDF_INT4/1): -99
+     FORMAT          (CDF_CHAR/2): "i3"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_INT4/1): 0
+     VALIDMAX        (CDF_INT4/1): 1
+     VAR_NOTES       (CDF_CHAR/1): " "
+     DEPEND_0        (CDF_CHAR/11): "Epoch_steps"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+slp_flag (No: 9) (Recs: 0)
+--------
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/8): "SLP flag"
+     CATDESC         (CDF_CHAR/31): "SLP passive (0) or sweeping (1)"
+     UNITS           (CDF_CHAR/22): "0=passive,(1)=sweeping"
+     LABLAXIS        (CDF_CHAR/9): "SLP Fire?"
+     FILLVAL         (CDF_INT4/1): -99
+     FORMAT          (CDF_CHAR/2): "i3"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_INT4/1): 0
+     VALIDMAX        (CDF_INT4/1): 1
+     VAR_NOTES       (CDF_CHAR/275): "The Sweeping Langmuir Probe (SLP) was commanded by PES so that it would not fire (sweep voltage) while PES was taking a measurement. PES measured background counts during such SLP firings, alternating between the total background counts, and the background counts above 20eV."
+     DEPEND_0        (CDF_CHAR/11): "Epoch_steps"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+PES_step_duration (No: 10) (Recs: 0)
+-----------------
+Attribute Entries:
+     FIELDNAM        (CDF_CHAR/13): "Step duration"
+     CATDESC         (CDF_CHAR/50): "Duration (integration time) of the PES Energy step"
+     UNITS           (CDF_CHAR/2): "ms"
+     LABLAXIS        (CDF_CHAR/13): "Step duration"
+     FILLVAL         (CDF_INT4/1): -99
+     FORMAT          (CDF_CHAR/2): "i3"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_INT4/1): 0
+     VALIDMAX        (CDF_INT4/1): 136
+     VAR_NOTES       (CDF_CHAR/1): " "
+     DEPEND_0        (CDF_CHAR/11): "Epoch_steps"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+sensor (No: 11) (Recs: 1)
+------
+Attribute Entries:
+     FIELDNAM        (CDF_UCHAR/6): "sensor"
+     LABLAXIS        (CDF_UCHAR/6): "sensor"
+     FORMAT          (CDF_CHAR/2): "i2"
+     VAR_TYPE        (CDF_UCHAR/12): "support_data"
+     VALIDMIN        (CDF_INT2/1): 1
+     VALIDMAX        (CDF_INT2/1): 8
+
+sensor_labl_a (No: 12) (Recs: 1)
+-------------
+Attribute Entries:
+     FIELDNAM        (CDF_UCHAR/11): "sensor_labl"
+     FORMAT          (CDF_CHAR/3): "a15"
+     VAR_TYPE        (CDF_UCHAR/8): "metadata"
+
+sensor_labl_b (No: 13) (Recs: 1)
+-------------
+Attribute Entries:
+     FIELDNAM        (CDF_UCHAR/11): "sensor_labl"
+     FORMAT          (CDF_CHAR/3): "a15"
+     VAR_TYPE        (CDF_UCHAR/8): "metadata"
+
+stepIndex (No: 14) (Recs: 1)
+---------
+Attribute Entries:
+     FIELDNAM        (CDF_UCHAR/5): "steps"
+     LABLAXIS        (CDF_UCHAR/5): "steps"
+     FORMAT          (CDF_CHAR/2): "i2"
+     VAR_TYPE        (CDF_UCHAR/12): "support_data"
+     SCALETYP        (CDF_CHAR/6): "linear"
+     VALIDMIN        (CDF_INT2/1): 1
+     VALIDMAX        (CDF_INT2/1): 81
+

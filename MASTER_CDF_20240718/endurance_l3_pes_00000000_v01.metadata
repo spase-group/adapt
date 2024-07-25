@@ -1,0 +1,165 @@
+Dumping cdf from "MASTER_CDF_20240718/endurance_l3_pes_00000000_v01.cdf"...
+File Info
+=========================================
+CDF File:     endurance_l3_pes_00000000_v01.cdf
+Version:      3.9.0
+
+Common Data Format (CDF)
+https://cdf.gsfc.nasa.gov
+Space Physics Data Facility
+NASA/Goddard Space Flight Center
+Greenbelt, Maryland 20771 USA
+
+Format:       SINGLE
+Encoding:     NETWORK
+Majority:     COLUMN
+NumrVars:     0
+NumzVars:     4
+NumAttrs:     47 (18 global, 29 variable)
+Compression:  None
+Checksum:     None
+LeapSecondLastUpdated:     20170101
+
+Global Attributes (18 attributes)
+=========================================
+Project (1 entry):
+	0 (CDF_CHAR/33): 	"SPDF> Space Physics Data Facility"
+Source_name (1 entry):
+	0 (CDF_CHAR/9): 	"Endurance"
+Discipline (1 entry):
+	0 (CDF_CHAR/33): 	"Space Physics>Ionospheric Science"
+Descriptor (1 entry):
+	0 (CDF_CHAR/30): 	"PES>Photoelectron Spectrometer"
+Data_type (1 entry):
+	0 (CDF_CHAR/10): 	"L3>Level 3"
+Data_version (1 entry):
+	0 (CDF_CHAR/2): 	"01"
+PI_name (1 entry):
+	0 (CDF_CHAR/12): 	"G. Collinson"
+PI_affiliation (1 entry):
+	0 (CDF_CHAR/43): 	"NASA GSFC / Catholic University of America "
+Logical_source_description (1 entry):
+	0 (CDF_CHAR/76): 	"Electric Potential Drop parallel to Earth’s magnetic Field below Endurance"
+Logical_source (1 entry):
+	0 (CDF_CHAR/16): 	"endurance_l3_pes"
+Logical_file_id (1 entry):
+	0 (CDF_CHAR/29): 	"endurance_l3_pes_00000000_v01"
+Mission_group (1 entry):
+	0 (CDF_CHAR/16): 	"Sounding Rockets"
+Instrument_type (1 entry):
+	0 (CDF_CHAR/21): 	"Plasma and Solar Wind"
+MODS (1 entry):
+	0 (CDF_CHAR/1): 	" "
+TEXT (1 entry):
+	0 (CDF_CHAR/300): 	"The Endurance mission was designed to make the first measurement of Earth’s electric potential. This Level 3 data product is the potential drop below Endurance as measured from the shift in the peak of the N2 A2 Πu  He-II photopeak, corrected for spacecraft potential by the Swept Langmuir Probe. "
+HTTP_LINK (1 entry):
+	0 (CDF_CHAR/43): 	"https://doi.org/10.1007/s11214-022-00908-0 "
+LINK_TEXT (1 entry):
+	0 (CDF_CHAR/146): 	"Collinson, G., Glocer, A., Pfaff, R. et al. The Endurance Rocket Mission. Space Sci Rev 218, 39 (2022). https://doi.org/10.1007/s11214-022-00908-0"
+LINK_TITLE (1 entry):
+	0 (CDF_CHAR/43): 	"https://doi.org/10.1007/s11214-022-00908-0 "
+
+Variable Attributes (29 attributes)
+=========================================
+CATDESC
+UNITS
+FIELDNAM
+LABLAXIS
+FILLVAL
+FORMAT
+VAR_TYPE
+SCALETYP
+VALIDMIN
+VALIDMAX
+VAR_NOTES
+DEPEND_0
+DEPEND_1
+DEPEND_2
+FORM_PTR
+UNIT_PTR
+SCAL_PTR
+LABL_PTR_1
+LABL_PTR_2
+MONOTON
+DICT_KEY
+AVG_TYPE
+RESOLUTION
+Bin_location
+DELTA_PLUS_VAR
+DELTA_MINUS_VAR
+DISPLAY_TYPE
+VIRTUAL
+FUNCT
+
+Variable Information (0 rVariable, 4 zVariables)
+===========================================================
+Epoch                 CDF_EPOCH/1	0:[]	T/  
+alt                   CDF_REAL8/1	0:[]	T/  
+Potential_Drop        CDF_REAL8/1	0:[]	T/  
+Potential_Drop_Error  CDF_REAL8/1	0:[]	T/  
+
+
+Variable (4 variables)
+=========================================
+
+Epoch (No: 0) (Recs: 0)
+-----
+Attribute Entries:
+     CATDESC         (CDF_CHAR/26): "Time start of avg interval"
+     UNITS           (CDF_CHAR/2): "ms"
+     FIELDNAM        (CDF_CHAR/4): "Time"
+     LABLAXIS        (CDF_CHAR/5): "Epoch"
+     FILLVAL         (CDF_REAL8/1): 31-Dec-9999 23:59:59.999
+     VAR_TYPE        (CDF_CHAR/12): "support_data"
+     VALIDMIN        (CDF_EPOCH/1): 01-Jan-1994 00:00:00.000
+     VALIDMAX        (CDF_EPOCH/1): 01-Jan-2050 00:00:00.000
+     VAR_NOTES       (CDF_CHAR/1): " "
+     MONOTON         (CDF_CHAR/8): "INCREASE"
+     DICT_KEY        (CDF_CHAR/23): "time>Epoch_center_range"
+     AVG_TYPE        (CDF_CHAR/1): " "
+     DISPLAY_TYPE    (CDF_CHAR/1): " "
+
+alt (No: 1) (Recs: 0)
+---
+Attribute Entries:
+     CATDESC         (CDF_CHAR/21): "Altitude of Endurance"
+     UNITS           (CDF_CHAR/2): "km"
+     FIELDNAM        (CDF_CHAR/3): "Alt"
+     LABLAXIS        (CDF_CHAR/3): "Alt"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/4): "f9.4"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 800.0
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+
+Potential_Drop (No: 2) (Recs: 0)
+--------------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/30): "Potential Drop Below Endurance"
+     UNITS           (CDF_CHAR/1): "V"
+     FIELDNAM        (CDF_CHAR/14): "Potential_Drop"
+     LABLAXIS        (CDF_CHAR/9): "Potential"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/4): "f7.4"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 10.0
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DELTA_PLUS_VAR  (CDF_UCHAR/20): "Potential_Drop_Error"
+     DELTA_MINUS_VAR (CDF_UCHAR/20): "Potential_Drop_Error"
+
+Potential_Drop_Error (No: 3) (Recs: 0)
+--------------------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/39): "Error in Potential Drop Below Endurance"
+     UNITS           (CDF_CHAR/1): "V"
+     FIELDNAM        (CDF_CHAR/20): "Potential_Drop_Error"
+     LABLAXIS        (CDF_CHAR/5): "Error"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/4): "f7.4"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 10.0
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+

@@ -1,0 +1,174 @@
+Dumping cdf from "MASTER_CDF_20240718/endurance_l2-esa_pes_00000000_v01.cdf"...
+File Info
+=========================================
+CDF File:     endurance_l2-esa_pes_00000000_v01.cdf
+Version:      3.9.0
+
+Common Data Format (CDF)
+https://cdf.gsfc.nasa.gov
+Space Physics Data Facility
+NASA/Goddard Space Flight Center
+Greenbelt, Maryland 20771 USA
+
+Format:       SINGLE
+Encoding:     NETWORK
+Majority:     COLUMN
+NumrVars:     0
+NumzVars:     5
+NumAttrs:     45 (18 global, 27 variable)
+Compression:  None
+Checksum:     None
+LeapSecondLastUpdated:     20170101
+
+Global Attributes (18 attributes)
+=========================================
+Project (1 entry):
+	0 (CDF_CHAR/33): 	"SPDF> Space Physics Data Facility"
+Source_name (1 entry):
+	0 (CDF_CHAR/9): 	"Endurance"
+Discipline (1 entry):
+	0 (CDF_CHAR/33): 	"Space Physics>Ionospheric Science"
+Descriptor (1 entry):
+	0 (CDF_CHAR/30): 	"PES>Photoelectron Spectrometer"
+Data_type (1 entry):
+	0 (CDF_CHAR/64): 	"L2-ESA>Level 2 Electrostatic Analyzer Mode (Standard Resolution)"
+Data_version (1 entry):
+	0 (CDF_CHAR/2): 	"01"
+PI_name (1 entry):
+	0 (CDF_CHAR/12): 	"G. Collinson"
+PI_affiliation (1 entry):
+	0 (CDF_CHAR/43): 	"NASA GSFC / Catholic University of America "
+Logical_source_description (1 entry):
+	0 (CDF_CHAR/50): 	"Standard Resolution (15% DE/E) data (10eV to 1keV)"
+Logical_source (1 entry):
+	0 (CDF_CHAR/20): 	"endurance_l2-esa_pes"
+Logical_file_id (1 entry):
+	0 (CDF_CHAR/33): 	"endurance_l2-esa_pes_00000000_v01"
+Mission_group (1 entry):
+	0 (CDF_CHAR/16): 	"Sounding Rockets"
+Instrument_type (1 entry):
+	0 (CDF_CHAR/21): 	"Plasma and Solar Wind"
+MODS (1 entry):
+	0 (CDF_CHAR/1): 	" "
+TEXT (1 entry):
+	0 (CDF_CHAR/687): 	"The Endurance PES instrument was comprised of 8 boom-mounted Dual Electrostatic Analyzer (DESA) sensors, and a main electronics box (MEB). Each DESA sensor had two look directions; A-side (looking down to Earth from launch to pitch-over maneuver, and then up to space until loss of signal (LOS)); and B-side (looking up to space from launch to pitch-over, and then down to Earth until loss of signal (LOS)). The sensors were synchronized by the MEB and cross-calibrated to look at approximately the same energy at the same time. These data present the standard resolution data measurement (15% DE/E, 10eV to 1keV) using the ESA alone, using counts from all the sensors combined together."
+HTTP_LINK (1 entry):
+	0 (CDF_CHAR/43): 	"https://doi.org/10.1007/s11214-022-00908-0 "
+LINK_TEXT (1 entry):
+	0 (CDF_CHAR/146): 	"Collinson, G., Glocer, A., Pfaff, R. et al. The Endurance Rocket Mission. Space Sci Rev 218, 39 (2022). https://doi.org/10.1007/s11214-022-00908-0"
+LINK_TITLE (1 entry):
+	0 (CDF_CHAR/43): 	"https://doi.org/10.1007/s11214-022-00908-0 "
+
+Variable Attributes (27 attributes)
+=========================================
+CATDESC
+UNITS
+FIELDNAM
+LABLAXIS
+FILLVAL
+FORMAT
+VAR_TYPE
+SCALETYP
+VALIDMIN
+VALIDMAX
+VAR_NOTES
+DEPEND_0
+DEPEND_1
+DEPEND_2
+FORM_PTR
+UNIT_PTR
+SCAL_PTR
+LABL_PTR_1
+LABL_PTR_2
+MONOTON
+DICT_KEY
+AVG_TYPE
+RESOLUTION
+Bin_location
+DISPLAY_TYPE
+VIRTUAL
+FUNCT
+
+Variable Information (0 rVariable, 5 zVariables)
+===========================================================
+Epoch                 CDF_EPOCH/1	0:[]	T/  
+PES_A_ESA_DEF         CDF_REAL8/1	1:[35]	T/T
+PES_B_ESA_DEF         CDF_REAL8/1	1:[35]	T/T
+energy                CDF_REAL4/1	1:[35]	F/T
+energyIndex           CDF_INT2/1	1:[35]	F/T
+
+
+Variable (5 variables)
+=========================================
+
+Epoch (No: 0) (Recs: 0)
+-----
+Attribute Entries:
+     CATDESC         (CDF_CHAR/26): "Time start of avg interval"
+     UNITS           (CDF_CHAR/2): "ms"
+     FIELDNAM        (CDF_CHAR/4): "Time"
+     LABLAXIS        (CDF_CHAR/5): "Epoch"
+     FILLVAL         (CDF_REAL8/1): 31-Dec-9999 23:59:59.999
+     VAR_TYPE        (CDF_CHAR/12): "support_data"
+     VALIDMIN        (CDF_EPOCH/1): 01-Jan-1994 00:00:00.000
+     VALIDMAX        (CDF_EPOCH/1): 01-Jan-2050 00:00:00.000
+     VAR_NOTES       (CDF_CHAR/1): " "
+     MONOTON         (CDF_CHAR/8): "INCREASE"
+     DICT_KEY        (CDF_CHAR/23): "time>Epoch_center_range"
+     AVG_TYPE        (CDF_CHAR/1): " "
+     DISPLAY_TYPE    (CDF_CHAR/1): " "
+
+PES_A_ESA_DEF (No: 1) (Recs: 0)
+-------------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/99): "Time/energy spectrogram of Differential Energy Flux of electrons from the 8 combined A-sides of PES"
+     UNITS           (CDF_CHAR/22): "eV cm-2 s -1 sr-1 eV-1"
+     FIELDNAM        (CDF_CHAR/13): "PES_A_ESA_DEF"
+     LABLAXIS        (CDF_CHAR/13): "PES_A_ESA_DEF"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "e12.4"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     SCALETYP        (CDF_CHAR/3): "log"
+     VALIDMIN        (CDF_REAL8/1): 10000.0
+     VALIDMAX        (CDF_REAL8/1): 1.0e+08
+     VAR_NOTES       (CDF_CHAR/194): "Data are corrected for background counts and then converted to Differential Energy Flux as per Collinson et al., The Geometric Factor of electrostatic plasma analyzers, Rev. Sci. Instrum., 2012,"
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DEPEND_1        (CDF_CHAR/6): "energy"
+
+PES_B_ESA_DEF (No: 2) (Recs: 0)
+-------------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/99): "Time/energy spectrogram of Differential Energy Flux of electrons from the 8 combined B-sides of PES"
+     UNITS           (CDF_CHAR/22): "eV cm-2 s -1 sr-1 eV-1"
+     FIELDNAM        (CDF_CHAR/13): "PES_B_ESA_DEF"
+     LABLAXIS        (CDF_CHAR/13): "PES_B_ESA_DEF"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "e12.4"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     SCALETYP        (CDF_CHAR/3): "log"
+     VALIDMIN        (CDF_REAL8/1): 10000.0
+     VALIDMAX        (CDF_REAL8/1): 1.0e+08
+     VAR_NOTES       (CDF_CHAR/194): "Data are corrected for background counts and then converted to Differential Energy Flux as per Collinson et al., The Geometric Factor of electrostatic plasma analyzers, Rev. Sci. Instrum., 2012,"
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DEPEND_1        (CDF_CHAR/6): "energy"
+
+energy (No: 3) (Recs: 1)
+------
+Attribute Entries:
+     FIELDNAM        (CDF_UCHAR/6): "energy"
+     LABLAXIS        (CDF_UCHAR/6): "energy"
+     FORMAT          (CDF_CHAR/4): "f9.4"
+     VAR_TYPE        (CDF_UCHAR/12): "support_data"
+     VALIDMIN        (CDF_REAL4/1): 0.0
+     VALIDMAX        (CDF_REAL4/1): 1000.0
+
+energyIndex (No: 4) (Recs: 1)
+-----------
+Attribute Entries:
+     FIELDNAM        (CDF_UCHAR/4): "step"
+     LABLAXIS        (CDF_UCHAR/4): "step"
+     FORMAT          (CDF_CHAR/2): "i2"
+     VAR_TYPE        (CDF_UCHAR/12): "support_data"
+     VALIDMIN        (CDF_INT2/1): 1
+     VALIDMAX        (CDF_INT2/1): 35
+
