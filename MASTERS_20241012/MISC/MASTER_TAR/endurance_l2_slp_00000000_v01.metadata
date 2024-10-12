@@ -1,0 +1,246 @@
+Dumping cdf from "MASTER_TAR/endurance_l2_slp_00000000_v01.cdf"...
+File Info
+=========================================
+CDF File:     endurance_l2_slp_00000000_v01.cdf
+Version:      3.9.0
+
+Common Data Format (CDF)
+https://cdf.gsfc.nasa.gov
+Space Physics Data Facility
+NASA/Goddard Space Flight Center
+Greenbelt, Maryland 20771 USA
+
+Format:       SINGLE
+Encoding:     NETWORK
+Majority:     COLUMN
+NumrVars:     0
+NumzVars:     9
+NumAttrs:     45 (18 global, 27 variable)
+Compression:  None
+Checksum:     None
+LeapSecondLastUpdated:     20170101
+
+Global Attributes (18 attributes)
+=========================================
+Project (1 entry):
+	0 (CDF_CHAR/33): 	"SPDF> Space Physics Data Facility"
+Source_name (1 entry):
+	0 (CDF_CHAR/9): 	"Endurance"
+Discipline (1 entry):
+	0 (CDF_CHAR/33): 	"Space Physics>Ionospheric Science"
+Descriptor (1 entry):
+	0 (CDF_CHAR/51): 	"SLP>Swept Langmuir Probe (SLP) Calibrated (L2) Data"
+Data_type (1 entry):
+	0 (CDF_CHAR/10): 	"L2>Level 2"
+Data_version (1 entry):
+	0 (CDF_CHAR/2): 	"01"
+PI_name (1 entry):
+	0 (CDF_CHAR/11): 	"A. Barjatya"
+PI_affiliation (1 entry):
+	0 (CDF_CHAR/36): 	"Embry Riddle Aeronautical University"
+Logical_source_description (1 entry):
+	0 (CDF_CHAR/80): 	"Calibrated L2 thermal plasma measurements from the Sweeping Langmuir Probe (SLP)"
+Logical_source (1 entry):
+	0 (CDF_CHAR/16): 	"endurance_l2_slp"
+Logical_file_id (1 entry):
+	0 (CDF_CHAR/29): 	"endurance_l2_slp_00000000_v01"
+Mission_group (1 entry):
+	0 (CDF_CHAR/16): 	"Sounding Rockets"
+Instrument_type (1 entry):
+	0 (CDF_CHAR/21): 	"Plasma and Solar Wind"
+MODS (1 entry):
+	0 (CDF_CHAR/1): 	" "
+TEXT (1 entry):
+	0 (CDF_CHAR/519): 	"The Endurance SLP was a needle probe mounted on the forward Fo’c’sle of the spacecraft. It measured thermal plasma density, electron temperature, the potential difference between the spacecraft and ambient plasma (plasma potential) and the relative potential of the spacecraft. SLP performed an active (20ms) sweep once every 5 seconds, wherein a sweeping +/- 5V voltage was applied to the needle. The data products here were derived from the I-V curves and intercalibrated with EISCAT Radar and the PES instrument."
+LINK_TEXT (1 entry):
+	0 (CDF_CHAR/24): 	"Endurance Rocket Mission"
+LINK_TITLE (1 entry):
+	0 (CDF_CHAR/26): 	"Space Science Review Paper"
+HTTP_LINK (1 entry):
+	0 (CDF_CHAR/42): 	"https://doi.org/10.1007/s11214-022-00908-0"
+
+Variable Attributes (27 attributes)
+=========================================
+CATDESC
+UNITS
+FIELDNAM
+LABLAXIS
+FILLVAL
+FORMAT
+VAR_TYPE
+SCALETYP
+VALIDMIN
+VALIDMAX
+VAR_NOTES
+DEPEND_2
+DEPEND_1
+DEPEND_0
+FORM_PTR
+UNIT_PTR
+SCAL_PTR
+LABL_PTR_1
+LABL_PTR_2
+MONOTON
+DICT_KEY
+AVG_TYPE
+RESOLUTION
+Bin_location
+DISPLAY_TYPE
+VIRTUAL
+FUNCT
+
+Variable Information (0 rVariable, 9 zVariables)
+===========================================================
+Epoch                 CDF_EPOCH/1	0:[]	T/  
+tof                   CDF_REAL8/1	0:[]	T/  
+alt                   CDF_REAL8/1	0:[]	T/  
+slp_ni                CDF_REAL8/1	0:[]	T/  
+slp_ni_error          CDF_REAL8/1	0:[]	T/  
+slp_te                CDF_REAL8/1	0:[]	T/  
+slp_te_error          CDF_REAL8/1	0:[]	T/  
+slp_vsc               CDF_REAL8/1	0:[]	T/  
+slp_vsc_error         CDF_REAL8/1	0:[]	T/  
+
+
+Variable (9 variables)
+=========================================
+
+Epoch (No: 0) (Recs: 0)
+-----
+Attribute Entries:
+     CATDESC         (CDF_CHAR/26): "Time start of avg interval"
+     UNITS           (CDF_CHAR/2): "ms"
+     FIELDNAM        (CDF_CHAR/4): "Time"
+     LABLAXIS        (CDF_CHAR/5): "Epoch"
+     FILLVAL         (CDF_REAL8/1): 31-Dec-9999 23:59:59.999
+     VAR_TYPE        (CDF_CHAR/12): "support_data"
+     VALIDMIN        (CDF_EPOCH/1): 01-Jan-1994 00:00:00.000
+     VALIDMAX        (CDF_EPOCH/1): 01-Jan-2050 00:00:00.000
+     VAR_NOTES       (CDF_CHAR/1): " "
+     MONOTON         (CDF_CHAR/8): "INCREASE"
+     DICT_KEY        (CDF_CHAR/23): "time>Epoch_center_range"
+     AVG_TYPE        (CDF_CHAR/1): " "
+     DISPLAY_TYPE    (CDF_CHAR/1): " "
+
+tof (No: 1) (Recs: 0)
+---
+Attribute Entries:
+     CATDESC         (CDF_CHAR/31): "Mission elapsed time in seconds"
+     UNITS           (CDF_CHAR/1): "s"
+     FIELDNAM        (CDF_CHAR/3): "MET"
+     LABLAXIS        (CDF_CHAR/3): "MET"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "f11.7"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 3600.0
+     VAR_NOTES       (CDF_CHAR/97): "Seconds from T-0, where T-0 is defined by ACS Umbi-pull, occurring at 2022-05-11T01:31:00.2207 UT"
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+alt (No: 2) (Recs: 0)
+---
+Attribute Entries:
+     CATDESC         (CDF_CHAR/40): "Altitude of Endurance during measurement"
+     UNITS           (CDF_CHAR/2): "km"
+     FIELDNAM        (CDF_CHAR/3): "Alt"
+     LABLAXIS        (CDF_CHAR/3): "Alt"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "f11.7"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 800.0
+     VAR_NOTES       (CDF_CHAR/32): "Altitude measured by onboard GPS"
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+slp_ni (No: 3) (Recs: 0)
+------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/73): "Thermal Plasma (Electron & Ion) Density in particles per cubic centimeter"
+     UNITS           (CDF_CHAR/3): "/m3"
+     FIELDNAM        (CDF_CHAR/7): "Density"
+     LABLAXIS        (CDF_CHAR/7): "Density"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "e11.5"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 1.0e+12
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+slp_ni_error (No: 4) (Recs: 0)
+------------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/57): "Error in Plasma Density in particles per cubic centimeter"
+     UNITS           (CDF_CHAR/2): "m3"
+     FIELDNAM        (CDF_CHAR/16): "Error in Density"
+     LABLAXIS        (CDF_CHAR/16): "Error in Density"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "f12.0"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 1.0e+12
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+slp_te (No: 5) (Recs: 0)
+------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/38): "Thermal Electron Temperature in Kelvin"
+     UNITS           (CDF_CHAR/1): "K"
+     FIELDNAM        (CDF_CHAR/2): "Te"
+     LABLAXIS        (CDF_CHAR/2): "Te"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "f11.6"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 5000.0
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+slp_te_error (No: 6) (Recs: 0)
+------------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/44): "Thermal Electron Temperature Error in Kelvin"
+     UNITS           (CDF_CHAR/1): "k"
+     FIELDNAM        (CDF_CHAR/11): "Error in Te"
+     LABLAXIS        (CDF_CHAR/11): "Error in Te"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "f11.7"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 1000.0
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+slp_vsc (No: 7) (Recs: 0)
+-------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/59): "Absolute potential difference between plasma and Endurance "
+     UNITS           (CDF_CHAR/1): "V"
+     FIELDNAM        (CDF_CHAR/12): "Abs. S/C Pot"
+     LABLAXIS        (CDF_CHAR/12): "Abs. S/C Pot"
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "f12.9"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): -10.0
+     VALIDMAX        (CDF_REAL8/1): 10.0
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
+slp_vsc_error (No: 8) (Recs: 0)
+-------------
+Attribute Entries:
+     CATDESC         (CDF_CHAR/31): "Plasma potential error in Volts"
+     UNITS           (CDF_CHAR/1): "V"
+     FIELDNAM        (CDF_CHAR/17): "Abs. S/C Pot Err."
+     LABLAXIS        (CDF_CHAR/17): "Abs. S/C Pot Err."
+     FILLVAL         (CDF_REAL8/1): nan
+     FORMAT          (CDF_CHAR/5): "f12.9"
+     VAR_TYPE        (CDF_CHAR/4): "data"
+     VALIDMIN        (CDF_REAL8/1): 0.0
+     VALIDMAX        (CDF_REAL8/1): 10.0
+     DEPEND_0        (CDF_CHAR/5): "Epoch"
+     DISPLAY_TYPE    (CDF_CHAR/11): "time_series"
+
