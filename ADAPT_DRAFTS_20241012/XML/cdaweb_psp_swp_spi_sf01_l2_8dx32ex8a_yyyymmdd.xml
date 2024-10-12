@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/psp_swp_spi_sf01_l2_8dx32ex8a/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>http://sprg.ssl.berkeley.edu/data/psp/pub/sci/sweap/description/</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Instrument Paper</Name>
+            <URL>https://link.springer.com/article/10.1007/s11214-015-0206-3</URL>
+            <Description>SWEAP</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Data Link</Name>
+            <URL>http://sweap.cfa.harvard.edu/Data.html</URL>
+            <Description>Smithsonian Astrophysical Observatory SWEAP</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/psp/sweap/spi/l2/spi_sf01_8dx32ex8a/</URL>
+            <ProductKey>PSP_SWP_SPI_SF01_L2_8DX32EX8A</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/psp/sweap/spi/l2/spi_sf01_8dx32ex8a/</URL>
+            <ProductKey>PSP_SWP_SPI_SF01_L2_8DX32EX8A</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=PSP_SWP_SPI_SF01_L2_8DX32EX8A&amp;index=sp_phys</URL>
+            <ProductKey>PSP_SWP_SPI_SF01_L2_8DX32EX8A</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>CDAWeb HAPI Server</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/hapi</URL>
+            <Style>HAPI</Style>
+            <ProductKey>PSP_SWP_SPI_SF01_L2_8DX32EX8A</ProductKey>
+            <Description>Web Service to this product using the HAPI interface.</Description>
+         </AccessURL>
+         <Format>CSV</Format>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2018-10-02T00:00:00.000</StartDate>
+            <StopDate>2023-07-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Heliosphere</ObservedRegion>
+      <ObservedRegion>Heliosphere.Inner</ObservedRegion>
+      <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+      <ObservedRegion>Sun.Corona</ObservedRegion>
+      <Parameter>
+         <Name>Time in TT2000 format</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Time at middle of sample</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>F24.1</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2029-12-31T23:59:58.999000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time in UTC format</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>TIME</ParameterKey>
+         <Description>Time at middle of sample</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unix Time</AxisLabel>
+            <ValueFormat>F24.7</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1.2623e+09</ValidMin>
+         <ValidMax>4.10244e+09</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MET</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MET</ParameterKey>
+         <Description>MET</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MET</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>APID</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>APID</ParameterKey>
+         <Description>APID</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>APID</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>SEQN</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SEQN</ParameterKey>
+         <Description>SEQN</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SEQN</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>SEQN_DELTA</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SEQN_DELTA</ParameterKey>
+         <Description>SEQN_DELTA</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SEQN_DELTA</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>SEQN_GROUP</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SEQN_GROUP</ParameterKey>
+         <Description>SEQN_GROUP</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SEQN_GROUP</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>PKT_SIZE</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PKT_SIZE</ParameterKey>
+         <Description>PKT_SIZE</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PKT_SIZE</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>SOURCE_APID</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SOURCE_APID</ParameterKey>
+         <Description>SOURCE_APID</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SOURCE_APID</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>SOURCE_HASH</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SOURCE_HASH</ParameterKey>
+         <Description>SOURCE_HASH</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SOURCE_HASH</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>COMPR_RATIO</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>COMPR_RATIO</ParameterKey>
+         <Description>COMPR_RATIO</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>COMPR_RATIO</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>NDAT</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NDAT</ParameterKey>
+         <Description>NDAT</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>NDAT</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>DATASIZE</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DATASIZE</ParameterKey>
+         <Description>DATASIZE</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DATASIZE</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>LTCSNNNN_BITS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LTCSNNNN_BITS</ParameterKey>
+         <Description>LTCSNNNN_BITS</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>LTCSNNNN_BITS</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>ARCH_BITS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ARCH_BITS</ParameterKey>
+         <Description>ARCH_BITS</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ARCH_BITS</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>MODE2_ORI</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MODE2_ORI</ParameterKey>
+         <Description>MODE2_ORI</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MODE2_ORI</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>MODE2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MODE2</ParameterKey>
+         <Description>MODE2</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MODE2</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>F0</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>F0</ParameterKey>
+         <Description>F0</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>F0</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>STATUS_BITS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>STATUS_BITS</ParameterKey>
+         <Description>STATUS_BITS</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>STATUS_BITS</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>PEAK_BIN</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PEAK_BIN</ParameterKey>
+         <Description>PEAK_BIN</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PEAK_BIN</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>PRODUCT_BITS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PRODUCT_BITS</ParameterKey>
+         <Description>PRODUCT_BITS</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PRODUCT_BITS</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>NUM_TOTAL</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NUM_TOTAL</ParameterKey>
+         <Description>NUM_TOTAL</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>NUM_TOTAL</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>NUM_ACCUM</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NUM_ACCUM</ParameterKey>
+         <Description>NUM_ACCUM</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>NUM_ACCUM</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>TIME_TOTAL</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>TIME_TOTAL</ParameterKey>
+         <Description>TIME_TOTAL</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TIME_TOTAL</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>TIME_ACCUM</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>TIME_ACCUM</ParameterKey>
+         <Description>TIME_ACCUM</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TIME_ACCUM</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>CNTS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>CNTS</ParameterKey>
+         <Description>CNTS</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>CNTS</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>DATA</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DATA</ParameterKey>
+         <Description>DATA</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DATA</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2048</Size>
+         </Structure>
+      </Parameter>
+      <Parameter>
+         <Name>GAP</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>GAP</ParameterKey>
+         <Description>GAP</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>GAP</AxisLabel>
+            <ValueFormat>I20</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>Quality Flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Quality Flag</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality Flag</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65534</ValidMax>
+         <FillValue>65535</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Eflux</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>EFLUX</ParameterKey>
+         <Description>Differential Energy Flux vs Energy/Angle Bin</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV/cm2-s-ster-eV</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Diff Energy Flux</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2048</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Energy</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ENERGY</ParameterKey>
+         <Description>Energy</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2048</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Instrument Theta</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>THETA</ParameterKey>
+         <Description>Elevation Angle in instrument coordinates</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Elevation Angle</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2048</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Instrument Phi</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PHI</ParameterKey>
+         <Description>Azimuth Angle in instrument coordinates</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Azimuth Angle</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2048</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

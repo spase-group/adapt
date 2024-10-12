@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/aim_cips_sci_3a/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Aeronomy of Ice in the Mesosphere (AIM),  Cloud Imaging and Particle Size (CIPS) Polar Mesospheric Clouds (PMC) Albedo images.
+There are 15 orbits per day and the data are gridded to form the Level 3A images</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Data Management Plan</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/aim/documents/AIM_DMP_V1_20050401.pdf</URL>
+            <Description>Aeronomy of Ice in the Mesosphere (AIM)</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Level3A data set description (daily daisies)</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/aim/cips/documentation/cips_pmc_level3a.pdf</URL>
+            <Description>Cloud Imaging and Particle Size (CIPS)</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>data files and canned plots (under north & south level_3a directories)</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/aim/cips/data/PMC</URL>
+            <Description>AIM CIPS PMC</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>AIM_CIPS_SCI_3A</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>AIM_CIPS_SCI_3A</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=AIM_CIPS_SCI_3A&amp;index=sp_phys</URL>
+            <ProductKey>AIM_CIPS_SCI_3A</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ImageIntensity</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>UT_DATE</Name>
+         <ParameterKey>UT_DATE</ParameterKey>
+         <Description>UTC date YYYYMMDD.</Description>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Epoch_cdf</Name>
+         <ParameterKey>Epoch_cdf</ParameterKey>
+         <Description>time_inboard</Description>
+         <Caveats>* Computed CDF_Epoch value: from yyyymmdd to Epoch
+This parameter is virtual. It is calculated by calling the function COMP_AIM_EPOCH with the following input parameters: UT_DATE.</Caveats>
+         <Units>seconds since 0 AD</Units>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Albedo (DAILY DATA) North&South</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>ALBEDO</ParameterKey>
+         <Description>Albedo plain images (Daily Data) - (North & South)</Description>
+         <Caveats>Reported albedo is a ratio of observed cloud albedo normalized by earth&apos;s albedo.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>10^-6 sr^-1</Units>
+         <RenderingHints>
+            <AxisLabel>ALBEDO (DAILY DATA)</AxisLabel>
+            <ValueFormat>F3.0</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Albedo</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>ALBEDO_N</ParameterKey>
+         <Description>Thumbnail and large mapped images Northern hemisphere [select dates when the s/c is in the north (May-Sept.)]</Description>
+         <Caveats>* Reported albedo is a ratio of observed cloud albedo normalized by earth&apos;s albedo.
+This parameter is virtual. It is calculated by calling the function APPLY_FILTER_FLAG with the following input parameters: ALBEDO, HEMISPHERE.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>10^-6 sr^-1</Units>
+         <RenderingHints>
+            <AxisLabel>ALBEDO (DAILY DATA) [North images only]</AxisLabel>
+            <ValueFormat>F3.0</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Albedo</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>ALBEDO_N_M</ParameterKey>
+         <Description>---&gt; Movie of Northern hemisphere mapped images [select dates when the s/c is in the north (May-Sept.)]</Description>
+         <Caveats>* Reported albedo is a ratio of observed cloud albedo normalized by earth&apos;s albedo.
+This parameter is virtual. It is calculated by calling the function APPLY_FILTER_FLAG with the following input parameters: ALBEDO, HEMISPHERE.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>10^-6 sr^-1</Units>
+         <RenderingHints>
+            <AxisLabel>ALBEDO (DAILY DATA) [North images only]</AxisLabel>
+            <ValueFormat>F3.0</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Albedo</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>ALBEDO_S</ParameterKey>
+         <Description>Thumbnail/large mapped images of Southern hemisphere [select dates when the s/c is in the south (Nov.- Feb.)]</Description>
+         <Caveats>* Reported albedo is a ratio of observed cloud albedo normalized by earth&apos;s albedo.
+This parameter is virtual. It is calculated by calling the function APPLY_FILTER_FLAG with the following input parameters: ALBEDO, HEMISPHERE.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>10^-6 sr^-1</Units>
+         <RenderingHints>
+            <AxisLabel>ALBEDO (DAILY DATA) [South images only]</AxisLabel>
+            <ValueFormat>F3.0</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Albedo</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>ALBEDO_S_M</ParameterKey>
+         <Description>---&gt; Movie of Southern hemisphere mapped images [select dates when the s/c is in the south (Nov.- Feb.)]</Description>
+         <Caveats>* Reported albedo is a ratio of observed cloud albedo normalized by earth&apos;s albedo.
+This parameter is virtual. It is calculated by calling the function APPLY_FILTER_FLAG with the following input parameters: ALBEDO, HEMISPHERE.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>10^-6 sr^-1</Units>
+         <RenderingHints>
+            <AxisLabel>ALBEDO (DAILY DATA) [South images only]</AxisLabel>
+            <ValueFormat>F3.0</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Hemisphere</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>HEMISPHERE</ParameterKey>
+         <Description>Hemipshere: S =  southern hemisphere, N = northern hemisphere [NO PLOT, but can be listed, etc.]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <ValueFormat>A1</ValueFormat>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>CenterLon</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>CENTER_LONGITUDE</ParameterKey>
+         <Description>Center longitude of map projection, NOT data. Used for orienting the data horizontally.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>F5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>image start</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>FIRST_IMAGE_START</ParameterKey>
+         <Description>GPS start time of first image in orbit (microseconds from 0000 UT on 6 Jan 1980) / [15], range: 9.6206507e14 to 9.6214616e14</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>microseconds</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>G13</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>9.62146e+14</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Kmperpix</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>KM_PER_PIXEL</ParameterKey>
+         <Description>Linear dimension of square pixel occupying area of CIPS resolution element.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>F10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>BBox</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>BBOX</ParameterKey>
+         <Description>{x, y} Bounding Box: Bottom-Left and Top-Right indices of the smallest rectangle which both circumscribes a set of cells on a grid and is parallel to the grid axes.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Structure>
+            <Size>4</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>DEPENDENT2AVERSION</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>DEPENDENT2AVERSION</ParameterKey>
+         <Description>Version of lower level 2 data used to produce this data set. One value per orbit (Each orbit forms a petal in the daisy.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Petalstart</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>PETAL_START_TIME</ParameterKey>
+         <Description>GPS start time of each orbit (microseconds from 0000 UT on 6 Jan 1980) / [15], range: 9.6206507e14 to 9.6214616e14</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>microseconds</Units>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Albedo</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>ORBIT_NUMBERS</ParameterKey>
+         <Description>An array containing the orbit number for each petal in daisy.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>5</ValidMax>
+         <FillValue>-1</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality (DAILY DATA)</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>QUALITY_FLAGS</ParameterKey>
+         <Description>Indicator of data quality. Measurements with values equal to or less than the value of Quality_Flags are included in the daisy. In v4.20 the QF is determined only by NLayers as follows: NLayers &gt; 5, QF=0. NLayers = 4 or 5, QF=1. NLayers &lt; 4, QF=2. / 0</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>If NLayers > 5: QF=0, NLayers = 4 or 5: QF=1 NLayers < 4: QF=2</Units>
+         <RenderingHints>
+            <AxisLabel>QUALITY Flags (daily images)</AxisLabel>
+         </RenderingHints>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>-1</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>N_LATITUDE</Name>
+         <ParameterKey>N_LATITUDE</ParameterKey>
+         <Units>&#176;</Units>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>N_LONGITUDE</Name>
+         <ParameterKey>N_LONGITUDE</ParameterKey>
+         <Units>&#176;</Units>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>S_LATITUDE</Name>
+         <ParameterKey>S_LATITUDE</ParameterKey>
+         <Units>&#176;</Units>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>S_LONGITUDE</Name>
+         <ParameterKey>S_LONGITUDE</ParameterKey>
+         <Units>&#176;</Units>
+         <Structure>
+            <Size>1700 1700</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>latlon_index</Name>
+         <ParameterKey>latlon_index</ParameterKey>
+         <Description>latlon_index</Description>
+         <Caveats>index for plain image variable</Caveats>
+         <RenderingHints>
+            <AxisLabel>latlon_index</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>1700</Size>
+         </Structure>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

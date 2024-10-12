@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/bar_7a_l2_ephm/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>BARREL 7A Ephemeris (EPHM) Geographic and Magnetic Coordinates, Level 2, 4 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Geographic and magnetic coordinates. Geographic coordinates are obtained from an onboard GPS unit, magnetic coordinates are derived using the IRBEM FORTRAN library. Ephemeris data products (Lat, Long, Alt, and Time) are each returned from the payload once every 4s.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan for use of the Data. 
+
+BARREL will make all its scientific data products quickly and publicly available but all users are expected to read and follow the "BARREL Mission Data Usage Policy" which can be found here: http://www.dartmouth.edu/~barrel/documents/data.use.policy.pdf</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robyn.Millan</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>BARREL Data Repository</Name>
+            <URL>http://barreldata.ucsc.edu/data_products/</URL>
+            <Description>Access to all releases of BARREL data and links to the Science Operation Center tools.</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/barrel/l2/7a/ephem/</URL>
+            <ProductKey>BAR_7A_L2_EPHM</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/barrel/l2/7a/ephem/</URL>
+            <ProductKey>BAR_7A_L2_EPHM</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=BAR_7A_L2_EPHM&amp;index=sp_phys</URL>
+            <ProductKey>BAR_7A_L2_EPHM</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Ephemeris</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2019-12-29T00:00:00.000</StartDate>
+            <StopDate>2020-04-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT4S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Mesosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Stratosphere</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2009-09-19T00:00:05.978849280</ValidMin>
+         <ValidMax>2019-10-15T09:04:54.724999936</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FrameGroup</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FrameGroup</ParameterKey>
+         <Description>DPU Frame Counter</Description>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Frame</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Quality</ParameterKey>
+         <Description>Data Quality Flag</Description>
+         <Caveats>32bit flag used to indicate data quality. Bit 0 = Low altitude (below 20km); Bit 1 = No GPS; Bit 2 = External ephemeris used; Bit 3 = Gain shift.</Caveats>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Q</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GPS_Lat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>GPS_Lat</ParameterKey>
+         <Description>GPS Latitude.</Description>
+         <Caveats>Converted from raw int value by multiplying by a scaling factor: 8.38190317154 * 10^-8</Caveats>
+         <Cadence>PT4S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Lat</AxisLabel>
+            <ValueFormat>F7.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GPS_Lon</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>GPS_Lon</ParameterKey>
+         <Description>GPS Longitude.</Description>
+         <Caveats>Converted from raw int value by multiplying by a scaling factor: 8.38190317154 * 10^-8</Caveats>
+         <Cadence>PT4S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Long</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GPS_Alt</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>GPS_Alt</ParameterKey>
+         <Description>GPS Altitude.</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Alt</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MLT_Kp2_T89c</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MLT_Kp2_T89c</ParameterKey>
+         <Description>Magnetic local time for Kp=2 in hours (using T89c).</Description>
+         <Caveats>Calculated using T89c model with the IRBEM FORTRAN library.</Caveats>
+         <Cadence>PT4S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MLT_Kp2</AxisLabel>
+            <ValueFormat>F5.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>24.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MLT_Kp6_T89c</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MLT_Kp6_T89c</ParameterKey>
+         <Description>Magnetic local time for Kp=6 in hours (using T89c).</Description>
+         <Caveats>Calculated using T89c model with the IRBEM FORTRAN library.</Caveats>
+         <Cadence>PT4S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MLT_Kp6</AxisLabel>
+            <ValueFormat>F5.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>24.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>L_Kp2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>L_Kp2</ParameterKey>
+         <Description>L shell for Kp=2 (using T89c).</Description>
+         <Caveats>Calculated using T89c model with the IRBEM FORTRAN library.</Caveats>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>L_Kp2_T89c</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>L_Kp6</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>L_Kp6</ParameterKey>
+         <Description>L shell for Kp=6 (using T89c).</Description>
+         <Caveats>Calculated using T89c model with the IRBEM FORTRAN library.</Caveats>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>L_Kp6_T89c</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Epoch_Error</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Epoch_Error</ParameterKey>
+         <Description>Difference between calculated timestamp (epoch) and simple linear model.</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-86400000</ValidMin>
+         <ValidMax>86400000</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

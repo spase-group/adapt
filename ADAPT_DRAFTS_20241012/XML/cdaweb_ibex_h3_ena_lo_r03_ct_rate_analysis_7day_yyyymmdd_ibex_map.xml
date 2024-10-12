@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/ibex_h3_ena_lo_r03_ct_rate_analysis_7day/yyyymmdd_ibex_map</ResourceID>
+      <ResourceHeader>
+         <ResourceName>IBEX Low Energy Neutral Atom Imager (Lo), Level H3 (H3), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>1: The Interstellar Boundary Explorer (IBEX) has operated in space since 2008 updating our knowledge of the outer heliosphere and its interaction with the local interstellar medium. Start-time: 2008-12-25. There are currently 16 releases of IBEX-HI and/or IBEX-LO data covering 2009-2022.
+2: This data set is from the Release 3, 7.5 days cadence, IBEX-Lo data for the years 2009 - 2010 contains data used in the publication of Moebius et al., 2012, Interstellar Gas Flow Parameters Derived from IBEX-Lo Observations in 2009 and 2010 Analytical Analysis and Bzowski et al., 2012, Neutral interstellar helium parameters based on IBEX-Lo observations and test particle calculations. The data are the 6 degree resolution corrected histogram data and the observation time periods in one csv file for each orbit for both the angular fit analysis and the count rate analysis.
+3: Additional publications: Bzowski et al., 2012, Neutral interstellar helium parameters based on IBEX-Lo observations and test particle calculations; and Hlond et al., 2012, Precision Pointing of IBEX-Lo Observations.
+4: Data Selection: In order to determine accurately the interstellar gas flow vector, the pointing of IBEX-Lo has to be known to about 0.1 degree accuracy for the observations used in this analysis. It is demonstrated that the pointing of the IBEX-Lo star sensor and of the spacecraft star tracker agree within this prescribed accuracy for time periods of simultaneous good observations (Hlond et al., 2012). The data used from time periods when the IBEX star tracker, which provides precision pointing information for the routine data processing, was operating within its specifications for all analysis that requires exact pointing knowledge, such as the evaluation of the flow distributions in latitude. However, the determination of the ISM flow maximum in ecliptic longitude only requires the use of the count rates, obtained over plus-minus 3 sigma of the angular distribution from the latitude peak position, as a function of longitude, so this requirement can be relaxed.
+5: During the analysis, it was found that the data transfer through the CEU that formats the information for the telemetry slows down because of the total traffic across the interface and the computational load event rates that exceed about 10 counts/s, as observed during the He ISM flow peak. This slow down produces a modulation in the high-resolution data according to the accumulation scheme into 6 deg sectors. Therefore, the only data integrated 6-deg sector for He used in this analysis. In addition, IBEX-Lo detects background electrons, which are identified as invalid events by the TOF spectrometer, but they have to be removed by the CEU, which adds to its load and the slow down when electron rates increase.
+6: For this analysis, a list of valid time periods was compiled for the ISM flow analysis that is used throughout this paper and also in the analysis by Bzowski et al. (2012). Excluded from this list are time periods, for which the following conditions apply:
+7: IBEX is close to the magnetosphere, where IBEX-Lo observes high count rates of magnetospheric ENAs and ions, based on angular ranges outside the ISM flow distribution.
+8: The Moon is in the IBEX FoV. These times are taken from the ISOC command files, which contain special commanding for the star sensor.
+9: The electron rates for IBEX-Lo are high. These times are identified in the IBEX-Lo TOF count rates, when the otherwise very stable base count rate outside the ISM flow direction is exceeded by more than a factor of 1.6 (safely above any stochastic fluctuations of the base count rate, but low enough to indicate any significant electron rate increases).
+10: The star tracker function has been impaired. This affects the determination of the ISM peak location and width in latitude.
+11: No further culling for increased background counts (routinely performed for suprathermal ENA observations (McComas et al. 2009b) is necessary for ISM flow observations because of the concentrated angular distributions at much higher rates. The angular distribution analysis, in general, is performed on much shorter .good. time periods than the count rate analysis because nominal operation of the star tracker is required. Because the rate analysis requires contiguous time sections of fixed length to achieve approximately comparable counting statistics for each data point, very small portions at the beginning or end of the .good. time intervals may be unused, which accounts for the occasional foreshortening of the .good. time intervals for the rate analysis at the beginning or the end.
+12: McComas, D. J., et al. (2017), Seven Years of Imaging the Global Heliosphere with IBEX, Astrophys. J. Supp. Ser., 229(2), 41 (32 pp.),
+http://doi.org/10.3847/1538-4365/aa66d8
+This particular data set is denoted in the original ascii files in https://ibex.princeton.edu/DataRelease3 as Interstellar Gas Flow Parameters Accumulated Count Data Used in the Count Rate Analysis.</Description>
+         <Acknowledgement>Please acknowledge the IBEX Mission Principal Investigator, Dr. David J McComas of Princeton University.. The IBEX Release 3 data are archived as fully citable data. Please consult IBEX team publications and personnel for further details on production, processing, and usage of these data.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>IBEX The Interstellar Boundary Explorer mission</Name>
+            <URL>https://ibex.princeton.edu/</URL>
+            <Description>IBEX Mission, Instrument, and Data Release Descriptions</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>IBEX Data Release 3</Name>
+            <URL>https://ibex.princeton.edu/DataRelease</URL>
+            <Description>IBEX Data Release 3, Count Rate analysis</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>IBEX_H3_ENA_LO_R03_CT_RATE_ANALYSIS_7DAY</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>IBEX_H3_ENA_LO_R03_CT_RATE_ANALYSIS_7DAY</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=IBEX_H3_ENA_LO_R03_CT_RATE_ANALYSIS_7DAY&amp;index=sp_phys</URL>
+            <ProductKey>IBEX_H3_ENA_LO_R03_CT_RATE_ANALYSIS_7DAY</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator D.J. McComas. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>CDAWeb HAPI Server</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/hapi</URL>
+            <Style>HAPI</Style>
+            <ProductKey>IBEX_H3_ENA_LO_R03_CT_RATE_ANALYSIS_7DAY</ProductKey>
+            <Description>Web Service to this product using the HAPI interface.</Description>
+         </AccessURL>
+         <Format>CSV</Format>
+         <Acknowledgement>Please acknowledge the Principal Investigator D.J. McComas. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/IBEX/Lo</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Heliosphere.Inner</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>CDF epoch start time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>day-month-year hour:minute:second</Units>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>CDF EPOCH TIME</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>01-Jan-1990 00:00:00.000</ValidMin>
+         <ValidMax>31-Dec-2029 23:59:59.999</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch2</ParameterKey>
+         <Description>CDF epoch end time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>day-month-year hour:minute:second</Units>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>CDF EPOCH TIME</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>01-Jan-1990 00:00:00.000</ValidMin>
+         <ValidMax>31-Dec-2029 23:59:59.999</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Start GPS Time</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Start_GPS_time</ParameterKey>
+         <Description>Start GPS Time.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Start GPS Time</AxisLabel>
+            <ValueFormat>F19.7</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>End GPS Time</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>End_GPS_time</ParameterKey>
+         <Description>End GPS Time.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>End GPS Time</AxisLabel>
+            <ValueFormat>F19.7</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Solar Ecliptic Latitude Bin Number</Name>
+         <ParameterKey>Bin_Number</ParameterKey>
+         <Description>Solar Ecliptic Latitude Bin Number</Description>
+         <Caveats>Solar Ecliptic Latitude Bin Number corresponding to six-degree latitudinal increments of the current IBEX-Lo viewing sector. There are 30 angular bins in Solar Ecliptic Latitude (NPR) covering from 0 to 180 degree</Caveats>
+         <Units>Bin Number</Units>
+         <RenderingHints>
+            <AxisLabel>#</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>30</Size>
+         </Structure>
+         <ValidMin>1</ValidMin>
+         <ValidMax>30</ValidMax>
+         <FillValue>65534</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Bin Center</Name>
+         <ParameterKey>Bin_Center</ParameterKey>
+         <Description>Bin Center</Description>
+         <Caveats>Latitude value corresponds to the mid-point of six-degree latitudinal IBEX-Lo NEP viewing sector</Caveats>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Latitude</AxisLabel>
+            <ValueFormat>F6.0</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>30</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>ENA Total Counts at the given bin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Counts</ParameterKey>
+         <Description>H ENA Total Counts</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Counts</AxisLabel>
+            <ValueFormat>F10.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>30</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>6</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>12</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>18</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>24</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>36</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>42</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>48</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>54</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>60</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>66</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>72</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>78</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>84</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>90</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>96</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>102</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>108</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>114</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>120</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>126</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>132</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>138</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>144</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>150</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>156</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>162</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>168</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>174</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c2_cp_sta_psd/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C2 Spatio-Temporal Analysis of Field Fluctuation (STAFF) Power Spectral Density, 8 Hz to 4 kHz, Cluster Active Archive Parameter (CP), 1 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>STAFF (Spatio Temporal Analysis of Field Fluctuations) is one of the five experiments
+of the Wave Experiment Consortium (WEC).
+The STAFF experiment comprises a boom-mounted three-axis search coil magnetometer to
+measure magnetic fluctuations in the frequency range 0.1 Hz  - 4 kHz, a
+preamplifier and an electronics box that houses the two complementary
+data-analysis packages: a digital Spectrum Analyser, and an on-board waveform
+unit (SC).</Description>
+         <Acknowledgement>Please acknowledge the STAFF team and the ESA Cluster Archive in any publication based upon use of this data. Digital Object Identifier for the STAFF archive: doi.org/10.5270/esa-yrzyijm</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c2/sta/powerspectraldensity/</URL>
+            <ProductKey>C2_CP_STA_PSD</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c2/sta/powerspectraldensity/</URL>
+            <ProductKey>C2_CP_STA_PSD</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C2_CP_STA_PSD&amp;index=sp_phys</URL>
+            <ProductKey>C2_CP_STA_PSD</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator P. Canu. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Cluster-Salsa/STAFF</InstrumentID>
+      <MeasurementType>ElectricField</MeasurementType>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2000-09-01T00:00:00.000</StartDate>
+            <StopDate>2023-01-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT1S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>UT Time</Name>
+         <ParameterKey>Time__C2_CP_STA_PSD</ParameterKey>
+         <Description>Interval start time tag</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A24</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000.000.000.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000.000.000.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999.999.999.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sampling interval duration</Name>
+         <Set>Time series defined by using: Time__C2_CP_STA_PSD</Set>
+         <ParameterKey>Duration__C2_CP_STA_PSD</ParameterKey>
+         <Description>Interval duration</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>s</Units>
+         <UnitsConversion>1.0&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>s</AxisLabel>
+            <ValueFormat>F4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.125</ValidMin>
+         <ValidMax>2.0</ValidMax>
+         <FillValue>9.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Frequency bin centres</Name>
+         <ParameterKey>Frequency__C2_CP_STA_PSD</ParameterKey>
+         <Description>Interval centred frequency tag</Description>
+         <Units>Hz</Units>
+         <UnitsConversion>1.0&gt;Hz</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>F</AxisLabel>
+            <ValueFormat>F12</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>27</Size>
+         </Structure>
+         <ValidMin>8.7692</ValidMin>
+         <ValidMax>3563.59</ValidMax>
+         <FillValue>-999.99</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Frequency bin half widths</Name>
+         <ParameterKey>Frequency_BHW__C2_CP_STA_PSD</ParameterKey>
+         <Description>Frequency bin half widths</Description>
+         <Units>Hz</Units>
+         <UnitsConversion>1.0&gt;Hz</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>F_bhw</AxisLabel>
+            <ValueFormat>F7</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>27</Size>
+         </Structure>
+         <ValidMin>1.0085</ValidMin>
+         <ValidMax>409.813</ValidMax>
+         <FillValue>-999.99</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Power Spectral Density</Name>
+         <Set>Time series defined by using: Time__C2_CP_STA_PSD</Set>
+         <ParameterKey>BB_xxyyzz_sr2__C2_CP_STA_PSD</ParameterKey>
+         <Description>Power spectrum 8-4000 Hz of the B-field components along the SR2 coordinate axes.
+
+* Column 1 Labels from FREQUENCY__C2_CP_STA_PSD: ["8.7692","11.0485","13.9203","17.5385","22.0971","27.8406","35.0769","44.1942","55.6812","70.1539","88.3883","111.362","140.308","176.777","222.725","280.616","353.553","445.449","561.231","707.107","890.899","1122.46","1414.21","1781.80","2244.92","2828.43","3563.59"].
+* Column 2 Labels from : ["Bx^2","By^2","Bz^2"].</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>nT^2/Hz</Units>
+         <UnitsConversion>1.0E-18&gt;T^2 Hz^-1</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>SR2</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Magnetic Power Spectral Density</AxisLabel>
+            <ValueFormat>F12</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>27 3</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electrical Power Spectral Density</Name>
+         <Set>Time series defined by using: Time__C2_CP_STA_PSD</Set>
+         <ParameterKey>EE_xxyy_sr2__C2_CP_STA_PSD</ParameterKey>
+         <Description>Power spectrum 8-4000 Hz of the E-field components along the SR2 coordinate axes.
+
+* Column 1 Labels from FREQUENCY__C2_CP_STA_PSD: ["8.7692","11.0485","13.9203","17.5385","22.0971","27.8406","35.0769","44.1942","55.6812","70.1539","88.3883","111.362","140.308","176.777","222.725","280.616","353.553","445.449","561.231","707.107","890.899","1122.46","1414.21","1781.80","2244.92","2828.43","3563.59"].
+* Column 2 Labels from : ["Ex^2","Ey^2"].</Description>
+         <Cadence>PT1S</Cadence>
+         <Units>mV^2 m^-2 Hz^-1</Units>
+         <UnitsConversion>1.0E-6&gt;V^2 m^-2 Hz^-1</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>SR2</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Electrical Power Spectral Density</AxisLabel>
+            <ValueFormat>F12</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>27 2</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

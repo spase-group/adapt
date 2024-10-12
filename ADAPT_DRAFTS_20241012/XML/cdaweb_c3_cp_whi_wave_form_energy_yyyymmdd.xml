@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c3_cp_whi_wave_form_energy/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C3 Waves of High frequency and Sounder for Probing of Electron density by Relaxation (WHISPER) Electric Wave Form Power Density, Cluster Active Archive Parameter (CP), 0.2 second Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The Wave of HIgh frequency and Sounder for Probing of Electron density
+by Relaxation (WHISPER) performs the measurement of the electron density
+on the four satellites of the CLUSTER project. The two main purposes of
+the WHISPER experiment are to record the natural waves and to make a
+diagnostic of the electron density using the sounding technique.
+The various working modes and the fourier transforms calculated on board
+provide a good frequency resolution obtained in the bandwidth 2-83 kHz.
+Onboard data compression by the Digital Wave Processing (DWP) intrument
+allows a good dynamic and level resolution of the electric signal amplitude.</Description>
+         <Acknowledgement>Please acknowledge the WHISPER team and the ESA Cluster Archive in any publication based upon use of this data. Digital Object Identifier for the WHISPER archive: https://doi.org/10.5270/esa-6stdo07</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c3/whi/efield_integratedpowerdensity_naturalmode/</URL>
+            <ProductKey>C3_CP_WHI_WAVE_FORM_ENERGY</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c3/whi/efield_integratedpowerdensity_naturalmode/</URL>
+            <ProductKey>C3_CP_WHI_WAVE_FORM_ENERGY</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C3_CP_WHI_WAVE_FORM_ENERGY&amp;index=sp_phys</URL>
+            <ProductKey>C3_CP_WHI_WAVE_FORM_ENERGY</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator P. Henri. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Cluster-Samba/WHISPER</InstrumentID>
+      <MeasurementType>ElectricField</MeasurementType>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2000-08-22T00:00:00.000</StartDate>
+            <StopDate>2023-06-30T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>0.2 second</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>time_tags__C3_CP_WHI_WAVE_FORM_ENERGY</ParameterKey>
+         <Description>Interval centred time tag</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A24</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_WAVE_FORM_ENERGY</Set>
+         <ParameterKey>Delta__C3_CP_WHI_WAVE_FORM_ENERGY</ParameterKey>
+         <Description>Half the sampling duration + uncertainty of time tags (in seconds)</Description>
+         <Cadence>0.2 second</Cadence>
+         <Units>s</Units>
+         <UnitsConversion>1&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>D</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0034</ValidMin>
+         <ValidMax>0.0061</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Energy Value</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_WAVE_FORM_ENERGY</Set>
+         <ParameterKey>Electric_Wave_Form_Power_Density__C3_CP_WHI_WAVE_FORM_ENERGY</ParameterKey>
+         <Description>Electric Wave Form Power Density</Description>
+         <Cadence>0.2 second</Cadence>
+         <Units>V^2 m^-2 Hz^-1</Units>
+         <UnitsConversion>1.0&gt;V^2 m^-2 Hz^-1</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>E_W_F_P_D</AxisLabel>
+            <ValueFormat>F13</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e-06</ValidMax>
+         <FillValue>-1.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Presence of Spectrum Code</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_WAVE_FORM_ENERGY</Set>
+         <ParameterKey>Spectrum_Code__C3_CP_WHI_WAVE_FORM_ENERGY</ParameterKey>
+         <Description>Wave form energies and natural spectra are acquired onboard simultaneously and then undergo the same time-averaging processing. However, only a selection of natural spectra is transmitted to ground (1/4 or 1/8, chosen by telecommand) while all energies are transmitted. The Spectrum_Code parameter is equal to 1 if the corresponding natural spectrum has been transmitted to ground and 0 otherwise. Natural spectra can be found in the Ci_CP_WHI_NATURAL dataset.</Description>
+         <Cadence>0.2 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>S_C</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>-1</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Average Number</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_WAVE_FORM_ENERGY</Set>
+         <ParameterKey>Average_Number__C3_CP_WHI_WAVE_FORM_ENERGY</ParameterKey>
+         <Description>Number of averaged individual spectra (formed every 13.33 ms)</Description>
+         <Cadence>0.2 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>A_N</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-1</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Overflow Code Value</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_WAVE_FORM_ENERGY</Set>
+         <ParameterKey>OverFlow_Code__C3_CP_WHI_WAVE_FORM_ENERGY</ParameterKey>
+         <Description>Coded overflow information</Description>
+         <Caveats>Value is between 0 (clean) and 1 (saturation)</Caveats>
+         <Cadence>0.2 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Ov</AxisLabel>
+            <ValueFormat>F9</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>128.0</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

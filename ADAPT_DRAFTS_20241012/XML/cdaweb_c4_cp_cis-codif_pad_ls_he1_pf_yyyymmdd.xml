@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c4_cp_cis-codif_pad_ls_he1_pf/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C4 Cluster Ion Spectrometry-ion Composition and Distribution Function (CIS-CODIF) Helium+ Pitch Angle Distribution, Low-sensitivity Side, in Differential Particle Flux, Cluster Active Archive Parameter (CP), 4 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Cluster Ion Spectrometry.
+The CIS (Cluster Ion Spectrometry) experiment is a comprehensive
+ionic plasma spectrometry package onboard the Cluster spacecraft,
+capable of obtaining full three-dimentional ion distributions
+(about 0 to 40 keV/e) with a time resolution of one spacecraft spin (4 sec)
+and with mass-per-charge composition determination.
+The CIS package consists of two different instruments,
+a time-of-flight ion Composition and Distribution Function analyser (CODIF, or CIS-1)
+and a Hot Ion Analyser (HIA, or CIS-2).</Description>
+         <Acknowledgement>Please acknowledge the CIS team and ESA Cluster Science Archive when using this data.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c4/cis-codif/heplus_pitchangle_lowsens_diffparticleflux/</URL>
+            <ProductKey>C4_CP_CIS-CODIF_PAD_LS_HE1_PF</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c4/cis-codif/heplus_pitchangle_lowsens_diffparticleflux/</URL>
+            <ProductKey>C4_CP_CIS-CODIF_PAD_LS_HE1_PF</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C4_CP_CIS-CODIF_PAD_LS_HE1_PF&amp;index=sp_phys</URL>
+            <ProductKey>C4_CP_CIS-CODIF_PAD_LS_HE1_PF</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator I. Dandouras. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2001-01-30T00:00:00.000</StartDate>
+            <StopDate>2021-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT4S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Start time</Name>
+         <ParameterKey>time_tags__C4_CP_CIS_CODIF_PAD_LS_He1_PF</ParameterKey>
+         <Description>Acquisition interval start time</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A17</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Acquisition interval duration</Name>
+         <Set>Time series defined by using: time_tags__C4_CP_CIS_CODIF_PAD_LS_He1_PF</Set>
+         <ParameterKey>duration__C4_CP_CIS_CODIF_PAD_LS_He1_PF</ParameterKey>
+         <Description>Acquisition interval duration</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>s</Units>
+         <UnitsConversion>1.0&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>dT</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>3.5</ValidMin>
+         <ValidMax>63.0</ValidMax>
+         <FillValue>0.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>CIS Operational Mode</Name>
+         <Set>Time series defined by using: time_tags__C4_CP_CIS_CODIF_PAD_LS_He1_PF</Set>
+         <ParameterKey>cis_mode__C4_CP_CIS_CODIF_PAD_LS_He1_PF</ParameterKey>
+         <Description>CIS Operational Mode</Description>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Mode</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>99</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Telemetry Product Number</Name>
+         <Set>Time series defined by using: time_tags__C4_CP_CIS_CODIF_PAD_LS_He1_PF</Set>
+         <ParameterKey>tm_product__C4_CP_CIS_CODIF_PAD_LS_He1_PF</ParameterKey>
+         <Description>CIS Telemetry Product</Description>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Product</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>63</ValidMax>
+         <FillValue>99</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Differential_Particle_Flux</Name>
+         <Set>Time series defined by using: time_tags__C4_CP_CIS_CODIF_PAD_LS_He1_PF</Set>
+         <ParameterKey>Differential_Particle_Flux__C4_CP_CIS_CODIF_PAD_LS_He1_PF</ParameterKey>
+         <Description>Differential_Particle_Flux.
+
+* Column 1 Labels from PITCH_ANGLE__C4_CP_CIS_CODIF_PAD_LS_HE1_PF: ["5.625","16.875","28.125","39.375","50.625","61.875","73.125","84.375","95.625","106.875","118.125","129.375","140.625","151.875","163.125","174.375"].
+* Column 2 Labels from ENERGY_TABLE__C4_CP_CIS_CODIF_PAD_LS_HE1_PF: ["35238.04","27677.06","21738.44","17074.05","13410.5","10533.03","8272.97","6497.85","5103.62","4008.54","3148.44","2472.88","1942.28","1525.53","1198.2","941.1","739.17","580.57","456.0","358.15","281.31","220.95","173.54","136.3","107.06","84.09","66.04","51.87","40.74","32.0","25.13"].</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>Particles cm^-2 s^-1 sr^-1 keV^-1</Units>
+         <UnitsConversion>6.2415E+19&gt;(particles) m^-2 s^-1 sr^-1 J^-1</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Differential_Particle_Flux</AxisLabel>
+            <ValueFormat>F11</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16 31</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pitch angles center value</Name>
+         <ParameterKey>pitch_angle__C4_CP_CIS_CODIF_PAD_LS_He1_PF</ParameterKey>
+         <Description>Pitch angles center value (partical arrival direction)</Description>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.0174532925199&gt;rad</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>alpha (deg)</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Energy table</Name>
+         <ParameterKey>energy_table__C4_CP_CIS_CODIF_PAD_LS_He1_PF</ParameterKey>
+         <Description>Energy table</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>31</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>40000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta plus energy table</Name>
+         <ParameterKey>delta_plus_energy_table__C4_CP_CIS_CODIF_PAD_LS_He1_PF</ParameterKey>
+         <Description>Delta plus energy table</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>+dE</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>31</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta minus energy table</Name>
+         <ParameterKey>delta_minus_energy_table__C4_CP_CIS_CODIF_PAD_LS_He1_PF</ParameterKey>
+         <Description>Delta minus energy table</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>-dE</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>31</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5100.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

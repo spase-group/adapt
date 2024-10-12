@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/endurance_l2-rpa_pes/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The Endurance PES instrument was comprised of 8 boom-mounted Dual Electrostatic Analyzer (DESA) sensors, and a main electronics box (MEB). Each DESA sensor had two look directions; A-side (looking down to Earth from launch to pitch-over maneuver, and then up to space until loss of signal (LOS)); and B-side (looking up to space from launch to pitch-over, and then down to Earth until loss of signal (LOS)). The sensors were synchronized by the MEB and cross-calibrated to look at approximately the same energy at the same time. These data present the high-resolution measurement (0.5% DE/E, 20.3 eV to 25.85 eV) using the ESA and RPA counts from all the sensors combined together</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>https://doi.org/10.1007/s11214-022-00908-0</Name>
+            <URL>https://doi.org/10.1007/s11214-022-00908-0</URL>
+            <Description>Collinson, G., Glocer, A., Pfaff, R. et al. The Endurance Rocket Mission. Space Sci Rev 218, 39 (2022). https://doi.org/10.1007/s11214-022-00908-0</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/endurance/endurance-2022/cdf/</URL>
+            <ProductKey>ENDURANCE_L2-RPA_PES</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/endurance/endurance-2022/cdf/</URL>
+            <ProductKey>ENDURANCE_L2-RPA_PES</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ENDURANCE_L2-RPA_PES&amp;index=sp_phys</URL>
+            <ProductKey>ENDURANCE_L2-RPA_PES</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2022-05-11T00:00:00.000</StartDate>
+            <StopDate>2022-05-11T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Time start of avg interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+         </RenderingHints>
+         <ValidMin>01-Jan-1994 00:00:00.000</ValidMin>
+         <ValidMax>01-Jan-2050 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PES_A_RPA_DEF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PES_A_RPA_DEF</ParameterKey>
+         <Description>High resolution Time/energy spectrogram of Differential Energy Flux of electrons from the 8 combined A-sides of PES. Uncorrected for Spacecraft Potential</Description>
+         <Caveats>Data are corrected for background counts and then converted to Differential Energy Flux as per Collinson et al., The Geometric Factor of electrostatic plasma analyzers, Rev. Sci. Instrum., 2012. NAN values resulting from contamination from pre-planned thruster firings. Data are uncorrected for spacecraft potential</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV cm-2 s -1 sr-1 eV-1</Units>
+         <RenderingHints>
+            <AxisLabel>DEF</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleMin>3980.0</ScaleMin>
+            <ScaleMax>3.163e+07</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>37</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>20.3000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>20.4500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>20.6000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>20.7500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>20.9000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>21.0500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>21.2000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>21.3500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>21.5000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>21.6500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>21.8000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>21.9500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>22.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>22.2500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>22.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>22.5500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>22.7000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>22.8500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>23.1500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>23.3000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>23.4500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>23.6000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>23.7500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>23.9000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>24.0500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>24.2000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>24.3500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>24.5000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>24.6500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>24.8000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>24.9500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>25.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>25.2500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>25.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>25.5500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>25.7000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>25.8500</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>10000.0</ValidMin>
+         <ValidMax>1.0e+08</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PES_B_RPA_DEF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PES_B_RPA_DEF</ParameterKey>
+         <Description>High resolution Time/energy spectrogram of Differential Energy Flux of electrons from the 8 combined B-sides of PES. Uncorrected for Spacecraft Potential</Description>
+         <Caveats>Data are corrected for background counts and then converted to Differential Energy Flux as per Collinson et al., The Geometric Factor of electrostatic plasma analyzers, Rev. Sci. Instrum., 2012. NAN values resulting from contamination from pre-planned thruster firings. Data are uncorrected for spacecraft potential</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV cm-2 s -1 sr-1 eV-1</Units>
+         <RenderingHints>
+            <AxisLabel>DEF</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleMin>3980.0</ScaleMin>
+            <ScaleMax>3.163e+07</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>37</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>20.3000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>20.4500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>20.6000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>20.7500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>20.9000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>21.0500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>21.2000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>21.3500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>21.5000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>21.6500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>21.8000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>21.9500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>22.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>22.2500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>22.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>22.5500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>22.7000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>22.8500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>23.1500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>23.3000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>23.4500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>23.6000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>23.7500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>23.9000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>24.0500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>24.2000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>24.3500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>24.5000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>24.6500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>24.8000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>24.9500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>25.1000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>25.2500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>25.4000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>25.5500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>25.7000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>25.8500</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>10000.0</ValidMin>
+         <ValidMax>1.0e+08</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PES_A_RPA_DEF_SC_CORRECTED</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PES_A_RPA_DEF_CORR</ParameterKey>
+         <Description>High resolution Time/energy spectrogram of Differential Energy Flux of electrons from the 8 combined A-sides of PES. Corrected for Spacecraft Potential</Description>
+         <Caveats>Data are corrected for background counts and then converted to Differential Energy Flux as per Collinson et al., The Geometric Factor of electrostatic plasma analyzers, Rev. Sci. Instrum., 2012. NAN values resulting from contamination from pre-planned thruster firings. Data are Corrected for spacecraft potential from SLP instrument</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV cm-2 s -1 sr-1 eV-1</Units>
+         <RenderingHints>
+            <AxisLabel>DEF CORR</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleMin>3980.0</ScaleMin>
+            <ScaleMax>3.163e+07</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>37</Size>
+         </Structure>
+         <ValidMin>10000.0</ValidMin>
+         <ValidMax>1.0e+08</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PES_B_RPA_DEF_SC_CORRECTED</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PES_B_RPA_DEF_CORR</ParameterKey>
+         <Description>High resolution Time/energy spectrogram of Differential Energy Flux of electrons from the 8 combined B-sides of PES. Corrected for Spacecraft Potential</Description>
+         <Caveats>Data are corrected for background counts and then converted to Differential Energy Flux as per Collinson et al., The Geometric Factor of electrostatic plasma analyzers, Rev. Sci. Instrum., 2012. NAN values resulting from contamination from pre-planned thruster firings. Data are Corrected for spacecraft potential from SLP instrument</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV cm-2 s -1 sr-1 eV-1</Units>
+         <RenderingHints>
+            <AxisLabel>DEF CORR</AxisLabel>
+            <ValueFormat>E12.4</ValueFormat>
+            <ScaleMin>3980.0</ScaleMin>
+            <ScaleMax>3.163e+07</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>37</Size>
+         </Structure>
+         <ValidMin>10000.0</ValidMin>
+         <ValidMax>1.0e+08</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Energy</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>energy</ParameterKey>
+         <Description>Energy of each RPA scan adjusted for spacecraft potential</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>F7.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>37</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>3</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>4</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>5</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>6</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>7</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>8</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>9</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>10</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>11</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>12</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>13</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>14</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>15</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>16</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>17</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>18</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>19</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>20</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>21</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>22</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>23</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>24</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>25</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>26</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>27</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>28</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>29</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>30</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>31</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>32</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>33</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>34</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>35</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>36</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>37</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>20.0</ValidMin>
+         <ValidMax>30.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Energy</Name>
+         <ParameterKey>energy_static</ParameterKey>
+         <Units>eV</Units>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>F8.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>37</Size>
+         </Structure>
+         <ValidMin>20.0</ValidMin>
+         <ValidMax>30.0</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>index</Name>
+         <ParameterKey>energyIndex</ParameterKey>
+         <RenderingHints>
+            <AxisLabel>index</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>37</Size>
+         </Structure>
+         <ValidMin>1</ValidMin>
+         <ValidMax>37</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

@@ -1,0 +1,9 @@
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 .xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Person/Leslie.Anita.Woodger.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Person/Michael.P.McCarthy.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Person/John.G.Sample.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Person/David.M.Smith.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Person/Warren.Z.Rexroad.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Person/Robert.M.Candey.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Repository/NASA/GSFC/SPDF/CDAWeb.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Instrument/.xml

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/wi_wa_rad1_l3_df/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>This file contains goniopolarimetry analytical inversion dataset for Wind/Waves, assuming an unpolarized extended radio source (U=V=Q=0). Data are calibrated in W/m^2/Hz.</Description>
+         <Acknowledgement>The authors must acknowledge the Plasma Physics Data Centre (CDPP) and Wind/WAVES teams for access to data. Data are open access, with CC-BY 4.0 license. If usedin presentations or publications, cite the data collection with its DOI, and acknowledge Wind/Waves Investigation (K.Issautier and K. Goetz, PIs). Please read carefully the caveats attached to the data. We recommend the data users to contact the Wind/Waves team early in their study (Data inversion and limitation contacts: B. Cecconi and X.Bonnin). For reporting purposes, we request bibliography information for any publication, etc., using these data. Please send information on the use of this data to PIs: K.Issautier and K. Goetz. XXX why XXX</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>repository</Name>
+            <URL>http://cdpp.eu/</URL>
+            <Description>CDPP archive</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/wind/waves/rad1_l3_df/</URL>
+            <ProductKey>WI_WA_RAD1_L3_DF</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/wind/waves/rad1_l3_df/</URL>
+            <ProductKey>WI_WA_RAD1_L3_DF</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=WI_WA_RAD1_L3_DF&amp;index=sp_phys</URL>
+            <ProductKey>WI_WA_RAD1_L3_DF</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>1994-11-10T00:00:00.000</StartDate>
+            <StopDate>2023-12-15T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Heliosphere</ObservedRegion>
+      <ObservedRegion>Heliosphere.Inner</ObservedRegion>
+      <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>* Primary time used as a reference in the file
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleMin>741441736215943798</ScaleMin>
+            <ScaleMax>741527917435114785</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1994-11-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2029-12-31T23:59:59.999000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sequential sweep number in the file</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SWEEP</ParameterKey>
+         <Description>Sequential sweep number</Description>
+         <Caveats>Sequential sweep number in the file, starting from the first sweep of the current day</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sequential sweep</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleMin>1</ScaleMin>
+            <ScaleMax>412</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>65534</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Frequency</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FREQUENCY</ParameterKey>
+         <Description>Frequency of analysis</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Hz</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Frequency</AxisLabel>
+            <ValueFormat>F10.1</ValueFormat>
+            <ScaleMin>20000.0</ScaleMin>
+            <ScaleMax>1.04e+06</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>20000.0</ValidMin>
+         <ValidMax>1.04e+06</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sequential number in parent L2 data file</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NUM</ParameterKey>
+         <Description>Sequential number in parent L2 data file</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>I11</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+            <Element>
+               <Name>First sequential sample</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Second sequential sample</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Third sequential sample</Name>
+               <Index>3</Index>
+            </Element>
+            <Element>
+               <Name>Fourth sequential sample</Name>
+               <Index>4</Index>
+            </Element>
+            <Element>
+               <Name>Fifth sequential sample</Name>
+               <Index>5</Index>
+            </Element>
+            <Element>
+               <Name>Sixth sequential sample</Name>
+               <Index>6</Index>
+            </Element>
+            <Element>
+               <Name>Seventh sequential sample</Name>
+               <Index>7</Index>
+            </Element>
+            <Element>
+               <Name>Eighth sequential sample</Name>
+               <Index>8</Index>
+            </Element>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65534</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Stokes I parameter</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>STOKES_I</ParameterKey>
+         <Description>Stokes I parameter of the incoming wave</Description>
+         <Caveats>Absolute flux density (i.e., I Stokes parameter) of the incoming wave. Derived from direction-finding inversion.The receiver background is already removed.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>W/m^2/Hz</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Stokes I</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleMin>4.7e-20</ScaleMin>
+            <ScaleMax>6.81e-16</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Wave colatitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>WAVE_COLATITUDE_SRF</ParameterKey>
+         <Description>Wave vector colatitude</Description>
+         <Caveats>Colatitude angle of the wave vector in the Wind Spacecraft Reference reference (SRF)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Wave colatitude</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleMin>0.00365</ScaleMin>
+            <ScaleMax>180.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Wave azimuth</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>WAVE_AZIMUTH_SRF</ParameterKey>
+         <Description>Wave vector azimuth</Description>
+         <Caveats>Azimuth angle of the wave vector in the Wind Spacecraft Reference Frame (SRF)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Wave azimuth</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleMin>-90.0</ScaleMin>
+            <ScaleMax>90.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Angular size radius</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SOURCE_SIZE</ParameterKey>
+         <Description>Radio source angular size radius</Description>
+         <Caveats>Radio source angular size radius, assuming an uniform brightness distribution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Ang. Radius</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>90.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Signal modulation rate</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MODULATION_RATE</ParameterKey>
+         <Description>Signal modulation rate</Description>
+         <Caveats>Signal modulation rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Modulation rate</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleMin>1.15e-15</ScaleMin>
+            <ScaleMax>1.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_FLAG</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Quality flag; 3=Good, 1=problems, 2=survey, 4=received special treatment</Description>
+         <Caveats>Flag to indicate the quality of the data. Possible values are: 0=Bad data. 1=Known problems. 2=Survey data. 3=Good for publication. 4=Data which has received special treatment.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>3 = Good</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality flag</AxisLabel>
+            <ValueFormat>I1.1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

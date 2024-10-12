@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/reach-vid-180_dosimeter-l1c/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The Responsive Environmental Assessment Commercially Hosted (REACH) constellation is collection of 32 small sensors hosted on six orbital planes of the Iridium-Next space vehicles in low earth orbit. Each sensor contains two micro-dosimeters sensitive to the passage of charged particles from the Earth s radiation belts. There are six distinct dosimeter types spread among the 64 individual sensors, which are unique in shielding and electronic threshold. When taken together, this effectively enables a high time-cadence measurement of protons and electrons in six integral energy channels over the entire globe.</Description>
+         <Acknowledgement>The development of the netCDF files was supported by the SPI Goddard HISFM 2022. The success of the REACH project is owed to a long line of people who have contributed to it over the many years of development. The REACH hardware team in The Aerospace Corporation s xLab organization included Paul Carranza, Sue Crain, Bill Crain, Andrew Hsu, Brian McCarthy, John McHale, Can Nguyen, Mario Perez, Deb Salvaggio, and Gerrit Sorensen, all critical to designing and fabricating the first 18 of the 32 REACH pods. Millennium Engineering and Integration (MEI) manufactured the remaining 14 pods. Doug Holker was instrumental in nearly all facets of REACH development, outreach, support, endorsement and project management for the entirety of the project lifetime. The REACH project was led in chronological order by the following USAF Program Managers: Capt Dan Kimmich, Lt Garrett Ellis, Lt Justin Shimasaki, Capt Sean Quintana, Capt Felix Abeyta, Lt Kurt Mann, Maj James Crane, Capt Omar Manning, Lt Zach Morley, Capt Scott Day, Lt Zeesha Braslawsce, and Lt Ryan Francies. This list reflects their ranks at the time of involvement. Recent management is possible through the SMC/Development Corp program office support Pete Cunningham. Data transport is provided by Iridium, L3Harris, and data processing of the Level 0 files is performed by Robin Barnes and supported by Tom Sotirelis and Mike Kelly at the Johns Hopkins Applied Physics Laboratory. Alexa Halford, now of NASA Goddard Space Flight Center, prototyped many higher-level REACH data products and performed intra-calibration of the dosimeters. See Usage Guidelines at: https://zenodo.org/record/6423507#.YmMqcfPMLCU. XXX why XXX</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>REACH data</Name>
+            <URL>https://zenodo.org/record/7038285</URL>
+            <Description>REACH csv files are avalible at</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>REACH-VID-180_DOSIMETER-L1C</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>REACH-VID-180_DOSIMETER-L1C</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=REACH-VID-180_DOSIMETER-L1C&amp;index=sp_phys</URL>
+            <ProductKey>REACH-VID-180_DOSIMETER-L1C</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Epoch</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>Milliseconds since 1970-1-1 00:00:00</Units>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+         </RenderingHints>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>time_epoch</Name>
+         <ParameterKey>Epoch_cdf</ParameterKey>
+         <Description>CDF epoch value of the times given in the data files</Description>
+         <Caveats>* Computed CDF_Epoch value: time_base+Epoch added by SPDF
+This parameter is virtual. It is calculated by calling the function COMP_ICON_EPOCH with the following input parameters: time_base, Epoch.</Caveats>
+         <Units>seconds since 1970-01-01 00:00:00</Units>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Modified Julian Day</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>mjd</ParameterKey>
+         <Description>Modified Julian Day</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Modified Julian Day</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>57754.0</ValidMin>
+         <ValidMax>80754.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>year</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>year</ParameterKey>
+         <Description>year</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>years</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>year</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2017</ValidMin>
+         <ValidMax>2079</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>month</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>month</ParameterKey>
+         <Description>month</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>months</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>month</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>12</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>day</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>day</ParameterKey>
+         <Description>day</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>day</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>31</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>hour</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>hour</ParameterKey>
+         <Description>hour</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>hour</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>24</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>minute</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>minute</ParameterKey>
+         <Description>minute</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>min</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>minute</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>60</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>seconds</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>seconds</ParameterKey>
+         <Description>seconds</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>seconds</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>60</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Fractional Day of Year</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>doy</ParameterKey>
+         <Description>Fractional Day of Year</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Fractional Day of Year</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>367.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>REACH Vehicle Identifier</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>vid</ParameterKey>
+         <Description>REACH Vehicle Identifier</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>REACH Vehicle Identifier</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>101</ValidMin>
+         <ValidMax>181</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>Geodetic Altitude</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>altitude</ParameterKey>
+         <Description>Geodetic Altitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Geodetic Altitude</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>750.0</ValidMin>
+         <ValidMax>850.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Geodetic Latitude</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>latitude</ParameterKey>
+         <Description>Geodetic Latitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Geodetic Latitude</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Geodetic Longitude</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>longitude</ParameterKey>
+         <Description>Geodetic Longitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Geodetic Longitude</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>geo_x</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>geo_x</ParameterKey>
+         <Description>geo_x</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>geo_x</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-2.0</ValidMin>
+         <ValidMax>2.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>geo_y</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>geo_y</ParameterKey>
+         <Description>geo_y</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>geo_y</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-2.0</ValidMin>
+         <ValidMax>2.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>geo_z</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>geo_z</ParameterKey>
+         <Description>geo_z</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>geo_z</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-2.0</ValidMin>
+         <ValidMax>2.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>gei_x</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>gei_x</ParameterKey>
+         <Description>gei_x</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>gei_x</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-2.0</ValidMin>
+         <ValidMax>2.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>gei_y</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>gei_y</ParameterKey>
+         <Description>gei_y</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>gei_y</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-2.0</ValidMin>
+         <ValidMax>2.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>gei_z</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>gei_z</ParameterKey>
+         <Description>gei_z</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>gei_z</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-2.0</ValidMin>
+         <ValidMax>2.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Dose rate from Dosimeter 1</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>dose1</ParameterKey>
+         <Description>Dose rate from Dosimeter 1</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>rad/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dose rate from Dosimeter 1</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleMin>1.0e-05</ScaleMin>
+            <ScaleMax>1.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton flux from bowtie</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>proton_flux1</ParameterKey>
+         <Description>Proton flux from bowtie</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>#/cm^2/sr/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Proton flux from bowtie</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleMin>1.0</ScaleMin>
+            <ScaleMax>1.0e+07</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+07</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electron flux from bowtie</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>electron_flux1</ParameterKey>
+         <Description>Electron flux from bowtie</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>#/cm^2/sr/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Electron flux from bowtie</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleMin>1.0</ScaleMin>
+            <ScaleMax>1.0e+09</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+09</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Most probable species</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>species1</ParameterKey>
+         <Description>Most probable species</Description>
+         <Caveats>0 (not currently used); 1-protons, 2-electrons; and 3-both / ambiguous</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Most probable species</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>3</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>Dose rate from Dosimeter 2</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>dose2</ParameterKey>
+         <Description>Dose rate from Dosimeter 2</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>rad/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dose rate from Dosimeter 2</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleMin>1.0</ScaleMin>
+            <ScaleMax>1.0e+09</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+09</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton flux from bowtie</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>proton_flux2</ParameterKey>
+         <Description>Proton flux from bowtie</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>#/cm^2/sr/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Proton flux from bowtie</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleMin>1.0</ScaleMin>
+            <ScaleMax>1.0e+10</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electron flux from bowtie</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>electron_flux2</ParameterKey>
+         <Description>Electron flux from bowtie</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>#/cm^2/sr/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Electron flux from bowtie</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleMin>1.0</ScaleMin>
+            <ScaleMax>1.0e+11</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+11</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Most probable species</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>species2</ParameterKey>
+         <Description>Most probable species</Description>
+         <Caveats>0 (not currently used); 1-protons, 2-electrons; and 3-both / ambiguous</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Most probable species</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>3</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>Housekeeping temperature</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>hk_temperature</ParameterKey>
+         <Description>Housekeeping temperature</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>degrees C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Housekeeping temperature</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>20.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Housekeeping voltage 15V</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>hk_15v_monitor</ParameterKey>
+         <Description>Housekeeping voltage 15V</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Housekeeping voltage 15V</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>30.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Housekeeping voltage 5V</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>hk_5v_monitor</ParameterKey>
+         <Description>Housekeeping voltage 5V</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Housekeeping voltage 5V</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>15.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Housekeeping voltage 3.3V</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>hk_3_3v_monitor</ParameterKey>
+         <Description>Housekeeping voltage 3.3V</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Housekeeping voltage 3.3V</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>7.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>McIlwain L-shell for locally mirroring particle</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>lm</ParameterKey>
+         <Description>McIlwain L-shell for locally mirroring particle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>McIlwain L-shell for locally mirroring particle</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>30.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Invariant Latitude for locally mirroring particle</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>inv_lat</ParameterKey>
+         <Description>Invariant Latitude for locally mirroring particle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Invariant Latitude for locally mirroring particle</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Local magnetic field at s/c</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>blocal</ParameterKey>
+         <Description>Local magnetic field at s/c</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Local magnetic field at s/c</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50000.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Minimum magnetic field on field line intersecting spacecraft</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>bmin</ParameterKey>
+         <Description>Minimum magnetic field on field line intersecting spacecraft</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Minimum magnetic field on field line intersecting spacecraft</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>30000.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic local time</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>mlt</ParameterKey>
+         <Description>Magnetic local time</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic local time</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>24.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>k_sqrt</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>k_sqrt</ParameterKey>
+         <Description>k_sqrt</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>k_sqrt</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>20000.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>hmin</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>hmin</ParameterKey>
+         <Description>hmin</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>hmin</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3000.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Local pitch angle</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>alpha</ParameterKey>
+         <Description>Local pitch angle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Local pitch angle</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Equatorial pitch angle</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>alpha_eq</ParameterKey>
+         <Description>Equatorial pitch angle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Equatorial pitch angle</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>region_code</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>region_code</ParameterKey>
+         <Description>region_code</Description>
+         <Caveats>-4: Southern Polar Cap; -3: Outer Zone Untrapped; -2: Slot Untrapped; -1: Inner Zone Untrapped; 0: Unknown; 1: Inner Zone Trapped; 2: Slot Trapped; 3: Outer Zone Trapped; 4: Northern Polar Cap</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>region_code</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-4</ValidMin>
+         <ValidMax>4</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>orbit_status</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>orbit_status</ParameterKey>
+         <Description>orbit_status</Description>
+         <Caveats>1=Northbound; 2=Southbound</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>orbit_status</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>2</ValidMax>
+      </Parameter>
+      <Parameter>
+         <Name>flag</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>flag</ParameterKey>
+         <Description>flag</Description>
+         <Caveats>-1: no data; 0: No known problems; 1: Test Mode; 2: Possible temperature-related self-counting in Dosimeter A.; 4: Possible temperature-related self-counting in Dosimeter B.; 8: Duplicate packets detected.; 16: Unknown issue with VID 163/Dosimeter B</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>flag</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1</ValidMin>
+         <ValidMax>16</ValidMax>
+      </Parameter>
+   </NumericalData>
+</Spase>

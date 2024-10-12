@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/solo_l2_swa-his-rates/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Solar Wind Analyzer, Heavy Ion Sensor (SWA-HIS) Rates, Level 2 (L2), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Rate data for HIS instrument in physical units. Some corrections for instrument characteristics and measurement techniques have been applied. Per Data Product Description Document, efficiency corrections have not been applied.
+Counts of unclassified ion event words on the HIS detectors (start MCP, stop MCP, SSD) as a function of E/q, integrated over incident angles, TOF and Energy. Includes full counts of events subject to decimation. Rates also include two coincidence rates, the number of events with a valid TOF and energy (triple coincidence), and a count of those with only a valid TOF (double coincidence). These rates are primarily used to evaluate the performance of the instrument, rather than for science.  In particular, they can be used for calculation of ion detection efficiency in-flight [von Steiger et al., 2000].  The resolution of this data product can be 30s or 300s. In Burst mode the resolution can be 4s but this can only be run on average 1% of the time due to telemetry constraints.
+Usage notes can be found via the SWA DOI at https://doi.org/10.5270/esa-ahypgn6.</Description>
+         <Acknowledgement>Please acknowledge Chris J. Owen (SWA PI -- UCL MSSL) & Stefano Livi (HIS PI -- SwRI). NASA Contract NNG10EK25C.. These Level 2 data require substantial processing for most applications. Users are encouraged to use Level 3 data, which provide the most relevant data products for scientific research. See Data Product Description Document for more information. Contact SWA/HIS team for more information as needed.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/swa/science/l2/his-rates/</URL>
+            <ProductKey>SOLO_L2_SWA-HIS-RATES</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/swa/science/l2/his-rates/</URL>
+            <ProductKey>SOLO_L2_SWA-HIS-RATES</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_L2_SWA-HIS-RATES&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_L2_SWA-HIS-RATES</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator S. Livi. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2022-01-01T00:00:00.000</StartDate>
+            <StopDate>2023-04-27T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>EPOCH</Name>
+         <ParameterKey>EPOCH</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>* Time in nanoseconds since January 1, 2000, 12:00:00.000. Converted using time correlation SCET via SPICE time kernel provided by the mission. Currently set to start of accumulation interval.
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>EPOCH</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2049-12-31T23:59:59.999000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SCET</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SCET</ParameterKey>
+         <Description>SCET</Description>
+         <Caveats>Mission elapsed time in spacecraft clock ticks. Note: These are effected by environmental conditions and do not match Earth-based seconds. Beginning of accumulation.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>SCET</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleMin>5.0e+12</ScaleMin>
+            <ScaleMax>8.0e+12</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+14</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>ACCUM_SECONDS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ACCUM_SECONDS</ParameterKey>
+         <Description>Accumulation time</Description>
+         <Caveats>Accumulation time in seconds for each E/q and elevation step</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <AxisLabel>ACCUM_SECONDS</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleMin>0.003</ScaleMin>
+            <ScaleMax>0.3</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.003</ValidMin>
+         <ValidMax>0.3</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_FLAG</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Quality flag</Description>
+         <Caveats>0=good, 1=caution, 2=bad</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>QUALITY_FLAG</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>3</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_BITMASK</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>QUALITY_BITMASK</ParameterKey>
+         <Description>Quality bitmask</Description>
+         <Caveats>Not yet fully implemented. 0:No Issue, 1:Proton Avoidance Triggered, 2:No PHAs Telemetered in Range (range 6/7 prior to Auguest 2020), 4:Elevation Step(s) not represented, 8:Saturation of Input Buffer, 16: Buffer Over Ran.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>QUALITY_BITMASK</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>32</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>31</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MODE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MODE</ParameterKey>
+         <Description>Mode. 0: Normal Science, 1: Burst 1, 2: Burst 2, 3: Low Cadence.</Description>
+         <Caveats>Normal: Full E/q range in nominal 30 sec scan, Burst1: E/q range optimized for slower solar wind in nominal 4 sec scan, Burst2: E/q range optimized for faster solar wind in nominal 4 sec scan, Low Cadence: Full E/q range in nominal 300 sec scan.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>MODE</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>3</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>COMPRESSION_CODE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>COMPRESSION_CODE</ParameterKey>
+         <Description>Compression code bitmask</Description>
+         <Caveats>Compression code bitmask. 0 = Lossy A, 1 = Lossy C. Bits: 0:SSD, 1:Priorities, 2:Starts, 3:Stops, 4:Double Coincidence, 5:Triple Coincidence, 6:Low TOF, 7:Alpha Decimation, 8:Proton Decimation, 9:Position A Singles, 10:Position B Singles.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>COMPRESSION_CODE</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>2100</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2047</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>STEP_TABLE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>STEP_TABLE</ParameterKey>
+         <Description>Step table</Description>
+         <Caveats>Science Configuration Packet&apos;s HV Sweep Scan Control Table Identification Number</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>STEP_TABLE</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>18</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MAIN_ENABLES</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>MAIN_ENABLES</ParameterKey>
+         <Description>Main enables</Description>
+         <Caveats>Bitmask for enabled rates. 1 = Enabled, Bit1 = Least Significant Bit. Bit 1: SSD Rate, 2: Priority, 3: Start, 4: Stop, 5: Double Coincidence, 6: Triple Coincidence, 7: Low TOF Decimation, 8: Alpha Decimation, 9: Proton Decimation, 10: Position A, 11: Position B.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MAIN_ENABLES</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>1100</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1023</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SSD_ENABLES</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SSD_ENABLES</ParameterKey>
+         <Description>SSD enables</Description>
+         <Caveats>Bitmask for enabled SSD rates. 1 = Enabled, Bit1 = Least Significant Bit.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SSD_ENABLES</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2147483647</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PRIORITY_ENABLES</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>PRIORITY_ENABLES</ParameterKey>
+         <Description>Priority enables</Description>
+         <Caveats>Bitmask for enabled Priority rates. 1 = Enabled, Bit1 = Least Significant Bit.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PRIORITY_ENABLES</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>260</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>START_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>START_DIMENSIONS</ParameterKey>
+         <Description>Start dimensions</Description>
+         <Caveats>Number of E/q Steps and Number of Elevation Steps for Start Rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>START_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>STOP_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>STOP_DIMENSIONS</ParameterKey>
+         <Description>Stop dimensions</Description>
+         <Caveats>Number of E/q Steps and Number of Elevation Steps for Stop Rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>STOP_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>DC_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>DC_DIMENSIONS</ParameterKey>
+         <Description>Double coincidence dimensions</Description>
+         <Caveats>Number of E/q Steps and Number of Elevation Steps for Double Coincidence Rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DC_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>TC_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>TC_DIMENSIONS</ParameterKey>
+         <Description>Triple coincidence dimensions</Description>
+         <Caveats>Number of E/q Steps and Number of Elevation Steps for Triple Coincidence Rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TC_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>LOW_TOF_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>LOW_TOF_DIMENSIONS</ParameterKey>
+         <Description>Low TOF dimensions</Description>
+         <Caveats>Number of E/q Steps and Number of Elevation Steps for Low TOF Rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>LOW_TOF_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PROTON_DEC_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>PROTON_DEC_DIMENSIONS</ParameterKey>
+         <Description>Proton decimation dimensions</Description>
+         <Caveats>Number of E/q Steps and Number of Elevation Steps for Proton Decimation Rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PROTON_DEC_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>ALPHA_DEC_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ALPHA_DEC_DIMENSIONS</ParameterKey>
+         <Description>Alpha decimation dimensions</Description>
+         <Caveats>Number of E/q Steps and Number of Elevation Steps for Alpha Decimation Rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ALPHA_DEC_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>POS_A_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>POS_A_DIMENSIONS</ParameterKey>
+         <Description>Position A dimensions</Description>
+         <Caveats>Number of E/q Steps and Number of Elevation Steps for Position A Rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>POS_A_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>POS_B_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>POS_B_DIMENSIONS</ParameterKey>
+         <Description>Position A dimensions</Description>
+         <Caveats>Number of E/q Steps and Number of Elevation Steps for Position B Rate</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>POS_B_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SSD_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SSD_DIMENSIONS</ParameterKey>
+         <Description>SSD dimensions</Description>
+         <Caveats>Number of SSDs and Number of E/q Steps and Number of Elevation Steps</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SSD_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PRIORITY_DIMENSIONS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>PRIORITY_DIMENSIONS</ParameterKey>
+         <Description>Priority dimensions</Description>
+         <Caveats>Number of Priority Ranges and Number of E/q Steps and Number of Elevation Steps</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PRIORITY_DIMENSIONS</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>65</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>64</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>START_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>START_RATE</ParameterKey>
+         <Description>Start rate.
+
+* Column 1 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+* Column 2 Labels from ELEVATION: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Counts/sec on Start MCP detector. Dimensions are maximum possible sizes. Consult START_DIMENSIONS for actual sizes in data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Start rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>STOP_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>STOP_RATE</ParameterKey>
+         <Description>Stop rate.
+
+* Column 1 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+* Column 2 Labels from ELEVATION: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Number of counts on Stop MCP detector. Dimensions are maximum possible sizes. Consult STOP_DIMENSIONS for actual sizes in data. When only one elevation step, DEPEND_2 should be ELEVATION_SUMMED.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Stop rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DC_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>DC_RATE</ParameterKey>
+         <Description>Double coincidence rate.
+
+* Column 1 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+* Column 2 Labels from ELEVATION: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Number of double coincidence events that have a start signal with a corresponding stop signal. Dimensions are maximum possible sizes. Consult DC_DIMENSIONS for actual sizes in data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Double coincidence rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TC_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>TC_RATE</ParameterKey>
+         <Description>Triple coincidence rate.
+
+* Column 1 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+* Column 2 Labels from ELEVATION: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Number of triple coincidence events that have a start signal with a corresponding stop and energy signals. Dimensions are maximum possible sizes. Consult TC_DIMENSIONS for actual sizes in data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Triple coincidence rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LOWTOF_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>LOW_TOF_RATE</ParameterKey>
+         <Description>Low TOF rate.
+
+* Column 1 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+* Column 2 Labels from ELEVATION_SUMMED: ["-7.202E+00","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31","-1.000E+31"].</Description>
+         <Caveats>Number of double coincidence events below low TOF threshold. Dimensions are maximum possible sizes. Consult LOW_TOF_DIMENSIONS for actual sizes in data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Low TOF rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PROTON_DEC_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>PROTON_DEC_RATE</ParameterKey>
+         <Description>Proton decimation rate.
+
+* Column 1 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+* Column 2 Labels from ELEVATION_SUMMED: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Number of double coincidence events within proton TOF range. Dimensions are maximum possible sizes. Consult PROTON_DEC_DIMENSIONS for actual sizes in data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Proton Decimation rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ALPHA_DEC_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>ALPHA_DEC_RATE</ParameterKey>
+         <Description>Alpha decimation rate.
+
+* Column 1 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+* Column 2 Labels from ELEVATION_SUMMED: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Number of double coincidence events within alpha TOF range. Dimensions are maximum possible sizes. Consult ALPHA_DEC_DIMENSIONS for actual sizes in data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Alpha decimation rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>POS_A_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>POS_A_RATE</ParameterKey>
+         <Description>Position A rate.
+
+* Column 1 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+* Column 2 Labels from ELEVATION: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Counts/sec on Position A detector. Dimensions are maximum possible sizes. Consult START_DIMENSIONS for actual sizes in data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Position A rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>POS_B_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>POS_B_RATE</ParameterKey>
+         <Description>Position B rate.
+
+* Column 1 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+* Column 2 Labels from ELEVATION: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Counts/sec on Position B detector. Dimensions are maximum possible sizes. Consult START_DIMENSIONS for actual sizes in data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Position B rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SSD_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SSD_RATE</ParameterKey>
+         <Description>SSD rate [All Output types supported except plotting].
+
+* Column 1 Labels from AZIMUTH: ["6.660E+01","6.335E+01","6.010E+01","5.685E+01","5.360E+01","5.035E+01","4.710E+01","4.385E+01","4.060E+01","3.735E+01","3.410E+01","3.085E+01","2.760E+01","2.435E+01","2.110E+01","1.785E+01","1.460E+01","1.135E+01","8.100E+00","4.850E+00","1.600E+00","-1.650E+00","-4.900E+00","-8.150E+00","-1.140E+01","-1.465E+01","-1.790E+01","-2.115E+01","-2.440E+01","-2.765E+01","-3.090E+01","-3.415E+01"].
+* Column 2 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+ * Column 3 Labels from ELEVATION: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Number of counts on each solid state detector. Dimensions are maximum possible sizes. Consult SSD_DIMENSIONS for actual sizes in data. SSDs 30 and 31 were not populated with physical detectors. In contrast, SSD 29 was disabled in software and will likely remain so. Any signals in these elements are due to electronic noise and not from real particles. When only one elevation step, DEPEND_2 should be ELEVATION_SUMMED.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>SSD rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>32 64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PRIORITY_RATE</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>PRIORITY_RATE</ParameterKey>
+         <Description>Priority rate [All Output types supported except plotting].
+
+* Column 1 Labels from PRIORITY: ["DC PUI","Fe","Mg, Si, S","O6+","C, N, O","Alphas","Protons","Error"].
+* Column 2 Labels from EOQ: ["5.000E-01","5.414E-01","5.862E-01","6.347E-01","6.873E-01","7.442E-01","8.058E-01","8.725E-01","9.447E-01","1.023E+00","1.108E+00","1.199E+00","1.299E+00","1.406E+00","1.522E+00","1.648E+00","1.785E+00","1.933E+00","2.093E+00","2.266E+00","2.454E+00","2.657E+00","2.877E+00","3.115E+00","3.373E+00","3.652E+00","3.954E+00","4.281E+00","4.636E+00","5.020E+00","5.435E+00","5.885E+00","6.372E+00","6.900E+00","7.471E+00","8.089E+00","8.759E+00","9.484E+00","1.027E+01","1.112E+01","1.204E+01","1.304E+01","1.412E+01","1.528E+01","1.655E+01","1.792E+01","1.940E+01","2.101E+01","2.275E+01","2.463E+01","2.667E+01","2.888E+01","3.127E+01","3.386E+01","3.666E+01","3.969E+01","4.298E+01","4.654E+01","5.039E+01","5.456E+01","5.908E+01","6.397E+01","6.927E+01","7.500E+01"].
+ * Column 3 Labels from ELEVATION: ["-2.762E+01","-2.420E+01","-2.109E+01","-1.787E+01","-1.485E+01","-1.190E+01","-8.852E+00","-5.780E+00","-2.533E+00","7.375E-01","4.155E+00","7.508E+00","1.077E+01","1.344E+01","1.486E+01","1.459E+01"].</Description>
+         <Caveats>Number of events in each priority range. 0: double coincidence PHAs (pickup ions), 1: Fe, 2: Mg, Si, S, 3: CNO (except O6+), 4: O6+, 5: Alphas, 6: Protons, 7: Error (low or unrealistically long TOFs). These are nominal categories and subject to change. Dimensions are maximum possible sizes. Consult PRIORITY_DIMENSIONS for actual sizes in data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <AxisLabel>Priority rate</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8 64 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PRIORITY_VERSION</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>PRIORITY_VERSION</ParameterKey>
+         <Description>Priority Version</Description>
+         <Caveats>Version number of the priority boundaries. These define the 8 priorities, numbered 1-7, used to prioritize which PHAs are downlinked.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>PRIORITY_VERSION</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>128</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>127</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SPECIES_BOX_VERSION</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SPECIES_BOX_VERSION</ParameterKey>
+         <Description>Species Box Version</Description>
+         <Caveats>Version number of the species boxes. These define 32 boxes in E/Q - TOF - E space which are set to the locations of counts for individual ion species.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>SPECIES_VERSION</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>128</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>127</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SSD_THRESHOLD_VERSION</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SSD_THRESHOLD_VERSION</ParameterKey>
+         <Description>SSD Threshold Version</Description>
+         <Caveats>Version number of the set of SSD thresholds (1 master and 30 trim) used to collect the data. These settings affect the sensitivity of HIS and the noise allowed into the onboard event processing through the SSD subsystem. Version numbers are given only to sets of values used for science data collection, not for testing.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>SSD_THRESHOLD_VERSION</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>128</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>127</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PROD_CONF_TBL_NUM</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>PROD_CONF_TBL_NUM</ParameterKey>
+         <Description>Product Configuration Table Number</Description>
+         <Caveats>Product configuration table number used during data collection. This table sets the dimensions of rate products produced onboard.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Prod Conf Tbl Num</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+            <ScaleMin>-1</ScaleMin>
+            <ScaleMax>128</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>127</ValidMax>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PA_HVPS_SET_POINT</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>PA_HVPS_SET_POINT</ParameterKey>
+         <Description>PA HVPS set point</Description>
+         <Caveats>This is the voltage setting for the PA HVPS, e.g. -10 kV, -25 kV. Note: It is not the reading of the on-board voltage monitor for this supply. Valid [0, -30 kV].</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>kV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PA_HVPS_SET_POINT</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-32.0</ScaleMin>
+            <ScaleMax>0.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-31.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>EOQ</Name>
+         <ParameterKey>EOQ</ParameterKey>
+         <Description>E/q step</Description>
+         <Caveats>E/q steps spanning the range 0.50 to 75.1 keV/e. Value is midpoint of step. Lower bound is EOQ value minus EOQ_DELTA, and upper bound is EOQ value plus EOQ_DELTA.</Caveats>
+         <Units>keV/e</Units>
+         <RenderingHints>
+            <AxisLabel>EOQ</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>80.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EOQ</Name>
+         <ParameterKey>EOQ_DELTA</ParameterKey>
+         <Description>E/q step delta</Description>
+         <Caveats>Delta is from the midpoint in EOQ variable. Lower bound is EOQ value minus EOQ_DELTA, and upper bound is EOQ value plus EOQ_DELTA.</Caveats>
+         <Units>keV/e</Units>
+         <RenderingHints>
+            <AxisLabel>EOQ_DELTA</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>80.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>64</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>80.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>ELEVATION</Name>
+         <ParameterKey>ELEVATION</ParameterKey>
+         <Description>Elevation step</Description>
+         <Caveats>The elevation range is nominally -20 to +16 deg, with +/-3 degree uncertainty. These values are subject to change after in-flight calibration. Value is the midpoint of the elevation bin. Lower bound is ELEVATION value minus ELEVATION_DELTA, and upper bound is ELEVATION value plus ELEVATION_DELTA. These values are only valid over a limited E/q range, 0-10 keV/e. These are based on current calibration, which may be updated in the future.</Caveats>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>ELEVATION</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-25.0</ScaleMin>
+            <ScaleMax>20.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>-25.0</ValidMin>
+         <ValidMax>20.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>ELEVATION_DELTA</Name>
+         <ParameterKey>ELEVATION_DELTA</ParameterKey>
+         <Description>Elevation step delta</Description>
+         <Caveats>Delta is from the midpoint in ELEVATION variable. Lower bound is ELEVATION value minus ELEVATION_DELTA, and upper bound is ELEVATION value plus ELEVATION_DELTA. These values are only valid over a limited E/q range, 0-10 keV/e. These are based on current calibration, which may be updated in the future.</Caveats>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>ELEVATION_DELTA</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-25.0</ScaleMin>
+            <ScaleMax>20.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>-25.0</ValidMin>
+         <ValidMax>20.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>ELEVATION_SUMMED</Name>
+         <ParameterKey>ELEVATION_SUMMED</ParameterKey>
+         <Description>Elevation step when summed to one bin</Description>
+         <Caveats>This variable is used when elevation is summed. The elevation range is nominally -20 to +16 deg, with +/-3 degree uncertainty. These values are subject to change after in-flight calibration. Value is the midpoint of the ELEVATION bin. Lower bound is ELEVATION value minus ELEVATION_DELTA, and upper bound is ELEVATION value plus ELEVATION_DELTA. Only the first element is used; all others are fill. These values are only valid over a limited E/q range, 0-10 keV/e. These are based on current calibration, which may be updated in the future.</Caveats>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>ELEVATION_SUMMED</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-25.0</ScaleMin>
+            <ScaleMax>20.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>-25.0</ValidMin>
+         <ValidMax>20.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>ELEVATION_SUMMED_DELTA</Name>
+         <ParameterKey>ELEVATION_SUMMED_DELTA</ParameterKey>
+         <Description>Delta for elevation step when summed to one bin</Description>
+         <Caveats>Delta is from the midpoint in ELEVATION variable. Lower bound is ELEVATION value minus ELEVATION_DELTA, and upper bound is ELEVATION value plus ELEVATION_DELTA. Only the first element is used; all others are fill. These values are only valid over a limited E/q range, 0-10 keV/e. These are based on current calibration, which may be updated in the future.</Caveats>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>ELEVATION_SUMMED_DELTA</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-25.0</ScaleMin>
+            <ScaleMax>20.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>-25.0</ValidMin>
+         <ValidMax>20.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>AZIMUTH</Name>
+         <ParameterKey>AZIMUTH</ParameterKey>
+         <Description>Azimuth</Description>
+         <Caveats>The azimuth range is nominally -33 to +66 degrees, with +/- 3 degree uncertainty. These values are subject to change after in-flight calibration. Value is the midpoint of the azimuth bin. Lower bound is AZIMUTH value minus AZIMUTH_DELTA, and upper bound is AZIMUTH value plus AZIMUTH_DELTA.</Caveats>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>AZIUTH</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-40.0</ScaleMin>
+            <ScaleMax>70.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>32</Size>
+         </Structure>
+         <ValidMin>-36.0</ValidMin>
+         <ValidMax>70.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>AZIMUTH_DELTA</Name>
+         <ParameterKey>AZIMUTH_DELTA</ParameterKey>
+         <Description>Azimuth delta</Description>
+         <Caveats>Delta is from the midpoint in the AZIMUTH variable. Lower bound is AZIMUTH value minus AZIMUTH_DELTA, and upper bound is AZIMUTH value plus AZIMUTH_DELTA.</Caveats>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>AZIMUTH_DELTA</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-35.0</ScaleMin>
+            <ScaleMax>70.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>32</Size>
+         </Structure>
+         <ValidMin>-33.0</ValidMin>
+         <ValidMax>67.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PRIORITY</Name>
+         <ParameterKey>PRIORITY</ParameterKey>
+         <Description>Priority</Description>
+         <Caveats>0: double coincidence PHAs (pickup ions), 1: Fe, 2: Mg, Si, S, 3: O6+, 4: CNO (except O6+), 5: Alphas, 6: Protons, 7: Error (low or unrealistically long TOFs).</Caveats>
+         <RenderingHints>
+            <AxisLabel>PRIORITY</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>7</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

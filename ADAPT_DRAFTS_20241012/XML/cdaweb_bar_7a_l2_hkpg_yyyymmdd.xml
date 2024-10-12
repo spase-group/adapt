@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/bar_7a_l2_hkpg/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>BARREL 7A Data Processing Unit (HKPG) Analog Housekeeping Voltage, Temperature, Current, and Payload Status, Level 2, 40 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Voltage, temperature, current, and payload status values returned every 40s. NOTE: The analog sensor data in these records are based on the nominal BARREL housekeeping layout. Some payloads may have small differences that are not reflected here. If there is specific sensor data that you need, but looks questionable, contact the BARREL team for clarification.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan for use of the Data. 
+
+BARREL will make all its scientific data products quickly and publicly available but all users are expected to read and follow the "BARREL Mission Data Usage Policy" which can be found here: http://www.dartmouth.edu/~barrel/documents/data.use.policy.pdf</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robyn.Millan</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>BARREL Data Repository</Name>
+            <URL>http://barreldata.ucsc.edu/data_products/</URL>
+            <Description>Access to all releases of BARREL data and links to the Science Operation Center tools.</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/barrel/l2/7a/hkpg/</URL>
+            <ProductKey>BAR_7A_L2_HKPG</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/barrel/l2/7a/hkpg/</URL>
+            <ProductKey>BAR_7A_L2_HKPG</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=BAR_7A_L2_HKPG&amp;index=sp_phys</URL>
+            <ProductKey>BAR_7A_L2_HKPG</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>InstrumentStatus</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2019-12-29T00:00:00.000</StartDate>
+            <StopDate>2020-04-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT40S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Mesosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Stratosphere</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2009-09-19T00:00:05.978849280</ValidMin>
+         <ValidMax>2019-10-15T09:04:54.724999936</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FrameGroup</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FrameGroup</ParameterKey>
+         <Description>DPU Frame Counter</Description>
+         <Cadence>PT40S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Frame</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Quality</ParameterKey>
+         <Description>Data Quality Flag</Description>
+         <Caveats>32bit flag used to indicate data quality. Bit 0 = Low altitude (below 20km); Bit 1 = No GPS; Bit 2 = External ephemeris used; Bit 3 = Gain shift.</Caveats>
+         <Cadence>PT40S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Q</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V0_VoltAtLoad</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V0_VoltAtLoad</ParameterKey>
+         <Description>Voltage at load</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V0_VoltAtLoad</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V1_Battery</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V1_Battery</ParameterKey>
+         <Description>Battery Voltage</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V1_Battery</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V2_Solar1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V2_Solar1</ParameterKey>
+         <Description>Solar Panel One Voltage</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V2_Solar1</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V3_POS_DPU</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V3_POS_DPU</ParameterKey>
+         <Description>DPU Voltage (Positive)</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V3_POS_DPU</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V4_POS_XRayDet</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V4_POS_XRayDet</ParameterKey>
+         <Description>X-ray Detector Voltage (Positive)</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V4_POS_XRayDet</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V5_Modem</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V5_Modem</ParameterKey>
+         <Description>Modem Voltage</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V5_Modem</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V6_NEG_XRayDet</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V6_NEG_XRayDet</ParameterKey>
+         <Description>X-ray Detector Voltage (Negative)</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V6_NEG_XRayDet</AxisLabel>
+            <ValueFormat>F7.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-50.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V7_NEG_DPU</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V7_NEG_DPU</ParameterKey>
+         <Description>DPU Voltage (Negative)</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V7_NEG_DPU</AxisLabel>
+            <ValueFormat>F7.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-50.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V8_Mag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V8_Mag</ParameterKey>
+         <Description>Magnetometer Voltage</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V8_Mag</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V9_Solar2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V9_Solar2</ParameterKey>
+         <Description>Solar Panel Two Voltage</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V9_Solar2</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V10_Solar3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V10_Solar3</ParameterKey>
+         <Description>Solar Panel Three Voltage</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V10_Solar3</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V11_Solar4</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V11_Solar4</ParameterKey>
+         <Description>Solar Panel Four Voltage</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V11_Solar4</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>50.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>I0_TotalLoad</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>I0_TotalLoad</ParameterKey>
+         <Description>Total Load Current</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I0_TotalLoad</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>I1_TotalSolar</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>I1_TotalSolar</ParameterKey>
+         <Description>Total Solar Current</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I1_TotalSolar</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>I2_Solar1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>I2_Solar1</ParameterKey>
+         <Description>Solar Panel One Current</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I2_Solar1</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>I3_POS_DPU</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>I3_POS_DPU</ParameterKey>
+         <Description>DPU Current (Positive)</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I3_POS_DPU</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>I4_POS_XRayDet</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>I4_POS_XRayDet</ParameterKey>
+         <Description>X-ray Detector Current (Positive)</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I4_POS_XRayDet</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>I5_Modem</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>I5_Modem</ParameterKey>
+         <Description>Modem Current</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I5_Modem</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>I6_NEG_XRayDet</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>I6_NEG_XRayDet</ParameterKey>
+         <Description>X-ray Detector Current (Negative)</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I6_NEG_XRayDet</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-2000.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>I7_NEG_DPU</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>I7_NEG_DPU</ParameterKey>
+         <Description>DPU Current (Negative)</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>I7_NEG_DPU</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-2000.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T0_Scint</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T0_Scint</ParameterKey>
+         <Description>Scintillator Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T0_Scint</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T1_Mag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T1_Mag</ParameterKey>
+         <Description>Magnetometer Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T1_Mag</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T2_ChargeCont</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T2_ChargeCont</ParameterKey>
+         <Description>Charge Controller Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T2_ChargeCont</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T3_Battery</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T3_Battery</ParameterKey>
+         <Description>Battery Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T3_Battery</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T4_PowerConv</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T4_PowerConv</ParameterKey>
+         <Description>Power Converter Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T4_PowerConv</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T5_DPU</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T5_DPU</ParameterKey>
+         <Description>DPU Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T5_DPU</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T6_Modem</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T6_Modem</ParameterKey>
+         <Description>Modem Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T6_Modem</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T7_Structure</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T7_Structure</ParameterKey>
+         <Description>Structure Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T7_Structure</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T8_Solar1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T8_Solar1</ParameterKey>
+         <Description>Solar Panel One Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T8_Solar1</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T9_Solar2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T9_Solar2</ParameterKey>
+         <Description>Solar Panel Two Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T9_Solar2</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T10_Solar3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T10_Solar3</ParameterKey>
+         <Description>Solar Panel Three Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T10_Solar3</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T11_Solar4</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T11_Solar4</ParameterKey>
+         <Description>Solar Panel Four Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T11_Solar4</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T12_TermTemp</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T12_TermTemp</ParameterKey>
+         <Description>Terminate Temperature</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T12_TermTemp</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T13_TermBatt</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T13_TermBatt</ParameterKey>
+         <Description>Terminate Battery</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T13_TermBatt</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T14_TermCap</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T14_TermCap</ParameterKey>
+         <Description>Terminate Capacitor</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T14_TermCap</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T15_CCStat</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T15_CCStat</ParameterKey>
+         <Description>CC Status</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>&#176;C</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T15_CCStat</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-273.0</ValidMin>
+         <ValidMax>273.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>numOfSats</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>numOfSats</ParameterKey>
+         <Description>Number of GPS Satellites</Description>
+         <Cadence>PT40S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>numOfSats</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>50</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>timeOffset</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>timeOffset</ParameterKey>
+         <Description>Leap Seconcs</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>timeOffset</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>50</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>termStatus</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>termStatus</ParameterKey>
+         <Description>Terminate Status</Description>
+         <Cadence>PT40S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>termStatus</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>cmdCounter</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>cmdCounter</ParameterKey>
+         <Description>Command Counter</Description>
+         <Cadence>PT40S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>cmdCounter</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1191181824</ValidMax>
+         <FillValue>-2147483648</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>modemCounter</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>modemCounter</ParameterKey>
+         <Description>Modem Reset Counter</Description>
+         <Cadence>PT40S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>modemCounter</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>32767</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>dcdCounter</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>dcdCounter</ParameterKey>
+         <Description>Number of times the DCD has been de-asserted</Description>
+         <Cadence>PT40S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>dcdCounter</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>200</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>weeks</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>weeks</ParameterKey>
+         <Description>Weeks since 6 Jan 1980</Description>
+         <Cadence>PT40S</Cadence>
+         <Units>Weeks</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>weeks</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1199570688</ValidMax>
+         <FillValue>-2147483648</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

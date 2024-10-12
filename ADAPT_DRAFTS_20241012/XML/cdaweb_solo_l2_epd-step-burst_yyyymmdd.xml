@@ -1,0 +1,2562 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/solo_l2_epd-step-burst/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Energetic Particle Detector, SupraThermal Electrons and Protons (EPD-STEP) Burst, Level 2 (L2), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Energetic Particle Detector (EPD). Instrument suite, part of the scientific payload aboard the Solar Orbiter mission, dedicated to the study of solar energetic particles. EPD measures electrons, protons and heavy ions with high temporal resolution over a wide energy range, from suprathermal energies to several hundreds of MeV/nucleon. It is composed of four units: SupraThermal Electrons and Protons (STEP), Electron Proton Telescope (EPT), Suprathermal Ion Spectrograph (SIS) and High Energy Telescope (HET).
+https://doi.org/10.1051/0004-6361/201935287</Description>
+         <Acknowledgement>See http://espada.uah.es/epd/EPD_data.php. See http://espada.uah.es/epd/EPD_data.php.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL>http://espada.uah.es/epd/EPD_data.php</URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>SOLO_L2_EPD-STEP-BURST</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>SOLO_L2_EPD-STEP-BURST</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_L2_EPD-STEP-BURST&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_L2_EPD-STEP-BURST</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator J. Rodriguez-Pacheco. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>EPOCH</ParameterKey>
+         <Description>Nanoseconds since J2000</Description>
+         <Caveats>Start of acquisition interval.</Caveats>
+         <Units>nanoseconds</Units>
+         <RenderingHints>
+            <AxisLabel>Time</AxisLabel>
+            <ScaleMin>6.3763429090904e+13</ScaleMin>
+            <ScaleMax>6.3763429990904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2000-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2050-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta epoch</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>DELTA_EPOCH</ParameterKey>
+         <Description>Accumulation period in seconds</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <AxisLabel>Delta epoch</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>3600</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>3600</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Magnet Flux</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Magnet_Flux</ParameterKey>
+         <Description>Sector averaged magnet channel flux</Description>
+         <Caveats>Includes ions of different species. Calibrated using the detector response for Hydrogen.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Magnet Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>9439.0</ScaleMin>
+            <ScaleMax>1.988e+06</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>0.0057 - 0.0090 MeV/n</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0572500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0060 - 0.0091 MeV/n</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0600700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0062 - 0.0092 MeV/n</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0621600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0065 - 0.0094 MeV/n</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0652100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0069 - 0.0096 MeV/n</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0686100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0071 - 0.0098 MeV/n</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0709900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0074 - 0.0101 MeV/n</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0741600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0078 - 0.0105 MeV/n</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0781900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0083 - 0.0109 MeV/n</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>0829500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0086 - 0.0112 MeV/n</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>0864300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0097 - 0.0128 MeV/n</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>0974400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0115 - 0.0141 MeV/n</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0115300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0122 - 0.0148 MeV/n</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0122300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0127 - 0.0153 MeV/n</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0127300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0135 - 0.0163 MeV/n</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0134800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0143 - 0.0171 MeV/n</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0143400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0149 - 0.0177 MeV/n</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0148900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0159 - 0.0186 MeV/n</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0158800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0169 - 0.0195 MeV/n</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0169200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0176 - 0.0202 MeV/n</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0175800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0186 - 0.0213 MeV/n</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0185800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0198 - 0.0224 MeV/n</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0197800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0209 - 0.0237 MeV/n</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0209200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0223 - 0.0248 MeV/n</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0222500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0231 - 0.0257 MeV/n</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0231200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0245 - 0.0274 MeV/n</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0244600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0262 - 0.0288 MeV/n</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0261600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0272 - 0.0298 MeV/n</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0272200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0287 - 0.0317 MeV/n</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0287000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0306 - 0.0332 MeV/n</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0306300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0318 - 0.0344 MeV/n</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0318200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0335 - 0.0366 MeV/n</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0334600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0358 - 0.0384 MeV/n</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0357700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0377 - 0.0411 MeV/n</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0376500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0404 - 0.0431 MeV/n</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0404000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0420 - 0.0447 MeV/n</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0419800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0440 - 0.0478 MeV/n</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0439900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0473 - 0.0502 MeV/n</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0473000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0494 - 0.0522 MeV/n</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0493600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0518 - 0.0560 MeV/n</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0517800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0556 - 0.0586 MeV/n</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0556100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0579 - 0.0609 MeV/n</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0579300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0605 - 0.0655 MeV/n</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0605400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0651 - 0.0683 MeV/n</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0651200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0680 - 0.0738 MeV/n</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0679600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0736 - 0.0771 MeV/n</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0736300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0767 - 0.0802 MeV/n</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0766500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0799 - 0.0865 MeV/n</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0799200</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnet Flux Uncertainty</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Magnet_Uncertainty</ParameterKey>
+         <Description>Uncertainty in sector averaged magnet channel flux</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Magnet Flux Sigma</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>9439.0</ScaleMin>
+            <ScaleMax>1.5e+06</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0572500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0600700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0621600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0652100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0686100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0709900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0741600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0781900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>0829500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>0864300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>0974400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0115300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0122300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0127300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0134800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0143400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0148900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0158800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0169200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0175800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0185800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0197800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0209200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0222500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0231200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0244600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0261600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0272200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0287000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0306300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0318200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0334600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0357700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0376500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0404000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0419800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0439900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 38</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0473000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 39</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0493600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 40</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0517800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 41</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0556100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 42</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0579300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 43</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0605400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 44</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0651200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 45</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0679600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 46</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0736300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 47</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0766500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 48</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0799200</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Magnet Count Rate</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Magnet_Rate</ParameterKey>
+         <Description>Sector averaged magnet channel count rate</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>counts / s</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Magnet Count Rate</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.5</ScaleMin>
+            <ScaleMax>2.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>0.0057 - 0.0090 MeV/n</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0572500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0060 - 0.0091 MeV/n</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0600700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0062 - 0.0092 MeV/n</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0621600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0065 - 0.0094 MeV/n</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0652100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0069 - 0.0096 MeV/n</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0686100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0071 - 0.0098 MeV/n</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0709900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0074 - 0.0101 MeV/n</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0741600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0078 - 0.0105 MeV/n</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0781900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0083 - 0.0109 MeV/n</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>0829500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0086 - 0.0112 MeV/n</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>0864300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0097 - 0.0128 MeV/n</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>0974400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0115 - 0.0141 MeV/n</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0115300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0122 - 0.0148 MeV/n</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0122300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0127 - 0.0153 MeV/n</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0127300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0135 - 0.0163 MeV/n</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0134800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0143 - 0.0171 MeV/n</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0143400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0149 - 0.0177 MeV/n</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0148900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0159 - 0.0186 MeV/n</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0158800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0169 - 0.0195 MeV/n</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0169200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0176 - 0.0202 MeV/n</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0175800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0186 - 0.0213 MeV/n</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0185800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0198 - 0.0224 MeV/n</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0197800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0209 - 0.0237 MeV/n</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0209200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0223 - 0.0248 MeV/n</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0222500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0231 - 0.0257 MeV/n</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0231200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0245 - 0.0274 MeV/n</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0244600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0262 - 0.0288 MeV/n</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0261600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0272 - 0.0298 MeV/n</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0272200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0287 - 0.0317 MeV/n</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0287000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0306 - 0.0332 MeV/n</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0306300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0318 - 0.0344 MeV/n</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0318200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0335 - 0.0366 MeV/n</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0334600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0358 - 0.0384 MeV/n</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0357700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0377 - 0.0411 MeV/n</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0376500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0404 - 0.0431 MeV/n</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0404000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0420 - 0.0447 MeV/n</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0419800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0440 - 0.0478 MeV/n</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0439900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0473 - 0.0502 MeV/n</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0473000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0494 - 0.0522 MeV/n</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0493600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0518 - 0.0560 MeV/n</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0517800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0556 - 0.0586 MeV/n</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0556100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0579 - 0.0609 MeV/n</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0579300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0605 - 0.0655 MeV/n</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0605400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0651 - 0.0683 MeV/n</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0651200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0680 - 0.0738 MeV/n</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0679600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0736 - 0.0771 MeV/n</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0736300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0767 - 0.0802 MeV/n</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0766500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0799 - 0.0865 MeV/n</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0799200</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Integral Flux</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Integral_Flux</ParameterKey>
+         <Description>Sector averaged integral channel flux</Description>
+         <Caveats>Includes ions of different species and electrons. Calibrated using the detector response for Hydrogen.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Integral Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>9475.0</ScaleMin>
+            <ScaleMax>2.959e+06</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>0.0057 - 0.0090 MeV/n</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0572500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0060 - 0.0091 MeV/n</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0600700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0062 - 0.0092 MeV/n</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0621600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0065 - 0.0094 MeV/n</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0652100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0069 - 0.0096 MeV/n</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0686100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0071 - 0.0098 MeV/n</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0709900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0074 - 0.0101 MeV/n</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0741600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0078 - 0.0105 MeV/n</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0781900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0083 - 0.0109 MeV/n</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>0829500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0086 - 0.0112 MeV/n</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>0864300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0097 - 0.0128 MeV/n</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>0974400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0115 - 0.0141 MeV/n</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0115300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0122 - 0.0148 MeV/n</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0122300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0127 - 0.0153 MeV/n</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0127300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0135 - 0.0163 MeV/n</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0134800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0143 - 0.0171 MeV/n</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0143400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0149 - 0.0177 MeV/n</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0148900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0159 - 0.0186 MeV/n</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0158800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0169 - 0.0195 MeV/n</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0169200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0176 - 0.0202 MeV/n</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0175800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0186 - 0.0213 MeV/n</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0185800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0198 - 0.0224 MeV/n</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0197800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0209 - 0.0237 MeV/n</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0209200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0223 - 0.0248 MeV/n</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0222500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0231 - 0.0257 MeV/n</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0231200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0245 - 0.0274 MeV/n</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0244600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0262 - 0.0288 MeV/n</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0261600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0272 - 0.0298 MeV/n</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0272200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0287 - 0.0317 MeV/n</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0287000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0306 - 0.0332 MeV/n</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0306300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0318 - 0.0344 MeV/n</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0318200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0335 - 0.0366 MeV/n</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0334600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0358 - 0.0384 MeV/n</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0357700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0377 - 0.0411 MeV/n</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0376500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0404 - 0.0431 MeV/n</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0404000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0420 - 0.0447 MeV/n</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0419800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0440 - 0.0478 MeV/n</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0439900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0473 - 0.0502 MeV/n</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0473000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0494 - 0.0522 MeV/n</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0493600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0518 - 0.0560 MeV/n</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0517800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0556 - 0.0586 MeV/n</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0556100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0579 - 0.0609 MeV/n</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0579300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0605 - 0.0655 MeV/n</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0605400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0651 - 0.0683 MeV/n</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0651200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0680 - 0.0738 MeV/n</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0679600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0736 - 0.0771 MeV/n</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0736300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0767 - 0.0802 MeV/n</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0766500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0799 - 0.0865 MeV/n</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0799200</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Integral Flux Uncertainty</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Integral_Uncertainty</ParameterKey>
+         <Description>Uncertainty in sector averaged integral channel flux</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Integral Flux Sigma</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>9475.0</ScaleMin>
+            <ScaleMax>2.093e+06</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0572500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0600700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0621600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0652100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0686100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0709900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0741600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0781900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 9</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>0829500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 10</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>0864300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 11</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>0974400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 12</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0115300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 13</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0122300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 14</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0127300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 15</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0134800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 16</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0143400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 17</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0148900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 18</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0158800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 19</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0169200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 20</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0175800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 21</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0185800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 22</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0197800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 23</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0209200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 24</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0222500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 25</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0231200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 26</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0244600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 27</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0261600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 28</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0272200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 29</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0287000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 30</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0306300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 31</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0318200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 32</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0334600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 33</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0357700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 34</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0376500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 35</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0404000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 36</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0419800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 37</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0439900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 38</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0473000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 39</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0493600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 40</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0517800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 41</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0556100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 42</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0579300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 43</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0605400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 44</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0651200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 45</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0679600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 46</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0736300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 47</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0766500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 48</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0799200</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Integral Count Rate</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Integral_Rate</ParameterKey>
+         <Description>Sector averaged integral channel count rate</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>counts / s</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Integral Count Rate</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.5</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+            <Element>
+               <Name>0.0057 - 0.0090 MeV/n</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0572500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0060 - 0.0091 MeV/n</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>0600700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0062 - 0.0092 MeV/n</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>0621600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0065 - 0.0094 MeV/n</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>0652100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0069 - 0.0096 MeV/n</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>0686100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0071 - 0.0098 MeV/n</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>0709900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0074 - 0.0101 MeV/n</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>0741600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0078 - 0.0105 MeV/n</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>0781900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0083 - 0.0109 MeV/n</Name>
+               <Index>9</Index>
+               <RenderingHints>
+                  <AxisLabel>0829500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0086 - 0.0112 MeV/n</Name>
+               <Index>10</Index>
+               <RenderingHints>
+                  <AxisLabel>0864300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0097 - 0.0128 MeV/n</Name>
+               <Index>11</Index>
+               <RenderingHints>
+                  <AxisLabel>0974400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0115 - 0.0141 MeV/n</Name>
+               <Index>12</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0115300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0122 - 0.0148 MeV/n</Name>
+               <Index>13</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0122300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0127 - 0.0153 MeV/n</Name>
+               <Index>14</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0127300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0135 - 0.0163 MeV/n</Name>
+               <Index>15</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0134800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0143 - 0.0171 MeV/n</Name>
+               <Index>16</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0143400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0149 - 0.0177 MeV/n</Name>
+               <Index>17</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0148900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0159 - 0.0186 MeV/n</Name>
+               <Index>18</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0158800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0169 - 0.0195 MeV/n</Name>
+               <Index>19</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0169200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0176 - 0.0202 MeV/n</Name>
+               <Index>20</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0175800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0186 - 0.0213 MeV/n</Name>
+               <Index>21</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0185800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0198 - 0.0224 MeV/n</Name>
+               <Index>22</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0197800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0209 - 0.0237 MeV/n</Name>
+               <Index>23</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0209200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0223 - 0.0248 MeV/n</Name>
+               <Index>24</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0222500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0231 - 0.0257 MeV/n</Name>
+               <Index>25</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0231200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0245 - 0.0274 MeV/n</Name>
+               <Index>26</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0244600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0262 - 0.0288 MeV/n</Name>
+               <Index>27</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0261600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0272 - 0.0298 MeV/n</Name>
+               <Index>28</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0272200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0287 - 0.0317 MeV/n</Name>
+               <Index>29</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0287000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0306 - 0.0332 MeV/n</Name>
+               <Index>30</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0306300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0318 - 0.0344 MeV/n</Name>
+               <Index>31</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0318200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0335 - 0.0366 MeV/n</Name>
+               <Index>32</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0334600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0358 - 0.0384 MeV/n</Name>
+               <Index>33</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0357700</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0377 - 0.0411 MeV/n</Name>
+               <Index>34</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0376500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0404 - 0.0431 MeV/n</Name>
+               <Index>35</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0404000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0420 - 0.0447 MeV/n</Name>
+               <Index>36</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0419800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0440 - 0.0478 MeV/n</Name>
+               <Index>37</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0439900</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0473 - 0.0502 MeV/n</Name>
+               <Index>38</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0473000</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0494 - 0.0522 MeV/n</Name>
+               <Index>39</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0493600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0518 - 0.0560 MeV/n</Name>
+               <Index>40</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0517800</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0556 - 0.0586 MeV/n</Name>
+               <Index>41</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0556100</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0579 - 0.0609 MeV/n</Name>
+               <Index>42</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0579300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0605 - 0.0655 MeV/n</Name>
+               <Index>43</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0605400</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0651 - 0.0683 MeV/n</Name>
+               <Index>44</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0651200</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0680 - 0.0738 MeV/n</Name>
+               <Index>45</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0679600</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0736 - 0.0771 MeV/n</Name>
+               <Index>46</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0736300</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0767 - 0.0802 MeV/n</Name>
+               <Index>47</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0766500</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>0.0799 - 0.0865 MeV/n</Name>
+               <Index>48</Index>
+               <RenderingHints>
+                  <AxisLabel>0.0799200</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+20</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Bins Low Energy</Name>
+         <ParameterKey>Bins_Low_Energy</ParameterKey>
+         <Description>Lowest energy of each bin for sector averaged flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.005725</ScaleMin>
+            <ScaleMax>0.07992</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+         </Structure>
+         <ValidMin>1.0e-06</ValidMin>
+         <ValidMax>1.0e+09</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Bins Width</Name>
+         <ParameterKey>Bins_Width</ParameterKey>
+         <Description>Width of each energy bin for sector averaged flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Bin width</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>48</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+09</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sector Magnet Flux</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Sector_Magnet_Flux</ParameterKey>
+         <Description>Sectored magnet channel flux.
+
+* Column 1 Labels from SECTOR_BINS_LOW_ENERGY: ["0.0059 - 0.0091 MeV/n","0.0066 - 0.0095 MeV/n","0.0074 - 0.0101 MeV/n","0.0083 - 0.0110 MeV/n","0.0097 - 0.0128 MeV/n","0.0121 - 0.0151 MeV/n","0.0144 - 0.0177 MeV/n","0.0171 - 0.0208 MeV/n","0.0206 - 0.0249 MeV/n","0.0249 - 0.0291 MeV/n","0.0291 - 0.0351 MeV/n","0.0351 - 0.0410 MeV/n","0.0410 - 0.0498 MeV/n","0.0498 - 0.0583 MeV/n","0.0583 - 0.0708 MeV/n","0.0708 - 0.0865 MeV/n"].
+* Column 2 Labels from SECTORS: ["Pixel 1","Pixel 2","Pixel 3","Pixel 4","Pixel 5","Pixel 6","Pixel 7","Pixel 8","Pixel 9","Pixel 10","Pixel 11","Pixel 12","Pixel 13","Pixel 14","Pixel 15"].</Description>
+         <Caveats>Includes ions of different species. Calibrated using the detector response for Hydrogen.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Magnet Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16 15</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sector Magnet Flux Uncertainty</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Sector_Magnet_Uncertainty</ParameterKey>
+         <Description>Uncertainty in sectored magnet channel flux.
+
+* Column 1 Labels from SECTOR_BINS_LOW_ENERGY: [ 0.00591600, 0.00663700, 0.00743600, 0.00829500, 0.00974400, 0.0120700, 0.0144100, 0.0170900, 0.0206300, 0.0248900, 0.0290700, 0.0350600, 0.0409700, 0.0497700, 0.0582600, 0.0707800].
+* Column 2 Labels from SECTORS: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Magnet Flux Sigma</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16 15</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sector Magnet Count Rate</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Sector_Magnet_Rate</ParameterKey>
+         <Description>Sectored magnet channel count rate.
+
+* Column 1 Labels from SECTOR_BINS_LOW_ENERGY: ["0.0059 - 0.0091 MeV/n","0.0066 - 0.0095 MeV/n","0.0074 - 0.0101 MeV/n","0.0083 - 0.0110 MeV/n","0.0097 - 0.0128 MeV/n","0.0121 - 0.0151 MeV/n","0.0144 - 0.0177 MeV/n","0.0171 - 0.0208 MeV/n","0.0206 - 0.0249 MeV/n","0.0249 - 0.0291 MeV/n","0.0291 - 0.0351 MeV/n","0.0351 - 0.0410 MeV/n","0.0410 - 0.0498 MeV/n","0.0498 - 0.0583 MeV/n","0.0583 - 0.0708 MeV/n","0.0708 - 0.0865 MeV/n"].
+* Column 2 Labels from SECTORS: ["Pixel 1","Pixel 2","Pixel 3","Pixel 4","Pixel 5","Pixel 6","Pixel 7","Pixel 8","Pixel 9","Pixel 10","Pixel 11","Pixel 12","Pixel 13","Pixel 14","Pixel 15"].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>counts / s</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Magnet Count Rate</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16 15</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sector Integral Flux</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Sector_Integral_Flux</ParameterKey>
+         <Description>Sectored integral channel flux.
+
+* Column 1 Labels from SECTOR_BINS_LOW_ENERGY: ["0.0059 - 0.0091 MeV/n","0.0066 - 0.0095 MeV/n","0.0074 - 0.0101 MeV/n","0.0083 - 0.0110 MeV/n","0.0097 - 0.0128 MeV/n","0.0121 - 0.0151 MeV/n","0.0144 - 0.0177 MeV/n","0.0171 - 0.0208 MeV/n","0.0206 - 0.0249 MeV/n","0.0249 - 0.0291 MeV/n","0.0291 - 0.0351 MeV/n","0.0351 - 0.0410 MeV/n","0.0410 - 0.0498 MeV/n","0.0498 - 0.0583 MeV/n","0.0583 - 0.0708 MeV/n","0.0708 - 0.0865 MeV/n"].
+* Column 2 Labels from SECTORS: ["Pixel 1","Pixel 2","Pixel 3","Pixel 4","Pixel 5","Pixel 6","Pixel 7","Pixel 8","Pixel 9","Pixel 10","Pixel 11","Pixel 12","Pixel 13","Pixel 14","Pixel 15"].</Description>
+         <Caveats>Includes ions of different species and electrons. Calibrated using the detector response for Hydrogen.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Integral Flux</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16 15</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sector Integral Flux Uncert.</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Sector_Integral_Uncertainty</ParameterKey>
+         <Description>Uncertainty in sectored integral channel flux.
+
+* Column 1 Labels from SECTOR_BINS_LOW_ENERGY: [ 0.00591600, 0.00663700, 0.00743600, 0.00829500, 0.00974400, 0.0120700, 0.0144100, 0.0170900, 0.0206300, 0.0248900, 0.0290700, 0.0350600, 0.0409700, 0.0497700, 0.0582600, 0.0707800].
+* Column 2 Labels from SECTORS: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>particles / (s cm^2 sr MeV)</Units>
+         <UnitsConversion>6.241.0e16&gt;particles/(s m^2 sr J)</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Integral Flux Sigma</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16 15</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sector Integral Count Rate</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>Sector_Integral_Rate</ParameterKey>
+         <Description>Sectored integral channel count rate.
+
+* Column 1 Labels from SECTOR_BINS_LOW_ENERGY: ["0.0059 - 0.0091 MeV/n","0.0066 - 0.0095 MeV/n","0.0074 - 0.0101 MeV/n","0.0083 - 0.0110 MeV/n","0.0097 - 0.0128 MeV/n","0.0121 - 0.0151 MeV/n","0.0144 - 0.0177 MeV/n","0.0171 - 0.0208 MeV/n","0.0206 - 0.0249 MeV/n","0.0249 - 0.0291 MeV/n","0.0291 - 0.0351 MeV/n","0.0351 - 0.0410 MeV/n","0.0410 - 0.0498 MeV/n","0.0498 - 0.0583 MeV/n","0.0583 - 0.0708 MeV/n","0.0708 - 0.0865 MeV/n"].
+* Column 2 Labels from SECTORS: ["Pixel 1","Pixel 2","Pixel 3","Pixel 4","Pixel 5","Pixel 6","Pixel 7","Pixel 8","Pixel 9","Pixel 10","Pixel 11","Pixel 12","Pixel 13","Pixel 14","Pixel 15"].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>counts / s</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Electron Count Rate</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16 15</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sector Bins Low Energy</Name>
+         <ParameterKey>Sector_Bins_Low_Energy</ParameterKey>
+         <Description>Lowest energy of each bin for sectored flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+            <ScaleMin>0.005916</ScaleMin>
+            <ScaleMax>0.07078</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>1.0e-06</ValidMin>
+         <ValidMax>1.0e+09</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sector Bins Width</Name>
+         <ParameterKey>Sector_Bins_Width</ParameterKey>
+         <Description>Width of each energy bin for sectored flux</Description>
+         <Units>MeV</Units>
+         <UnitsConversion>1.602e-13&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Bin width</AxisLabel>
+            <ValueFormat>G10.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+09</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sectors</Name>
+         <ParameterKey>Sectors</ParameterKey>
+         <Description>Sectors</Description>
+         <RenderingHints>
+            <AxisLabel>Sector number</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>1</ScaleMin>
+            <ScaleMax>15</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>15</Size>
+         </Structure>
+         <ValidMin>1</ValidMin>
+         <ValidMax>15</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality flag</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Data quality flag</Description>
+         <Caveats>0:Bad, 1:Known problems, 2:Survey data, 3:Good, 4:Excellent</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Quality flag</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality bitmask</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>QUALITY_BITMASK</ParameterKey>
+         <Description>Computer readable quality parameter</Description>
+         <Caveats>0x1: Bad value, 0x2: Close mode, 0x4: High flux mode</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Quality bitmask</AxisLabel>
+            <ValueFormat>Z4</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>32767</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>32767</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

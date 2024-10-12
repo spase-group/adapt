@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c3_cp_edi_aedc/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C3 Electron Drift Instrument (EDI) Corrected Ambient Electron Counts, Cluster Active Archive Parameter (CP), 0.062 second Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Electron Drift Instrument
+Electric field measured by the drift velocity
+of monoenergetic artificial electron beams
+injected perpendicularly to the ambient magnetic field</Description>
+         <Acknowledgement>Please acknowledge the EDI team and ESA Cluster Active Archive in any publication based upon use of this data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Goetz.Paschmann</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c3/edi/ambientelectron_counts_passivemode_mixedreso/</URL>
+            <ProductKey>C3_CP_EDI_AEDC</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c3/edi/ambientelectron_counts_passivemode_mixedreso/</URL>
+            <ProductKey>C3_CP_EDI_AEDC</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C3_CP_EDI_AEDC&amp;index=sp_phys</URL>
+            <ProductKey>C3_CP_EDI_AEDC</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator G. Paschmann. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Cluster-Samba/EDI</InstrumentID>
+      <MeasurementType>ElectricField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2001-02-01T00:00:00.000</StartDate>
+            <StopDate>2022-03-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>0.062 second</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>time_tags__C3_CP_EDI_AEDC</ParameterKey>
+         <Description>Interval centred time tag</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A24</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C3, corrected ambient electron counts GDU1 PA=90 degree</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_EDI_AEDC</Set>
+         <ParameterKey>counts_GDU1_PA_90__C3_CP_EDI_AEDC</ParameterKey>
+         <Description>Cluster C3, corrected ambient electron counts GDU1 PA=90 degree</Description>
+         <Cadence>0.062 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AE_counts_GDU1_90</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>95000</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C3, corrected ambient electron counts GDU2 PA=90 degree</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_EDI_AEDC</Set>
+         <ParameterKey>counts_GDU2_PA_90__C3_CP_EDI_AEDC</ParameterKey>
+         <Description>Cluster C3, corrected ambient electron counts GDU2 PA=90 degree</Description>
+         <Cadence>0.062 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AE_counts_GDU2_90</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>95000</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C3, corrected ambient electron counts GDU1 PA=180 degree</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_EDI_AEDC</Set>
+         <ParameterKey>counts_GDU1_PA_180__C3_CP_EDI_AEDC</ParameterKey>
+         <Description>Cluster C3, corrected ambient electron counts GDU1 PA=180 degree</Description>
+         <Cadence>0.062 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AE_counts_GDU1_180</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>95000</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C3, corrected ambient electron counts GDU2 PA=0 degree</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_EDI_AEDC</Set>
+         <ParameterKey>counts_GDU2_PA_0__C3_CP_EDI_AEDC</ParameterKey>
+         <Description>Cluster C3, corrected ambient electron counts GDU2 PA=0 degree</Description>
+         <Cadence>0.062 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AE_counts_GDU2_0</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>95000</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C3, corrected ambient electron counts GDU1 PA=0 degree</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_EDI_AEDC</Set>
+         <ParameterKey>counts_GDU1_PA_0__C3_CP_EDI_AEDC</ParameterKey>
+         <Description>Cluster C3, corrected ambient electron counts GDU1 PA=0 degree</Description>
+         <Cadence>0.062 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AE_counts_GDU1_0</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>95000</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C3, corrected ambient electron counts GDU2 PA=180 degree</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_EDI_AEDC</Set>
+         <ParameterKey>counts_GDU2_PA_180__C3_CP_EDI_AEDC</ParameterKey>
+         <Description>Cluster C3, corrected ambient electron counts GDU2 PA=180 degree</Description>
+         <Cadence>0.062 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AE_counts_GDU2_180</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>95000</ValidMax>
+         <FillValue>-32768</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C3, EDI Detector 1 look direction in GSE</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_EDI_AEDC</Set>
+         <ParameterKey>D1_xyz_gse__C3_CP_EDI_AEDC</ParameterKey>
+         <Description>Cluster C3, EDI Detector 1 look direction in GSE</Description>
+         <Cadence>0.062 second</Cadence>
+         <Units>m</Units>
+         <UnitsConversion>1.0&gt;m</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>D1</AxisLabel>
+            <ValueFormat>F12</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>D1x</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>D1y</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>D1z</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0</ValidMin>
+         <ValidMax>1.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C3, AE Status</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_EDI_AEDC</Set>
+         <ParameterKey>Status__C3_CP_EDI_AEDC</ParameterKey>
+         <Description>Cluster C3, AE Status</Description>
+         <Cadence>0.062 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>AE Status</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>3</ValidMax>
+         <FillValue>9</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

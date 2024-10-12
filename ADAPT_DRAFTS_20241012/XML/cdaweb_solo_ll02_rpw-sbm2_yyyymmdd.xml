@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/solo_ll02_rpw-sbm2/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Radio and Plasma Wave (RPW-SBM2) Selected Burst Mode 2, SBM2, In Situ Type III Events, Level 2 Low Latency (LL02), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>This file contains RPW Low latency SBM2 data produced by the RPW Low Latency data Pipeline.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator M. Maksimovic for use of the Data. 
+
+Data provided are private. The data users shall contact the Solar Orbiter/RPW team before any use in presentations or publications.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Homepage</Name>
+            <URL>https://sci.esa.int/web/solar-orbiter</URL>
+            <Description>ESA Solar Orbiter</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Data Archive</Name>
+            <URL>https://soar.esac.esa.int/soar</URL>
+            <Description>ESA Solar Orbiter</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Astronomy and Astrophysics</Name>
+            <URL>https://www.aanda.org/component/toc/?task=topic&id=1082</URL>
+            <Description>Special Issue of Solar Orbiter Mission and Instruments in</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>SOLO_LL02_RPW-SBM2</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>SOLO_LL02_RPW-SBM2</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_LL02_RPW-SBM2&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_LL02_RPW-SBM2</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator M. Maksimovic. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>EPOCH (Terrestrial Time)</Name>
+         <ParameterKey>EPOCH</ParameterKey>
+         <Description>Epoch encoded as Terrestrial Time on rotating Earth geoid, ns since J2000</Description>
+         <Caveats>* Spacecraft elapsed time used as a reference in the file.
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0E-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>EPOCH</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>-9223372036854775808</ScaleMin>
+            <ScaleMax>9223372036854775807</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>31-DEC-9999 23:59:59.999999999</ValidMin>
+         <ValidMax>11-Apr-2292 11:46:07.670775807</ValidMax>
+         <FillValue>31-DEC-9999 23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spaceraft Elapsed Time</Name>
+         <ParameterKey>SCET</ParameterKey>
+         <Description>Elapsed Time of the onboard clock</Description>
+         <Caveats>* Spacecraft elapsed time used as a reference in the file.
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>Ticks</Units>
+         <RenderingHints>
+            <AxisLabel>Spacecraft Elapsed Time</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.29497e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SYNCHRO_FLAG</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SYNCHRO_FLAG</ParameterKey>
+         <Description>Time synchronisation flag</Description>
+         <Caveats>Flag to indicate if the RPW DPU time is synchronized with the on-board time (OBT). 0=Synchronized, 1=Not synchronized</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Time sync. Flag</AxisLabel>
+            <ValueFormat>I1.0</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_FLAG</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Quality flag</Description>
+         <Caveats>Flag to indicate the quality of the data</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality flag</AxisLabel>
+            <ValueFormat>I1.1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SBM2_ALGO_STATUS</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SBM2_ALGO_STATUS</ParameterKey>
+         <Description>SBM2 detection algorithm status</Description>
+         <Caveats>SBM2 detection algorithm status. Possible values: SBM2_NONE = 0, SBM2_RPW = 1, SBM2_EPD = 2</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SBM2 algo status</AxisLabel>
+            <ValueFormat>I3.3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>3</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>2</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SBM2_TIME</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SBM2_TIME</ParameterKey>
+         <Description>SBM2 event absolute time.</Description>
+         <Caveats>SBM2 event absolute time (CUC format)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SBM2 event time</AxisLabel>
+            <ValueFormat>I10.0</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4294967295</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SBM2_QF</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SBM2_QF</ParameterKey>
+         <Description>SBM2 event quality factor.</Description>
+         <Caveats>SBM2 event quality factor (raw value)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SBM2 event Qf</AxisLabel>
+            <ValueFormat>I5.5</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>65535</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65535</ValidMax>
+         <FillValue>65535</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DT_SBM2</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>DT_SBM2</ParameterKey>
+         <Description>DT_SBM2 parameter</Description>
+         <Caveats>DT_SBM2 or DT_SBM2_F parameter.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DT_SBM2</AxisLabel>
+            <ValueFormat>I5.5</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>65535</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65535</ValidMax>
+         <FillValue>65535</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DT_LW</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>DT_LW</ParameterKey>
+         <Description>DT_LW</Description>
+         <Caveats>SBM2_DT_LW or SBM2_DT_LW_F parameter.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>DT2_SBM1</AxisLabel>
+            <ValueFormat>I5.5</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>65535</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65535</ValidMax>
+         <FillValue>65535</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>EPD_S20_FLAG</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>EPD_S20_FLAG</ParameterKey>
+         <Description>Electron fluxes from EPD instrument</Description>
+         <Caveats>Electron fluxes from EPD instrument in the following order: EPD_S20_ESW_FLAG, EPD_S20_EASW_FLAG, EPD_S20_EN_FLAG, EPD_S20_ES_FLAG , EPD_S20_PSW_FLAG, EPD_S20_PASW_FLAG, EPD_S20_PN_FLAG, EPD_S20_PS_FLAG</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SBM2 EPD S20 FLAG</AxisLabel>
+            <ValueFormat>I5.5</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>255</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

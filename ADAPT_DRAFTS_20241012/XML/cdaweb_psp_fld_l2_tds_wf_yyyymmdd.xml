@@ -1,0 +1,3116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/psp_fld_l2_tds_wf/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>PSP FIELDS TDS_WF Science Telemetry Data</Description>
+         <Acknowledgement>Produced by the PSP/FIELDS team at the University of Minnesota. For PSP team use. XXX why XXX</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Data Link</Name>
+            <URL>http://fields.ssl.berkeley.edu/data/</URL>
+            <Description>PSP/FIELDS SOC</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/psp/fields/l2/tds_wf/</URL>
+            <ProductKey>PSP_FLD_L2_TDS_WF</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/psp/fields/l2/tds_wf/</URL>
+            <ProductKey>PSP_FLD_L2_TDS_WF</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=PSP_FLD_L2_TDS_WF&amp;index=sp_phys</URL>
+            <ProductKey>PSP_FLD_L2_TDS_WF</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>CDAWeb HAPI Server</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/hapi</URL>
+            <Style>HAPI</Style>
+            <ProductKey>PSP_FLD_L2_TDS_WF</ProductKey>
+            <Description>Web Service to this product using the HAPI interface.</Description>
+         </AccessURL>
+         <Format>CSV</Format>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ElectricField</MeasurementType>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2018-08-13T00:00:00.000</StartDate>
+            <StopDate>2023-06-27T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Heliosphere</ObservedRegion>
+      <ObservedRegion>Heliosphere.Inner</ObservedRegion>
+      <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+      <ObservedRegion>Sun.Corona</ObservedRegion>
+      <Parameter>
+         <Name>epoch</Name>
+         <ParameterKey>epoch</ParameterKey>
+         <Description>Corrected UTC time of the start of the collected wave-form burst in TT2000</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I22</ValueFormat>
+            <ScaleMin>6.3700322619904e+13</ScaleMin>
+            <ScaleMax>6.4344650559904e+13</ScaleMax>
+         </RenderingHints>
+         <ValidMin>2009-12-31T23:59:59.999998080</ValidMin>
+         <ValidMax>2049-12-31T23:58:59.999998208</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain V1 sensor (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V2 sensor (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain V2 sensor (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V3 sensor (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain V3 sensor (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V4 sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain V4 sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V5 sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain V5 sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1V2_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1V2_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain difference of V1-V2 (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V1-V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1V2_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1V2_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain difference of V1-V2 (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1V2_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V1-V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3V4_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3V4_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain difference of V3-V4 (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V3-V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3V4_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3V4_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain difference of V3-V4 (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3V4_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V3-V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1234_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1234_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain sum of V1+V2+V3+V4 (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V1+V2+V3+V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1234_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1234_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain sum of V1+V2+V3+V4 (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1234_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V1+V2+V3+V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_nT</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_nT</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain SCM MF sensor (Ch5) NOT corrected for frequency response (engineering nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_nT</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain SCM MF sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1LG_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V1 sensor (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2LG_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V2 sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3LG_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V3 sensor (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4LG_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V4 sensor (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5LG_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V5 sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_nT</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_nT_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering nT)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_nT.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_nT</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_nT_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain SCM MF sensor (Ch5) NOT corrected for frequency response (engineering nT)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_nT.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_nT</Name>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_nT_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the low-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering nT)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_nT.</Caveats>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the high-gain SCM MF sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the low-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1LG_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1LG_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the low-gain V1 sensor (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1LG_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2LG_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2LG_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the low-gain V2 sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2LG_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3LG_Engineering_mV</Name>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3LG_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the low-gain V3 sensor (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3LG_Engineering_mV.</Caveats>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4LG_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4LG_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the low-gain V4 sensor (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4LG_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5LG_Engineering_mV</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5LG_Engineering_mV_f</ParameterKey>
+         <Description>TDS wave-form burst time series for the low-gain V5 sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5LG_Engineering_mV.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_Physical_Units_Valid_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_Physical_Units_Valid_Flag</ParameterKey>
+         <Description>[NO PLOTS] Flag indicates that frequency corrected physical units are available for burst time series</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V1 sensor (Ch1) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V2 sensor (Ch2) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V3 sensor (Ch3) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V4 sensor (Ch4) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V5 sensor (Ch5) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1V2_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1V2_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain difference of V1-V2 (Ch3) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V1-V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3V4_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3V4_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain difference of V3-V4 (Ch1) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V3-V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1234_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1234_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain sum of V1+V2+V3+V4 (Ch2) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V1+V2+V3+V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Physical_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Physical_nT</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain SCM MF sensor (Ch4) corrected for frequency response (physical nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Physical_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Physical_nT</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain SCM MF sensor (Ch5) corrected for frequency response (physical nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Physical_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Physical_nT</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain SCM MF sensor (Ch4) corrected for frequency response (physical nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain SCM MF sensor (Ch4) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain SCM MF sensor (Ch5) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain SCM MF sensor (Ch4) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1LG_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1LG_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V1 sensor (Ch3) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2LG_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2LG_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V2 sensor (Ch5) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3LG_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3LG_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V3 sensor (Ch1) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4LG_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4LG_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V4 sensor (Ch2) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5LG_Physical_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5LG_Physical_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the low-gain V5 sensor (Ch4) corrected for frequency response (physical mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SWEAP_Counts</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SWEAP_Counts</ParameterKey>
+         <Description>[NO PLOTS] The TDS wave-form burst time series for SWEAP (Ch0) - the values are positive integers (GE 0) returned as a real from the SWEAP particle count channel (counts)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Burst SWEAP</AxisLabel>
+            <ValueFormat>F12.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SWEAP_Counts</Name>
+         <Set>Time series defined by using: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SWEAP_Counts_f</ParameterKey>
+         <Description>The TDS wave-form burst time series for SWEAP (Ch0) - the values are positive integers (GE 0) returned as a real from the SWEAP particle count channel (counts)</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_SWEAP_Counts.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Burst SWEAP</AxisLabel>
+            <ValueFormat>F12.1</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>100.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_N_Bursts_Today</Name>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_N_Bursts_Today</ParameterKey>
+         <Description>Total count of TDS multi-channel wave-form bursts in this CDF (records)</Description>
+         <RenderingHints>
+            <AxisLabel>Count</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>20000</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>100000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Version</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Version</ParameterKey>
+         <Description>TDS wave-form burst telemetry format version number</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Version</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>10</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>999</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Start_Time_ASCII</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Start_Time_ASCII</ParameterKey>
+         <Description>Corrected UTC time of the start of the burst in an easy to read 26 character string</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst Time</AxisLabel>
+            <ValueFormat>A</ValueFormat>
+         </RenderingHints>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_ID</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_ID</ParameterKey>
+         <Description>Event number for this burst</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst ID</AxisLabel>
+            <ValueFormat>I12</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4000000000</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4000000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Quality</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Quality</ParameterKey>
+         <Description>Overall quality for this burst (arbitrary units - used for burst selection)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Arbitrary</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Burst Quality</AxisLabel>
+            <ValueFormat>I12</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4000000000</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4000000000</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Quality_Algorithm_Name</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Quality_Algorithm_Name</ParameterKey>
+         <Description>[LIST/CREATIONs only] ASCII string giving the flight software algorithm in use for burst quality determination</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Trigger</AxisLabel>
+            <ValueFormat>A</ValueFormat>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Type_Name</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Type_Name</ParameterKey>
+         <Description>[LIST/CREATIONs only] Indicates that the burst is a Quality, Honesty or Promptly burst (8 character string)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Burst Type</AxisLabel>
+            <ValueFormat>A</ValueFormat>
+         </RenderingHints>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_N_Samples_per_Channel</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_N_Samples_per_Channel</ParameterKey>
+         <Description>Number of samples per channel</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>N Samples</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>262144</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>262144</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_N_Samples_per_Channel_MAX</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_N_Samples_per_Channel_MAX</ParameterKey>
+         <Description>Maximum number of samples allowed per channel (always 262,144)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>N Samples MAX</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>262144</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>262144</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Start_Time_UR8</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Start_Time_UR8</ParameterKey>
+         <Description>Corrected UTC time of the start of the burst in traditional TMlib UR8 time (days)</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Start UR8</AxisLabel>
+            <ValueFormat>F20.9</ValueFormat>
+            <ScaleMin>13726.0</ScaleMin>
+            <ScaleMax>21184.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>10227.0</ValidMin>
+         <ValidMax>24837.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Start_Time_UNIX</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Start_Time_UNIX</ParameterKey>
+         <Description>Time of the start of the burst in UNIX time derived from the corrected UTC (seconds)</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>UNIX time</AxisLabel>
+            <ValueFormat>F24.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.0e+09</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.0e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Start_Time_TT2000</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Start_Time_TT2000</ParameterKey>
+         <Description>Burst start time in corrected UTC TT2000 time (ns)</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I22</ValueFormat>
+            <ScaleMin>6.3700322619904e+13</ScaleMin>
+            <ScaleMax>6.4344650559904e+13</ScaleMax>
+         </RenderingHints>
+         <ValidMin>2009-12-31T23:59:59.999998080</ValidMin>
+         <ValidMax>2049-12-31T23:58:59.999998208</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000</ParameterKey>
+         <Description>Corrected (UTC-based) absolute time for each of the time series samples (ns)</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I22</ValueFormat>
+         </RenderingHints>
+         <ValidMin>2009-12-31T23:59:59.999998080</ValidMin>
+         <ValidMax>2049-12-31T23:58:59.999998208</ValidMax>
+         <FillValue>01-Jan-2000 11:58:54.816000001</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000</Name>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000_f</ParameterKey>
+         <Description>Flattened Corrected (UTC-based) absolute time for each of the time series samples (ns)</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+This parameter is virtual. It is calculated by calling the function FLATTEN_DATA with the following input parameters: PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times_TT2000.</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>I22</ValueFormat>
+            <ScaleMin>6.3700322619904e+13</ScaleMin>
+            <ScaleMax>6.4344650559904e+13</ScaleMax>
+         </RenderingHints>
+         <ValidMin>2009-12-31T23:59:59.999998080</ValidMin>
+         <ValidMax>2049-12-31T23:58:59.999998208</ValidMax>
+         <FillValue>01-Jan-2000 11:58:54.816000001</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Total_SWEAP_Counts</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Total_SWEAP_Counts</ParameterKey>
+         <Description>The total number of SWEAP particle counts in this TDS wave-form burst time series (Ch0) - the value is a positive integer (GE 0) returned as a real8 from the SWEAP particle counting channel (counts)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SWEAP Counts</AxisLabel>
+            <ValueFormat>F12.1</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>1.0e+07</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+07</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Total_SWEAP_Counting_Rate</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Total_SWEAP_Counting_Rate</ParameterKey>
+         <Description>The observed SWEAP particle counting rate (Ch0) during this burst (counts per second)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>CPS</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SWEAP CPS</AxisLabel>
+            <ValueFormat>F12.1</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>1.0e+07</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+07</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SWEAP_Status</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SWEAP_Status</ParameterKey>
+         <Description>SWEAP Status word (coded)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SWEAP Status</AxisLabel>
+            <ValueFormat>Z8</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4294967295</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>-9223372036854775808</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SWEAP_Electron_Mask</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SWEAP_Electron_Mask</ParameterKey>
+         <Description>SWEAP SWEAP electron anode selection mask (coded)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SWEAP e Mask</AxisLabel>
+            <ValueFormat>Z8</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4294967295</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>-9223372036854775808</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SWEAP_Ion_Mask</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SWEAP_Ion_Mask</ParameterKey>
+         <Description>SWEAP SWEAP ion anode selection mask (coded)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SWEAP ion Mask</AxisLabel>
+            <ValueFormat>Z8</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4294967295</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967295</ValidMax>
+         <FillValue>-9223372036854775808</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SWEAP_Start</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SWEAP_Start</ParameterKey>
+         <Description>Time since the last SWEAP sweep start (seconds)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SWEAP Start</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>250.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>250.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_All_Channels_Exist_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_All_Channels_Exist_Flag</ParameterKey>
+         <Description>Flag indicates that all six burst channels exist for this burst</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SWEAP_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SWEAP_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for the SWEAP particle counter</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1V2_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1V2_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3V4_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3V4_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1234_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1234_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM5_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_SCM4LG_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1LG_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1LG_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2LG_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V2LG_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3LG_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V3LG_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4LG_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V4LG_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5LG_Exists_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V5LG_Exists_Flag</ParameterKey>
+         <Description>Flag indicates that this TDS burst exists for this sensor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Trigger_Source_Name</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Trigger_Source_Name</ParameterKey>
+         <Description>The current burst trigger channel source number (8 character string)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Trigger</AxisLabel>
+            <ValueFormat>A</ValueFormat>
+         </RenderingHints>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Trigger_Threshold_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Trigger_Threshold_Engineering_mV</ParameterKey>
+         <Description>The current burst trigger threshold (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Trigger</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Trigger_Position</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Trigger_Position</ParameterKey>
+         <Description>The desired time/location of the burst trigger after the start of the burst (s)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Trigger</AxisLabel>
+            <ValueFormat>F12.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>1.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Thrusting_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Thrusting_Flag</ParameterKey>
+         <Description>Indicates thrusting coming or happening now</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_TWTA_On_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_TWTA_On_Flag</ParameterKey>
+         <Description>Indicates a spacecraft traveling wave-tube amplifier is on</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SCM_Cal_On_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SCM_Cal_On_Flag</ParameterKey>
+         <Description>Indicates the internal calbration cycle of the SCM is on</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_DFB_Bursting_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_DFB_Bursting_Flag</ParameterKey>
+         <Description>Indicates the FIELDS DFB is producing a high-rate burst now</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Bursts_Suppressed_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Bursts_Suppressed_Flag</ParameterKey>
+         <Description>Indicates the FIELDS burst suppression flag is on</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Down_Sampling_State</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Down_Sampling_State</ParameterKey>
+         <Description>Indicates that TDS down-sampling is in use</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Sample_Speed</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Sample_Speed</ParameterKey>
+         <Description>Possibly down-sampled sample rate of the TDS (Samples/second)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TDS Sa/s</AxisLabel>
+            <ValueFormat>F18.1</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>2.0e+07</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+07</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Sample_Period</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Sample_Period</ParameterKey>
+         <Description>Possibly down-sampled sample period of the TDS samples (seconds/sample)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TDS s/Sa</AxisLabel>
+            <ValueFormat>F18.9</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>1.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Period</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Period</ParameterKey>
+         <Description>Burst duration period of this TDS burst (seconds/burst)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TDS s/burst</AxisLabel>
+            <ValueFormat>F18.6</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>10.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>100.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Nyquist_Frequency</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Nyquist_Frequency</ParameterKey>
+         <Description>Burst Nyquist frequency (Hz)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Hz</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Nyquist</AxisLabel>
+            <ValueFormat>F18.1</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>2.0e+07</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+07</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Frequency_Resolution</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Frequency_Resolution</ParameterKey>
+         <Description>Burst frequency resolution and lowest frequency (Hz)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Hz</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Frequency Resolution</AxisLabel>
+            <ValueFormat>F18.1</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>2.0e+07</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+07</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Low_Pass_Filters_Match_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Low_Pass_Filters_Match_Flag</ParameterKey>
+         <Description>Flag indicates that all five analog channels have matching LPFs</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Low_Pass_Filter</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Low_Pass_Filter</ParameterKey>
+         <Description>Low-Pass filter value in use for this burst (Hz)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Hz</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>TDS LPF</AxisLabel>
+            <ValueFormat>F18.1</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>2.0e+07</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+07</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_TM_Xmit_Sequence_Number</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_TM_Xmit_Sequence_Number</ParameterKey>
+         <Description>The sequence number this wave-form burst was sent from FIELDS2</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Xmit Sequence</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>16777215</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>16777215</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_DFB_Voltages_Valid_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_DFB_Voltages_Valid_Flag</ParameterKey>
+         <Description>Flag indicates that all V1234 antenna voltages from the DFB are are valid</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_DFB_Voltage_V1</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_DFB_Voltage_V1</ParameterKey>
+         <Description>The DFB DC voltage measurement from the V1 sensor (Volts)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V1DC</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_DFB_Voltage_V2</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_DFB_Voltage_V2</ParameterKey>
+         <Description>The DFB DC voltage measurement from the V2 sensor (Volts)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V2DC</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_DFB_Voltage_V3</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_DFB_Voltage_V3</ParameterKey>
+         <Description>The DFB DC voltage measurement from the V3 sensor (Volts)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V3DC</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_DFB_Voltage_V4</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_DFB_Voltage_V4</ParameterKey>
+         <Description>The DFB DC voltage measurement from the V4 sensor (Volts)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V4DC</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speeds_All_Valid_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speeds_Valid_Flag</ParameterKey>
+         <Description>Flag indicates that all of the four reaction wheel speeds are valid</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speed_RW1</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speed_RW1</ParameterKey>
+         <Description>Indicates the rotational speed of the 1st reaction wheel (revolutions per second)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>RPS</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RW1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speed_RW2</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speed_RW2</ParameterKey>
+         <Description>Indicates the rotational speed of the 2nd reaction wheel (revolutions per second)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>RPS</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RW2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speed_RW3</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speed_RW3</ParameterKey>
+         <Description>Indicates the rotational speed of the 3rd reaction wheel (revolutions per second)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>RPS</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RW3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speed_RW4</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Reaction_Wheel_Speed_RW4</ParameterKey>
+         <Description>Indicates the rotational speed of the 4th reaction wheel (revolutions per second)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>RPS</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RW4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Saturation_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Saturation_Flag</ParameterKey>
+         <Description>Indicates that at least one analog channel had at least one sample saturated at the plus or minus limit</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V1_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V1_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain V1 sensor (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V2_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V2_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain V2 sensor (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V3_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V3_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain V3 sensor (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V4_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V4_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain V4 sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V5_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V5_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain V5 sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V1V2_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V1V2_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain difference of V1-V2 (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V1-V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V3V4_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V3V4_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain difference of V3-V4 (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V3-V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V1234_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V1234_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain sum of V1+V2+V3+V4 (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V1+V2+V3+V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM4_Engineering_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM4_Engineering_nT</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM5_Engineering_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM5_Engineering_nT</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain SCM MF sensor (Ch5) NOT corrected for frequency response (engineering nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM4LG_Engineering_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM4LG_Engineering_nT</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the low-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM4_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM4_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM5_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM5_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the high-gain SCM MF sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM4LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_SCM4LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the low-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V1LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V1LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the low-gain V1 sensor (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V2LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V2LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the low-gain V2 sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V3LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V3LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the low-gain V3 sensor (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V4LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V4LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the low-gain V4 sensor (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Peak_V5LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Peak_V5LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series peak for the low-gain V5 sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V1_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V1_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain V1 sensor (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V2_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V2_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain V2 sensor (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V3_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V3_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain V3 sensor (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V4_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V4_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain V4 sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V5_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V5_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain V5 sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V1V2_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V1V2_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain difference of V1-V2 (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V1-V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V3V4_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V3V4_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain difference of V3-V4 (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V3-V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V1234_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V1234_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain sum of V1+V2+V3+V4 (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V1+V2+V3+V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM4_Engineering_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM4_Engineering_nT</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM5_Engineering_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM5_Engineering_nT</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain SCM MF sensor (Ch5) NOT corrected for frequency response (engineering nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM4LG_Engineering_nT</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM4LG_Engineering_nT</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the low-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering nT)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM4_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM4_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM5_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM5_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the high-gain SCM MF sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM4LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_SCM4LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the low-gain SCM MF sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS SCM</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V1LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V1LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the low-gain V1 sensor (Ch3) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V2LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V2LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the low-gain V2 sensor (Ch5) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V2</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V3LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V3LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the low-gain V3 sensor (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V3</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V4LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V4LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the low-gain V4 sensor (Ch2) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V4</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_RMS_V5LG_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_RMS_V5LG_Engineering_mV</ParameterKey>
+         <Description>TDS wave-form burst time series RMS for the low-gain V5 sensor (Ch4) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS V5</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+            <ScaleMin>-2000.0</ScaleMin>
+            <ScaleMax>2000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Solar_Distance_Known_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Solar_Distance_Known_Flag</ParameterKey>
+         <Description>Flag indicates that the S/C provided solar distance is known (0 means not known; 1 means known)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Solar_Distance_Valid_Flag</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Solar_Distance_Valid_Flag</ParameterKey>
+         <Description>Flag indicates that the S/C provided solar distance is valid (0 means not valid; 1 means valid)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Solar_Distance_Direction</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Solar_Distance_Direction</ParameterKey>
+         <Description>Flag indicates the S/C direction to/fron the sun (0 means falling; 1 means climbing)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_SC_Solar_Distance</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_SC_Solar_Distance</ParameterKey>
+         <Description>Value is the S/C provided distance to the sun at the time of this burst</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>S/C-Sun</AxisLabel>
+            <ValueFormat>F15.3</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>1.6e+08</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.0e+08</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_Times</ParameterKey>
+         <Description>[NO PLOTS] Relative time for the time series samples - starting at zero and counting up (s)</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <AxisLabel>Time</AxisLabel>
+            <ValueFormat>F15.9</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1_Engineering_mV</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>PSP_FLD_L2_TDS_WF_Burst_Time_Series_V1_Engineering_mV</ParameterKey>
+         <Description>[NO PLOTS] TDS wave-form burst time series for the high-gain V1 sensor (Ch1) NOT corrected for frequency response (engineering mV)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mV</Units>
+         <RenderingHints>
+            <AxisLabel>Burst V1</AxisLabel>
+            <ValueFormat>F12.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

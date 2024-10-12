@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/NumericalData/Arase/Ephemeris/Level3/Definitive/OP77Q/PT6S</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>ERG orbit (The L-shell parameters and adiabatic invariants in this file are calculated using the International Radiation Belt Environment Modeling (IRBEM) library (https://craterre.onecert.fr/prbem/irbem/description.html).)</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>ProjectManager</Role>
+         </Contact>
+         <Contact>
+            <PersonID></PersonID>
+            <Role>ProjectScientist</Role>
+         </Contact>
+         <Contact>
+            <PersonID></PersonID>
+            <Role>HostContact</Role>
+            <Note>ERG Science Center, ERG SC, Point of Contact for Arase (ERG) Satellite Ephemeris Data</Note>
+         </Contact>
+         <InformationURL>
+            <Name>the ERG Science Center website</Name>
+            <URL>http://ergsc.isee.nagoya-u.ac.jp</URL>
+            <Description>For more information, see</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>instrument papers in Earth, Planets and Space</Name>
+            <URL>https://www.springeropen.com/collections/erg</URL>
+            <Description>ERG</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/ERG-SC</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>ERG Science Center</Name>
+            <URL>https://ergsc.isee.nagoya-u.ac.jp/data/ergsc/satellite/erg/orb/l3/</URL>
+            <ProductKey>ERG_ORB_L3</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via the ERG Science Center</Description>
+            <Language>en</Language>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the ERG Science Center, ERG-SC, the Institute of Space and Astronautical Science, ISAS, the Japan Aerospace Exploration Agency, JAXA, and the Institute for Space-Earth Environmental Research, ISEE, Nagoya University in presentations or publications when using data, data analysis software, plug-ins for data analysis, integrated analysis tools, or any other services provided by the ERG-SC.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/erg/orb/l3/</URL>
+            <ProductKey>ERG_ORB_L3</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/erg/orb/l3/</URL>
+            <ProductKey>ERG_ORB_L3</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ERG_ORB_L3&amp;index=sp_phys</URL>
+            <ProductKey>ERG_ORB_L3</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers, the ERG Science Center, and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Arase/Ephemeris</InstrumentID>
+      <MeasurementType>Ephemeris</MeasurementType>
+      <MeasurementType>MagneticField</MeasurementType>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2017-02-27T00:00:00.000</StartDate>
+            <StopDate>2018-09-04T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RingCurrent</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.MidLatitudeRegion</ObservedRegion>
+      <Parameter>
+         <Name>Epoch Time</Name>
+         <ParameterKey>epoch</ParameterKey>
+         <Description>Epoch Time, beginning of interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleMin>6.3587268219904e+13</ScaleMin>
+            <ScaleMax>6.6301178619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2015-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2100-12-31T23:59:59.099900000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Observation Date and Time, character format</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>date_time</ParameterKey>
+         <Description>Observation Date and Time, character format: year, month, day, hour, minute, second, millisecond, microsecond, nanosecond</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: none</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Time</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>9</Size>
+            <Element>
+               <Name>Year</Name>
+               <Index>1</Index>
+               <Units>yr</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Month</Name>
+               <Index>2</Index>
+               <Units>mo</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Day</Name>
+               <Index>3</Index>
+               <Units>d</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Hour</Name>
+               <Index>4</Index>
+               <Units>h</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Minute</Name>
+               <Index>5</Index>
+               <Units>min</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Second</Name>
+               <Index>6</Index>
+               <Units>s</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Millisecond</Name>
+               <Index>7</Index>
+               <Units>ms</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Microsecond</Name>
+               <Index>8</Index>
+               <Units>micros</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Nanosecond</Name>
+               <Index>9</Index>
+               <Units>ns</Units>
+               <ValidMin>-9999</ValidMin>
+               <ValidMax>9999</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9999</ScaleMin>
+                  <ScaleMax>9999</ScaleMax>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-32768</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Position mapped to the magnetic equator, [Leq, MLTeq], OP77Q</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_eq_op</ParameterKey>
+         <Description>Spacecraft Position mapped on to the magnetic equator, L Shell, equatorial, Magnetic Local Time, equatorial, [Leq, MLTeq], calculated by using the Olson-Pfitzer 1977 Quiet, OP77Q, model</Description>
+         <Caveats>* The OP77Q model used here is Olson & Pfitzer Quiet (1977)
+Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+            <CoordinateSystemName>MAG</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>Leq</Name>
+               <Index>1</Index>
+               <Units>Re</Units>
+               <UnitsConversion>6.3712e6&gt;m</UnitsConversion>
+               <ValidMin>-1.0e+31</ValidMin>
+               <ValidMax>1.0e+31</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-1.0E31</ScaleMin>
+                  <ScaleMax>1.0E31</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name> MLTeq</Name>
+               <Index>2</Index>
+               <Units>h</Units>
+               <UnitsConversion>3600&gt;s</UnitsConversion>
+               <ValidMin>-1.0e+31</ValidMin>
+               <ValidMax>1.0e+31</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-1.0E31</ScaleMin>
+                  <ScaleMax>1.0E31</ScaleMax>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <Qualifier>Array</Qualifier>
+            <SupportQuantity>Positional</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Footpoint Position, GEO, [Lat, Long], 100 km, northern hemisphere, OP77Q</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_iono_north_op</ParameterKey>
+         <Description>Spacecraft Footpoint Position at 100 km altitude in the northern hemisphere, Geomagnetic, MAG, spherical coordinates, [Lat, Long], calculated by using the Olson-Pfitzer 1977 Quiet, OP77Q, model</Description>
+         <Caveats>* The OP77Q model used here is Olson & Pfitzer Quiet (1977)
+Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.0174532925&gt;rad</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+            <CoordinateSystemName>GEO</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>Lat N (OP77Q)</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Lon N (OP77Q)</Name>
+               <Index>2</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <Qualifier>Array</Qualifier>
+            <SupportQuantity>Positional</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Footpoint Position, GEO, [Lat, Long], 100 km, southern hemisphere, OP77Q</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_iono_south_op</ParameterKey>
+         <Description>Spacecraft Footpoint Position at 100 km altitude in the southern hemisphere, Geomagnetic, MAG, spherical coordinates, [Lat, Long], calculated by using the Olson-Pfitzer 1977 Quiet, OP77Q, model</Description>
+         <Caveats>* The OP77Q model used here is Olson & Pfitzer Quiet (1977)
+Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.0174532925&gt;rad</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+            <CoordinateSystemName>GEO</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>Lat S (OP77Q)</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Lon S (OP77Q)</Name>
+               <Index>2</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <Qualifier>Array</Qualifier>
+            <SupportQuantity>Positional</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>McIlwain L Parameter, nine pitch angles, OP77Q</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_lmc_op</ParameterKey>
+         <Description>McIlwain L Parameter for particles with pitch angles in descending order equal to: 90&#176;, 80&#176;, 70&#176;, 60&#176;, 50&#176;, 40&#176;, 30&#176;, 20&#176; and 10&#176; respectively, calculated by using the Olson-Pfitzer 1977 Quiet, OP77Q, model</Description>
+         <Caveats>* The OP77Q model used here is Olson & Pfitzer Quiet (1977)
+Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E+31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>9</Size>
+            <Element>
+               <Name>L @ PA90 (OP77Q)</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>L @ PA80 (OP77Q)</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>L @ PA70 (OP77Q)</Name>
+               <Index>3</Index>
+            </Element>
+            <Element>
+               <Name>L @ PA60 (OP77Q)</Name>
+               <Index>4</Index>
+            </Element>
+            <Element>
+               <Name>L @ PA50 (OP77Q)</Name>
+               <Index>5</Index>
+            </Element>
+            <Element>
+               <Name>L @ PA40 (OP77Q)</Name>
+               <Index>6</Index>
+            </Element>
+            <Element>
+               <Name>L @ PA30 (OP77Q)</Name>
+               <Index>7</Index>
+            </Element>
+            <Element>
+               <Name>L @ PA20 (OP77Q)</Name>
+               <Index>8</Index>
+            </Element>
+            <Element>
+               <Name>L @ PA10 (OP77Q)</Name>
+               <Index>9</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <Qualifier>Array</Qualifier>
+            <SupportQuantity>Positional</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>L&#8432; Parameter, OP77Q</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_lstar_op</ParameterKey>
+         <Description>L&#8432; Parameter for nine pitch angles in descending order, 90&#176;, 80&#176;, 70&#176;, 60&#176;, 50&#176;, 40&#176;, 30&#176;, 20&#176; and 10&#176;, calculated by using the Olson-Pfitzer 1977 Quiet, OP77Q, model</Description>
+         <Caveats>* The OP77Q model used here is Olson & Pfitzer Quiet (1977)
+Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E+31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>9</Size>
+            <Element>
+               <Name>Lstar @ PA90 (OP77Q)</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Lstar @ PA80 (OP77Q)</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Lstar @ PA70 (OP77Q)</Name>
+               <Index>3</Index>
+            </Element>
+            <Element>
+               <Name>Lstar @ PA60 (OP77Q)</Name>
+               <Index>4</Index>
+            </Element>
+            <Element>
+               <Name>Lstar @ PA50 (OP77Q)</Name>
+               <Index>5</Index>
+            </Element>
+            <Element>
+               <Name>Lstar @ PA40 (OP77Q)</Name>
+               <Index>6</Index>
+            </Element>
+            <Element>
+               <Name>Lstar @ PA30 (OP77Q)</Name>
+               <Index>7</Index>
+            </Element>
+            <Element>
+               <Name>Lstar @ PA20 (OP77Q)</Name>
+               <Index>8</Index>
+            </Element>
+            <Element>
+               <Name>Lstar @ PA10 (OP77Q)</Name>
+               <Index>9</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <Qualifier>Array</Qualifier>
+            <SupportQuantity>Positional</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Integral Invariant, I, OP77Q</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_I_op</ParameterKey>
+         <Description>Integral Invariant, I, calculated by using the Olson-Pfitzer 1977 Quiet, OP77Q, model. See Roederer, J. G., Dynamics of the Geomagnetically trapped Radiation, Springer New York, pp. 48, 1970.</Description>
+         <Caveats>* 1.The second adiabatic invariant: K=I*Bm^(1/2), in which Bm is magnetic field intensity at mirror point for a given pitch angle. 2.The OP77Q model used here is Olson & Pfitzer Quiet (1977).
+Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Re</Units>
+         <UnitsConversion>6.3712e6&gt;m</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E+31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>9</Size>
+            <Element>
+               <Name>I @ PA90 (OP77Q)</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>I @ PA80 (OP77Q)</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>I @ PA70 (OP77Q)</Name>
+               <Index>3</Index>
+            </Element>
+            <Element>
+               <Name>I @ PA60 (OP77Q)</Name>
+               <Index>4</Index>
+            </Element>
+            <Element>
+               <Name>I @ PA50 (OP77Q)</Name>
+               <Index>5</Index>
+            </Element>
+            <Element>
+               <Name>I @ PA40 (OP77Q)</Name>
+               <Index>6</Index>
+            </Element>
+            <Element>
+               <Name>I @ PA30 (OP77Q)</Name>
+               <Index>7</Index>
+            </Element>
+            <Element>
+               <Name>I @ PA20 (OP77Q)</Name>
+               <Index>8</Index>
+            </Element>
+            <Element>
+               <Name>I @ PA10 (OP77Q)</Name>
+               <Index>9</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Particle>
+            <ParticleType>Electron</ParticleType>
+            <ParticleType>Ion</ParticleType>
+            <Qualifier>Array</Qualifier>
+            <ParticleQuantity>AdiabaticInvariant.BounceMotion</ParticleQuantity>
+         </Particle>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Field Magnitude, at spacecraft position, OP77Q</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_blocal_op</ParameterKey>
+         <Description>Magnetic Field Magnitude, |B|, at the spacecraft position, Olson-Pfitzer 1977 Quiet, OP77Q, model</Description>
+         <Caveats>* The OP77Q model used here is Olson & Pfitzer Quiet (1977)
+Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>|B| (OP77Q)</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E+31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Field>
+            <Qualifier>Scalar</Qualifier>
+            <Qualifier>Magnitude</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Field Magnitude, at spacecraft position mapped to the magnetic equator, OP77Q</Name>
+         <Set>Time series defined by using: epoch</Set>
+         <ParameterKey>pos_beq_op</ParameterKey>
+         <Description>Magnetic Field Magnitude, |Beq|, at the spacecraft position mapped on to the magnetic equator, calculated by using the Olson-Pfitzer 1977 Quiet, OP77Q, model</Description>
+         <Caveats>* The OP77Q model used here is Olson & Pfitzer Quiet (1977)
+Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>|Beq| (OP77Q)</AxisLabel>
+            <ValueFormat>E10.3</ValueFormat>
+            <ScaleMin>-1.0E+31</ScaleMin>
+            <ScaleMax>1.0E31</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.0e+31</ValidMin>
+         <ValidMax>1.0e+31</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Field>
+            <Qualifier>Scalar</Qualifier>
+            <Qualifier>Magnitude</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+   </NumericalData>
+</Spase>

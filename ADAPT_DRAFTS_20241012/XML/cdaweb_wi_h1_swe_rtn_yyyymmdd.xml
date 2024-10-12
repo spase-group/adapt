@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/wi_h1_swe_rtn/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>analysis:                               70.0000[%]</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>WI_H1_SWE_RTN</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>WI_H1_SWE_RTN</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=WI_H1_SWE_RTN&amp;index=sp_phys</URL>
+            <ProductKey>WI_H1_SWE_RTN</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Ephemeris</MeasurementType>
+      <MeasurementType>MagneticField</MeasurementType>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Heliosphere</ObservedRegion>
+      <ObservedRegion>Heliosphere.Inner</ObservedRegion>
+      <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+      <Parameter>
+         <Name>fit_flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>fit_flag</ParameterKey>
+         <Description>This flag denotes the fit quality and encodes any contingencies in the ion VDF analysis (10=SW parameters OK)</Description>
+         <Caveats>FLAG values indicate analysis contingencies: 10: Solar wind parameters OK -- no action necessary 9: Alpha particles relatively too cold 8: Alpha particles overlap within protons in CDF. 7: Alphas too fast, out of SWE range 6: Alpha particle peak may be confused with second proton peak. 5: Parameters OK, but Tp=Ta constraint used (params obtained with SUB_PROT=1) 4: alphas are unusually cold, Tp=Ta constraint used (SUB_PROT=1) 3: alpha patr. relatively too hot (SUB_PROT=1). Tp=Ta constraint used 2: The speed of the alpha is unusually low. 1: Poor peak identification 0: Spectrum cannot be fit with a bimax model.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>fit flag</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1</ValidMin>
+         <ValidMax>10</ValidMax>
+         <FillValue>-128</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>CDF Epoch time at the beginning of each SWE spectrum (milliseconds)</Description>
+         <Caveats>* The Epoch value is the number of milliseconds since 01-Jan-0000 00:00:00.000
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000</ValidMin>
+         <ValidMax>2029-12-31T23:59:59.999</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>year</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>year</ParameterKey>
+         <Description>---&gt; year</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>years</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>year</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-54</ValidMin>
+         <ValidMax>2</ValidMax>
+         <FillValue>-128</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>doy</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>doy</ParameterKey>
+         <Description>---&gt; Fractional day of year of start of spectrum (Noon on January 1 = 1.5)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>doy</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>3.67e+02</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>vp</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_V_nonlin</ParameterKey>
+         <Description>Proton bulk speed</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>proton bulk speed</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>vp</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_V_nonlin_errorbars</ParameterKey>
+         <Description>--&gt; Proton bulk speed (w/ uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_V_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>proton bulk speed</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>uncertainty in vp</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_sigmaV_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty of the proton bulk speed</Description>
+         <Caveats>From fit uncertainty, measurement uncertainties</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>uncertainty in Vp</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vr, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_VR_nonlin</ParameterKey>
+         <Description>R_RTN component of the proton vector velocity [km/s], from non-linear analysis</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Vr RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.80e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vr, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_VR_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; R_RTN component (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_VR_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Vr RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.80e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in Proton bulk Vr, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_sigmaVR_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty of measured R_RTN</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma P+ Vr nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vt, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_VT_nonlin</ParameterKey>
+         <Description>T_RTN component of the proton vector velocity [km/s], from non-linear analysis</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Vt RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vt, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_VT_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; T_RTN component (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_VT_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Vt RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in Proton bulk Vt, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_sigmaVT_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty of measured T_RTN</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma P+ Vt nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vn, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_VN_nonlin</ParameterKey>
+         <Description>N_RTN component of the proton vector velocity [km/s], from non-linear analysis</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Vn RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vn, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_VN_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; N_RTN (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_VN_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Vn RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in Proton bulk Vn, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_sigmaVN_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty of measured N_RTN</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma P+ Vn nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Scalar proton thermal speed</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_W_nonlin</ParameterKey>
+         <Description>Scalar [isotropic] proton thermal speed [km/s], from the trace of the anisotropic temperatures.</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ W nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Scalar proton thermal speed</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_W_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Scalar [isotropic] proton thermal speed (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_W_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ W nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in scalar proton thermal speed</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_sigmaW_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in the proton trace thermal speed [km/s].</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma P+ W nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton thermal speed perpendicular to the magnetic field direction [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Wperp_nonlin</ParameterKey>
+         <Description>Proton thermal speed perpendicular to the magnetic field direction [km/s].</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Wperp nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton thermal speed perpendicular to the magnetic field direction [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Wperp_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Proton thermal speed perpendicular (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_Wperp_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Wperp nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in the perpendicular proton thermal speed [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_sigmaWperp_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in the perpendicular proton thermal speed [km/s].</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma P+ Wperp nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton thermal speed parallel to the magnetic field direction [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Wpar_nonlin</ParameterKey>
+         <Description>Proton thermal speed parallel to the magnetic field direction [km/s].</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Wpar nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton thermal speed parallel to the magnetic field direction [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Wpar_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Proton thermal speed (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_Wpar_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Wpar nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in the parallel proton thermal speed [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_sigmaWpar_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in the parallel proton thermal speed [km/s].</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma P+ Wpar nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>East-West Flow Angle [degrees]</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>EW_flowangle</ParameterKey>
+         <Description>East-West RTN bulk Flow Angle [degrees]</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>east-west flow angle</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.80e+02</ValidMin>
+         <ValidMax>1.80e+02</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>East-West Flow Angle [degrees]</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>EW_flowangle_errorbars</ParameterKey>
+         <Description>---&gt; East-West RTN bulk Flow Angle (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: EW_flowangle.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>east-west flow angle</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.80e+02</ValidMin>
+         <ValidMax>1.80e+02</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ew_flow_angle_DELTA_VAR</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SigmaEW_flowangle</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in the east-west flow angle</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ew_flow_angle_DELTA_VAR</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.80e+02</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>North-south flow angle [degrees]</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NS_flowangle</ParameterKey>
+         <Description>North-south RTN bulk flow angle [degrees]</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>north-south flow angle</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-9.00e+01</ValidMin>
+         <ValidMax>9.00e+01</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>North-south flow angle [degrees]</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NS_flowangle_errorbars</ParameterKey>
+         <Description>---&gt; North-south RTN bulk flow angle (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: NS_flowangle.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>north-south flow angle</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-9.00e+01</ValidMin>
+         <ValidMax>9.00e+01</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ns_flow_angle_DELTA_VAR</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SigmaNS_flowangle</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in north-south flow angle</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ns_flow_angle_DELTA_VAR</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>9.00e+01</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton number density Np (n/cc) from non-linear analysis (linear scale)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Np_nonlin</ParameterKey>
+         <Description>Proton number density Np (n/cc) from non-linear analysis (linear scale)</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ density</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton number density Np (n/cc) from non-linear analysis (linear scale)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Np_nonlin_log</ParameterKey>
+         <Description>---&gt; Proton number density Np (log scale)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_Np_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ density</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton number density Np (n/cc) from non-linear analysis (linear scale)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Np_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Proton number density Np (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_Np_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ density</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>1.00e+05</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in the proton density</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_sigmaNp_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in the proton density</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>sigma P+ density</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha bulk speed V (km/s) from non-linear analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_V_nonlin</ParameterKey>
+         <Description>Alpha bulk speed V (km/s) from non-linear analysis</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>alpha bulk speed</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha bulk speed V (km/s) from non-linear analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_V_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Alpha bulk speed V (km/s) (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Alpha_V_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>alpha bulk speed</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>va_DELTA_VAR</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_sigmaV_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in alpha V [km/s]</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>uncertainty in Va</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha bulk Vr, nonlinva_r</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_VR_nonlin</ParameterKey>
+         <Description>Alpha velocity component Vr (RTN, km/s) from non-linear analysis</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Vr RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha bulk Vr, nonlinva_r</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_VR_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Alpha velocity component Vr (with uncertainties</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Alpha_VR_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Vr RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in Alpha bulk Vr, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_sigmaVR_nonlin</ParameterKey>
+         <Description>---&gt;1-sigma uncertainty in alpha Vr [km/s]</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma He++ Vr nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vy, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_VT_nonlin</ParameterKey>
+         <Description>Alpha velocity component Vt (RTN, km/s) from non-linear analysis</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Vt RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vy, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_VT_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Alpha velocity component Vt (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Alpha_VT_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Vt RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in Alpha bulk Vx, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_sigmaVT_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in alpha Vt [km/s]</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma He++ Vt nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vz, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_VN_nonlin</ParameterKey>
+         <Description>Alpha velocity component Vn (RTN, km/s) from non-linear analysis</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Vx RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk Vz, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_VN_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Alpha velocity component Vn (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Alpha_VN_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Vx RTN nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in Alpha bulk Vx, nonlin</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_sigmaVN_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in alpha Vn [km/s]</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma He++ Vn nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Scalar Alpha thermal speed</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_W_nonlin</ParameterKey>
+         <Description>Scalar [isotropic] alpha particle thermal speed [km/s].</Description>
+         <Caveats>Calculated from the trace of the anisotropic alpha pressure tensor, obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ W nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Scalar Alpha thermal speed</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_W_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Scalar [isotropic] alpha particle thermal speed [km/s] (with uncertainties).</Description>
+         <Caveats>* Calculated from the trace of the anisotropic alpha pressure tensor, obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Alpha_W_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ W nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in scalar alpha thermal speed</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_sigmaW_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in trace thermal speed [km/s].</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma He++ W nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha particle thermal speed perpendicular to the magnetic field direction [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_Wperp_nonlin</ParameterKey>
+         <Description>Alpha particle thermal speed perpendicular to the magnetic field direction [km/s].</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Wperp nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha particle thermal speed perpendicular to the magnetic field direction [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_Wperp_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Alpha particle thermal speed perpendicular to the magnetic field direction [km/s] (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Alpha_Wperp_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Wperp nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in the perpendicular alpha thermal speed [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_sigmaWperp_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in the perpendicular alpha thermal speed [km/s].</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma He++ Wperp nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha thermal speed parallel to the magnetic field direction [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_Wpar_nonlin</ParameterKey>
+         <Description>Alpha particle thermal speed parallel to the magnetic field direction [km/s]</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Wpar nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha thermal speed parallel to the magnetic field direction [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_Wpar_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Alpha particle thermal speed parallel (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Alpha_Wpar_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ Wpar nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in the perpendicular alpha thermal speed [km/s].</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_sigmaWpar_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in the perpendicular alpha thermal speed [km/s].</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma He++ Wpar nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha number density Na (n/cc) from non-linear analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_Na_nonlin</ParameterKey>
+         <Description>Alpha number density Na (n/cc) from non-linear analysis</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ density nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha number density Na (n/cc) from non-linear analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_Na_nonlin_log</ParameterKey>
+         <Description>---&gt; Alpha number density Na (log scale)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Alpha_Na_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ density nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>1.00e+05</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha number density Na (n/cc) from non-linear analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_Na_nonlin_errorbars</ParameterKey>
+         <Description>---&gt; Alpha number density Na (with uncertainties)</Description>
+         <Caveats>* Obtained from non-linear fitting to the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Alpha_Na_nonlin.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>He++ density nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>1.00e+05</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>One sigma uncertainty in the alpha density [n/cc]</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_sigmaNa_nonlin</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in the alpha density [n/cc]</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma He++ density nonlin</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>chi-square per degree of freedom</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ChisQ_DOF_nonlin</ParameterKey>
+         <Description>Reduced chi-squared for this fit</Description>
+         <Caveats>Obtained from non-linear fitting to the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>chisq/dof</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>time of peak flux (observed) in fractional day of year</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Peak_doy</ParameterKey>
+         <Description>---&gt; Time that the peak charge flux was observed for each spectrum (in fractional day of year)</Description>
+         <Caveats>Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak DOY</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>3.67e+02</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>1-sigma uncertainty in time of peak flux (in fractional day of year)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sigmaPeak_doy</ParameterKey>
+         <Description>---&gt; 1-sigma uncertainty in time of peak flux (in fractional day of year)</Description>
+         <Caveats>calculated from the number of spacecraft spins corresponding to the half-width measurement</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sigma Peak DOY</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.06e-03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton bulk speed (km/s) from moment analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_V_moment</ParameterKey>
+         <Description>Proton bulk speed (km/s) from moment analysis</Description>
+         <Caveats>Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>bulk speed moment</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton velocity component Vr (RTN, km/s) from moment analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_VR_moment</ParameterKey>
+         <Description>Proton velocity component Vr (RTN, km/s) from moment analysis</Description>
+         <Caveats>Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Vr moment</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton velocity component Vt (RTN, km/s) from moment analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_VT_moment</ParameterKey>
+         <Description>Proton velocity component Vt (RTN, km/s) from moment analysis</Description>
+         <Caveats>Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Vt moment</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton velocity component Vn (RTN, km/s) from moment analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_VN_moment</ParameterKey>
+         <Description>Proton velocity component Vn (RTN, km/s) from moment analysis</Description>
+         <Caveats>Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Vn moment</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton thermal speed W (km/s) from isotropic moment analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_W_moment</ParameterKey>
+         <Description>Proton thermal speed W (km/s) from isotropic moment analysis</Description>
+         <Caveats>Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ W moment</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton thermal speed Wperpendicular (km/s) from bimax moment analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Wperp_moment</ParameterKey>
+         <Description>Proton thermal speed Wperpendicular (km/s) from bimax moment analysis</Description>
+         <Caveats>Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Wperp moment</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton thermal speed Wparallel (km/s) from bimax moment analysis</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Wpar_moment</ParameterKey>
+         <Description>Proton thermal speed Wparallel (km/s) from bimax moment analysis</Description>
+         <Caveats>Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ Wpar moment</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>nm</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Np_moment</ParameterKey>
+         <Description>Proton number density Np (n/cc) from moment analysis</Description>
+         <Caveats>Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ N moment</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>nm</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Proton_Np_moment_log</ParameterKey>
+         <Description>---&gt; Proton number density Np (n/cc) from moment analysis (log scale)</Description>
+         <Caveats>* Statistical moments of the ion velocity distribution function (VDF) are estimated analytically from the ion current distribution function (CDF).
+This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: Proton_Np_moment.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>P+ N moment</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic field component Br (RTN, nT) averaged over plasma measurement</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BR</ParameterKey>
+         <Description>Magnetic field component Br (RTN, nT) averaged over plasma measurement</Description>
+         <Caveats>calculated from 3-second MFI experiment Version 5 data</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BR</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic field component Bt (RTN, nT) averaged over plasma measurement</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BT</ParameterKey>
+         <Description>Magnetic field component Bt (RTN, nT) averaged over plasma measurement</Description>
+         <Caveats>calculated from 3-second MFI experiment Version 5 data</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BT</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic field component Bn (RTN, nT) averaged over plasma measurement</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BN</ParameterKey>
+         <Description>Magnetic field component Bn (RTN, nT) averaged over plasma measurement</Description>
+         <Caveats>calculated from 3-second MFI experiment Version 5 data</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BN</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+04</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Angluar deviation of magnetic field over plasma measurement [degrees]</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Ang_dev</ParameterKey>
+         <Description>Angluar deviation of magnetic field over plasma measurement [degrees]</Description>
+         <Caveats>calculated from 3-second MFI experiment Version 5 data</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B angular deviation</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.80e+02</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Deviation in magnitude of field over plasma measurement [nT]</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>dev</ParameterKey>
+         <Description>Deviation in magnitude of field over plasma measurement [nT]</Description>
+         <Caveats>calculated from 3-second MFI experiment Version 5 data</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B mag deviation</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.00e+00</ValidMin>
+         <ValidMax>1.00e+04</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>xgse</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>xgse</ParameterKey>
+         <Description>X (GSE) Position of Wind S/C at start of spectrum [Re]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>xgse</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+03</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>ygse</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ygse</ParameterKey>
+         <Description>Y (GSE) Position of Wind S/C at start of spectrum [Re]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ygse</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+03</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>zgse</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>zgse</ParameterKey>
+         <Description>Z (GSE) Position of Wind S/C at start of spectrum [Re]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>zgse</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-1.00e+03</ValidMin>
+         <ValidMax>1.00e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

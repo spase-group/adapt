@@ -1,0 +1,10 @@
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 .xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Repository/NASA/GSFC/SPDF/CDAWeb.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Repository/NASA/GSFC/SPDF/CDAWeb.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Instrument/ParkerSolarProbe/FIELDS/RFS/HFR.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Instrument/ParkerSolarProbe/FIELDS/RFS/LFR.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Instrument/ParkerSolarProbe/FIELDS/SCM.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Instrument/ParkerSolarProbe/FIELDS/V1.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Instrument/ParkerSolarProbe/FIELDS/V2.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Instrument/ParkerSolarProbe/FIELDS/V3.xml
+vxo_registration_check.com /home/jovyan/efs/lbargatze/Space/PROGRAMS/HARVEST/CDAWEB/VXO/20231117 SMWG/Instrument/ParkerSolarProbe/FIELDS/V4.xml

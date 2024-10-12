@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c1_cp_edi_spin/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C1 Electron Drift Instrument (EDI) Electron Drift Velocity and Electric Field, Spin Resolution, Cluster Active Archive Parameter (CP), 4 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Electron Drift Instrument
+Electric field measured by the drift velocity
+of monoenergetic artificial electron beams
+injected perpendicularly to the ambient magnetic field</Description>
+         <Acknowledgement>Please acknowledge the EDI team and ESA Cluster Active Archive in any publication based upon use of this data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Goetz.Paschmann</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c1/edi/electron_driftvelo_efield_3dvect_spinreso/</URL>
+            <ProductKey>C1_CP_EDI_SPIN</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c1/edi/electron_driftvelo_efield_3dvect_spinreso/</URL>
+            <ProductKey>C1_CP_EDI_SPIN</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C1_CP_EDI_SPIN&amp;index=sp_phys</URL>
+            <ProductKey>C1_CP_EDI_SPIN</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator G. Paschmann. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Cluster-Rumba/EDI</InstrumentID>
+      <MeasurementType>ElectricField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2001-02-01T00:00:00.000</StartDate>
+            <StopDate>2022-03-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT4S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>time_tags__C1_CP_EDI_SPIN</ParameterKey>
+         <Description>Interval centred time tag</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A24</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Half width of averaging interval</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_SPIN</Set>
+         <ParameterKey>half_interval__C1_CP_EDI_SPIN</ParameterKey>
+         <Description>Half averaging interval length</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>s</Units>
+         <UnitsConversion>1.0&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>s</AxisLabel>
+            <ValueFormat>F6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2.2</ValidMax>
+         <FillValue>-1.0e+28</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Status</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_SPIN</Set>
+         <ParameterKey>status__C1_CP_EDI_SPIN</ParameterKey>
+         <Description>EDI Status</Description>
+         <Cadence>PT4S</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Status</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>7</Size>
+            <Element>
+               <Name>Status[0]</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Status[1]</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Status[2]</Name>
+               <Index>3</Index>
+            </Element>
+            <Element>
+               <Name>Status[3]</Name>
+               <Index>4</Index>
+            </Element>
+            <Element>
+               <Name>Status[4]</Name>
+               <Index>5</Index>
+            </Element>
+            <Element>
+               <Name>Status[5]</Name>
+               <Index>6</Index>
+            </Element>
+            <Element>
+               <Name>Status[6]</Name>
+               <Index>7</Index>
+            </Element>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>254</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Electron Drift Velocity, spin resolution in GSE</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_SPIN</Set>
+         <ParameterKey>V_ed_xyz_gse__C1_CP_EDI_SPIN</ParameterKey>
+         <Description>Electron Drift Velocity, spin resolution in GSE</Description>
+         <Caveats>The quality of the data is in status byte 0. Other options to filter are in bytes 3,5,6. More information can be found in UG(p.8) and ICD documents.</Caveats>
+         <Cadence>PT4S</Cadence>
+         <Units>km s^-1</Units>
+         <UnitsConversion>1.0E3&gt;m s^-1</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Velocity</AxisLabel>
+            <ValueFormat>F11</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Vx</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Vy</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Vz</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-2000.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electric Field, spin resolution in GSE</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_SPIN</Set>
+         <ParameterKey>E_xyz_gse__C1_CP_EDI_SPIN</ParameterKey>
+         <Description>Electric Field, spin resolution in GSE</Description>
+         <Caveats>The quality of the data is in status byte 0. Other options to filter are in bytes 3,5,6. More information can be found in UG(p.8) and ICD documents.</Caveats>
+         <Cadence>PT4S</Cadence>
+         <Units>mV/m</Units>
+         <UnitsConversion>1.0E-3&gt;V m^-1</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>E</AxisLabel>
+            <ValueFormat>F11</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Ex</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Ey</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Ez</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

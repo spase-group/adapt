@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c4_cp_rap_i3dm_h/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C4 Research with Adaptive Particle Imaging Detectors (RAPID) Proton Three-dimensional Distribution (standard), Differential Flux, Cluster Active Archive Parameter (CP), 128S Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Research with Adaptive Particle Imaging Detectors (RAPID)
+The RAPID spectrometer for the Cluster mission is an
+advanced particle detector for the analysis of suprathermal
+plasma distributions in the energy range from 39-400 keV
+for electrons, 28-1500 keV (4000 keV) for hydrogen,
+and 10 keV/nuc - 1500 keV (4000 keV) for heavier ions.</Description>
+         <Acknowledgement>Please acknowledge the instrument team and the ESA Cluster Science Archive when using these data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Berend.Wilken</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c4/rap-iims/proton_3ddist_stdreso/</URL>
+            <ProductKey>C4_CP_RAP_I3DM_H</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c4/rap-iims/proton_3ddist_stdreso/</URL>
+            <ProductKey>C4_CP_RAP_I3DM_H</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C4_CP_RAP_I3DM_H&amp;index=sp_phys</URL>
+            <ProductKey>C4_CP_RAP_I3DM_H</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator B. Wilken. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Cluster-Tango/RAPID</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2000-12-01T00:00:00.000</StartDate>
+            <StopDate>2022-09-30T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>128S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>Time_tags__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>Interval centered time tag</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A23</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time half interval</Name>
+         <Set>Time series defined by using: Time_tags__C4_CP_RAP_I3DM_H</Set>
+         <ParameterKey>Time_half_interval__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>Time half interval</Description>
+         <Cadence>128S</Cadence>
+         <Units>s</Units>
+         <UnitsConversion>1.0&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dT</AxisLabel>
+            <ValueFormat>F8.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1.8</ValidMin>
+         <ValidMax>86.0</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>3D ion record key</Name>
+         <Set>Time series defined by using: Time_tags__C4_CP_RAP_I3DM_H</Set>
+         <ParameterKey>Rec_Key__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>Key for merged ion distributions: number of records merged</Description>
+         <Cadence>128S</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Nb merged records</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>3</ValidMax>
+         <FillValue>99</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Proton Differential Flux</Name>
+         <Set>Time series defined by using: Time_tags__C4_CP_RAP_I3DM_H</Set>
+         <ParameterKey>Proton_Dif_flux_3DM__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>Proton Differential Flux.
+
+* Column 1 Labels from DIMENSION_E__C4_CP_RAP_I3DM_H: [ 27.7000, 75.3000, 92.2000, 159.700, 374.000, 962.000, 1885.00, 4007.00].
+* Column 2 Labels from DIMENSION_AZ__C4_CP_RAP_I3DM_H: [ 11.2500, 33.7500, 56.2500, 78.7500, 101.250, 123.750, 146.250, 168.750, 191.250, 213.750, 236.250, 258.750, 281.250, 303.750, 326.250, 348.750].
+* Column 3 Labels from DIMENSION_POL__C4_CP_RAP_I3DM_H: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500].</Description>
+         <Cadence>128S</Cadence>
+         <Units>Particles/(cm^2 s sr keV)</Units>
+         <UnitsConversion>6.242E+19&gt;(particles) m^-2 s^-1 sr^-1 J^-1</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>J(p)</AxisLabel>
+            <ValueFormat>G8.1</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8 16 12</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Std. Dev. Proton Differential Flux</Name>
+         <Set>Time series defined by using: Time_tags__C4_CP_RAP_I3DM_H</Set>
+         <ParameterKey>Proton_Dif_flux_3DM_SD__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>Standard Deviation of Proton Differential Flux.
+
+* Column 1 Labels from DIMENSION_E__C4_CP_RAP_I3DM_H: [ 27.7000, 75.3000, 92.2000, 159.700, 374.000, 962.000, 1885.00, 4007.00].
+* Column 2 Labels from DIMENSION_AZ__C4_CP_RAP_I3DM_H: [ 11.2500, 33.7500, 56.2500, 78.7500, 101.250, 123.750, 146.250, 168.750, 191.250, 213.750, 236.250, 258.750, 281.250, 303.750, 326.250, 348.750].
+* Column 3 Labels from DIMENSION_POL__C4_CP_RAP_I3DM_H: [ 7.50000, 22.5000, 37.5000, 52.5000, 67.5000, 82.5000, 97.5000, 112.500, 127.500, 142.500, 157.500, 172.500].</Description>
+         <Cadence>128S</Cadence>
+         <Units>Particles/(cm^2 s sr keV)</Units>
+         <UnitsConversion>6.242E+19&gt;(particles) m^-2 s^-1 sr^-1 J^-1</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Sigma(J(p))</AxisLabel>
+            <ValueFormat>G8.1</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8 16 12</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton energy thresholds</Name>
+         <ParameterKey>Dimension_E__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>Energy channels</Description>
+         <Units>keV</Units>
+         <UnitsConversion>1.609E-16&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>E(p)</AxisLabel>
+            <ValueFormat>F8.1</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>27.7</ValidMin>
+         <ValidMax>4007.0</ValidMax>
+         <FillValue>0.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Azimuthal angle</Name>
+         <ParameterKey>Dimension_Az__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>16 Azimuthal sectors of RAPID</Description>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.01745&gt;rad</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Phi</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-100.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Polar angle</Name>
+         <ParameterKey>Dimension_Pol__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>12 Polar directions of IIMS</Description>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.01745&gt;rad</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Theta</AxisLabel>
+            <ValueFormat>F5.1</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>12</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-100.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Data quality flag</Name>
+         <Set>Time series defined by using: Time_tags__C4_CP_RAP_I3DM_H</Set>
+         <ParameterKey>Quality__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>Data quality flag</Description>
+         <Cadence>128S</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Quality</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>-1</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>DELTA_PLUS_Dimension_E__C4_CP_RAP_I3DM_H</Name>
+         <ParameterKey>DELTA_PLUS_Dimension_E__C4_CP_RAP_I3DM_H</ParameterKey>
+         <Description>DELTA_PLUS_Dimension_E__C4_CP_RAP_I3DM_H</Description>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>Delta plus E(p)</AxisLabel>
+            <ValueFormat>F8.1</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>16.9</ValidMin>
+         <ValidMax>2122.0</ValidMax>
+         <FillValue>0.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/endurance_l2_slp/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The Endurance SLP was a needle probe mounted on the forward Fo’c’sle of the spacecraft. It measured thermal plasma density, electron temperature, the potential difference between the spacecraft and ambient plasma (plasma potential) and the relative potential of the spacecraft. SLP performed an active (20ms) sweep once every 5 seconds, wherein a sweeping +/- 5V voltage was applied to the needle. The data products here were derived from the I-V curves and intercalibrated with EISCAT Radar and the PES instrument.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Space Science Review Paper</Name>
+            <URL>https://doi.org/10.1007/s11214-022-00908-0</URL>
+            <Description>Endurance Rocket Mission</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/endurance/endurance-2022/cdf/</URL>
+            <ProductKey>ENDURANCE_L2_SLP</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/endurance/endurance-2022/cdf/</URL>
+            <ProductKey>ENDURANCE_L2_SLP</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ENDURANCE_L2_SLP&amp;index=sp_phys</URL>
+            <ProductKey>ENDURANCE_L2_SLP</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2022-05-11T00:00:00.000</StartDate>
+            <StopDate>2022-05-11T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Time start of avg interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+         </RenderingHints>
+         <ValidMin>01-Jan-1994 00:00:00.000</ValidMin>
+         <ValidMax>01-Jan-2050 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>MET</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tof</ParameterKey>
+         <Description>Mission elapsed time in seconds</Description>
+         <Caveats>Seconds from T-0, where T-0 is defined by ACS Umbi-pull, occurring at 2022-05-11T01:31:00.2207 UT</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MET</AxisLabel>
+            <ValueFormat>F11.7</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3600.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alt</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>alt</ParameterKey>
+         <Description>Altitude of Endurance during measurement</Description>
+         <Caveats>Altitude measured by onboard GPS</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Alt</AxisLabel>
+            <ValueFormat>F11.7</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>800.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Density</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>slp_ni</ParameterKey>
+         <Description>Thermal Plasma (Electron & Ion) Density in particles per cubic centimeter</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>/m3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Density</AxisLabel>
+            <ValueFormat>E11.5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+12</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Error in Density</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>slp_ni_error</ParameterKey>
+         <Description>Error in Plasma Density in particles per cubic centimeter</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>m3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Error in Density</AxisLabel>
+            <ValueFormat>F12.0</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+12</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Te</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>slp_te</ParameterKey>
+         <Description>Thermal Electron Temperature in Kelvin</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;K</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Te</AxisLabel>
+            <ValueFormat>F11.6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5000.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Error in Te</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>slp_te_error</ParameterKey>
+         <Description>Thermal Electron Temperature Error in Kelvin</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;K</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Error in Te</AxisLabel>
+            <ValueFormat>F11.7</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Abs. S/C Pot</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>slp_vsc</ParameterKey>
+         <Description>Absolute potential difference between plasma and Endurance</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Abs. S/C Pot</AxisLabel>
+            <ValueFormat>F12.9</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Abs. S/C Pot Err.</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>slp_vsc_error</ParameterKey>
+         <Description>Plasma potential error in Volts</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Abs. S/C Pot Err.</AxisLabel>
+            <ValueFormat>F12.9</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

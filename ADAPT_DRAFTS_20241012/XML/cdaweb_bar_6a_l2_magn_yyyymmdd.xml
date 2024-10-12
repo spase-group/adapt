@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/bar_6a_l2_magn/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>BARREL 6A Tri-axial Fluxgate Magnetometer (MAGN) Magnetic Field Data, no Gain Correction, not Despun, Level 2, 0.25 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Three axis magnetometer reading with nominal conversion. Data are neither gain corrected nor despun.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan for use of the Data. 
+
+BARREL will make all its scientific data products quickly and publicly available but all users are expected to read and follow the "BARREL Mission Data Usage Policy" which can be found here: http://www.dartmouth.edu/~barrel/documents/data.use.policy.pdf</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robyn.Millan</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>BARREL Data Repository</Name>
+            <URL>http://barreldata.ucsc.edu/data_products/</URL>
+            <Description>Access to all releases of BARREL data and links to the Science Operation Center tools.</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/barrel/l2/6a/magn/</URL>
+            <ProductKey>BAR_6A_L2_MAGN</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/barrel/l2/6a/magn/</URL>
+            <ProductKey>BAR_6A_L2_MAGN</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=BAR_6A_L2_MAGN&amp;index=sp_phys</URL>
+            <ProductKey>BAR_6A_L2_MAGN</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType></MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2018-12-09T00:00:00.000</StartDate>
+            <StopDate>2019-02-21T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT0.25S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Mesosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Stratosphere</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2009-09-19T00:00:05.978849280</ValidMin>
+         <ValidMax>2019-10-15T09:04:54.724999936</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FrameGroup</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FrameGroup</ParameterKey>
+         <Description>DPU Frame Counter</Description>
+         <Cadence>PT0.25S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Frame</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Quality</ParameterKey>
+         <Description>Data Quality Flag</Description>
+         <Caveats>32bit flag used to indicate data quality. Bit 0 = Low altitude (below 20km); Bit 1 = No GPS; Bit 2 = External ephemeris used; Bit 3 = Gain shift.</Caveats>
+         <Cadence>PT0.25S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Q</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MAG_X_uncalibrated</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MAG_X_uncalibrated</ParameterKey>
+         <Description>X axis of magnetic field. *Uncalibrated*</Description>
+         <Caveats>Calculated as (raw_value - 8388608) / 83886.070. Contains fluctuations due to payload rotations.</Caveats>
+         <Cadence>PT0.25S</Cadence>
+         <Units>&#181;T</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_X</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MAG_Y_uncalibrated</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MAG_Y_uncalibrated</ParameterKey>
+         <Description>Y axis of magnetic field. *Uncalibrated*</Description>
+         <Caveats>Calculated as (raw_value - 8388608) / 83886.070. Contains fluctuations due to payload rotations.</Caveats>
+         <Cadence>PT0.25S</Cadence>
+         <Units>&#181;T</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_Y</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MAG_Z_uncalibrated</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MAG_Z_uncalibrated</ParameterKey>
+         <Description>Z axis of magnetic field. *Uncalibrated*</Description>
+         <Caveats>Calculated as (raw_value - 8388608) / 83886.070. Contains fluctuations due to payload rotations.</Caveats>
+         <Cadence>PT0.25S</Cadence>
+         <Units>&#181;T</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_Z</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Total</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Total</ParameterKey>
+         <Description>Magnitude of magnetic field. *Uncalibrated*</Description>
+         <Caveats>Bt = sqrt(Bx^2 + By^2 + Bz^2). Value has variations due to payload rotations and Bx, By, and Bz not being gain corrected.</Caveats>
+         <Cadence>PT0.25S</Cadence>
+         <Units>&#181;T</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_total</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-200.0</ValidMin>
+         <ValidMax>200.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

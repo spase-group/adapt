@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/endurance_ephemeris_def/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description></Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>further information</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/aaa_sounding_rockets/endurance/endurance-2022/aareadme.html</URL>
+            <Description>Endurance</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/endurance/endurance-2022/cdf/</URL>
+            <ProductKey>ENDURANCE_EPHEMERIS_DEF</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/endurance/endurance-2022/cdf/</URL>
+            <ProductKey>ENDURANCE_EPHEMERIS_DEF</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ENDURANCE_EPHEMERIS_DEF&amp;index=sp_phys</URL>
+            <ProductKey>ENDURANCE_EPHEMERIS_DEF</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Ephemeris</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2022-05-11T00:00:00.000</StartDate>
+            <StopDate>2022-05-11T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Start Time for the record</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2040-12-31T23:59:59.000000000</ValidMax>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>time</ParameterKey>
+         <Description>Mission Elapsed Time</Description>
+         <Caveats>Seconds from T-0, where T-0 is defined by ACS Umbi-pull</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Time</AxisLabel>
+            <ValueFormat>F10.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3600.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Yaw</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Yaw</ParameterKey>
+         <Description>Euler Rotation Angle (Yaw)</Description>
+         <Caveats>Euler rotation angle (degrees) relative to inertial T-0 orientation about the lateral Z-axis 180 degrees from rail</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Euler rotation angle</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pitch</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pitch</ParameterKey>
+         <Description>Euler Rotation Angle (Pitch)</Description>
+         <Caveats>Euler rotation angle (degrees) relative to inertial T-0 orientation about the lateral Y axis that completes the R.H.R. with the other two axes</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pitch</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Roll</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Roll</ParameterKey>
+         <Description>Euler Rotation Angle (Roll)</Description>
+         <Caveats>Euler rotation angle (degrees) relative to inertial T-0 orientation about the longitudinal geometric X-axis out of nose</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Roll</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RollRate</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>RollRate</ParameterKey>
+         <Description>Roll Rate</Description>
+         <Caveats>Roll rate (about the body spin axis, X) in cycles/second (Hz) relative to an inertial frame</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Hz</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RollRate</AxisLabel>
+            <ValueFormat>F7.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>AoA_T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>AoA_T</ParameterKey>
+         <Description>Total Angle of Attack (between Spin Axis X and Velocity)</Description>
+         <Caveats>Total Angle of Attack (angle between the spin axis (X) and the velocity vector)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AoA_T</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>AngleB</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>AngleB</ParameterKey>
+         <Description>Angle between Spin Axis X and Magnetic Field</Description>
+         <Caveats>Angle between the spin axis (X) and the local IGRF magnetic field vector</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>AngleB</AxisLabel>
+            <ValueFormat>F7.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DCM</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DCM</ParameterKey>
+         <Description>Direction Cosine Matrix (DCM) [No Plot].
+
+* Column 1 Labels from ROW: [ 1, 2, 3].
+* Column 2 Labels from COL: [ 1, 2, 3].</Description>
+         <Caveats>DCM is a 3x3xn direction cosine matrix expressing the payload body frame (X-axis out of nose, Z-axis 180 degrees from rail, Y-axis completes R.H.R.) axes as column vectors in the coordinates of the ENU (Local) reference frame. The NIACS body frame is X-axis out of tail, Z-axis towards the rail, Y-axis completes R.H.R., so expressing the payload body frame in the coordinates of the NIACS body frame is achieved by the following matrix: | -1 0 0 | | 0 1 0 | | 0 0 -1 | The ENU (Local) reference frame is the local geodetic East, North, Up coordinate frame</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>DCM</AxisLabel>
+            <ValueFormat>F10.6</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3 3</Size>
+         </Structure>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>X Azimuth</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>X_Az</ParameterKey>
+         <Description>X Azimuth</Description>
+         <Caveats>Azimuth (degrees) of spin axis, X, from North in the local geodetic reference frame (clockwise if ENU, counterclockwise if NED)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>X Azimuth</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>X Elevation</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>X_El</ParameterKey>
+         <Description>X Elevation</Description>
+         <Caveats>Elevation (degrees) of spin axis, X, from the local geodetic horizontal plane, tangent to the surface of the Earth</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>X Elevation</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Y Azimuth</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Y_Az</ParameterKey>
+         <Description>Y Azimuth</Description>
+         <Caveats>Y_Az: Azimuth (degrees) of lateral axis, Y, from North in the local geodetic reference frame (clockwise if ENU, counterclockwise if NED)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Y Azimuth</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Y Elevation</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Y_El</ParameterKey>
+         <Description>Y Elevation</Description>
+         <Caveats>Elevation (degrees) of lateral axis, Y, from the local geodetic horizontal plane, tangent to the surface of the Earth</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Y Elevation</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Z Azimuth</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Z_Az</ParameterKey>
+         <Description>Z Azimuth</Description>
+         <Caveats>Azimuth (degrees) of lateral axis, Z, from North in the local geodetic reference frame (clockwise if ENU, counterclockwise if NED)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Z Azimuth</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Z Elevation</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Z_El</ParameterKey>
+         <Description>Z Elevation</Description>
+         <Caveats>Elevation (degrees) of lateral axis, Z, from the local geodetic horizontal plane, tangent to the surface of the Earth</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Z Elevation</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Geodetic latitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latgd</ParameterKey>
+         <Description>Geodetic Latitude of the Payload</Description>
+         <Caveats>Positional data from POSDAT File</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Geodetic latitude</AxisLabel>
+            <ValueFormat>F10.6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>longitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Long</ParameterKey>
+         <Description>Longitude of the Payload</Description>
+         <Caveats>Positional data from POSDAT File</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>longitude</AxisLabel>
+            <ValueFormat>F10.5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Geodetic altitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alt</ParameterKey>
+         <Description>Geodetic Altitude of the Payload</Description>
+         <Caveats>Positional data from POSDAT File</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>m</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Geodetic altitude</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>800000.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>row</Name>
+         <ParameterKey>row</ParameterKey>
+         <RenderingHints>
+            <AxisLabel>row</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+         </Structure>
+         <ValidMin>1</ValidMin>
+         <ValidMax>3</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>col</Name>
+         <ParameterKey>col</ParameterKey>
+         <RenderingHints>
+            <AxisLabel>col</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+         </Structure>
+         <ValidMin>1</ValidMin>
+         <ValidMax>3</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

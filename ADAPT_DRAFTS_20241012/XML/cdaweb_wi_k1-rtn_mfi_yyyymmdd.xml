@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/wi_k1-rtn_mfi/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>References:
+1. Panetta P. (GSFC), GGS WIND MFI Operator s Manual, September 15, 1992.
+2. Computer Sciences Corporation, Data Format Control Document (DFCD) Between
+The International Solar-Terrestrial Physics (ISTP) Program Information
+Processing Division Ground Data Processing System and The ISTP Mission
+Investigators, CSC/TR-91/6014, 560-1DFD/0190, July 1992.
+3. Behannon, K. W., International Solar Terrestrial Physics (ISTP) Program
+Investigator Data Analysis Requirements For WIND and GEOTAIL Spacecraft
+Magnetometer Experiment, September 1987.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>WI_K1-RTN_MFI</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>WI_K1-RTN_MFI</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=WI_K1-RTN_MFI&amp;index=sp_phys</URL>
+            <ProductKey>WI_K1-RTN_MFI</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Heliosphere</ObservedRegion>
+      <ObservedRegion>Heliosphere.Inner</ObservedRegion>
+      <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+      <Parameter>
+         <Name>Time</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Time, centered</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1994-11-14T00:00:00.000</ValidMin>
+         <ValidMax>2050-12-31T00:00:00.000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Time_PB5</ParameterKey>
+         <Description>Time</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Year</Name>
+               <Index>1</Index>
+               <Units>a</Units>
+               <ValidMin>1994</ValidMin>
+               <ValidMax>2020</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>2024</ScaleMin>
+                  <ScaleMax>2024</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Day of Year (Jan 1 = Day 1)</Name>
+               <Index>2</Index>
+               <Units>d</Units>
+               <ValidMin>318</ValidMin>
+               <ValidMax>365</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>196</ScaleMin>
+                  <ScaleMax>197</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Elapsed milliseconds of Day</Name>
+               <Index>3</Index>
+               <Units>ms</Units>
+               <ValidMin>0</ValidMin>
+               <ValidMax>0</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>0</ScaleMin>
+                  <ScaleMax>0</ScaleMax>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Instrument mode - major frame</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MODE</ParameterKey>
+         <Description>Instrument mode - major frame</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Mode</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>3</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>3</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Number of points in average</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>N</ParameterKey>
+         <Description>Number of points in average</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Npts</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1000</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Average of the magnitudes</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BF1</ParameterKey>
+         <Description>Average of the magnitudes</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BF1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.000000e+00</ScaleMin>
+            <ScaleMax>2.500000e+01</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.000000e+00</ValidMin>
+         <ValidMax>1.000000e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Field - Cartesian RTN</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BRTN</ParameterKey>
+         <Description>Magnetic Field - Cartesian RTN</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>RTN</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2.500000e+01</ScaleMin>
+            <ScaleMax>2.500000e+01</ScaleMax>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Br RTN</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Bt RTN</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Bn RTN</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.000000e+03</ValidMin>
+         <ValidMax>1.000000e+03</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Field - Angular RTN</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BRTNa</ParameterKey>
+         <Description>Magnetic Field - Angular RTN</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>RTN</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E13.6</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>B RTN</Name>
+               <Index>1</Index>
+               <Units>nT</Units>
+               <ValidMin>0.000000e+00</ValidMin>
+               <ValidMax>1.000000e+03</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>0.000000e+00</ScaleMin>
+                  <ScaleMax>2.500000e+01</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Bt RTN</Name>
+               <Index>2</Index>
+               <Units>&#176;</Units>
+               <ValidMin>-9.000000e+01</ValidMin>
+               <ValidMax>9.000000e+01</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-9.000000e+01</ScaleMin>
+                  <ScaleMax>9.000000e+01</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Bp RTN</Name>
+               <Index>3</Index>
+               <Units>&#176;</Units>
+               <ValidMin>0.000000e+00</ValidMin>
+               <ValidMax>3.600000e+02</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>0.000000e+00</ScaleMin>
+                  <ScaleMax>3.600000e+02</ScaleMax>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Radial distance from the earth</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DIST</ParameterKey>
+         <Description>Radial distance from the earth</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dist</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>0.000000e+00</ScaleMin>
+            <ScaleMax>2.500000e+01</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.000000e+00</ValidMin>
+         <ValidMax>2.200000e+02</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>S/C Position - Cartesian GSM</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PGSM</ParameterKey>
+         <Description>Wind Position - Cartesian GSM</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>GSM</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2.500000e+01</ScaleMin>
+            <ScaleMax>2.500000e+01</ScaleMax>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>x GSM</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>y GSM</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>z GSM</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-2.200000e+02</ValidMin>
+         <ValidMax>2.200000e+02</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>S/C Position - Cartesian GSE</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PGSE</ParameterKey>
+         <Description>Wind Position - Cartesian GSE</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Earth radii</Units>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>GSE</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2.500000e+01</ScaleMin>
+            <ScaleMax>2.500000e+01</ScaleMax>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>x GSE</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>y GSE</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>z GSE</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-2.200000e+02</ValidMin>
+         <ValidMax>2.200000e+02</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Key Parameter Quality flags</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DQF</ParameterKey>
+         <Description>KP Quality: 0-Good Data Point, 1-Not a full major frame, 2-Missing Data</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Flags</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>20</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>20</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Gap flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Gap_Flag</ParameterKey>
+         <Description>Gap Flag: 0-Good 1-Invalid 2-Missing 4-No Spin 5-Maneuver 10-No Ave 20-Start</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Gap_Flag</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>20</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>20</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

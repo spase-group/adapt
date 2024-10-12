@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/dn_magn-l2-hires_g10/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Magnetometer high-resolution data for the GOES-8 through GOES-17, (GOES I-M, GOES-NOP and GOES-R series of 10 spacecraft). The GOES MAG subsystem consists of fluxgate magnetometer instruments monitoring three orthogonal components of the geomagnetic field at geosynchronous orbit (L = 6.6) with high resolution sampling rate (G8-15: 2 Hz and G16-17: 10 Hz). The NetCDF product files include the magnetometer observations from the instrument(s) in several coordinate systems, and the satellite location calculated using a standard SGP/SDP orbit propagator. The field measurements are provided as B field vectors in the ECI (Earth-centered inertial), EPN (earthward, poleward, normal/eastward), GSE (geocentric solar ecliptic), GSM(geocentric solar magnetospheric) and VDH (dipole aligned) coordinate systems. For comprehensive documentation including caveats and usage recommendations, please consult the GOES magnetometer User s Guide at NCEI.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>readme</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/goes/GOES-8-onwards_magnetometer_readme.pdf</URL>
+            <Description>GOES Magnetometer CDAWeb</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>DN_MAGN-L2-HIRES_G10</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>DN_MAGN-L2-HIRES_G10</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=DN_MAGN-L2-HIRES_G10&amp;index=sp_phys</URL>
+            <ProductKey>DN_MAGN-L2-HIRES_G10</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>time_epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>time_inboard</Description>
+         <Caveats>* Seconds since the J2K epoch - added by SPDF
+This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: time_base, time.</Caveats>
+         <Units>seconds since 2000-01-01 12:00:00</Units>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_total</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_total</ParameterKey>
+         <Description>Total estimated magnetic field computed from the EPN frame.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <RenderingHints>
+            <AxisLabel>B_total</AxisLabel>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_epn</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_epn</ParameterKey>
+         <Description>Magnetic field in EPN coordinates - E: earthward, P: perpendicular to the satellite orbital plane, N: ExP (eastward)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>E</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>P</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>N</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_eci</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_eci</ParameterKey>
+         <Description>Magnetic field in Earth Centered Inertial (ECI) coordinates (x, y, z)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>X ECI</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Y ECI</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Z ECI</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_gse</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_gse</ParameterKey>
+         <Description>Magnetic field in Geocentric Solar Ecliptic (GSE) coordinates (x, y, z)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>X GSE</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Y GSE</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Z GSE</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_gsm</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_gsm</ParameterKey>
+         <Description>Magnetic field in Geocentric Solar Magnetospheric (GSM) coordinates (x, y, z)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>X GSM</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Y GSM</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Z GSM</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_vdh</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_vdh</ParameterKey>
+         <Description>Magnetic field in VDH coordinates - V: anti-earthward, D: eastward, H: northward along dipole.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>V</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>D</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>H</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_brf</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_brf</ParameterKey>
+         <Description>Magnetic field in Body Reference Frame (BRF) coordinates (spacecraft x=Roll, y=Pitch, z=Yaw). This is also the frame of the SEISS instrument.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>X BRF</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Y BRF</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Z BRF</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>quality_magnetic_field</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_quality</ParameterKey>
+         <Description>Data quality flag (0 = good quality data)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Quality magnetic field</AxisLabel>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2147483648</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_estimation_method</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_method</ParameterKey>
+         <Description>MAG instrument flag {1 (default) = outboard MAG.}</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>0=in,1=out,2=average,3=gradiometer</Units>
+         <RenderingHints>
+            <AxisLabel>Instrument Flag</AxisLabel>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>3</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_sensor</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ib_sensor</ParameterKey>
+         <Description>Compensated (calibrated and misalignment corrected) magnetic field for x, y, and z direction in native reference frame for inboard magnetometer</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_epn</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ib_epn</ParameterKey>
+         <Description>Compensated inboard magnetometer data in EPN coordinates (x, y, z). E: earthward, P: perpendicular to orbital plane, N: ExP.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_eci</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ib_eci</ParameterKey>
+         <Description>Compensated inboard magnetometer data in Earth Centered Inertial coordinates (x, y, z)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_gse</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ib_gse</ParameterKey>
+         <Description>Compensated inboard magnetometer data in Geocentric Solar Ecliptic coordinates (x, y, z)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_gsm</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ib_gsm</ParameterKey>
+         <Description>Compensated inboard magnetometer data in Geocentric Solar Magnetospheric coordinates (x, y, z)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_vdh</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ib_vdh</ParameterKey>
+         <Description>Compensated inboard magnetometer data in VDH coordinates (x, y, z). V: anti-earthward, D: eastward, H: northward along dipole.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_brf</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ib_brf</ParameterKey>
+         <Description>Compensated inboard magnetometer data in Body Reference Frame coordinates (x, y, z). This frame orients the magnetometer to the SEISS.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>quality_magnetic_field_inboard</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ib_quality</ParameterKey>
+         <Description>Quality flag for Inboard sensor, applies to all coordinate frames.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>time_inboard</Name>
+         <ParameterKey>time_ib</ParameterKey>
+         <Description>Inboard intermediate timestamp with 0.1 second resolution. Seconds since the J2K epoch</Description>
+         <Units>seconds since 2000-01-01 12:00:00</Units>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_outboard_sensor</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ob_sensor</ParameterKey>
+         <Description>Compensated (calibrated and misalignment corrected) magnetic field for x, y, and z direction in native reference frame for outboard magnetometer</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_epn</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ob_epn</ParameterKey>
+         <Description>Compensated outboard magnetometer data in EPN coordinates (x, y, z). E: earthward, P: perpendicular to orbital plane, N: ExP.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_eci</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ob_eci</ParameterKey>
+         <Description>Compensated outboard magnetometer data in Earth Centered Inertial coordinates (x, y, z)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_outboard_gse</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ob_gse</ParameterKey>
+         <Description>Compensated outboard magnetometer data in Geocentric Solar Ecliptic coordinates (x, y, z)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_outboard_gsm</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ob_gsm</ParameterKey>
+         <Description>Compensated outboard magnetometer data in Geocentric Solar Magnetospheric coordinates (x, y, z)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_outboard_vdh</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ob_vdh</ParameterKey>
+         <Description>Compensated outboard magnetometer data in VDH coordinates (x, y, z). V: anti-earthward, D: eastward, H: northward along dipole.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>magnetic_field_inboard_brf</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ob_brf</ParameterKey>
+         <Description>Compensated outboard magnetometer data in Body Reference Frame coordinates (x, y, z). This frame orients the magnetometer to the SEISS.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>[nT]</Units>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-1024.0</ValidMin>
+         <ValidMax>1024.0</ValidMax>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>quality_magnetic_field_outboard</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>b_ob_quality</ParameterKey>
+         <Description>Quality flag for Outboard sensor, applies to all coordinate frames.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>time_outboard</Name>
+         <ParameterKey>time_ob</ParameterKey>
+         <Description>Outboard intermediate timestamp with 0.1 second resolution. Seconds since the J2K epoch</Description>
+         <Units>seconds since 2000-01-01 12:00:00</Units>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>orbit_latitude_longitude_radius_geographic</Name>
+         <Set>Time series defined by using: Epoch_orbit</Set>
+         <ParameterKey>orbit_llr_geo</ParameterKey>
+         <Description>Spacecraft geographic position (latitude (+north), longitude (+east), radius)</Description>
+         <Caveats>Spacecraft geographic position (latitude (+north), longitude (+east), radius) degrees, degrees, meters)</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Orbit Latitude GEO</Name>
+               <Index>1</Index>
+               <Units>&#176;</Units>
+               <ValidMin>-5.0</ValidMin>
+               <ValidMax>5.0</ValidMax>
+               <RenderingHints>
+                  <AxisLabel>0</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Orbit Longitude GEO</Name>
+               <Index>2</Index>
+               <Units>&#176;</Units>
+               <ValidMin>-180.0</ValidMin>
+               <ValidMax>180.0</ValidMax>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Orbit Radius GEO</Name>
+               <Index>3</Index>
+               <Units>m</Units>
+               <ValidMin>3.99901e+07</ValidMin>
+               <ValidMax>4.41995e+07</ValidMax>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>time_orbit</Name>
+         <ParameterKey>time_orbit</ParameterKey>
+         <Description>Orbit timestamp with 1 second resolution. Seconds since the J2K epoch</Description>
+         <Units>seconds since 2000-01-01 12:00:00</Units>
+         <FillValue>-9999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>time_epoch</Name>
+         <ParameterKey>Epoch_orbit</ParameterKey>
+         <Description>time_inboard</Description>
+         <Caveats>* Seconds since the J2K epoch - added by SPDF
+This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: time_base, time_orbit.</Caveats>
+         <Units>seconds since 2000-01-01 12:00:00</Units>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

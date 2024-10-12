@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/solo_ll02_swa-eas-ss/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Solar Wind Analyser, Electron Analyser System (SWA-EAS) Parameters, Level 2 Low Latency (LL02), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description></Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator C.J. Owen for use of the Data. 
+
+Consult with MSSL-UCL before using</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Homepage</Name>
+            <URL>https://sci.esa.int/web/solar-orbiter</URL>
+            <Description>ESA Solar Orbiter</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Data Archive</Name>
+            <URL>https://soar.esac.esa.int/soar</URL>
+            <Description>ESA Solar Orbiter</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Astronomy and Astrophysics</Name>
+            <URL>https://www.aanda.org/component/toc/?task=topic&id=1082</URL>
+            <Description>Special Issue of Solar Orbiter Mission and Instruments in</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>SOLO_LL02_SWA-EAS-SS</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>SOLO_LL02_SWA-EAS-SS</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_LL02_SWA-EAS-SS&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_LL02_SWA-EAS-SS</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator C.J. Owen. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>EPOCH (Terrestrial Time)</Name>
+         <ParameterKey>EPOCH</ParameterKey>
+         <Description>Epoch encoded as Terrestrial Time on rotating Earth geoid, ns since J2000</Description>
+         <Caveats>The EAS1 time tag is from the center of the acquisition interval which is 1 sec</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0E-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EPOCH</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>-9223372036854775808</ScaleMin>
+            <ScaleMax>9223372036854775807</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>31-DEC-9999 23:59:59.999999999</ValidMin>
+         <ValidMax>11-Apr-2292 11:46:07.670775807</ValidMax>
+         <FillValue>31-DEC-9999 23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EPOCH_2 (Terrestrial Time)</Name>
+         <ParameterKey>EPOCH_1</ParameterKey>
+         <Description>Epoch encoded as Terrestrial Time on rotating Earth geoid, ns since J2000</Description>
+         <Caveats>The EAS2 time tag is from the center of the acquisition interval which is 1 sec</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0E-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EPOCH_2</AxisLabel>
+            <ValueFormat>I</ValueFormat>
+            <ScaleMin>-9223372036854775808</ScaleMin>
+            <ScaleMax>9223372036854775807</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>31-DEC-9999 23:59:59.999999999</ValidMin>
+         <ValidMax>11-Apr-2292 11:46:07.670775807</ValidMax>
+         <FillValue>31-DEC-9999 23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SCET</Name>
+         <ParameterKey>SCET</ParameterKey>
+         <Description>Elapsed time of the onboard clock at the time of EAS1 observation.</Description>
+         <Caveats>The EAS1 time tag is from the center of the acquisition interval which is 1 sec</Caveats>
+         <Units>Ticks</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Spacecraft Elapsed Time</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.29497e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.29497e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SCET_1</Name>
+         <ParameterKey>SCET_1</ParameterKey>
+         <Description>Elapsed time of the onboard clock at the time of EAS2 observation.</Description>
+         <Caveats>The EAS2 time tag is from the center of the acquisition interval which is 1 sec</Caveats>
+         <Units>Ticks</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Spacecraft Elapsed Time</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>4.29497e+09</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.29497e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS1 Single Strahl Data</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>SWA_EAS1_SS_DATA</ParameterKey>
+         <Description>The single strahl data from EAS1..
+
+* Column 1 Labels from SWA_EAS_AZIMUTH: [ 5.62500, 16.8750, 28.1250, 39.3750, 50.6250, 61.8750, 73.1250, 84.3750, 95.6250, 106.875, 118.125, 129.375, 140.625, 151.875, 163.125, 174.375, 185.625, 196.875, 208.125, 219.375, 230.625, 241.875, 253.125, 264.375, 275.625, 286.875, 298.125, 309.375, 320.625, 331.875, 343.125, 354.375].
+* Column 2 Labels from SWA_EAS1_ELEVATION: [ 39.3400, 29.1700, 20.9100, 13.9800, 8.06000, 2.91000, -1.66000, -5.82000, -9.70000, -13.4300, -17.1300, -20.9400, -25.0000, -29.5300, -34.8200, -41.3600].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Counts/Acc</Units>
+         <RenderingHints>
+            <AxisLabel>Electron Counts</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>32 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>EAS2 Single Strahl Data</Name>
+         <Set>Time series defined by using: EPOCH_1</Set>
+         <ParameterKey>SWA_EAS2_SS_DATA</ParameterKey>
+         <Description>The single strahl data from EAS2..
+
+* Column 1 Labels from SWA_EAS_AZIMUTH: [ 5.62500, 16.8750, 28.1250, 39.3750, 50.6250, 61.8750, 73.1250, 84.3750, 95.6250, 106.875, 118.125, 129.375, 140.625, 151.875, 163.125, 174.375, 185.625, 196.875, 208.125, 219.375, 230.625, 241.875, 253.125, 264.375, 275.625, 286.875, 298.125, 309.375, 320.625, 331.875, 343.125, 354.375].
+* Column 2 Labels from SWA_EAS2_ELEVATION: [ 38.9400, 28.2500, 19.8600, 12.9900, 7.25000, 2.35000, -1.93000, -5.78000, -9.37000, -12.8400, -16.3200, -19.9700, -23.9700, -28.5700, -34.1300, -41.1000].</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Counts/Acc</Units>
+         <RenderingHints>
+            <AxisLabel>Electron Counts</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>32 16</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>EAS1 Elevation</Name>
+         <ParameterKey>SWA_EAS1_ELEVATION</ParameterKey>
+         <Description>The elevation angles of the EAS1 sensor bin centres.</Description>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>EAS1 Elevation Angle</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+            <ScaleMin>-45.0</ScaleMin>
+            <ScaleMax>45.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>-45.0</ValidMin>
+         <ValidMax>45.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS1 Elevation half bin width</Name>
+         <ParameterKey>SWA_EAS1_ELEV_DELTA</ParameterKey>
+         <Description>Half bin width of EAS1 Elevation bins</Description>
+         <RenderingHints>
+            <AxisLabel>EAS1 Elevation delta Angle</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS2 Elevation</Name>
+         <ParameterKey>SWA_EAS2_ELEVATION</ParameterKey>
+         <Description>The elevation angles of the EAS2 sensor bin centres.</Description>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>EAS2 Elevation Angle</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+            <ScaleMin>-45.0</ScaleMin>
+            <ScaleMax>45.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>-45.0</ValidMin>
+         <ValidMax>45.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS2 Elevation half bin width</Name>
+         <ParameterKey>SWA_EAS2_ELEV_DELTA</ParameterKey>
+         <Description>Half bin width of EAS1 Elevation bins</Description>
+         <RenderingHints>
+            <AxisLabel>EAS2 Elevation delta Angle</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS Azimuth</Name>
+         <ParameterKey>SWA_EAS_AZIMUTH</ParameterKey>
+         <Description>The azimuth angles of the EAS sensor bin centres.</Description>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Azimuth Angle</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>360.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>32</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS1 Energy</Name>
+         <ParameterKey>SWA_EAS1_ENERGY</ParameterKey>
+         <Description>The Energy Bin used to obtain the Single Strahl value for EAS1.</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+            <ScaleMin>0.1</ScaleMin>
+            <ScaleMax>6000.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.1</ValidMin>
+         <ValidMax>6000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS2 Energy</Name>
+         <ParameterKey>SWA_EAS2_ENERGY</ParameterKey>
+         <Description>The Energy Bin used to obtain the Single Strahl value for EAS2.</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>F14.4</ValueFormat>
+            <ScaleMin>0.1</ScaleMin>
+            <ScaleMax>6000.0</ScaleMax>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.1</ValidMin>
+         <ValidMax>6000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS1 Rotation Matrix</Name>
+         <ParameterKey>EAS1_ROT_MATRIX</ParameterKey>
+         <Description>The rotation matrix that will transform EAS1_RTP to SO_RTP.</Description>
+         <RenderingHints>
+            <ValueFormat>F14.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3 3</Size>
+         </Structure>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS2 Rotation Matrix</Name>
+         <ParameterKey>EAS2_ROT_MATRIX</ParameterKey>
+         <Description>The rotation matrix that will transform EAS2_RTP to SO_RTP.</Description>
+         <RenderingHints>
+            <ValueFormat>F14.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3 3</Size>
+         </Structure>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS1 Data Quality</Name>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>EAS1 Data Quality flag</Description>
+         <RenderingHints>
+            <AxisLabel>EAS1 data quality</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>EAS2 Data Quality</Name>
+         <ParameterKey>QUALITY_FLAG_1</ParameterKey>
+         <Description>EAS2 Data Quality flag</Description>
+         <RenderingHints>
+            <AxisLabel>EAS2 data quality</AxisLabel>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>4</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

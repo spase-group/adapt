@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/thg_l2_mag_dmo/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>Ground-based Vector Magnetic Field   Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>, Ground-based Vector Magnetic Field  Data,  Time Resolution, Station Code: (), Station Location: (GEO )</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator , </Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL>http://magstar.cpi.com</URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>THG_L2_MAG_DMO</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>THG_L2_MAG_DMO</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=THG_L2_MAG_DMO&amp;index=sp_phys</URL>
+            <ProductKey>THG_L2_MAG_DMO</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Ground/University.of.Missouri/Magnetometer</InstrumentID>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>B in HDZ Components</Name>
+         <Set>Time series defined by using: thg_mag_dmo_time</Set>
+         <ParameterKey>thg_mag_dmo</ParameterKey>
+         <Description>Magnetic field B in HDZ vector components</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1e-9&gt;T</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>GEO</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B in HDZ Components</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Magnetic North, local</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Magnetic East, local</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Vertical Down, local</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>3</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Field>
+            <Qualifier>Vector</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>H component of B</Name>
+         <Set>Time series defined by using: thg_mag_dmo_time</Set>
+         <ParameterKey>thg_magh_dmo</ParameterKey>
+         <Description>---&gt; H - Local magnetic North component of B</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: thg_mag_dmo.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1e-9&gt;T</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic North - H</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Field>
+            <Qualifier>Component.I</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>E component of B</Name>
+         <Set>Time series defined by using: thg_mag_dmo_time</Set>
+         <ParameterKey>thg_magd_dmo</ParameterKey>
+         <Description>---&gt; E - Local magnetic East component of B</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: thg_mag_dmo.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1e-9&gt;T</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic East - E</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Field>
+            <Qualifier>Component.J</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>Z component of B</Name>
+         <Set>Time series defined by using: thg_mag_dmo_time</Set>
+         <ParameterKey>thg_magz_dmo</ParameterKey>
+         <Description>---&gt; Z - Local vertical down component of B</Description>
+         <Caveats>This parameter is virtual. It is calculated by calling the function ALTERNATE_VIEW with the following input parameters: thg_mag_dmo.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1e-9&gt;T</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Vertical Down - Z</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Field>
+            <Qualifier>Component.K</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>HDZ Component Number</Name>
+         <ParameterKey>thg_mag_dmo_compno</ParameterKey>
+         <Description>HDZ Component Number</Description>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>GEO</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <AxisLabel>HDZ Component Number</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+         </Structure>
+         <ValidMin>1</ValidMin>
+         <ValidMax>3</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>thg_mag_dmo_time</Name>
+         <ParameterKey>thg_mag_dmo_time</ParameterKey>
+         <Description>thg_mag_dmo_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+         <Caveats>Unleaped seconds</Caveats>
+         <Units>s</Units>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>01-Jan-2000 11:58:55.816000000</ValidMin>
+         <ValidMax>02-Aug-2150 22:13:38.064502784</ValidMax>
+         <FillValue>16-Mar-2292 10:16:07.857090560</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

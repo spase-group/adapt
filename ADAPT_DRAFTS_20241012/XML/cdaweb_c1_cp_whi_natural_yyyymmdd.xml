@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c1_cp_whi_natural/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C1 Waves of High frequency and Sounder for Probing of Electron density by Relaxation (WHISPER) Electric Spectral Power Density, Cluster Active Archive Parameter (CP), 2.14 second Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The Wave of HIgh frequency and Sounder for Probing of Electron density
+by Relaxation (WHISPER) performs the measurement of the electron density
+on the four satellites of the CLUSTER project. The two main purposes of
+the WHISPER experiment are to record the natural waves and to make a
+diagnostic of the electron density using the sounding technique.
+The various working modes and the fourier transforms calculated on board
+provide a good frequency resolution obtained in the bandwidth 2-83 kHz.
+Onboard data compression by the Digital Wave Processing (DWP) intrument
+allows a good dynamic and level resolution of the electric signal amplitude.</Description>
+         <Acknowledgement>Please acknowledge the WHISPER team and the ESA Cluster Archive in any publication based upon use of this data. Digital Object Identifier for the WHISPER archive: https://doi.org/10.5270/esa-6stdo07</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c1/whi/efield_spectralpowerdensity_naturalmode/</URL>
+            <ProductKey>C1_CP_WHI_NATURAL</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c1/whi/efield_spectralpowerdensity_naturalmode/</URL>
+            <ProductKey>C1_CP_WHI_NATURAL</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C1_CP_WHI_NATURAL&amp;index=sp_phys</URL>
+            <ProductKey>C1_CP_WHI_NATURAL</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator P. Henri. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Cluster-Rumba/WHISPER</InstrumentID>
+      <MeasurementType>ElectricField</MeasurementType>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2000-08-22T00:00:00.000</StartDate>
+            <StopDate>2023-06-30T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>2.14 second</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>time_tags__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>Interval centred time tag</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A24</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_WHI_NATURAL</Set>
+         <ParameterKey>Delta__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>Half of the sampling duration + the uncertainty of the time tags (in seconds)</Description>
+         <Cadence>2.14 second</Cadence>
+         <Units>s</Units>
+         <UnitsConversion>1&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>D</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0097</ValidMin>
+         <ValidMax>0.43</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Fast Fourier Transform Size</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_WHI_NATURAL</Set>
+         <ParameterKey>fft_size__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>Number of bin frequency points of the Fast Fourier Transform</Description>
+         <Cadence>2.14 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>F_F_T</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>64</ValidMin>
+         <ValidMax>512</ValidMax>
+         <FillValue>-1</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>E-Spectral Power Density</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_WHI_NATURAL</Set>
+         <ParameterKey>Electric_Spectral_Power_Density__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>Electric Spectral Power Density in Natural Mode</Description>
+         <Caveats>Fill values can be present (1) in the first/last values when only a part of the on-board spectrum values is sent to ground and/or (2) inside the spectrum when a specific mode is used, sending only one value (the highest signal) for each pair of consecutive frequency bins</Caveats>
+         <Cadence>2.14 second</Cadence>
+         <Units>V^2 m^-2 Hz^-1</Units>
+         <UnitsConversion>1.0&gt;V^2 m^-2 Hz^-1</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>E-SPD</AxisLabel>
+            <ValueFormat>F13</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>512</Size>
+         </Structure>
+         <FillValue>-1.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spectral Frequencies</Name>
+         <ParameterKey>Spectral_Frequencies_float__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>Frequencies for the 512 elements of the fixed size spectrum</Description>
+         <Units>kHz</Units>
+         <UnitsConversion>1.0E3&gt;Hz</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>S_F</AxisLabel>
+            <ValueFormat>F7.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>512</Size>
+         </Structure>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Overflow Code Value</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_WHI_NATURAL</Set>
+         <ParameterKey>Overflow_Code__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>Coded overflow information</Description>
+         <Caveats>Value is between 0 (clean) and 1 (saturation)</Caveats>
+         <Cadence>2.14 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Ov</AxisLabel>
+            <ValueFormat>F12</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>128.0</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Average Number</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_WHI_NATURAL</Set>
+         <ParameterKey>Average_Number__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>Number of averaged spectra</Description>
+         <Cadence>2.14 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>A_N</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>226</ValidMax>
+         <FillValue>-1</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Gain Change Number</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_WHI_NATURAL</Set>
+         <ParameterKey>Gain_Change_Number__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>Number of gain changes during the acquisition</Description>
+         <Cadence>2.14 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>G_C_N</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>-1</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Mantissa</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_WHI_NATURAL</Set>
+         <ParameterKey>Mantissa__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>First part of the compressed value which is a fixed point integer defined in the compression algorithm</Description>
+         <Cadence>2.14 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>M</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>8</ValidMax>
+         <FillValue>99</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Exponent</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_WHI_NATURAL</Set>
+         <ParameterKey>Exponent__C1_CP_WHI_NATURAL</ParameterKey>
+         <Description>Second part of the compressed value</Description>
+         <Cadence>2.14 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>E</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-30</ValidMin>
+         <ValidMax>34</ValidMax>
+         <FillValue>99</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

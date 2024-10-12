@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c1_cp_cis-hia_hs_mag_ions_psd/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C1 Cluster Ion Spectrometry-Hot Ion Analyser (CIS-HIA) Three-dimensional Ion Distributions, High-sensitivity, Magnetospheric Mode, in Phase Space Density, Cluster Active Archive Parameter (CP), 4 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Cluster Ion Spectrometry.
+The CIS (Cluster Ion Spectrometry) experiment is a comprehensive
+ionic plasma spectrometry package onboard the Cluster spacecraft,
+capable of obtaining full three-dimentional ion distributions
+(about 0 to 40 keV/e) with a time resolution of one spacecraft spin (4 sec)
+and with mass-per-charge composition determination.
+The CIS package consists of two different instruments,
+a time-of-flight ion Composition and Distribution Function analyser (CODIF, or CIS-1)
+and a Hot Ion Analyser (HIA, or CIS-2).</Description>
+         <Acknowledgement>Please acknowledge the CIS team and ESA Cluster Science Archive when using this data.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c1/cis-hia/ions_3ddist_magmode_highsens_phasespacedens/</URL>
+            <ProductKey>C1_CP_CIS-HIA_HS_MAG_IONS_PSD</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c1/cis-hia/ions_3ddist_magmode_highsens_phasespacedens/</URL>
+            <ProductKey>C1_CP_CIS-HIA_HS_MAG_IONS_PSD</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C1_CP_CIS-HIA_HS_MAG_IONS_PSD&amp;index=sp_phys</URL>
+            <ProductKey>C1_CP_CIS-HIA_HS_MAG_IONS_PSD</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator I. Dandouras. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2001-01-01T00:00:00.000</StartDate>
+            <StopDate>2020-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT4S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>time_tags__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>Acquisition interval start time</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A17</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Accumulation time</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</Set>
+         <ParameterKey>duration__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>Interval duration</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>s</Units>
+         <UnitsConversion>1.0&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>dT</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>3.5</ValidMin>
+         <ValidMax>22.0</ValidMax>
+         <FillValue>0.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>CIS Operational Mode</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</Set>
+         <ParameterKey>cis_mode__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>CIS Operational Mode</Description>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Mode</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>99</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Telemetry Product Number</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</Set>
+         <ParameterKey>tm_product__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>CIS Telemetry Product</Description>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Product</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>63</ValidMax>
+         <FillValue>99</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Geometric factor</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</Set>
+         <ParameterKey>geom_factor__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>Geometric factor</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>cm2^2 sr keV keV^-1</Units>
+         <UnitsConversion>1.0E-4&gt;m^2 sr</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>F7.5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.00075</ValidMin>
+         <ValidMax>0.0012</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>HIA MCP High-Voltage</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</Set>
+         <ParameterKey>hia_mcp_hv__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>HIA MCP High-Voltage</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>volt</Units>
+         <UnitsConversion>1&gt;V</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCP HV</AxisLabel>
+            <ValueFormat>G8.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-5100.0</ValidMin>
+         <ValidMax>0.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HIA Discriminator level</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</Set>
+         <ParameterKey>hia_discri__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>HIA Discriminator level</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>volt</Units>
+         <UnitsConversion>1&gt;V</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Discri</AxisLabel>
+            <ValueFormat>G7.5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>6.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>CIS-HIA 3D ion distribution</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</Set>
+         <ParameterKey>ions_3d__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>CIS-HIA 3D ion distribution.
+
+* Column 1 Labels from THETA__C1_CP_CIS_HIA_HS_MAG_IONS_PSD: [ -78.7500, -56.2500, -33.7500, -11.2500, 11.2500, 33.7500, 56.2500, 78.7500].
+* Column 2 Labels from PHI__C1_CP_CIS_HIA_HS_MAG_IONS_PSD: [ 134.583, 112.083, 89.5830, 67.0830, 44.5830, 22.0830, -0.417000, -22.9170, -45.4170, -67.9170, -90.4170, -112.917, -135.417, -157.917, 179.583, 157.083].
+* Column 3 Labels from ENERGY_TABLE__C1_CP_CIS_HIA_HS_MAG_IONS_PSD: [ 28898.3, 21728.2, 16337.1, 12283.6, 9235.88, 6944.32, 5221.33, 3925.84, 2951.78, 2219.40, 1668.73, 1254.69, 943.390, 709.320, 533.320, 401.000, 301.500, 226.700, 170.450, 128.160, 96.3600, 72.4500, 54.4800, 40.9600, 30.8000, 23.1600, 17.4100, 13.0900, 9.84000, 7.40000, 5.56000].</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>Particles s^3 km^-6</Units>
+         <UnitsConversion>1.0E-18&gt;(particles) s^3 m^-6</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8 16 31</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Polar bin edges</Name>
+         <ParameterKey>theta__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>Polar bin edges (particle arrival direction)</Description>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.0174532925199&gt;rad</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Polar bin</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Azimuthal bin edges</Name>
+         <ParameterKey>phi__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>Azimuthal bin edges (particle arrival direction)</Description>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.0174532925199&gt;rad</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Azimuthal bin</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Energy table</Name>
+         <ParameterKey>energy_table__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>Energy table</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>31</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>32000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta plus energy table</Name>
+         <ParameterKey>delta_plus_energy_table__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>Delta plus energy table</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>+dE</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>31</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>6000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta minus energy table</Name>
+         <ParameterKey>delta_minus_energy_table__C1_CP_CIS_HIA_HS_MAG_IONS_PSD</ParameterKey>
+         <Description>Delta minus energy table</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>-dE</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>31</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

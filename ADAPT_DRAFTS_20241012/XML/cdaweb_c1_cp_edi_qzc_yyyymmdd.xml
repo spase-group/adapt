@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c1_cp_edi_qzc/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C1 Electron Drift Instrument (EDI) Background Electron Counts, in WW-mode, Cluster Active Archive Parameter (CP), 0.01562 second Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Electron Drift Instrument
+Electric field measured by the drift velocity
+of monoenergetic artificial electron beams
+injected perpendicularly to the ambient magnetic field</Description>
+         <Acknowledgement>Please acknowledge the EDI team and ESA Cluster Active Archive in any publication based upon use of this data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Goetz.Paschmann</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c1/edi/backgroundelectron_counts_activemode_mixedreso/</URL>
+            <ProductKey>C1_CP_EDI_QZC</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c1/edi/backgroundelectron_counts_activemode_mixedreso/</URL>
+            <ProductKey>C1_CP_EDI_QZC</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C1_CP_EDI_QZC&amp;index=sp_phys</URL>
+            <ProductKey>C1_CP_EDI_QZC</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator G. Paschmann. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Cluster-Rumba/EDI</InstrumentID>
+      <MeasurementType>ElectricField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2001-02-01T00:00:00.000</StartDate>
+            <StopDate>2022-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>0.01562 second</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>time_tags__C1_CP_EDI_QZC</ParameterKey>
+         <Description>Time Tag</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A27</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QZC Status</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_QZC</Set>
+         <ParameterKey>Status__C1_CP_EDI_QZC</ParameterKey>
+         <Description>QZC Status</Description>
+         <Cadence>0.01562 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>QZC Status</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>3</ValidMax>
+         <FillValue>9</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QZC electron counts GDU1 PA=90 degrees</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_QZC</Set>
+         <ParameterKey>counts_GDU1_PA_90__C1_CP_EDI_QZC</ParameterKey>
+         <Description>QZC electron counts GDU1 PA=90 degree</Description>
+         <Cadence>0.01562 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>QZC_counts_GDU1_90</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>16400</ValidMax>
+         <FillValue>-1</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GDU1 look direction in GSE</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_QZC</Set>
+         <ParameterKey>D1_rlp_gse__C1_CP_EDI_QZC</ParameterKey>
+         <Description>GDU1 look direction in spherical polar GSE coordinates</Description>
+         <Cadence>0.01562 second</Cadence>
+         <Units>&#176;</Units>
+         <UnitsConversion>1&gt;degree</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>F7</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>D1_lat_gse</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>D1_lon_gse</Name>
+               <Index>2</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>999.99</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C1, phi look direction index for D1</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_QZC</Set>
+         <ParameterKey>D1_phi_index__C1_CP_EDI_QZC</ParameterKey>
+         <Description>Cluster C1, phi look direction index for D1</Description>
+         <Caveats>Values are between 0-127. Value of 128 is 0</Caveats>
+         <Cadence>0.01562 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>i_phi_D1</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>128</ValidMax>
+         <FillValue>999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C1, theta look direction index for D1</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_QZC</Set>
+         <ParameterKey>D1_theta_index__C1_CP_EDI_QZC</ParameterKey>
+         <Description>Cluster C1, theta look direction index for D1</Description>
+         <Cadence>0.01562 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>i_theta_D1</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-1</ValidMin>
+         <ValidMax>145</ValidMax>
+         <FillValue>999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QZC electron counts GDU2 PA=90 degrees</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_QZC</Set>
+         <ParameterKey>counts_GDU2_PA_90__C1_CP_EDI_QZC</ParameterKey>
+         <Description>QZC electron counts GDU2 PA=90 degree</Description>
+         <Cadence>0.01562 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>QZC_counts_GDU2_90</AxisLabel>
+            <ValueFormat>I6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>16400</ValidMax>
+         <FillValue>-1</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>GDU1 look direction in GSE</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_QZC</Set>
+         <ParameterKey>D2_rlp_gse__C1_CP_EDI_QZC</ParameterKey>
+         <Description>GDU1 look direction in spherical polar GSE coordinates</Description>
+         <Cadence>0.01562 second</Cadence>
+         <Units>&#176;</Units>
+         <UnitsConversion>1&gt;degree</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>F7</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>2</Size>
+            <Element>
+               <Name>D2_lat_gse</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>D2_lon_gse</Name>
+               <Index>2</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>999.99</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C1, phi look direction index for D2</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_QZC</Set>
+         <ParameterKey>D2_phi_index__C1_CP_EDI_QZC</ParameterKey>
+         <Description>Cluster C1, phi look direction index for D2</Description>
+         <Cadence>0.01562 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>i_phi_D2</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>128</ValidMax>
+         <FillValue>999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Cluster C1, theta look direction index for D2</Name>
+         <Set>Time series defined by using: time_tags__C1_CP_EDI_QZC</Set>
+         <ParameterKey>D2_theta_index__C1_CP_EDI_QZC</ParameterKey>
+         <Description>Cluster C1, theta look direction index for D2</Description>
+         <Cadence>0.01562 second</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>i_theta_D2</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-1</ValidMin>
+         <ValidMax>145</ValidMax>
+         <FillValue>999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

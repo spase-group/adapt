@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/bar_7a_l2_rcnt/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>BARREL 7A Rate Counter (RCNT) NaI Scintillator Diagnostics, Level 2, 4 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Rate counters are diagnostic fields, have uncalibrated energy ranges, and wrap near or above 16384 counts/second. Values are stored as 4 second accumulations of counts.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan for use of the Data. 
+
+BARREL will make all its scientific data products quickly and publicly available but all users are expected to read and follow the "BARREL Mission Data Usage Policy" which can be found here: http://www.dartmouth.edu/~barrel/documents/data.use.policy.pdf</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robyn.Millan</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>BARREL Data Repository</Name>
+            <URL>http://barreldata.ucsc.edu/data_products/</URL>
+            <Description>Access to all releases of BARREL data and links to the Science Operation Center tools.</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/barrel/l2/7a/rcnt/</URL>
+            <ProductKey>BAR_7A_L2_RCNT</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/barrel/l2/7a/rcnt/</URL>
+            <ProductKey>BAR_7A_L2_RCNT</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=BAR_7A_L2_RCNT&amp;index=sp_phys</URL>
+            <ProductKey>BAR_7A_L2_RCNT</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType></MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2019-12-29T00:00:00.000</StartDate>
+            <StopDate>2020-04-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT4S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Mesosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Stratosphere</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2009-09-19T00:00:05.978849280</ValidMin>
+         <ValidMax>2019-10-15T09:04:54.724999936</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FrameGroup</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FrameGroup</ParameterKey>
+         <Description>DPU Frame Counter</Description>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Frame</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Quality</ParameterKey>
+         <Description>Data Quality Flag</Description>
+         <Caveats>32bit flag used to indicate data quality. Bit 0 = Low altitude (below 20km); Bit 1 = No GPS; Bit 2 = External ephemeris used; Bit 3 = Gain shift.</Caveats>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Q</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PeakDet</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PeakDet</ParameterKey>
+         <Description>Peak detect rate counter.</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Peak Detect</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>16384.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>LowLevel</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>LowLevel</ParameterKey>
+         <Description>LowLevel rate counter.</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>LowLevel</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>16384.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HighLevel</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>HighLevel</ParameterKey>
+         <Description>HighLevel rate counter.</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>HighLevel</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>16384.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Interrupt</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Interrupt</ParameterKey>
+         <Description>Interrupt rate counter.</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>s^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Interrupt</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>16384.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

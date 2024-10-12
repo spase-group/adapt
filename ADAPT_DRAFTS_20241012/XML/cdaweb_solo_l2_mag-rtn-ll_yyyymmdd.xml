@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/solo_l2_mag-rtn-ll/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Magnetometer (MAG) Derived from Low Latency Data, Level 2 (L2), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Dual-sensor, triaxial fluxgate magnetometer
+doi:10.1051/0004-6361/201937257</Description>
+         <Acknowledgement>Solar Orbiter magnetometer data was provided by Imperial College Londonand supported by the UK Space Agency</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL>https://www.imperial.ac.uk/space-and-atmospheric-physics/research/missions-and-projects/space-missions/solar-orbiter/</URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/mag/science/l2/rtn-ll/</URL>
+            <ProductKey>SOLO_L2_MAG-RTN-LL</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/mag/science/l2/rtn-ll/</URL>
+            <ProductKey>SOLO_L2_MAG-RTN-LL</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_L2_MAG-RTN-LL&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_L2_MAG-RTN-LL</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator T. Horbury. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2021-09-05T00:00:00.000</StartDate>
+            <StopDate>2021-09-15T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>B RTN</Name>
+         <Set>Time series defined by using: EPOCH</Set>
+         <ParameterKey>B_RTN</ParameterKey>
+         <Description>Magnetic field vector in RTN coordinates</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>1.0E-9&gt;T</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>RTN</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>F11.4</ValueFormat>
+            <ScaleMin>-80000.0</ScaleMin>
+            <ScaleMax>80000.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>B_r</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>B_t</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>B_n</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+10</ValidMin>
+         <ValidMax>1.0e+10</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Vector representation for B</Name>
+         <ParameterKey>REP1_B_RTN</ParameterKey>
+         <Description>Vector representation for magnetic field vectors</Description>
+         <RenderingHints>
+            <ValueFormat>A1</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+         </Structure>
+         <ValidMin>UNKNOWN_VALID_MIN</ValidMin>
+         <ValidMax>UNKNOWN_VALID_MAX</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

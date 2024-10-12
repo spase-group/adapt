@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/solo_l2_swa-pas-grnd-mom/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Solar Wind Analyser, Proton-Alpha Sensor (SWA-PAS) Ground Calculated Moments, Level 2 (L2), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Moments computed from the Proton part of ion distribution function measured by PAS</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator C.J. Owen for use of the Data. 
+
+Consult with MSSL-UCL before using</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/swa/science/l2/pas-grnd-mom/</URL>
+            <ProductKey>SOLO_L2_SWA-PAS-GRND-MOM</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/swa/science/l2/pas-grnd-mom/</URL>
+            <ProductKey>SOLO_L2_SWA-PAS-GRND-MOM</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_L2_SWA-PAS-GRND-MOM&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_L2_SWA-PAS-GRND-MOM</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator C.J. Owen. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2020-07-07T00:00:00.000</StartDate>
+            <StopDate>2023-08-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Epoch encoded as Terrestrial Time on rotating Earth geoid, ns since J2000</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0E-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2029-12-31T23:59:59.999000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft Elapsed Time</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SCET</ParameterKey>
+         <Description>Elapsed time on the onboard clock</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>Ticks</Units>
+         <RenderingHints>
+            <AxisLabel>SCET</AxisLabel>
+            <ValueFormat>D20.6</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>4.29497e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Info</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Info</ParameterKey>
+         <Description>Info 0:Ground 1:Normal 2:Snapshot 3:Burst 4:Engineering 5:Calib</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Info</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>5</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>unrecoverd_count</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>unrecovered_count</ParameterKey>
+         <Description>Total counter of unrecovered bins</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Unrecovered count</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>total_count</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>total_count</ParameterKey>
+         <Description>Total count</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Total count</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>quality_factor</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>quality_factor</ParameterKey>
+         <Description>Quality factor</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Quality factor</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Density</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>N</ParameterKey>
+         <Description>Density</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <AxisLabel>Density</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V_SRF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V_SRF</ParameterKey>
+         <Description>Velocity in spacecraft reference frame (SRF)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <AxisLabel>V (SRF)</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Vx SRF</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Vy SRF</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Vz SRF</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-2000.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V_RTN</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V_RTN</ParameterKey>
+         <Description>Velocity in RTN frame</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <AxisLabel>V (RTN)</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Vr RTN</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Vt RTN</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Vn RTN</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-2000.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>P_SRF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>P_SRF</ParameterKey>
+         <Description>Pressure tensor in spacecraft reference frame (SRF)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>J.cm^-3</Units>
+         <RenderingHints>
+            <AxisLabel>Pressure (SRF)</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Pxx SRF</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Pyy SRF</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Pzz SRF</Name>
+               <Index>3</Index>
+            </Element>
+            <Element>
+               <Name>Pxy SRF</Name>
+               <Index>4</Index>
+            </Element>
+            <Element>
+               <Name>Pxz SRF</Name>
+               <Index>5</Index>
+            </Element>
+            <Element>
+               <Name>Pyz SRF</Name>
+               <Index>6</Index>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>P_RTN</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>P_RTN</ParameterKey>
+         <Description>Pressure tensor in RTN frame</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>J.cm^-3</Units>
+         <RenderingHints>
+            <AxisLabel>Pressure (RTN)</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>6</Size>
+            <Element>
+               <Name>Prr RTN</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Ptt RTN</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Pnn RTN</Name>
+               <Index>3</Index>
+            </Element>
+            <Element>
+               <Name>Prt RTN</Name>
+               <Index>4</Index>
+            </Element>
+            <Element>
+               <Name>Prn RTN</Name>
+               <Index>5</Index>
+            </Element>
+            <Element>
+               <Name>Ptn RTN</Name>
+               <Index>6</Index>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TxTyTz_SRF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>TxTyTz_SRF</ParameterKey>
+         <Description>Temperature components in SRF</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV</Units>
+         <RenderingHints>
+            <AxisLabel>TxTyTz (SRF)</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Tx SRF</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Ty SRF</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Tz SRF</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>TxTyTz_RTN</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>TxTyTz_RTN</ParameterKey>
+         <Description>Temperature components in RTN frame</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV</Units>
+         <RenderingHints>
+            <AxisLabel>TxTyTz (RTN)</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Tr RTN</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Tt RTN</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Tn RTN</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-100000.0</ValidMin>
+         <ValidMax>100000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T</ParameterKey>
+         <Description>Temperature</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV</Units>
+         <RenderingHints>
+            <AxisLabel>Temperature</AxisLabel>
+            <ValueFormat>E12.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V_SOLO_RTN</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V_SOLO_RTN</ParameterKey>
+         <Description>Spacecraft velocity in RTN frame</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <AxisLabel>SOLO velocity (RTN)</AxisLabel>
+            <ValueFormat>F10.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>SOLO Vr</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>SOLO Vt</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>SOLO Vn</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-100.0</ValidMin>
+         <ValidMax>100.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

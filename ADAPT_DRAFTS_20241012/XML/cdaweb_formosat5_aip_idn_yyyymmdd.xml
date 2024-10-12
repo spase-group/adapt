@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/formosat5_aip_idn/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>IDN&gt;Ion Number Density. Advanced Ionospheric Probe (AIP) is provided by Graduate Institute of Space Science, National Central University (NCU) for the FORMOSAT-5 satellite as a scientific payload. The AIP is an all-in-one plasma sensor with sampling rate up to 8,192 Hz to measure ionospheric plasma concentrations, velocities, and temperatures over a wide range of spatial scales. Once a comprehensive dataset is available from the AIP, a systematic examination of longitudinal and seasonal variations of the ionospheric parameters in the topside F region can be conducted for all latitudinal coverage. The transient and long-term variations of ionospheric plasma can be monitored in the upcoming solar maximum period and are beneficial to predict the trend of the space weather as well as the seismic precursors associated with earthquakes.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data. 
+
+Please write We are grateful to NSPO, Taiwan, for the formosat-5 data. in acknowledgment. Please cite Lin, Z. W., C. K. Chao, J. Y. Liu, C. M. Huang, Y. H. Chu, C. L. Su, Y. C. Mao, and Y. S. Chang (2017), Advanced Ionospheric Probe scientific mission onboard FORMOSAT-5 satellite, Terr. Atmos. Ocean. Sci., doi: 10.3319/TAO.2016.09.14.01(EOF5). .</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>AIP/SDC</Name>
+            <URL>http://sdc.ss.ncu.edu.tw</URL>
+            <Description>AIP/Science Data Center</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>FORMOSAT5_AIP_IDN</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>FORMOSAT5_AIP_IDN</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=FORMOSAT5_AIP_IDN&amp;index=sp_phys</URL>
+            <ProductKey>FORMOSAT5_AIP_IDN</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>time_epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>time_inboard</Description>
+         <Caveats>* Date in msec - Base+uTIME, computed by SPDF
+This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: time_base, uTIME.</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time_base</Name>
+         <ParameterKey>time_base</ParameterKey>
+         <Description>time base</Description>
+         <Caveats>EPOCH of 01-Jan-1970 00:00:00 - SPDF added base variable/value</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>timebase</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+         </RenderingHints>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time since 1970 (POSIX)</Name>
+         <ParameterKey>uTIME</ParameterKey>
+         <Description>Time of observation, in UNIX seconds, ignoring leap seconds</Description>
+         <Units>seconds since 1970-01-01T00:00:00Z</Units>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.0</ValueFormat>
+         </RenderingHints>
+         <ValidMin>2.0e+09</ValidMin>
+         <ValidMax>2.0e+09</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Geographic Latitude (degrees)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>gLAT</ParameterKey>
+         <Description>Geographic Latitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>gLAT</AxisLabel>
+            <ValueFormat>E11.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Geographic Longitude (degrees)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>gLON</ParameterKey>
+         <Description>Geographic Longitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>gLON</AxisLabel>
+            <ValueFormat>E11.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Altitude (km)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>gALT</ParameterKey>
+         <Description>Altitude (km)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ALT</AxisLabel>
+            <ValueFormat>E11.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>300.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Ion Number Density FS-5/AIP (cm-3)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Ni</ParameterKey>
+         <Description>Ion number density</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Ni</AxisLabel>
+            <ValueFormat>E11.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1.0</ValidMin>
+         <ValidMax>1.0e+07</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

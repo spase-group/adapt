@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/voyager2_pls_hires_plasma_data_hsh/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The files in this directory contain the Voyager fine resolution plasma data. The plasma parameters are obtained by finding the best fit of a convected isotropic Maxwellian distribution to the data. One sigma errors are typically less than 0.5% in the speed and VR, less than 5% for the density and thermal speed, and vary greatly for VT and VN. Sampling times range from 12 to 192 sec., with sampling generally more frequent early in the mission.
+The velocity components are given in the RTN coordinate system, where R is radially outward, T is in a plane parallel to the solar equatorial plane and positive in the direction of solar rotation, and N completes a right-handed system.
+(WARNING: V_t, and V_n parameters are often NOT reliable after 1989)
+Please consult with us, or at least send preprints, when you use this data to prevent grievous errors or misconceptions. (John Richardson, jdr@space.mit.edu)</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>ASCII files</Name>
+            <URL>http://spdf.gsfc.nasa.gov/pub/data/voyager/voyager2/plasma/hires/heliosheath/</URL>
+            <Description>Above data in the form of</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>VOYAGER2_PLS_HIRES_PLASMA_DATA_HSH</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>VOYAGER2_PLS_HIRES_PLASMA_DATA_HSH</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=VOYAGER2_PLS_HIRES_PLASMA_DATA_HSH&amp;index=sp_phys</URL>
+            <ProductKey>VOYAGER2_PLS_HIRES_PLASMA_DATA_HSH</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2007-08-27T00:00:00.000</StartDate>
+            <StopDate>2018-01-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <ValidMin>01-Jan-1000 00:00:00.000</ValidMin>
+         <ValidMax>01-Jan-3000 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>chi^2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>chi2</ParameterKey>
+         <Description>chi-square value of fit</Description>
+         <Caveats>a measure of how good the fit to the data is, lower is better</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>chi^2</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V_rtn</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V_rtn</ParameterKey>
+         <Description>velocity vector in RTN coordinates</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V_rtn</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Vr</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Vt</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Vn</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1000.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>xV_rtn</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>xV_rtn</ParameterKey>
+         <Description>1-sigma uncertainty of velocity vector</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>xV_rtn</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>x(Vr)</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>x(Vt)</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>x(Vn)</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1000.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V</ParameterKey>
+         <Description>proton bulk velocity</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>V</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>density</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>dens</ParameterKey>
+         <Description>density</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>density</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>x(density)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>xdens</ParameterKey>
+         <Description>1-sigma uncertainty of density</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>x(density)</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>w</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>w</ParameterKey>
+         <Description>Thermal speed w</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>w</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>x(w)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>xw</ParameterKey>
+         <Description>1-sigma uncertainty of thermal speed</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>x(w)</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>T</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>T</ParameterKey>
+         <Description>proton temperature</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>T</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>x(T)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>xT</ParameterKey>
+         <Description>1-sigma uncertainty of proton temperature</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>eV</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>x(T)</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

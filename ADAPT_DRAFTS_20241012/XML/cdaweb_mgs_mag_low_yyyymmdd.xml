@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/mgs_mag_low/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The Mars Global Surveyor magnetic field instrument consists of dual, triaxial fluxgate magnetometers, capable of measuring fields between +/- 4 nT and +/- 65536 nT. Automated range switching allows the instrument to maintain maximum digital resolution over a wide range of field strengths. The text of this instrument description has been abstracted from the   instrument paper:  Acuna, M. A., J. E. P. Connerney, P. Wasilewski, R. P. Lin,     K. A. Anderson, C. W. Carlson, J. McFadden, D. W. Curtis, H. Reme,  A. Cros, J. L. Medale, J. A. Sauvaud, C. d Uston, S. J. Bauer,  P. Cloutier, M. Mayhew, and N. F. Ness, Mars Observer Magnetic   Fields Investigation, J. Geophys. Res., 97, 7799-7814, 1992.</Description>
+         <Acknowledgement>Much of the information provided in this meta data originates from text files provided at: https://pds-ppi.igpp.ucla.edu/search/?sc=Mars%20Global%20Surveyor&i=MAG within the CATALOG folder and the AAREADME.txt files. The development of the netCDF files was supported by the NASA Postdoctoral Program Fellowship awarded to Teresa Esman in 2022. The success of the MGS MAG project is owed to, among others, the people listed here: https://mars.nasa.gov/mgs/people/. Addtional information on the MAG dataset can be found at: https://mgs-mager.gsfc.nasa.gov/status.html. Documentation on MGS MAG data on the PDS has been maintained by J.E.P. Connerney, Mark Sharlow, D. Kazden, J. Springborn, and B. Semenov, among others. Teresa Esman, now a NPP Fellow at NASA Goddard Space Flight Center, compiled MGS MAG low resolution and high resolution data products, translated time to unix time, and performed the calculation and interpolation (to high resolution) of the altitude data product..</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>MGS MAG</Name>
+            <URL>https://pds-ppi.igpp.ucla.edu/search/?sc=Mars%20Global%20Surveyor&i=MAG</URL>
+            <Description>MGS MAG magnetic field .STS files from 1997-09-12 through 2006-11-02 are avalible at</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>MGS_MAG_LOW</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>MGS_MAG_LOW</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=MGS_MAG_LOW&amp;index=sp_phys</URL>
+            <ProductKey>MGS_MAG_LOW</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>time</Name>
+         <ParameterKey>time</ParameterKey>
+         <Description>time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>Milliseconds since 1970-1-1 00:00:00</Units>
+         <RenderingHints>
+            <ValueFormat>I8</ValueFormat>
+         </RenderingHints>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>time_epoch</Name>
+         <ParameterKey>Epoch_cdf</ParameterKey>
+         <Description>time_inboard</Description>
+         <Caveats>* Computed CDF_Epoch value: time_base+Epoch added by SPDF
+This parameter is virtual. It is calculated by calling the function COMP_ICON_EPOCH with the following input parameters: base_time, time.</Caveats>
+         <Units>seconds since 1970-01-01 00:00:00</Units>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Altitude [km]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>altitude</ParameterKey>
+         <Description>Altitude</Description>
+         <Caveats>Low Resolution. Calculated as the radius of Mars (= 3389.5 km) subtracted from the spacecraft position.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Altitude</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>100.0</ValidMin>
+         <ValidMax>48000.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Decimal Day</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>decimal_day</ParameterKey>
+         <Description>Decimal Day</Description>
+         <Caveats>Low resolution</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Decimal Day</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>367.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Dynamic Range</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>dynamic_b_pl_range</ParameterKey>
+         <Description>Dynamic Range</Description>
+         <Caveats>Gain range of the instrument at the time of the sample. Sample quantization is gain range dependent. A negative value indicate a detail word (versus fullword) entry.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dynamic Range</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Dynamic Spacecraft Field X [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>dynamic_bx_lpl</ParameterKey>
+         <Description>Dynamic Spacecraft Field X</Description>
+         <Caveats>Dynamic spacecraft field in payload coordinates (this has been removed from the measured field to compensate for spacecraft field); see sc_mod.ker at https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/MGS-M-MAG-3-MAP1_FULLWORD-RES-MAG-V1.0/GEOMETRY and https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/MGS-M-MAG-3-PREMAP_FULLWORD-RES-MAG-V1.0/GEOMETRY Low resolution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dynamic Spacecraft Field X</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Dynamic Spacecraft Field Y [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>dynamic_by_lpl</ParameterKey>
+         <Description>Dynamic Spacecraft Field Y</Description>
+         <Caveats>Dynamic spacecraft field in payload coordinates (this has been removed from the measured field to compensate for spacecraft field); see sc_mod.ker at https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/MGS-M-MAG-3-MAP1_FULLWORD-RES-MAG-V1.0/GEOMETRY and https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/MGS-M-MAG-3-PREMAP_FULLWORD-RES-MAG-V1.0/GEOMETRY Low resolution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dynamic Spacecraft Field Y</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Dynamic Spacecraft Field Z [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>dynamic_bz_lpl</ParameterKey>
+         <Description>Dynamic Spacecraft Field Z</Description>
+         <Caveats>Dynamic spacecraft field in payload coordinates (this has been removed from the measured field to compensate for spacecraft field); see sc_mod.ker at https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/MGS-M-MAG-3-MAP1_FULLWORD-RES-MAG-V1.0/GEOMETRY and https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/MGS-M-MAG-3-PREMAP_FULLWORD-RES-MAG-V1.0/GEOMETRY Low resolution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Dynamic Spacecraft Field Z</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Static Spacecraft Field Range</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>static_b_pl_range</ParameterKey>
+         <Description>Static Spacecraft Field Range</Description>
+         <Caveats>Static spacecraft fields are due to permanent magnetization, for example, magnets or magnetized objects.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Static Spacecraft Field Range</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Static Spacecraft Field X [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>static_bx_lpl</ParameterKey>
+         <Description>Static Spacecraft Field X</Description>
+         <Caveats>Static spacecraft field in payload X coordinates (this has been removed from the measured field to compensate for spacecraft fields); see sc_mod.ker at https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/MGS-M-MAG-3-MAP1_FULLWORD-RES-MAG-V1.0/GEOMETRY and https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&id=pds://PPI/MGS-M-MAG-3-PREMAP_FULLWORD-RES-MAG-V1.0/GEOMETRY Low resolution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Static Spacecraft Field X</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Static Spacecraft Field Y [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>static_by_lpl</ParameterKey>
+         <Description>Static Spacecraft Field Y</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Static Spacecraft Field Y</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Static Spacecraft Field Z [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>static_bz_lpl</ParameterKey>
+         <Description>Static Spacecraft Field Z</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Static Spacecraft Field Z</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Field Range</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>b_range_lpc</ParameterKey>
+         <Description>Magnetic Field Range Planetocentric</Description>
+         <Caveats>Planetocentric, low resolution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic Field Range</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Field Range</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>b_range_lss</ParameterKey>
+         <Description>Magnetic Field Range MSO</Description>
+         <Caveats>Sun-state, ss, or MSO. Low resolution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic Field Range MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B_X [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>bx_lpc</ParameterKey>
+         <Description>Magnetic Field X Planetocentric</Description>
+         <Caveats>Low resolution in planetocentric coordinates. Outboard.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_X</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B_X [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>bx_lss</ParameterKey>
+         <Description>Magnetic Field X MSO</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_X MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B_Y [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>by_lpc</ParameterKey>
+         <Description>Magnetic Field Y Planetocentric</Description>
+         <Caveats>Low resolution in planetocentric coordinates. Outboard.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_Y</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B_Y [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>by_lss</ParameterKey>
+         <Description>Magnetic Field Y MSO</Description>
+         <Caveats>Low resolution in sun-state or MSO coordinates. Outboard.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_Y MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B_Z [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>bz_lpc</ParameterKey>
+         <Description>Magnetic Field Z Planetocentric</Description>
+         <Caveats>Low resolution in planetocentric coordinates. Outboard.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_Z</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B_Z [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>bz_lss</ParameterKey>
+         <Description>Magnetic Field Z MSO</Description>
+         <Caveats>Low resolution in sun-state or MSO coordinates. Outboard.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B_Z MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMS Range</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>rms_range_lpc</ParameterKey>
+         <Description>RMS Range Planetocentric</Description>
+         <Caveats>Low resolution, planetocentric.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS Range</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMS Range</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>rms_range_lss</ParameterKey>
+         <Description>RMS Range MSO</Description>
+         <Caveats>Low resolution, sun-state/ss/MSO</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS Range MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10.0</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMS X [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>rms_x_lpc</ParameterKey>
+         <Description>RMS X Planetocentric</Description>
+         <Caveats>Root mean square of the outboard delta words (there are 23 delta words between fullwords, sampled at either 32, 16, or 8 per second depending on date rate allocation. Planetocentric, low resolution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS X</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMS X [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>rms_x_lss</ParameterKey>
+         <Description>RMS X MSO</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS X MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMS Y [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>rms_y_lpc</ParameterKey>
+         <Description>RMS Y Planetocentric</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS Y</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMS Y [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>rms_y_lss</ParameterKey>
+         <Description>RMS Y MSO</Description>
+         <Caveats>Low resolution, sun-state/ss/MSO</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS Y MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMS Z [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>rms_z_lpc</ParameterKey>
+         <Description>RMS Z Planetocentric</Description>
+         <Caveats>Low resolution, planetocentric.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS Z</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>RMS Z [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>rms_z_lss</ParameterKey>
+         <Description>RMS Z MSO</Description>
+         <Caveats>Low resolution, sun-state/ss/MSO</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>RMS Z MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-65536.0</ValidMin>
+         <ValidMax>65536.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SA Neg Y Current [mA]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>sa_neg_y_low</ParameterKey>
+         <Description>Solar Array Negative Y Current</Description>
+         <Caveats>Solar array (-Y panel) current from sc engineering data base. A fill value of &apos;-99&apos; is used when the solar array currents are negative.&apos;-999&apos; is used as a fill value when the data is not available for the time.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SA Neg Y Current</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>30000.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Total SA Current [mA]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>sa_total_low</ParameterKey>
+         <Description>Total Solar Array Current</Description>
+         <Caveats>Solar array output current (total) from sc engineering data base. A fill value of &apos;-99&apos; is used when the solar array currents are negative.&apos;-999&apos; is used as a fill value when the data is not available for the time.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Total SA Current</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>30000.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SA Plus Y Current [mA]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>sa_plus_y_low</ParameterKey>
+         <Description>Solar Array Positive Y Current</Description>
+         <Caveats>Solar array (+Y panel) current from sc engineering data base. A fill value of &apos;-99&apos; is used when the solar array currents are negative. &apos;-999&apos; is used as a fill value when the data is not available for the time.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mA</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SA Plus Y Current</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>30000.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>SC Position X [km]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>sc_pos_x_lpc</ParameterKey>
+         <Description>Spacecraft Position X Planetocentric</Description>
+         <Caveats>Low resolution in planeocentric coordinates.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SC Position X</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-51000.0</ValidMin>
+         <ValidMax>51000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>InstrumentMode</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SC Position X [km]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>sc_pos_x_lss</ParameterKey>
+         <Description>Spacecraft Position X MSO</Description>
+         <Caveats>Low resolution in sun-state or MSO coordinates.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SC Position X MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-51000.0</ValidMin>
+         <ValidMax>51000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>InstrumentMode</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SC Position Y [km]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>sc_pos_y_lpc</ParameterKey>
+         <Description>Spacecraft Position Y Planetocentric</Description>
+         <Caveats>Low resolution in planetocentric coordinates.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SC Position Y</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-51000.0</ValidMin>
+         <ValidMax>51000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>InstrumentMode</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SC Position Y [km]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>sc_pos_y_lss</ParameterKey>
+         <Description>Spacecraft Position Y MSO</Description>
+         <Caveats>Low resolution in sun-state or MSO coordinates.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SC Position Y MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-51000.0</ValidMin>
+         <ValidMax>51000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>InstrumentMode</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SC Position Z [km]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>sc_pos_z_lpc</ParameterKey>
+         <Description>Spacecraft Position Z Planetocentric</Description>
+         <Caveats>Low resolution in planetocentric coordinates.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SC Position Z</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-51000.0</ValidMin>
+         <ValidMax>51000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>InstrumentMode</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>SC Position Z [km]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>sc_pos_z_lss</ParameterKey>
+         <Description>Spacecraft Position Z MSO</Description>
+         <Caveats>Low resolution in sun-state or MSO coordinates.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SC Position Z MSO</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-51000.0</ValidMin>
+         <ValidMax>51000.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>InstrumentMode</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Day of Year</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>doy</ParameterKey>
+         <Description>Day of Year</Description>
+         <Caveats>Low resolution</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Day of Year</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1.0</ValidMin>
+         <ValidMax>366.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Hour</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>hour</ParameterKey>
+         <Description>Hour</Description>
+         <Caveats>Low resolution</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Hour</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>23.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Minute</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>minute</ParameterKey>
+         <Description>Minute</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>min</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Minute</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>59.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Millisecond</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>msec</ParameterKey>
+         <Description>Millisecond</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Millisecond</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>999.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Seconds</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>seconds</ParameterKey>
+         <Description>Seconds</Description>
+         <Caveats>Low resolution</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Seconds</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>59.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Year</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>year</ParameterKey>
+         <Description>Year</Description>
+         <Caveats>Low resolution</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>years</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Year</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1997.0</ValidMin>
+         <ValidMax>2006.0</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Unix Time</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>unix_time</ParameterKey>
+         <Description>Unix Time</Description>
+         <Caveats>Low resolution.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>seconds since Jan. 1, 1970</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Unix Time</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.67485e+09</ValidMax>
+         <FillValue>nan</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Field Magnitude [nT]</Name>
+         <Set>Time series defined by using: Epoch_cdf</Set>
+         <ParameterKey>magnitude</ParameterKey>
+         <Description>Magnetic Field Magnitude</Description>
+         <Caveats>Magnitude calculated via the square root of the sum of the squares. Low resolution data.</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic Field Magnitude</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2500.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

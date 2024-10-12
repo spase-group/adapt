@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/timed_l2a_saber/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description></Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>SABER data and experiment home page at NASA Langley</Name>
+            <URL>http://saber.gats-inc.com/</URL>
+            <Description>*</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>TIMED Mission Data Center at JHU/APL</Name>
+            <URL>http://www.timed.jhuapl.edu/scripts/mdc_home.pl</URL>
+            <Description>*</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>TIMED_L2A_SABER</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>TIMED_L2A_SABER</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=TIMED_L2A_SABER&amp;index=sp_phys</URL>
+            <ProductKey>TIMED_L2A_SABER</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ImageIntensity</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <SpectralRange>Infrared</SpectralRange>
+      <ObservedRegion>Earth.NearSurface.Atmosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.EquatorialRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Mesosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Stratosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Thermosphere</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <ValidMin>01-Jan-1990 00:00:00.000</ValidMin>
+         <ValidMax>31-Dec-2010 00:00:00.000</ValidMax>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>event</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>event</ParameterKey>
+         <Description>Event Number for Current File</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>event</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>1000</ValidMax>
+         <FillValue>-9</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Date of observation</Name>
+         <ParameterKey>DATE</ParameterKey>
+         <Description>Date of observation</Description>
+         <RenderingHints>
+            <AxisLabel>Date of observation</AxisLabel>
+            <ValueFormat>I7</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1990001</ValidMin>
+         <ValidMax>2020365</ValidMax>
+         <FillValue>2001100</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>scan-mode</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>mode</ParameterKey>
+         <Description>Instrument scan mode (down=0, up=1)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Scan mode</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>-9</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point D/N</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpDN</ParameterKey>
+         <Description>Phase of day at Tangent Point (0=Day, 1=Night, 2=Twilight (85&lt;solar zenith angle&lt;95)),</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>TPoint d-phase</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2</ValidMax>
+         <FillValue>-9</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point A/D</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpAD</ParameterKey>
+         <Description>Orbit phase at Tangent Point (0=Ascending 1=Descending)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>TPoint o-phase</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>-9</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Separation Angle</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>moonSepAngle</ParameterKey>
+         <Description>Separation Angle(los & moon)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Separation Angle</AxisLabel>
+            <ValueFormat>F7.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>500.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Tp Alt at Sep Angle</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpaltmoonSepAngle</ParameterKey>
+         <Description>Tp Altitude at Separation Angle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>Tp Alt at Sep Angle</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-500.0</ValidMin>
+         <ValidMax>500.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Ap index</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>solAP</ParameterKey>
+         <Description>Magnetic Ap index (daily)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <AxisLabel>Ap</AxisLabel>
+            <ValueFormat>F5.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>100.0</ValidMax>
+         <FillValue>-9.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Kp index</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>solKP</ParameterKey>
+         <Description>Magnetic Kp index (3-hour)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>3 h</Units>
+         <RenderingHints>
+            <AxisLabel>Kp</AxisLabel>
+            <ValueFormat>F5.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>100.0</ValidMax>
+         <FillValue>-9.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>solar F10.7 index (daily)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>solf10p7Daily</ParameterKey>
+         <Description>Solar F10.7 index (daily)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>d</Units>
+         <RenderingHints>
+            <AxisLabel>F10.7</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>solar F10.7 index (81-day average)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>solf10p781dAvg</ParameterKey>
+         <Description>Solar F10.7 index (81-day)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>81 d</Units>
+         <RenderingHints>
+            <AxisLabel>F10.7</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>400.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sunspot Number</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>solSpotNo</ParameterKey>
+         <Description>Zurich Sunspot Number  [all fill]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Sunspot Number</AxisLabel>
+            <ValueFormat>I4</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1000</ValidMax>
+         <FillValue>-9</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Solar Zenith Angle</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>scSolarZen</ParameterKey>
+         <Description>Sc solar zenith angle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Solar Zenith Angle</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>500.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Earth-Sun distance</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>earth_sun</ParameterKey>
+         <Description>Earth-Sun distance</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>Earth-Sun distance</AxisLabel>
+            <ValueFormat>E14.5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+09</ValidMax>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Aurora Flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Iaurora</ParameterKey>
+         <Description>Aurora Flag [all fill]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Aurora Flag</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>-999</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Time</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>time</ParameterKey>
+         <Description>Time in msec since midnight</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Time</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft latitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sclatitude</ParameterKey>
+         <Description>Spacecraft latitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Spacecraft latitude</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft longitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sclongitude</ParameterKey>
+         <Description>Spacecraft longitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Spacecraft longitude</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft altitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>scaltitude</ParameterKey>
+         <Description>Spacecraft altitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>Spacecraft altitude</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft latitude averaged</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sclatitudeAVG</ParameterKey>
+         <Description>Spacecraft latitude (scan-average)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>latitude s/c</AxisLabel>
+            <ValueFormat>F10.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft longitude averaged</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sclongitudeAVG</ParameterKey>
+         <Description>---------&gt; longitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>longitude s/c</AxisLabel>
+            <ValueFormat>F10.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft altitude averaged</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>scaltitudeAVG</ParameterKey>
+         <Description>---------&gt; altitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>h s/c</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point latitude averaged</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tplatitudeAVG</ParameterKey>
+         <Description>Tangent point latitude (average ) over lower part of scan</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Lati TPoint bot</AxisLabel>
+            <ValueFormat>F10.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point latitude averaged top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tplatitude_topAVG</ParameterKey>
+         <Description>---------&gt; latitude (average over upper part of scan</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Lati TPoint top</AxisLabel>
+            <ValueFormat>F10.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point longitude averaged</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tplongitudeAVG</ParameterKey>
+         <Description>---------&gt; longitude (lower average)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Longi TPoint bot</AxisLabel>
+            <ValueFormat>F10.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point longitude averaged top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tplongitude_topAVG</ParameterKey>
+         <Description>---------&gt; longitude (upper average)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Longi TPoint top</AxisLabel>
+            <ValueFormat>F10.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point solar zenith angle averaged</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpSolarZenAVG</ParameterKey>
+         <Description>---------&gt; solar zenith angle (lower average)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>SZA TPoint bot</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point solar zenith angle averaged top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpSolarZen_topAVG</ParameterKey>
+         <Description>---------&gt; solar zenith angle (upper average</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>SZA TPoint top</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point local solar time averaged</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpSolarLTAVG</ParameterKey>
+         <Description>---------&gt; Local Solar Time (lower average</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <AxisLabel>LST TPoint bot</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>24.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point local solar time averaged top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpSolarLT_topAVG</ParameterKey>
+         <Description>---------&gt; Local Solar Time (upper average)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <AxisLabel>LST TPoint top</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>24.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point altitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpaltitude</ParameterKey>
+         <Description>Tangent Point altitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>h TPoint bot</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point latitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tplatitude</ParameterKey>
+         <Description>Tangent Point latitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Tangent Point latitude</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point longitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tplongitude</ParameterKey>
+         <Description>Tangent Point longitude</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Tangent Point longitude</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point solar zenith angle</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpSolarZen</ParameterKey>
+         <Description>Tangent point solar zenith angle vs tangent point height (lower part of scan)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>SZA TPoint bot</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point solar zenith angle top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpSolarZen_top</ParameterKey>
+         <Description>---------&gt; solar zenith angle vs tangent point height (upper part of scan</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>SZA TPoint top</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point local solar time</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpSolarLT</ParameterKey>
+         <Description>---------&gt; Local Solar Time vs tangent point height (lower)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <AxisLabel>LST TPoint bot</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point local solar time top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpSolarLT_top</ParameterKey>
+         <Description>---------&gt; Local Solar Time vs tangent point height (upper)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>h</Units>
+         <RenderingHints>
+            <AxisLabel>LST TPoint top</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Elevation angle</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Elevation</ParameterKey>
+         <Description>Elevation angle (lower part of scan)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mrad</Units>
+         <RenderingHints>
+            <AxisLabel>Elevation bot</AxisLabel>
+            <ValueFormat>F11.5</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Elevation angle top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Elevation_top</ParameterKey>
+         <Description>---------&gt; upper part of scan</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mrad</Units>
+         <RenderingHints>
+            <AxisLabel>Elevation top</AxisLabel>
+            <ValueFormat>F11.5</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Time top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>time_top</ParameterKey>
+         <Description>Time in msec since midnight top</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Time top</AxisLabel>
+            <ValueFormat>I8</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft latitude top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sclatitude_top</ParameterKey>
+         <Description>Spacecraft latitude top</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Spacecraft latitude top</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft longitude top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sclongitude_top</ParameterKey>
+         <Description>Spacecraft longitude top</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Spacecraft longitude top</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft altitude top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>scaltitude_top</ParameterKey>
+         <Description>Spacecraft altitude top</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>Spacecraft altitude top</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point altitude top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpaltitude_top</ParameterKey>
+         <Description>Tangent Point altitude top</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>h TPoint top</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point latitude top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tplatitude_top</ParameterKey>
+         <Description>Tangent Point latitude top</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Tangent Point latitude top</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Tangent Point longitude top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tplongitude_top</ParameterKey>
+         <Description>Tangent Point longitude top</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>Tangent Point longitude top</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft latitude averaged top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sclatitude_topAVG</ParameterKey>
+         <Description>Spacecraft latitude top (scan-average)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>lati s/c top</AxisLabel>
+            <ValueFormat>F10.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft longitude averaged top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>sclongitude_topAVG</ParameterKey>
+         <Description>---------&gt; longitude top</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <AxisLabel>longi s/c top</AxisLabel>
+            <ValueFormat>F10.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Spacecraft altitude averaged top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>scaltitude_topAVG</ParameterKey>
+         <Description>---------&gt; altitude top</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>h s/c top</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-999.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>TP Geopot alt</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>tpgpaltitude</ParameterKey>
+         <Description>Geopotential height at tangent point</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>Geopot. h</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>pressure</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>pressure</ParameterKey>
+         <Description>---------&gt; Pressure</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>mbar</Units>
+         <RenderingHints>
+            <AxisLabel>Pressure</AxisLabel>
+            <ValueFormat>E14.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Kinetic Temperature</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ktemp</ParameterKey>
+         <Description>---------&gt; Kinetic temperature</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;K</Units>
+         <RenderingHints>
+            <AxisLabel>Kinetic Temp.</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Atmospheric Density</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>density</ParameterKey>
+         <Description>---------&gt; Neutral density</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <AxisLabel>Neutral Density</AxisLabel>
+            <ValueFormat>E14.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O3 Mixing Ratio 9.6um</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>O3_96</ParameterKey>
+         <Description>Mixing Ratios (MR):-&gt; O3 (9.6um) MR vs tangent point height</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Mixing Ratio</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O3 Mixing Ratio 1.27um</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>O3_127</ParameterKey>
+         <Description>---------&gt; O3 (1.27um) MR vs tangent point height</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Mixing Ratio</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O3 Mixing Ratio 1.27um (92km)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>O3_127_92km</ParameterKey>
+         <Description>-------------&gt; O3 (1.27um) MR at 92km [line plot]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Mixing Ratio at 92km</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1.0e-09</ValidMin>
+         <ValidMax>0.1</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>H2O Mixing Ratio</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>H2O</ParameterKey>
+         <Description>---------&gt; H2O MR vs tangent point height [all fill]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Mixing Ratio</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>CO2 Mixing Ratio</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>C02</ParameterKey>
+         <Description>---------&gt; CO2 MR vs tangent point height</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Mixing Ratio</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O Mixing Ratio</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>O</ParameterKey>
+         <Description>---------&gt; O MR vs tangent point height</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Mixing Ratio</AxisLabel>
+            <ValueFormat>F9.4</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>H Mixing Ratio</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>H</ParameterKey>
+         <Description>---------&gt; H MR vs tangent point height</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Mixing Ratio</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O2(1delta)VER unfilt Mixing Ratio</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>O2_1delta_ver_unfilt</ParameterKey>
+         <Description>Volume Emission Rates (VER):-&gt; O2(1delta) VER vs tangent point height</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>O2(1delta) VER</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O2(1delta)VER</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>O2_1delta_ver</ParameterKey>
+         <Description>--------------&gt; filtered (actual measurement with SABER&apos;s spectral bandpass for this line)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>O2(1delta) filt</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>O2(1delta)VER (92km)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>O2_1delta_ver_92km</ParameterKey>
+         <Description>---------------&gt; unfiltered at 92km [line plot]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>O2 1^ VER at 92km</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1.0e-11</ValidMin>
+         <ValidMax>0.01</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OH 16 VER unfilt for 1.6 um Channel</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OH_16_ver_unfilt</ParameterKey>
+         <Description>---------&gt; OH (1.6um) VER vs tangent point height</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>OH 16 VER</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OH 16 VER for 1.6 um Channel</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OH_16_ver</ParameterKey>
+         <Description>---------------&gt; filtered</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>OH 16 VER filt</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OH 16 VER for 1.6 um Channel (85km)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OH_16_ver_85km</ParameterKey>
+         <Description>---------------&gt; unfiltered at 85km [line plot]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>OH 16 VER at 85km</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1.0e-12</ValidMin>
+         <ValidMax>0.01</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OH 20 VER unfilt for 2.0 um Channel</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OH_20_ver_unfilt</ParameterKey>
+         <Description>---------&gt; OH (2.0 um) VER vs tangent point height</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>OH 20 VER</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OH VER 20 for 2.0 um Channel</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OH_20_ver</ParameterKey>
+         <Description>---------------&gt; filtered</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>OH 20 VER filt</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>OH VER 20 for 2.0 um Channel (85km)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>OH_20_ver_85km</ParameterKey>
+         <Description>------------------&gt; unfiltered at 85km [lineplot]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>OH 20 VER at 85km</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1.0e-11</ValidMin>
+         <ValidMax>0.001</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>NO VER top unfilt</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NO_ver_top_unfilt</ParameterKey>
+         <Description>---------&gt; NO VER (upper part of scan) vs tangent point height</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>NO VER upper</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>NO VER top</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NO_ver_top</ParameterKey>
+         <Description>---------------&gt; filtered (upper)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>NO VER upper filt</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>NO VER unfilt</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NO_ver_unfilt</ParameterKey>
+         <Description>---------------&gt; unfiltered (lower)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>NO VER lower</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>NO VER</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NO_ver</ParameterKey>
+         <Description>---------------&gt; filtered (lower)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>NO VER lower filt</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>400</Size>
+         </Structure>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>NO VER (120km)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>NO_ver_120km</ParameterKey>
+         <Description>---------------&gt; unfiltered at 120km [line plot]</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>erg/(cm^3 s)</Units>
+         <RenderingHints>
+            <AxisLabel>NO VER at 120km</AxisLabel>
+            <ValueFormat>E12.5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1.0e-11</ValidMin>
+         <ValidMax>0.0001</ValidMax>
+         <FillValue>-999.0</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

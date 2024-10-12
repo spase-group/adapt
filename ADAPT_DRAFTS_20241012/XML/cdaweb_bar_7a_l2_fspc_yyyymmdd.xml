@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/bar_7a_l2_fspc/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>BARREL 7A X-ray Spectrometer (FSPC) Bremsstrahlung X-ray Spectrum Fast Time Resolution, Level 2, 0.05 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Six channels of fast time resolution (50ms) Bremsstrahlung X-rays detected with a NaI Scintillator. Each channel is separated in its own variable (e.g. FSPC1, FSPC2, etc). Nominal energy range covered by the 6 channels is 0 - 1.5MeV.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan for use of the Data. 
+
+BARREL will make all its scientific data products quickly and publicly available but all users are expected to read and follow the "BARREL Mission Data Usage Policy" which can be found here: http://www.dartmouth.edu/~barrel/documents/data.use.policy.pdf</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robyn.Millan</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>BARREL Data Repository</Name>
+            <URL>http://barreldata.ucsc.edu/data_products/</URL>
+            <Description>Access to all releases of BARREL data and links to the Science Operation Center tools.</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/barrel/l2/7a/fspc/</URL>
+            <ProductKey>BAR_7A_L2_FSPC</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/barrel/l2/7a/fspc/</URL>
+            <ProductKey>BAR_7A_L2_FSPC</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=BAR_7A_L2_FSPC&amp;index=sp_phys</URL>
+            <ProductKey>BAR_7A_L2_FSPC</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator R. Millan. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType></MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2019-12-29T00:00:00.000</StartDate>
+            <StopDate>2020-04-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT0.05S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Mesosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Stratosphere</ObservedRegion>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2009-09-19T00:00:05.978849280</ValidMin>
+         <ValidMax>2019-10-15T09:04:54.724999936</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FrameGroup</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FrameGroup</ParameterKey>
+         <Description>DPU Frame Counter</Description>
+         <Cadence>PT0.05S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Frame</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Quality</ParameterKey>
+         <Description>Data Quality Flag</Description>
+         <Caveats>32bit flag used to indicate data quality. Bit 0 = Low altitude (below 20km); Bit 1 = No GPS; Bit 2 = External ephemeris used; Bit 3 = Gain shift.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Q</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4294967294</ValidMax>
+         <FillValue>4294967295</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>FSPC1a</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FSPC1a</ParameterKey>
+         <Description>Fast spectra (50ms) ch. 1a</Description>
+         <Caveats>Nominal FSPC1a energy range is 0keV - 48.8keV. The calibrated energy range for each channel is tracked in the variable FSPC_Edges.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FSPC 1b</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>10000</ValidMax>
+         <FillValue>-2147483648</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>cnt_error1a</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>cnt_error1a</ParameterKey>
+         <Description>Count error based on Poisson statistics.</Description>
+         <Caveats>Error only valid for large count values.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Count Error</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FSPC1b</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FSPC1b</ParameterKey>
+         <Description>Fast spectra (50ms) ch. 1b</Description>
+         <Caveats>Nominal FSPC1b energy range is 48.8keV - 97.6keV. The calibrated energy range for each channel is tracked in the variable FSPC_Edges.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FSPC 1b</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>10000</ValidMax>
+         <FillValue>-2147483648</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>cnt_error1b</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>cnt_error1b</ParameterKey>
+         <Description>Count error based on Poisson statistics.</Description>
+         <Caveats>Error only valid for large count values.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Count Error</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FSPC1c</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FSPC1c</ParameterKey>
+         <Description>Fast spectra (50ms) ch. 1c</Description>
+         <Caveats>Nominal FSPC1c energy range is 97.6keV - 183keV. The calibrated energy range for each channel is tracked in the variable FSPC_Edges.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FSPC 1c</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>10000</ValidMax>
+         <FillValue>-2147483648</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>cnt_error1c</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>cnt_error1c</ParameterKey>
+         <Description>Count error based on Poisson statistics.</Description>
+         <Caveats>Error only valid for large count values.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Count Error</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FSPC2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FSPC2</ParameterKey>
+         <Description>Fast spectra (50ms) ch. 2</Description>
+         <Caveats>Nominal FSPC2 energy range is 183keV - 561keV. The calibrated energy range for each channel is tracked in the variable FSPC_Edges.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FSPC 2</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>10000</ValidMax>
+         <FillValue>-2147483648</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>cnt_error2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>cnt_error2</ParameterKey>
+         <Description>Count error based on Poisson statistics.</Description>
+         <Caveats>Error only valid for large count values.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Count Error</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FSPC3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FSPC3</ParameterKey>
+         <Description>Fast spectra (50ms) ch. 3</Description>
+         <Caveats>Nominal FSPC2 energy range is 561keV - 854keV. The calibrated energy range for each channel is tracked in the variable FSPC_Edges.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FSPC 3</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>10000</ValidMax>
+         <FillValue>-2147483648</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>cnt_error3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>cnt_error3</ParameterKey>
+         <Description>Count error based on Poisson statistics.</Description>
+         <Caveats>Error only valid for large count values.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Count Error</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FSPC4</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FSPC4</ParameterKey>
+         <Description>Fast spectra (50ms) ch. 4</Description>
+         <Caveats>Nominal FSPC2 energy range is 854keV - 1510keV. The calibrated energy range for each channel is tracked in the variable FSPC_Edges.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>FSPC 4</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LogScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>10000</ValidMax>
+         <FillValue>-2147483648</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>cnt_error4</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>cnt_error4</ParameterKey>
+         <Description>Count error based on Poisson statistics.</Description>
+         <Caveats>Error only valid for large count values.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>(50 ms)^-1</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Count Error</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>FSPC_Edges</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>FSPC_Edges</ParameterKey>
+         <Description>Fast Spectrum Channel Boundaries</Description>
+         <Caveats>Each element of the array represents the boundaries that separate each energy channel. That is, FSPC1a lies between elements 0 and 1, FSPC1b between 1 and 2, FSPC1c between 2 and 3, FSPC2 between 3 and 4, FSPC2 between 4 and 5, and FSPC4 between 5 and 6. These energy levels are not standardized and is calculated for each record.</Caveats>
+         <Cadence>PT0.05S</Cadence>
+         <Units>keV</Units>
+         <RenderingHints>
+            <AxisLabel>FSPC_Edges</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>7</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>2000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

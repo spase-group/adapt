@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c3_cp_whi_passive_active/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C3 Waves of High frequency and Sounder for Probing of Electron density by Relaxation (WHISPER) Passive or Active Electric Spectral Power Density, Cluster Active Archive Parameter (CP), PT52S Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The Wave of HIgh frequency and Sounder for Probing of Electron density
+by Relaxation (WHISPER) performs the measurement of the electron density
+on the four satellites of the CLUSTER project. The two main purposes of
+the WHISPER experiment are to record the natural waves and to make a
+diagnostic of the electron density using the sounding technique.
+The various working modes and the fourier transforms calculated on board
+provide a good frequency resolution obtained in the bandwidth 2-83 kHz.
+Onboard data compression by the Digital Wave Processing (DWP) intrument
+allows a good dynamic and level resolution of the electric signal amplitude.</Description>
+         <Acknowledgement>Please acknowledge the WHISPER team and the ESA Cluster Archive in any publication based upon use of this data. Digital Object Identifier for the WHISPER archive: https://doi.org/10.5270/esa-6stdo07</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c3/whi/efield_passivespectralpowerdensity_soundingmode/</URL>
+            <ProductKey>C3_CP_WHI_PASSIVE_ACTIVE</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c3/whi/efield_passivespectralpowerdensity_soundingmode/</URL>
+            <ProductKey>C3_CP_WHI_PASSIVE_ACTIVE</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C3_CP_WHI_PASSIVE_ACTIVE&amp;index=sp_phys</URL>
+            <ProductKey>C3_CP_WHI_PASSIVE_ACTIVE</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator P. Henri. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Cluster-Samba/WHISPER</InstrumentID>
+      <MeasurementType>ElectricField</MeasurementType>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2000-08-22T00:00:00.000</StartDate>
+            <StopDate>2023-06-30T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT52S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>time_tags__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>Interval centred time tag</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A24</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_PASSIVE_ACTIVE</Set>
+         <ParameterKey>Delta__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>Half the sampling duration + uncertainty of the time tags (in seconds)</Description>
+         <Cadence>PT52S</Cadence>
+         <Units>s</Units>
+         <UnitsConversion>1&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>D</AxisLabel>
+            <ValueFormat>F8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.26</ValidMin>
+         <ValidMax>4.38</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>E-Spectral Power Density</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_PASSIVE_ACTIVE</Set>
+         <ParameterKey>Electric_Spectral_Power_Density__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>Electric Spectral Power Density</Description>
+         <Caveats>Fill values can be present (1) in the first/last values when only a part of the on-board spectrum values is sent to ground and/or (2) inside the spectrum when a specific mode is used, sending only one value (the highest signal) for each pair of consecutive frequency bins</Caveats>
+         <Cadence>PT52S</Cadence>
+         <Units>V^2 m^-2 Hz^-1</Units>
+         <UnitsConversion>1.0&gt;V^2 m^-2 Hz^-1</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>E-SPD</AxisLabel>
+            <ValueFormat>F13</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>512</Size>
+         </Structure>
+         <FillValue>-1.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Spectral Frequencies</Name>
+         <ParameterKey>Spectral_Frequencies_float__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>Frequencies for the 512 elements of the fixed size spectrum</Description>
+         <Units>kHz</Units>
+         <UnitsConversion>1.0E3&gt;Hz</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>SF</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>512</Size>
+         </Structure>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Table Number</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_PASSIVE_ACTIVE</Set>
+         <ParameterKey>Table_Number__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>Frequency Table Number between 0 and 127</Description>
+         <Cadence>PT52S</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>T_N</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>127</ValidMax>
+         <FillValue>-1</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Sounding Interval</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_PASSIVE_ACTIVE</Set>
+         <ParameterKey>Sounding_Interval__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>Time interval between 2 emission pulses (in seconds)</Description>
+         <Caveats>13.3 ms (1 unit); 26.6 ms (2 units); 40 ms (3 units); 66.6 ms (5 units); 106.6 ms (8 units); 8.5 s (40 units+2106.66 ms waiting+256 units+2446.66 ms waiting); 125 ms (6 units+45 ms waiting); 250 ms (14 units+63.34 ms waiting)</Caveats>
+         <Cadence>PT52S</Cadence>
+         <Units>ms</Units>
+         <UnitsConversion>1.0E-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>S_I</AxisLabel>
+            <ValueFormat>F10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>13.3</ValidMin>
+         <ValidMax>250.0</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Passive/Active Delay</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_PASSIVE_ACTIVE</Set>
+         <ParameterKey>Passive_Active_Delay__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>Delay between passive spectrum and active spectrum acquisition</Description>
+         <Cadence>PT52S</Cadence>
+         <Units>ms</Units>
+         <UnitsConversion>1.0E-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>P/A_D</AxisLabel>
+            <ValueFormat>F9</ValueFormat>
+         </RenderingHints>
+         <ValidMin>13.3</ValidMin>
+         <ValidMax>26.7</ValidMax>
+         <FillValue>-1.0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Gain Change Number</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_PASSIVE_ACTIVE</Set>
+         <ParameterKey>Gain_Change_Number__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>Number of gain changes during the acquisition</Description>
+         <Cadence>PT52S</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>G_C_N</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>255</ValidMax>
+         <FillValue>-1</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Mantissa</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_PASSIVE_ACTIVE</Set>
+         <ParameterKey>Mantissa__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>First part of the compressed value which is a fixed point integer defined in the compression algorithm</Description>
+         <Cadence>PT52S</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>M</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>8</ValidMax>
+         <FillValue>99</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Exponent</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_WHI_PASSIVE_ACTIVE</Set>
+         <ParameterKey>Exponent__C3_CP_WHI_PASSIVE_ACTIVE</ParameterKey>
+         <Description>Second part of the compressed value</Description>
+         <Cadence>PT52S</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>E</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-30</ValidMin>
+         <ValidMax>33</ValidMax>
+         <FillValue>99</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

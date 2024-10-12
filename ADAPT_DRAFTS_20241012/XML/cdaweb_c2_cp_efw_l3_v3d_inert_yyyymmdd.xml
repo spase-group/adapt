@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c2_cp_efw_l3_v3d_inert/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C2 Electric Field and Wave (EFW) E Cross B Drift Velocity, Inverted Spin Reference 2, ISR2, 4 s, Cluster Active Archive Parameter (CP), 4 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The EFW (Electric Field and Wave) instrument consists of four spherical
+probes deployed orthogonally on 44-meter-long wire booms in the spin
+plane of the spacecraft. The potential differences between opposing
+probes, separated by 88 m tip-to-tip, are measured to provide electric
+field measurements in two directions, thus providing the full electric
+field vector in the spin plane of the spacecraft. Additionally, the
+potential differences between each of the probes and the spacecraft are
+measured, providing an estimate of the spacecraft potential relative
+to the plasma, which can be used as a proxy for the ambient electron
+density. The output analogue signals from the preamplifiers connected
+to the spherical probes are also provided to the wave instruments
+(STAFF, WHISPER and WBD) for analysis of high frequency wave phenomena.</Description>
+         <Acknowledgement>Please acknowledge the ESA Cluster Active Archive in any publication based upon this data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c2/efw/driftvelo_3dvect_spinreso_l3_inertialframe/</URL>
+            <ProductKey>C2_CP_EFW_L3_V3D_INERT</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c2/efw/driftvelo_3dvect_spinreso_l3_inertialframe/</URL>
+            <ProductKey>C2_CP_EFW_L3_V3D_INERT</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C2_CP_EFW_L3_V3D_INERT&amp;index=sp_phys</URL>
+            <ProductKey>C2_CP_EFW_L3_V3D_INERT</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator M. Andre. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Cluster-Salsa/EFW</InstrumentID>
+      <MeasurementType>ElectricField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2000-12-02T00:00:00.000</StartDate>
+            <StopDate>2022-08-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT4S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>time_tags__C2_CP_EFW_L3_V3D_INERT</ParameterKey>
+         <Description>Interval centered time tag</Description>
+         <Units>ps</Units>
+         <UnitsConversion>1.0e-12&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000.000.000.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000.000.000.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999.999.999.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Velocity</Name>
+         <Set>Time series defined by using: time_tags__C2_CP_EFW_L3_V3D_INERT</Set>
+         <ParameterKey>v_drift_ISR2__C2_CP_EFW_L3_V3D_INERT</ParameterKey>
+         <Description>Velocity</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>km/s</Units>
+         <UnitsConversion>1.0e3&gt;m s^-1</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Velocity (ISR2)</AxisLabel>
+            <ValueFormat>F15.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Vx</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>Vy</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>Vz</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+07</ValidMin>
+         <ValidMax>1.0e+07</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Error of velocityISR2</Name>
+         <Set>Time series defined by using: time_tags__C2_CP_EFW_L3_V3D_INERT</Set>
+         <ParameterKey>delta_v_ISR2__C2_CP_EFW_L3_V3D_INERT</ParameterKey>
+         <Description>Error of velocityISR2</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>km/s</Units>
+         <UnitsConversion>1.0e3&gt;m s^-1</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Error of velocity (ISR2)</AxisLabel>
+            <ValueFormat>F15.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>dVx</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>dVy</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>dVz</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+08</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electric field measurement quality bitmask</Name>
+         <Set>Time series defined by using: time_tags__C2_CP_EFW_L3_V3D_INERT</Set>
+         <ParameterKey>E_bitmask__C2_CP_EFW_L3_V3D_INERT</ParameterKey>
+         <Description>Electric field measurement quality bitmask</Description>
+         <Cadence>PT4S</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Bitmask</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1</ValidMin>
+         <ValidMax>94216</ValidMax>
+         <FillValue>0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Electric field measurement quality flag (4=best)</Name>
+         <Set>Time series defined by using: time_tags__C2_CP_EFW_L3_V3D_INERT</Set>
+         <ParameterKey>E_quality__C2_CP_EFW_L3_V3D_INERT</ParameterKey>
+         <Description>Electric field measurement quality flag (4=best)</Description>
+         <Cadence>PT4S</Cadence>
+         <UnitsConversion>1&gt;unitless</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Quality</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>0</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Electric field standard deviation</Name>
+         <Set>Time series defined by using: time_tags__C2_CP_EFW_L3_V3D_INERT</Set>
+         <ParameterKey>E_sigma__C2_CP_EFW_L3_V3D_INERT</ParameterKey>
+         <Description>Electric field standard deviation</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>mV/m</Units>
+         <UnitsConversion>1.0e-3&gt;V m^-1</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>St dev</AxisLabel>
+            <ValueFormat>F15.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>550.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

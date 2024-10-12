@@ -1,0 +1,1640 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/tss-1r_m1_dpmf/yyyymmddhhmmss</ResourceID>
+      <ResourceHeader>
+         <ResourceName>TSS-1R (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>References:
+1. The Instrument Data File Set. URL http://www.idfs.org</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data. 
+
+PI determined</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Mission Overview</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/grl10545.pdf</URL>
+            <Description>TSS-1R</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Documentation Folder</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/pub/data/tss/tss_docs/</URL>
+            <Description>TSS</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/tss/tss-1r/cdf/dply/dpmf/</URL>
+            <ProductKey>TSS-1R_M1_DPMF</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/tss/tss-1r/cdf/dply/dpmf/</URL>
+            <ProductKey>TSS-1R_M1_DPMF</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=TSS-1R_M1_DPMF&amp;index=sp_phys</URL>
+            <ProductKey>TSS-1R_M1_DPMF</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>InstrumentStatus</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>1996-02-22T23:51:19T00:00:00.000</StartDate>
+            <StopDate>1996-03-01T10:51:17T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time Line</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Start Time for the record</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.2798349819904e+13</ScaleMin>
+            <ScaleMax>6.3745034619904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>1990-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2020-01-01T00:00:00.000000000</ValidMax>
+         <FillValue>2100-01-01T00:00:00.000000000</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <ParameterKey>Epoch_Start</ParameterKey>
+         <Description>Start time = Epoch - value</Description>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time Resolution</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Epoch_End</ParameterKey>
+         <Description>End time = Epoch + value</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dt</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>3.16224e+16</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Latch Gr1 Motor I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_Gr1_Motor_I_1_telemetry_unitless</ParameterKey>
+         <Description>Latch Group 1 Motor Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch Gr1 Motor I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch Gr1 Motor I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_Gr1_Motor_I_2_Current_amps</ParameterKey>
+         <Description>Latch Group 1 Motor Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch Gr1 Motor I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-30.0</ScaleMin>
+            <ScaleMax>30.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Latch_Gr1_Motor_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Latch_Gr1_Motor_I</ParameterKey>
+         <Description>Data Quality Indicator for Latch Gr1 Motor I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch Gr2 Motor I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_Gr2_Motor_I_1_telemetry_unitless</ParameterKey>
+         <Description>Latch Group 2 Motor Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch Gr2 Motor I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Latch Gr2 Motor I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latch_Gr2_Motor_I_2_Current_amps</ParameterKey>
+         <Description>Latch Group 2 Motor Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latch Gr2 Motor I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-30.0</ScaleMin>
+            <ScaleMax>30.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Latch_Gr2_Motor_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Latch_Gr2_Motor_I</ParameterKey>
+         <Description>Data Quality Indicator for Latch Gr2 Motor I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Boom Motors I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Boom_Motors_I_1_telemetry_unitless</ParameterKey>
+         <Description>Boom Motors Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Boom Motors I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Boom Motors I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Boom_Motors_I_2_Current_amps</ParameterKey>
+         <Description>Boom Motors Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Boom Motors I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-30.0</ScaleMin>
+            <ScaleMax>30.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Boom_Motors_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Boom_Motors_I</ParameterKey>
+         <Description>Data Quality Indicator for Boom Motors I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MCA-Reel Motor I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MCA_Reel_Motor_I_1_telemetry_unitless</ParameterKey>
+         <Description>MCA-Reel Motor Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCA-Reel Motor I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MCA-Reel Motor I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MCA_Reel_Motor_I_2_Current_amps</ParameterKey>
+         <Description>MCA-Reel Motor Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCA-Reel Motor I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-30.0</ScaleMin>
+            <ScaleMax>30.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_MCA_Reel_Motor_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_MCA_Reel_Motor_I</ParameterKey>
+         <Description>Data Quality Indicator for MCA-Reel Motor I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Bat Htr I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Bat_Htr_I_1_telemetry_unitless</ParameterKey>
+         <Description>Satellite Battery Heater Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Bat Htr I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Bat Htr I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Bat_Htr_I_2_Current_amps</ParameterKey>
+         <Description>Satellite Battery Heater Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Bat Htr I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-30.0</ScaleMin>
+            <ScaleMax>30.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Sat_Bat_Htr_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sat_Bat_Htr_I</ParameterKey>
+         <Description>Data Quality Indicator for Sat Bat Htr I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat P/L Mod Htr I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_P_L_Mod_Htr_I_1_telemetry_unitless</ParameterKey>
+         <Description>Satellite P/L Module Heater Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat P/L Mod Htr I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat P/L Mod Htr I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_P_L_Mod_Htr_I_2_Current_amps</ParameterKey>
+         <Description>Satellite P/L Module Heater Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat P/L Mod Htr I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-30.0</ScaleMin>
+            <ScaleMax>30.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Sat_P_L_Mod_Htr_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sat_P_L_Mod_Htr_I</ParameterKey>
+         <Description>Data Quality Indicator for Sat P/L Mod Htr I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Serv Mod Htr I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Serv_Mod_Htr_I_1_telemetry_unitless</ParameterKey>
+         <Description>Satellite Service Module Heater Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Serv Mod Htr I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Serv Mod Htr I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Serv_Mod_Htr_I_2_Current_amps</ParameterKey>
+         <Description>Satellite Service Module Heater Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Serv Mod Htr I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-30.0</ScaleMin>
+            <ScaleMax>30.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 6</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sat_Serv_Mod_Htr_I</ParameterKey>
+         <Description>Data Quality Indicator for Sat Serv Mod Htr I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC-MCA I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_MCA_I_1_telemetry_unitless</ParameterKey>
+         <Description>MPC-MCA Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC-MCA I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC-MCA I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_MCA_I_2_Current_amps</ParameterKey>
+         <Description>MPC-MCA Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC-MCA I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-6.0</ScaleMin>
+            <ScaleMax>6.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_MPC_MCA_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_MPC_MCA_I</ParameterKey>
+         <Description>Data Quality Indicator for MPC-MCA I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC Input I Hi Rng</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_Input_I_Hi_Rng_1_telemetry_unitless</ParameterKey>
+         <Description>MPC Input Current High Range</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC Input I Hi Rng</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC Input I Hi Rng</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_Input_I_Hi_Rng_2_Current_amps</ParameterKey>
+         <Description>MPC Input Current High Range</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC Input I Hi Rng</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-200.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 8</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_MPC_Input_I_Hi_Rng</ParameterKey>
+         <Description>Data Quality Indicator for MPC Input I Hi Rng</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC Input I Low Rng</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_Input_I_Low_Rng_1_telemetry_unitless</ParameterKey>
+         <Description>MPC Input Current Low Range</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC Input I Low Rng</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MPC Input I Low Rng</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MPC_Input_I_Low_Rng_2_Current_amps</ParameterKey>
+         <Description>MPC Input Current Low Range</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MPC Input I Low Rng</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-30.0</ScaleMin>
+            <ScaleMax>30.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 9</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_MPC_Input_I_Low_Rng</ParameterKey>
+         <Description>Data Quality Indicator for MPC Input I Low Rng</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Ext Pwr I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Ext_Pwr_I_1_telemetry_unitless</ParameterKey>
+         <Description>Satellite External Power Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Ext Pwr I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Ext Pwr I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Ext_Pwr_I_2_Current_amps</ParameterKey>
+         <Description>Satellite External Power Current</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>A</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Ext Pwr I</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-30.0</ScaleMin>
+            <ScaleMax>30.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Sat_Ext_Pwr_I</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sat_Ext_Pwr_I</ParameterKey>
+         <Description>Data Quality Indicator for Sat Ext Pwr I</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MCP V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MCP_V_1_telemetry_unitless</ParameterKey>
+         <Description>MPC Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCP V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>MCP V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MCP_V_2_Voltage_volts</ParameterKey>
+         <Description>MPC Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCP V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>150.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_MCP_V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_MCP_V</ParameterKey>
+         <Description>Data Quality Indicator for MCP V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Ext Pwr V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Ext_Pwr_V_1_telemetry_unitless</ParameterKey>
+         <Description>Satellite External Power Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Ext Pwr V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sat Ext Pwr V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sat_Ext_Pwr_V_2_Voltage_volts</ParameterKey>
+         <Description>Satellite External Power Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sat Ext Pwr V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Sat_Ext_Pwr_V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sat_Ext_Pwr_V</ParameterKey>
+         <Description>Data Quality Indicator for Sat Ext Pwr V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Upper Tether Cut V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Upper_Tether_Cut_V_1_telemetry_unitless</ParameterKey>
+         <Description>Primary Upper Tether Cut Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Upper Tether Cut V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Upper Tether Cut V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Upper_Tether_Cut_V_2_Voltage_volts</ParameterKey>
+         <Description>Primary Upper Tether Cut Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Upper Tether Cut V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 13</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Pri_Upper_Tether_Cut_V</ParameterKey>
+         <Description>Data Quality Indicator for Pri Upper Tether Cut V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Lower Tether Cut V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Lower_Tether_Cut_V_1_telemetry_unitless</ParameterKey>
+         <Description>Primary Lower Tether Cut Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Lower Tether Cut V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Lower Tether Cut V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Lower_Tether_Cut_V_2_Voltage_volts</ParameterKey>
+         <Description>Primary Lower Tether Cut Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Lower Tether Cut V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 14</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Pri_Lower_Tether_Cut_V</ParameterKey>
+         <Description>Data Quality Indicator for Pri Lower Tether Cut V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Boom Eject V1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Boom_Eject_V1_1_telemetry_unitless</ParameterKey>
+         <Description>Primary Boom Eject Voltage 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Boom Eject V1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Boom Eject V1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Boom_Eject_V1_2_Voltage_volts</ParameterKey>
+         <Description>Primary Boom Eject Voltage 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Boom Eject V1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Pri_Boom_Eject_V1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Pri_Boom_Eject_V1</ParameterKey>
+         <Description>Data Quality Indicator for Pri Boom Eject V1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Boom Eject V2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Boom_Eject_V2_1_telemetry_unitless</ParameterKey>
+         <Description>Primary Boom Eject Voltage 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Boom Eject V2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Boom Eject V2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Boom_Eject_V2_2_Voltage_volts</ParameterKey>
+         <Description>Primary Boom Eject Voltage 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Boom Eject V2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Pri_Boom_Eject_V2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Pri_Boom_Eject_V2</ParameterKey>
+         <Description>Data Quality Indicator for Pri Boom Eject V2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Boom Eject V3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Boom_Eject_V3_1_telemetry_unitless</ParameterKey>
+         <Description>Primary Boom Eject Voltage 3</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Boom Eject V3</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Pri Boom Eject V3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Pri_Boom_Eject_V3_2_Voltage_volts</ParameterKey>
+         <Description>Primary Boom Eject Voltage 3</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Pri Boom Eject V3</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Pri_Boom_Eject_V3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Pri_Boom_Eject_V3</ParameterKey>
+         <Description>Data Quality Indicator for Pri Boom Eject V3</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Upper Tether Cut V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Upper_Tether_Cut_V_1_telemetry_unitless</ParameterKey>
+         <Description>Secondary Upper Tether Cut Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Upper Tether Cut V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Upper Tether Cut V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Upper_Tether_Cut_V_2_Voltage_volts</ParameterKey>
+         <Description>Secondary Upper Tether Cut Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Upper Tether Cut V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 18</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sec_Upper_Tether_Cut_V</ParameterKey>
+         <Description>Data Quality Indicator for Sec Upper Tether Cut V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Lower Tether Cut V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Lower_Tether_Cut_V_1_telemetry_unitless</ParameterKey>
+         <Description>Secondary Lower Tether Cut Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Lower Tether Cut V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Lower Tether Cut V</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Lower_Tether_Cut_V_2_Voltage_volts</ParameterKey>
+         <Description>Secondary Lower Tether Cut Voltage</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Lower Tether Cut V</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 19</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sec_Lower_Tether_Cut_V</ParameterKey>
+         <Description>Data Quality Indicator for Sec Lower Tether Cut V</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Boom Eject V1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Boom_Eject_V1_1_telemetry_unitless</ParameterKey>
+         <Description>Secondary Boom Eject Voltage 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Boom Eject V1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Boom Eject V1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Boom_Eject_V1_2_Voltage_volts</ParameterKey>
+         <Description>Secondary Boom Eject Voltage 1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Boom Eject V1</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Sec_Boom_Eject_V1</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sec_Boom_Eject_V1</ParameterKey>
+         <Description>Data Quality Indicator for Sec Boom Eject V1</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Boom Eject V2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Boom_Eject_V2_1_telemetry_unitless</ParameterKey>
+         <Description>Secondary Boom Eject Voltage 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Boom Eject V2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Boom Eject V2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Boom_Eject_V2_2_Voltage_volts</ParameterKey>
+         <Description>Secondary Boom Eject Voltage 2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Boom Eject V2</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Sec_Boom_Eject_V2</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sec_Boom_Eject_V2</ParameterKey>
+         <Description>Data Quality Indicator for Sec Boom Eject V2</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Boom Eject V3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Boom_Eject_V3_1_telemetry_unitless</ParameterKey>
+         <Description>Secondary Boom Eject Voltage 3</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Boom Eject V3</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Sec Boom Eject V3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Sec_Boom_Eject_V3_2_Voltage_volts</ParameterKey>
+         <Description>Secondary Boom Eject Voltage 3</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>V</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Sec Boom Eject V3</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-50.0</ScaleMin>
+            <ScaleMax>50.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Sec_Boom_Eject_V3</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Sec_Boom_Eject_V3</ParameterKey>
+         <Description>Data Quality Indicator for Sec Boom Eject V3</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Outbrd Fine Tether Ten</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Outbrd_Fine_Tether_Ten_1_telemetry_unitless</ParameterKey>
+         <Description>Outboard Fine Tether Tension</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Outbrd Fine Tether Ten</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Outbrd Fine Tether Ten</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Outbrd_Fine_Tether_Ten_2_Tension_newtons</ParameterKey>
+         <Description>Outboard Fine Tether Tension</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>newtons</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Outbrd Fine Tether Ten</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-10.0</ScaleMin>
+            <ScaleMax>10.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 23</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Outbrd_Fine_Tether_Ten</ParameterKey>
+         <Description>Data Quality Indicator for Outbrd Fine Tether Ten</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Outbrd Coarse Tether Ten</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Outbrd_Coarse_Tether_Ten_1_telemetry_unitless</ParameterKey>
+         <Description>Outboard Coarse Tether Tension</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Outbrd Coarse Tether Ten</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Outbrd Coarse Tether Ten</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Outbrd_Coarse_Tether_Ten_2_Tension_newtons</ParameterKey>
+         <Description>Outboard Coarse Tether Tension</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>newtons</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Outbrd Coarse Tether Ten</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-75.0</ScaleMin>
+            <ScaleMax>75.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data Quality sensor 24</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Outbrd_Coarse_Tether_Ten</ParameterKey>
+         <Description>Data Quality Indicator for Outbrd Coarse Tether Ten</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Inbrd Tether Ten</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Inbrd_Tether_Ten_1_telemetry_unitless</ParameterKey>
+         <Description>Inboard Tether Tension</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Inbrd Tether Ten</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-2500.0</ScaleMin>
+            <ScaleMax>2500.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Inbrd Tether Ten</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Inbrd_Tether_Ten_2_Tension_newtons</ParameterKey>
+         <Description>Inboard Tether Tension</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>newtons</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Inbrd Tether Ten</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-150.0</ScaleMin>
+            <ScaleMax>150.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Data_Quality_Inbrd_Tether_Ten</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Data_Quality_Inbrd_Tether_Ten</ParameterKey>
+         <Description>Data Quality Indicator for Inbrd Tether Ten</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Quality</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+            <ScaleMin>-1.0</ScaleMin>
+            <ScaleMax>3.0</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-3.0e+38</ValidMin>
+         <ValidMax>3.0e+38</ValidMax>
+         <FillValue>-3.4e+38</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

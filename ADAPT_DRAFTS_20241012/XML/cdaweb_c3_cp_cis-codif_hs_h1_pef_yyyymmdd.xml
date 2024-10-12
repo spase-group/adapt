@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/c3_cp_cis-codif_hs_h1_pef/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>C3 Cluster Ion Spectrometry-ion Composition and Distribution Function (CIS-CODIF) Three-dimensional Helium+ Distributions, High-sensitivity, in Phase Space Density, Cluster Active Archive Parameter (CP), 4 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Cluster Ion Spectrometry.
+The CIS (Cluster Ion Spectrometry) experiment is a comprehensive
+ionic plasma spectrometry package onboard the Cluster spacecraft,
+capable of obtaining full three-dimentional ion distributions
+(about 0 to 40 keV/e) with a time resolution of one spacecraft spin (4 sec)
+and with mass-per-charge composition determination.
+The CIS package consists of two different instruments,
+a time-of-flight ion Composition and Distribution Function analyser (CODIF, or CIS-1)
+and a Hot Ion Analyser (HIA, or CIS-2).</Description>
+         <Acknowledgement>Please acknowledge the CIS team and ESA Cluster Science Archive when using this data.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/cluster/c3/cis-codif/proton_3ddist_highsens_diffenergyflux/</URL>
+            <ProductKey>C3_CP_CIS-CODIF_HS_H1_PEF</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/cluster/c3/cis-codif/proton_3ddist_highsens_diffenergyflux/</URL>
+            <ProductKey>C3_CP_CIS-CODIF_HS_H1_PEF</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=C3_CP_CIS-CODIF_HS_H1_PEF&amp;index=sp_phys</URL>
+            <ProductKey>C3_CP_CIS-CODIF_HS_H1_PEF</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator I. Dandouras. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>EnergeticParticles</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2001-01-01T00:00:00.000</StartDate>
+            <StopDate>2009-11-11T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT4S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>time_tags__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>Acquisition interval start time</Description>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>A17</ValueFormat>
+         </RenderingHints>
+         <ValidMin>16-Jul-2000 00:00:00.000</ValidMin>
+         <ValidMax>22-Aug-2026 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Interval duration</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_CIS_CODIF_HS_H1_PEF</Set>
+         <ParameterKey>duration__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>Interval duration</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>s</Units>
+         <UnitsConversion>1.0&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>dT</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>3.5</ValidMin>
+         <ValidMax>36.0</ValidMax>
+         <FillValue>0.0</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>CIS Operational Mode</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_CIS_CODIF_HS_H1_PEF</Set>
+         <ParameterKey>cis_mode__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>CIS Operational Mode</Description>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Mode</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>99</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Telemetry Product Number</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_CIS_CODIF_HS_H1_PEF</Set>
+         <ParameterKey>tm_product__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>CIS Telemetry Product</Description>
+         <Cadence>PT4S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Product</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>63</ValidMax>
+         <FillValue>99</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Geometric factor</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_CIS_CODIF_HS_H1_PEF</Set>
+         <ParameterKey>geom_factor__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>Geometric factor</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>cm2^2 sr keV keV^-1</Units>
+         <UnitsConversion>1.0E-4&gt;m^2 sr</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>F7.5</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.001</ValidMin>
+         <ValidMax>0.01</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Codif MCP High-Voltage</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_CIS_CODIF_HS_H1_PEF</Set>
+         <ParameterKey>codif_mcp_hv__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>CODIF MCP High-Voltage</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>volt</Units>
+         <UnitsConversion>1&gt;V</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>MCP HV</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Codif Acceleration High-Voltage</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_CIS_CODIF_HS_H1_PEF</Set>
+         <ParameterKey>codif_acc_hv__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>CODIF Acceleration High-Voltage</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>volt</Units>
+         <UnitsConversion>1&gt;V</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>ACC HV</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>31000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>CIS-CODIF 3D HS Proton distributions</Name>
+         <Set>Time series defined by using: time_tags__C3_CP_CIS_CODIF_HS_H1_PEF</Set>
+         <ParameterKey>ions_3d__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>CIS-CODIF 3D HS Proton distributions.
+
+* Column 1 Labels from THETA__C3_CP_CIS_CODIF_HS_H1_PEF: [ -78.7500, -56.2500, -33.7500, -11.2500, 11.2500, 33.7500, 56.2500, 78.7500].
+* Column 2 Labels from PHI__C3_CP_CIS_CODIF_HS_H1_PEF: [ -45.4170, -67.9170, -90.4170, -112.917, -135.417, -157.917, 179.583, 157.083, 134.583, 112.083, 89.5830, 67.0830, 44.5830, 22.0830, -0.417000, -22.9170].
+* Column 3 Labels from ENERGY_TABLE__C3_CP_CIS_CODIF_HS_H1_PEF: [ 34117.3, 26796.8, 21047.1, 16531.0, 12984.0, 10198.0, 8009.85, 6291.19, 4941.30, 3881.05, 3048.30, 2394.23, 1880.50, 1477.01, 1160.09, 911.170, 715.660, 562.100, 441.490, 346.760, 272.360, 213.920, 168.020, 131.970, 103.650, 81.4100, 63.9400, 50.2200, 39.4500, 30.9800, 24.3300].</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>keV cm^-2 s^-1 sr^-1 keV^-1</Units>
+         <UnitsConversion>1.0E+4&gt;m^-2 s^-1 sr^-1</UnitsConversion>
+         <RenderingHints>
+            <ValueFormat>G10</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8 16 31</Size>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Polar bin edges</Name>
+         <ParameterKey>theta__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>Polar bin edges (particle arrival direction)</Description>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.0174532925199&gt;rad</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Polar bin</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Azimuthal bin edges</Name>
+         <ParameterKey>phi__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>Azimuthal bin edges (particle arrival direction)</Description>
+         <Units>&#176;</Units>
+         <UnitsConversion>0.0174532925199&gt;rad</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Azimuthal bin</AxisLabel>
+            <ValueFormat>F8.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>16</Size>
+         </Structure>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Energy table</Name>
+         <ParameterKey>energy_table__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>Energy table</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Energy</AxisLabel>
+            <ValueFormat>F9.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>31</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>40000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta plus energy table</Name>
+         <ParameterKey>delta_plus_energy_table__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>Delta plus energy table</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dE_plus</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>31</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Delta minus energy table</Name>
+         <ParameterKey>delta_minus_energy_table__C3_CP_CIS_CODIF_HS_H1_PEF</ParameterKey>
+         <Description>Delta minus energy table</Description>
+         <Units>eV</Units>
+         <UnitsConversion>1.60217646E-19&gt;J</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>dE_minus</AxisLabel>
+            <ValueFormat>F8.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>31</Size>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5100.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

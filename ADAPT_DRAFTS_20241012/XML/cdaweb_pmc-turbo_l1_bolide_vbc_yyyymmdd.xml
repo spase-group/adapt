@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/pmc-turbo_l1_bolide_vbc/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>Instrument description in https://doi.org/10.5194/amt-13-5681-2020</Description>
+         <Acknowledgement>Users are encouraged to contact the PI for early discussion of analysis projects and to offer co-authorship when publishing results derived from BOLIDE data.</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>PMC Turbo overview paper</Name>
+            <URL>https://doi.org/10.1029/2019JD030298</URL>
+            <Description>BOLIDE lidar PMC measurements as described in</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>PMC-TURBO_L1_BOLIDE_VBC</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>PMC-TURBO_L1_BOLIDE_VBC</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=PMC-TURBO_L1_BOLIDE_VBC&amp;index=sp_phys</URL>
+            <ProductKey>PMC-TURBO_L1_BOLIDE_VBC</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ImageIntensity</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>time_epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>time_inboard</Description>
+         <Caveats>* Date in msec - time_base+Time, computed by SPDF
+This parameter is virtual. It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters: time_base, Time.</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time_base</Name>
+         <ParameterKey>time_base</ParameterKey>
+         <Description>time base</Description>
+         <Caveats>EPOCH of 01-Jan-1970 00:00:00 - SPDF added base variable/value</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>timebase</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+         </RenderingHints>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Altitude</Name>
+         <ParameterKey>Altitude</ParameterKey>
+         <Description>altitude</Description>
+         <Units>km</Units>
+         <RenderingHints>
+            <AxisLabel>Altitude</AxisLabel>
+            <ValueFormat>F6.3</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>701</Size>
+         </Structure>
+         <FillValue>9.96921e+36</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>alpha</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Azimuth</ParameterKey>
+         <Description>Beam pointing clockwise from north, from gondola yaw angle + 90 deg of CSBFs TDRSS log</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Azimuth</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>270.0</ValidMax>
+         <FillValue>9.96921e+36</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>z0</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Floating_altitude</ParameterKey>
+         <Description>Balloon floating altitude from onboard GPS sensors</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Floating altitude</AxisLabel>
+            <ValueFormat>F5.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>60.0</ValidMax>
+         <FillValue>9.96921e+36</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>latitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Latitude</ParameterKey>
+         <Description>Latitude of lidar beam at 82 km altitude, given azimuth, floating altitude and 28 deg off-zenith beam angle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Latitude</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>9.96921e+36</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>longitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Longitude</ParameterKey>
+         <Description>Longitude of lidar beam at 82 km altitude, given azimuth, floating altitude and 28 deg off-zenith beam angle</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Longitude</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>9.96921e+36</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Time</Name>
+         <ParameterKey>Time</ParameterKey>
+         <Description>time</Description>
+         <Units>Seconds since 1970-01-01T00:00:00Z</Units>
+         <RenderingHints>
+            <AxisLabel>Time</AxisLabel>
+            <ValueFormat>I10</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1.53148e+09</ValidMin>
+         <ValidMax>1.53154e+09</ValidMax>
+         <FillValue>9.96921e+36</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>beta</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Volume_backscatter_coefficient</ParameterKey>
+         <Description>volume backscatter coefficient beta derived from Rayleigh lidar data at a threshold of 2.5 sigma above background</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>10^{-10}/m/sr</Units>
+         <RenderingHints>
+            <DisplayType>Spectrogram</DisplayType>
+            <AxisLabel>Volume backscatter coefficient</AxisLabel>
+            <ValueFormat>F6.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>701</Size>
+         </Structure>
+         <FillValue>9.96921e+36</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

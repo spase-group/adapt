@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/endurance_l2-gf_pes/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>The Endurance PES instrument was comprised of 8 boom-mounted Dual Electrostatic Analyzer (DESA) sensors, and a main electronics box (MEB). Each DESA sensor had two look directions; A-side (looking down to Earth from launch to pitch-over maneuver, and then up to space until loss of signal (LOS)); and B-side (looking up to space from launch to pitch-over, and then down to Earth until loss of signal (LOS)). The sensors were synchronized by the MEB and cross-calibrated to look at approximately the same energy at the same time. A PES sweep consisted of 81 different steps and took 10 seconds. At each step, a voltage could be applied to the Electrostatic Analyzer (ESA) and/or the Retarding Potential Analyzer (RPA). Of these 81 steps; 3 (0, 1, 44) were used to take background counts with the ESA grounded, and to fire the SLP; 34 (2:9, 33, 56:80) were used to collect the standard resolution data measurement (15% DE/E, 10eV to 1keV) using the ESA alone; and 44 (10:32, 34:43, 45:55) were used to collect the high-resolution measurement (0.5% DE/E, 20.3 eV to 25.85 eV) using the ESA and RPA combined. These calibration data present the variation in Geometric Factor with PES operation during flight</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>https://doi.org/10.1007/s11214-022-00908-0</Name>
+            <URL>https://doi.org/10.1007/s11214-022-00908-0</URL>
+            <Description>Collinson, G., Glocer, A., Pfaff, R. et al. The Endurance Rocket Mission. Space Sci Rev 218, 39 (2022). https://doi.org/10.1007/s11214-022-00908-0</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/endurance/endurance-2022/cdf/</URL>
+            <ProductKey>ENDURANCE_L2-GF_PES</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/sounding_rockets/endurance/endurance-2022/cdf/</URL>
+            <ProductKey>ENDURANCE_L2-GF_PES</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=ENDURANCE_L2-GF_PES&amp;index=sp_phys</URL>
+            <ProductKey>ENDURANCE_L2-GF_PES</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2022-05-11T00:00:00.000</StartDate>
+            <StopDate>2022-05-11T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Time start of avg interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+         </RenderingHints>
+         <ValidMin>01-Jan-1994 00:00:00.000</ValidMin>
+         <ValidMax>01-Jan-2050 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>PES Step</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>step</ParameterKey>
+         <Description>Photoelectron Spectrometer Energy Step</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>PES Step</AxisLabel>
+            <ValueFormat>I3</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>81</ValidMax>
+         <FillValue>-99</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PES_A_GF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PES_A_GF</ParameterKey>
+         <Description>Variation of geometric factor of PES all sensors, A-side during operation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^2 sr eV/eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>PES_A_GF</AxisLabel>
+            <ValueFormat>E9.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>3</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>4</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>5</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>6</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>7</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>8</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>1.0e-05</ValidMin>
+         <ValidMax>1.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>PES_B_GF</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>PES_B_GF</ParameterKey>
+         <Description>Variation of geometric factor of PES all sensors, B-side during operation</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^2 sr eV/eV)^-1</Units>
+         <RenderingHints>
+            <AxisLabel>PES_B_GF</AxisLabel>
+            <ValueFormat>E9.2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+            <Element>
+               <Name>Element 1</Name>
+               <Index>1</Index>
+               <RenderingHints>
+                  <AxisLabel>1</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 2</Name>
+               <Index>2</Index>
+               <RenderingHints>
+                  <AxisLabel>2</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 3</Name>
+               <Index>3</Index>
+               <RenderingHints>
+                  <AxisLabel>3</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 4</Name>
+               <Index>4</Index>
+               <RenderingHints>
+                  <AxisLabel>4</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 5</Name>
+               <Index>5</Index>
+               <RenderingHints>
+                  <AxisLabel>5</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 6</Name>
+               <Index>6</Index>
+               <RenderingHints>
+                  <AxisLabel>6</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 7</Name>
+               <Index>7</Index>
+               <RenderingHints>
+                  <AxisLabel>7</AxisLabel>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Element 8</Name>
+               <Index>8</Index>
+               <RenderingHints>
+                  <AxisLabel>8</AxisLabel>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <ValidMin>1.0e-05</ValidMin>
+         <ValidMax>1.0</ValidMax>
+         <FillValue>nan</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>sensor</Name>
+         <ParameterKey>sensor</ParameterKey>
+         <RenderingHints>
+            <AxisLabel>sensor</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>8</Size>
+         </Structure>
+         <ValidMin>1</ValidMin>
+         <ValidMax>8</ValidMax>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

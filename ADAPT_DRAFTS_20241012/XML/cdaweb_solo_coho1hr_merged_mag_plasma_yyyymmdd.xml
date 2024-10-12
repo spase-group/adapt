@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/solo_coho1hr_merged_mag_plasma/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>Solar Orbiter (SOLO) Magnetometer/Energetic Particle Detector, Hourly Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>COHO hourly and daily SOLO data were made using SOLO high resolution data from CDAWeb at https://cdaweb.gsfc.nasa.gov/. The name of the original  plasma data is  \SOLO_L2_SWA-PAS-GRND-MOM\ , [ parameter names: proton bulk velocity in the RTN frame, proton density, proton temperature (Only Good Quality).] The name of  the original magnetic field data is \ SOLO_L2_MAG-RTN-NORMAL-1-MINUTE\ . The heliocentric trajectory data is from HelioWeb at https://omniweb.gsfc.nasa.gov/coho/helios/heli.html
+This file includes the SOLO MAG magnetometer data, and density, velocity and temperature of the solar wind protons measured by the Solar Wind Analyzer (SWA).
+About SOLO data in COHOWeb Solar Orbiter https://omniweb.gsfc.nasa.gov/coho and https://cdaweb.gsfc.nasa.gov/.</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator N.E. Papitashvili for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Natalia.E.Papitashvili</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Documentation</Name>
+            <URL>https://omniweb.gsfc.nasa.gov/coho/html/cw_data.html</URL>
+            <Description>COHO dataset</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>COHOWeb service</Name>
+            <URL>https://omniweb.gsfc.nasa.gov/coho/</URL>
+            <Description>Additional analysis tools for these data from the</Description>
+            <Language>en</Language>
+         </InformationURL>
+         <InformationURL>
+            <Name>Archive</Name>
+            <URL>https://soar.esac.esa.int/soar/</URL>
+            <Description>Solar Orbiter</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/coho1hr_magplasma/</URL>
+            <ProductKey>SOLO_COHO1HR_MERGED_MAG_PLASMA</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/coho1hr_magplasma/</URL>
+            <ProductKey>SOLO_COHO1HR_MERGED_MAG_PLASMA</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_COHO1HR_MERGED_MAG_PLASMA&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_COHO1HR_MERGED_MAG_PLASMA</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator N.E. Papitashvili. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Ephemeris</MeasurementType>
+      <MeasurementType>MagneticField</MeasurementType>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2020-01-01T00:00:00.000</StartDate>
+            <StopDate>2023-08-01T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT1H</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Time</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Time, beginning of interval</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+            <ValueFormat>E14.8</ValueFormat>
+            <ScaleMin>6.3752897019904e+13</ScaleMin>
+            <ScaleMax>6.4060653819904e+13</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>01-Apr-2020 00:00:00.000</ValidMin>
+         <ValidMax>01-Jan-2030 00:00:00.000</ValidMax>
+         <FillValue>31-Dec-9999 23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Radial Distance</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>radialDistance</ParameterKey>
+         <Description>Heliocentric distance</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>ua</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Radial Distance</AxisLabel>
+            <ValueFormat>F7.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.1</ValidMin>
+         <ValidMax>10.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HGI Latitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>heliographicLatitude</ParameterKey>
+         <Description>HelioGraphic Inertial (HGI) latitude of the spacecraft position</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>HGI_Lat</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-90.0</ValidMin>
+         <ValidMax>90.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>HGI Longitude</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>heliographicLongitude</ParameterKey>
+         <Description>HelioGraphic Inertial (HGI) longitude of the spacecraft position</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>HGI_Long</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>360.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>BR (RTN)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BR</ParameterKey>
+         <Description>IMF BR in RTN (Radial-Tangential-Normal) coordinate system</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BR_(RTN)</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>BT (RTN)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BT</ParameterKey>
+         <Description>IMF BT in RTN coordinate system</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BT_(RTN)</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-1000.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>BN (RTN)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>BN</ParameterKey>
+         <Description>IMF BN in RTN coordinate system</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>BN_(RTN)</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>B vector</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>B</ParameterKey>
+         <Description>Magnitude, Avg. B field(Vr)</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VR (RTN)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>VR</ParameterKey>
+         <Description>Proton VR in RTN (Radial-Tangential-Normal) coordinate system</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VR_(RTN)</AxisLabel>
+            <ValueFormat>F8.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VT (RTN)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>VT</ParameterKey>
+         <Description>Proton VT in RTN coordinate system</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VT_(RTN)</AxisLabel>
+            <ValueFormat>F8.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>VN (RTN)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>VN</ParameterKey>
+         <Description>Proton VN in RTN coordinate system</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>VN_(RTN)</AxisLabel>
+            <ValueFormat>F8.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-10000.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>proton speed</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>ProtonSpeed</ParameterKey>
+         <Description>Proton bulk speed</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>proton_speed</AxisLabel>
+            <ValueFormat>F8.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>100.0</ValidMin>
+         <ValidMax>90000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>flow theta</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>flow_theta</ParameterKey>
+         <Description>Flow elevation angle in RTN coordinate system</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>flow_Lat_(RTN)</AxisLabel>
+            <ValueFormat>F8.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-89.9</ValidMin>
+         <ValidMax>89.9</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>flow lon</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>flow_lon</ParameterKey>
+         <Description>Flow azimuth angle in RTN coordinate system</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>&#176;</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SW_Lon_(RTN)</AxisLabel>
+            <ValueFormat>F8.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>-180.0</ValidMin>
+         <ValidMax>180.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>proton density</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>protonDensity</ParameterKey>
+         <Description>Proton density</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>proton_dens</AxisLabel>
+            <ValueFormat>F8.1</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>10000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>proton temperature</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>protonTemp</ParameterKey>
+         <Description>Proton temperature</Description>
+         <Cadence>PT1H</Cadence>
+         <Units>&#176;K</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Proton_temp</AxisLabel>
+            <ValueFormat>F10.0</ValueFormat>
+         </RenderingHints>
+         <ValidMin>1000.0</ValidMin>
+         <ValidMax>9.0e+07</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>

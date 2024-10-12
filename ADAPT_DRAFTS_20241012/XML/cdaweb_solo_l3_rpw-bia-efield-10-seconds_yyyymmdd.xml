@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/solo_l3_rpw-bia-efield-10-seconds/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName>SOLO Radio and Plasma Wave, Biasing Unit (RPW-BIA) Electric Field Vector, Downsampled, Level 3 (L3), 10 s Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>This file contains RPW LFR level 3 electric vector field data in SRF, downsampled.</Description>
+         <Acknowledgement>The authors are pleased to acknowledge the Solar Orbiter/RPW Investigation (M. Maksimovic, PIs) for access to data.. Data provided are Publicly available. If used in presentations or publications, please acknowledge Solar Orbiter/RPW Investigation (M. Maksimovic, PIs). Please read carefully the caveats attached to the data. For reporting purposes, we request bibliography information for any publication, etc., using these data. Please send information on the use of this data to: M. Maksimovic (PI).</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name>RPW Web site</Name>
+            <URL>https://rpw.lesia.obspm.fr</URL>
+            <Description>RPW Web site at LESIA</Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/rpw/science/l3/bia-efield-10-seconds/</URL>
+            <ProductKey>SOLO_L3_RPW-BIA-EFIELD-10-SECONDS</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/pub/data/solar-orbiter/rpw/science/l3/bia-efield-10-seconds/</URL>
+            <ProductKey>SOLO_L3_RPW-BIA-EFIELD-10-SECONDS</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=SOLO_L3_RPW-BIA-EFIELD-10-SECONDS&amp;index=sp_phys</URL>
+            <ProductKey>SOLO_L3_RPW-BIA-EFIELD-10-SECONDS</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator M. Maksimovic. Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>Waves</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2020-06-15T00:00:00.000</StartDate>
+            <StopDate>2022-11-30T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT10S</Cadence>
+      </TemporalDescription>
+      <Parameter>
+         <Name>Epoch</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Default time</Description>
+         <Caveats>* Primary time used as a reference in the file.
+This Parameter exhibits an increasing Monotonic Progression</Caveats>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Epoch</AxisLabel>
+            <ScaleMin>-315575942816000000</ScaleMin>
+            <ScaleMax>1609416069183000000</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>2000-01-01T00:00:00.000000000</ValidMin>
+         <ValidMax>2050-12-31T23:59:59.999000000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999999999</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_FLAG</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QUALITY_FLAG</ParameterKey>
+         <Description>Quality flag</Description>
+         <Caveats>Flag to indicate the quality of the data</Caveats>
+         <Cadence>PT10S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Quality flag</AxisLabel>
+            <ValueFormat>I1.1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>2</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>4</ValidMax>
+         <FillValue>255</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>QUALITY_BITMASK</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QUALITY_BITMASK</ParameterKey>
+         <Description>Bitmask flag</Description>
+         <Caveats>Flag to indicate any context information or status at the receiver or experiment level</Caveats>
+         <Cadence>PT10S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Bitmask flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>255</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65534</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>L2_QUALITY_BITMASK</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>L2_QUALITY_BITMASK</ParameterKey>
+         <Description>Bitmask flag</Description>
+         <Caveats>Flag to indicate any context or events that can alter data -bit0: partial saturation -bit1: full saturation</Caveats>
+         <Cadence>PT10S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>L2 Bitmask flag</AxisLabel>
+            <ValueFormat>I5</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>65534</ValidMax>
+         <FillValue>65535</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Electric field, downsampled</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>EDC_SRF</ParameterKey>
+         <Description>Electric field vector in SRF. Median value over 10 s interval.</Description>
+         <Caveats>Uses SRF coordinates as vector basis.</Caveats>
+         <Cadence>PT10S</Cadence>
+         <Units>mV/m</Units>
+         <UnitsConversion>1.0e-3&gt;V/m</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EDC_SRF med</AxisLabel>
+            <ValueFormat>G12.5</ValueFormat>
+            <ScaleMin>-68.209</ScaleMin>
+            <ScaleMax>19.84</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>EDC_SRF_X</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>EDC_SRF_Y</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>EDC_SRF_Z</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-1.0e+30</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Electric field, std. deviation</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>EDCSTD_SRF</ParameterKey>
+         <Description>Std. deviation of electric field vector in SRF over 10 s interval.</Description>
+         <Caveats>Uses SRF coordinates as vector basis. Standard deviation is counted from the median value.</Caveats>
+         <Cadence>PT10S</Cadence>
+         <Units>mV/m</Units>
+         <UnitsConversion>1.0e-3&gt;V/m</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>EDC_SRF std</AxisLabel>
+            <ValueFormat>G12.5</ValueFormat>
+            <ScaleMin>0.00014559</ScaleMin>
+            <ScaleMax>59.205</ScaleMax>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>EDCSTD_SRF_X</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>EDCSTD_SRF_Y</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>EDCSTD_SRF_Z</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1.0e+30</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>DELTA_PLUS_MINUS</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DELTA_PLUS_MINUS</ParameterKey>
+         <Description>Time between sample timestamp and beginning/end of integration. Total integration time is twice this value.</Description>
+         <Cadence>PT10S</Cadence>
+         <Units>ns</Units>
+         <UnitsConversion>1.0e-9&gt;s</UnitsConversion>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Delta plus minus</AxisLabel>
+            <ValueFormat>I1.1</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>3700</ValidMin>
+         <ValidMax>70000000</ValidMax>
+         <FillValue>-9223372036854775808</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+   </NumericalData>
+</Spase>

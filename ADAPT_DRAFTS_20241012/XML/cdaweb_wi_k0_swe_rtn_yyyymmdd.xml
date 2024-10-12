@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_6_1.xsd">
+   <Version>2.6.1</Version>
+   <NumericalData>
+      <ResourceID>spase://NASA/Granule/UNKNOWN/wi_k0_swe_rtn/yyyymmdd</ResourceID>
+      <ResourceHeader>
+         <ResourceName> (), Data</ResourceName>
+         <DOI>DOI_DOI</DOI>
+         <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+         <RevisionHistory>
+            <RevisionEvent>
+               <ReleaseDate>2024-10-12T12:34:56.789</ReleaseDate>
+               <Note>Initial release of metadata, ADAPT generated, LFB</Note>
+            </RevisionEvent>
+         </RevisionHistory>
+         <Description>SWE, a comprehensive plasma instrument for the WIND spacecraft,  K.W. Ogilvie, et al., Space Sci. Rev., 71, 55-77, 1995.
+USE OF THE QUALITY VARIABLES:
+Quality flags are set in the analysis program that generates the KP data.  Previous descriptions of their meaning were out of date.
+Good data is indicated by a quality flag of 0.
+The quality flags for each parameter are given as integers 4 bytes long (integer*4).  The individual  bits  for each quality value are set (or cleared) in the analysis code by adding (or subtracting) a power of 2 as follows: To set the 1st bit, add 1.  To set the 2nd bit, add 2. To set the 3rd bit, add 4.  To set the 4th bit, add 8, and so on.
+BIT  TO_SET_BIT     MEANING
+1    +1     = 3 point parabolic fits to proton peaks were not attempted.
+2    +2     = non-linear least squares fit was not attempted.
+3    +4     = 3 point parabolic fits to proton peaks FAILED.
+4    +8     = non-linear least squares fit FAILED. (Non-linear fit may be reported as good for protons and, at the same time, not good for alphas.)
+5    +16    = Alpha params not valid for reason that the non-linear least squares fit was done for protons only.  Not enough good energy channels to do simultaneous alpha fit. (This value applies to iqual_core(5) only.)
+6    +32    = analysis code unable to get good value for spin period.
+7    +64    = SWE instrument in mode 1 - calibration state.  Key parameters not produced this mode, only in mode 1 - science.
+8   +128   = 3 point fits done for cup 1 only.  Split collector ratio of currents used to get n/s angle.  Either cup 2 turned off, or cup 2 densities were low indicating noise associated with vibration.
+9   +256   = fewer than 10 fc_blocks in spectrum. Analysis skipped.
+10  +512   = Alpha non-linear fit produced values of thermal speed and density that do not seem reasonable.
+11  +1024   = 3 point parabolic fits to proton peaks done for cup 2 only. Ratio of currents on split collectors used to get n/s angle.  Probably Cup 1 is turned off.
+12  +2048   = single width windows.  Delta E over E 6/5% instead of the default 13%.
+13  +4096   = tracking mode operation
+14  +8192   = Limited tracking mode scan (Not a full scan)
+Comments:
+Non-linear fits are not done for Key Parameters (KPs), but those parameter values are excellent and should be used to do science; non-linear fits are available, but they have problems which suggest strongly that the KP parameters should be used (see paper by Kasper et al.,  Physics-based tests to identify the accuracy of solar wind ion measurements: A case study with the Wind Faraday Cups , J. Geophys. Res., 111, A03105, doi:101029/2005JA011442. Examples (note that all are even numbers because non-linear fits were not attempted)
+FLAG   Meaning
+4098   Tracking mode (4096) full scan  + no non-linear (2)
+14338  Limited tracking mode (8192) + Tracking mode (4096)
+See http://cdaweb.gsfc.nasa.gov/wind_swe_quality.html for the complete guide to the quality flag values.
+</Description>
+         <Acknowledgement>Please acknowledge the Principal Investigator  for use of the Data</Acknowledgement>
+         <Contact>
+            <PersonID>spase://</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <InformationURL>
+            <Name></Name>
+            <URL></URL>
+            <Description></Description>
+            <Language>en</Language>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>FTPS from SPDF (not with most browsers)</Name>
+            <URL>ftps://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>WI_K0_SWE_RTN</ProductKey>
+            <Description>Access to Data in CDF Format via ftps from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>HTTPS from SPDF</Name>
+            <URL>https://spdf.gsfc.nasa.gov/UNKNOWN</URL>
+            <ProductKey>WI_K0_SWE_RTN</ProductKey>
+            <Description>Access to Data in CDF Format via https from SPDF</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=WI_K0_SWE_RTN&amp;index=sp_phys</URL>
+            <ProductKey>WI_K0_SWE_RTN</ProductKey>
+            <Description>Access to ASCII, CDF, and Plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>Please acknowledge the Principal Investigator . Please acknowledge the Data Providers and CDAWeb when using these Data.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/</InstrumentID>
+      <MeasurementType>ThermalPlasma</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>9999-01-01T00:00:00.000</StartDate>
+            <StopDate>9999-12-31T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT99999.999S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Heliosphere</ObservedRegion>
+      <ObservedRegion>Heliosphere.Inner</ObservedRegion>
+      <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+      <Parameter>
+         <Name>Time</Name>
+         <ParameterKey>Epoch</ParameterKey>
+         <Description>Time, centered, in NSSDC Epoch</Description>
+         <Caveats>This Parameter exhibits an increasing Monotonic Progression
+* Average Type: standard</Caveats>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Epoch</AxisLabel>
+         </RenderingHints>
+         <ValidMin>1994-11-01T00:00:00.000</ValidMin>
+         <ValidMax>2050-12-31T00:00:00.000</ValidMax>
+         <FillValue>9999-12-31T23:59:59.999</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time interval</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Delta_time</ParameterKey>
+         <Description>1/2 time interval to collect data for parameters</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>Del Time</AxisLabel>
+            <ValueFormat>E10.4</ValueFormat>
+            <ScaleMin>2.0000e+03</ScaleMin>
+            <ScaleMax>2.0000e+05</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0000e+00</ValidMin>
+         <ValidMax>3.0000e+05</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Time PB5</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Time_PB5</ParameterKey>
+         <Description>Time, centered, in GSFC PB5 format (yr, day, ms)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Year</Name>
+               <Index>1</Index>
+               <Units>a</Units>
+               <ValidMin>1994</ValidMin>
+               <ValidMax>2020</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>1994</ScaleMin>
+                  <ScaleMax>2020</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Day of Year (Jan 1 = Day 1)</Name>
+               <Index>2</Index>
+               <Units>d</Units>
+               <ValidMin>305</ValidMin>
+               <ValidMax>365</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>305</ScaleMin>
+                  <ScaleMax>365</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Elapsed millisecond of day</Name>
+               <Index>3</Index>
+               <Units>ms</Units>
+               <ValidMin>0</ValidMin>
+               <ValidMax>86399000</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>0</ScaleMin>
+                  <ScaleMax>86399000</ScaleMax>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Orientation</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Post Gap Flag</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>GAP_FLAG</ParameterKey>
+         <Description>Post Gap Flag0=no gap immediately prior to this record; other:see &apos;Guidelines</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Data Gap</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>3</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Instrument Mode</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>MODE</ParameterKey>
+         <Description>Mode categories to be decided</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>Mode</AxisLabel>
+            <ValueFormat>I2</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>5</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>15</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>S/C position in GSE</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SC_pos_gse</ParameterKey>
+         <Description>Wind s/c position, 3 comp. in GSE coord.</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>GSE</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>F9.1</ValueFormat>
+            <ScaleMin>-2000000.0</ScaleMin>
+            <ScaleMax>2000000.0</ScaleMax>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>WI X (GSE)</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>WI Y (GSE)</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>WI Z (GSE)</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-2000000.0</ValidMin>
+         <ValidMax>2000000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>InstrumentMode</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>S/C position in GSM</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SC_pos_GSM</ParameterKey>
+         <Description>Wind s/c position, 3 comp. in GSM coord.</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>GSM</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>F9.1</ValueFormat>
+            <ScaleMin>-2000000.0</ScaleMin>
+            <ScaleMax>2000000.0</ScaleMax>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>WI X (GSM)</Name>
+               <Index>1</Index>
+            </Element>
+            <Element>
+               <Name>WI Y (GSM)</Name>
+               <Index>2</Index>
+            </Element>
+            <Element>
+               <Name>WI Z (GSM)</Name>
+               <Index>3</Index>
+            </Element>
+         </Structure>
+         <ValidMin>-2000000.0</ValidMin>
+         <ValidMax>2000000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>InstrumentMode</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>S/C radial distance</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>SC_pos_R</ParameterKey>
+         <Description>Wind s/c radial distance to center of Earth, scalar</Description>
+         <Caveats>Average Type: standard</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>WI Rad Dist</AxisLabel>
+            <ValueFormat>F9.1</ValueFormat>
+            <ScaleMin>6400.0</ScaleMin>
+            <ScaleMax>4000000.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>6400.0</ValidMin>
+         <ValidMax>4000000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>InstrumentMode</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality Flag: Data</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>DQF</ParameterKey>
+         <Description>Data Quality Flag: 0=good; 1=bad</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>DQ FLAG</AxisLabel>
+            <ValueFormat>I1</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>1</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>1</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality Flag: Velocity</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QF_V</ParameterKey>
+         <Description>Velocity Quality Flag: 0=OK; 2 or 130 = caution; Other values NOT VALID</Description>
+         <Caveats>Velocity Quality Flag: 0=OK; 2=parabolic 3-point fit only; 130=parabolic 3-point fit only, sensor 1 only, N/S angle zero degrees assumed; Other values NOT VALID</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>QF_V</AxisLabel>
+            <ValueFormat>I11</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>256</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2147483647</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality Flag: proton Vth</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QF_Vth</ParameterKey>
+         <Description>Proton thermal speed Quality Flag: 0=OK; 2 or 130 = caution; Other values NOT VALID</Description>
+         <Caveats>Proton thermal speed Quality Flag: 0=OK; 2=parabolic 3-point fit only; 130=parabolic 3-point fit only, sensor 1 only, N/S angle zero degrees assumed; Other values NOT VALID</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>QF_Vth</AxisLabel>
+            <ValueFormat>I11</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>255</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2147483647</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality Flag: proton dens.</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QF_Np</ParameterKey>
+         <Description>Proton Density Quality Flag: 0=OK; 2 or 130 = caution; Other values NOT VALID</Description>
+         <Caveats>Proton Density Quality Flag: 0=OK; 2=parabolic 3-point fit only; 130=parabolic 3-point fit only, sensor 1 only, N/S angle zero degrees assumed; Other values NOT VALID</Caveats>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>QF_Np</AxisLabel>
+            <ValueFormat>I11</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>255</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2147483647</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Quality Flag: Na/Np</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>QF_ap</ParameterKey>
+         <Description>Na/Np Quality Flag: 0=OK; &gt;0=NOT VALID</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <AxisLabel>QF_a/p</AxisLabel>
+            <ValueFormat>I11</ValueFormat>
+            <ScaleMin>0</ScaleMin>
+            <ScaleMax>256</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0</ValidMin>
+         <ValidMax>2147483647</ValidMax>
+         <FillValue>-2147483648</FillValue>
+         <Support>
+            <SupportQuantity>Housekeeping</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Solar Wind Velocity (RTN)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V_RTN</ParameterKey>
+         <Description>Solar Wind Velocity in RTN coord., 3 comp.</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>RTN</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>F8.1</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Vr RTN</Name>
+               <Index>1</Index>
+               <ValidMin>0.0</ValidMin>
+               <ValidMax>1800.0</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-1200.0</ScaleMin>
+                  <ScaleMax>0.0</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Vt RTN</Name>
+               <Index>2</Index>
+               <ValidMin>-900.0</ValidMin>
+               <ValidMax>900.0</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-500.0</ScaleMin>
+                  <ScaleMax>500.0</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>Vn RTN</Name>
+               <Index>3</Index>
+               <ValidMin>-900.0</ValidMin>
+               <ValidMax>900.0</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-500.0</ScaleMin>
+                  <ScaleMax>500.0</ScaleMax>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Bulk Flow, polar, (RTN)</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>V_RTN_p</ParameterKey>
+         <Description>Ion Bulk Flow vector in RTN coord.,  3 comp. (speed, E/W flow, N/S flow)</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>RTN</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <ValueFormat>F6.1</ValueFormat>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Flow Speed</Name>
+               <Index>1</Index>
+               <Units>km/s</Units>
+               <ValidMin>0.0</ValidMin>
+               <ValidMax>2000.0</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>200.0</ScaleMin>
+                  <ScaleMax>1000.0</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>E/W Flow(RTN)</Name>
+               <Index>2</Index>
+               <Units>&#176;</Units>
+               <ValidMin>-50.0</ValidMin>
+               <ValidMax>50.0</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-20.0</ScaleMin>
+                  <ScaleMax>20.0</ScaleMax>
+               </RenderingHints>
+            </Element>
+            <Element>
+               <Name>N/S Flow(RTN)</Name>
+               <Index>3</Index>
+               <Units>&#176;</Units>
+               <ValidMin>-50.0</ValidMin>
+               <ValidMax>50.0</ValidMax>
+               <RenderingHints>
+                  <ScaleMin>-20.0</ScaleMin>
+                  <ScaleMax>20.0</ScaleMax>
+               </RenderingHints>
+            </Element>
+         </Structure>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton thermal speed</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>THERMAL_SPD</ParameterKey>
+         <Description>Solar Wind Most Probable Thermal Speed = sqrt(2kT/M), scalar</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>km/s</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>SW Vth</AxisLabel>
+            <ValueFormat>F6.1</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>500.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Proton density</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Np</ParameterKey>
+         <Description>Solar Wind Proton Number Density, scalar</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <Units>cm^-3</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Ion N</AxisLabel>
+            <ValueFormat>F7.1</ValueFormat>
+            <ScaleMin>0.0</ScaleMin>
+            <ScaleMax>200.0</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>1000.0</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+      <Parameter>
+         <Name>Alpha_Percent</Name>
+         <Set>Time series defined by using: Epoch</Set>
+         <ParameterKey>Alpha_Percent</ParameterKey>
+         <Description>Percent of density due to alpha particles</Description>
+         <Cadence>PT99999.999S</Cadence>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Na/Np</AxisLabel>
+            <ValueFormat>F7.3</ValueFormat>
+            <ScaleMin>0.000</ScaleMin>
+            <ScaleMax>100.000</ScaleMax>
+         </RenderingHints>
+         <ValidMin>0.000</ValidMin>
+         <ValidMax>100.000</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+      </Parameter>
+   </NumericalData>
+</Spase>
